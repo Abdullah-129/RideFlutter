@@ -1,0 +1,11 @@
+query Reservations {
+  orders(filter: { status: { eq: Booked } }) {
+    edges {
+      node {
+        id
+        expectedTimestamp
+        addresses
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+fragment BasicProfile on Driver {
+  mobileNumber
+  firstName
+  lastName
+  searchDistance
+  media {
+    address
+  }
+  softRejectionNote
+  status
+  currentOrders {
+    ...CurrentOrder
+  }
+  wallets {
+    balance
+    currency
+  }
+  isWalletHidden
+}

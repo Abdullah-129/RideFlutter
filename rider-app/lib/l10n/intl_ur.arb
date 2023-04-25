@@ -1,0 +1,237 @@
+{
+  "loading": "لوڈ ہو رہا ہے۔",
+  "wallet_empty_state_message": "کوئی تاریخ درج نہیں۔",
+  "enum_rider_transaction_deduct_order_fee": "آرڈر کی فیس",
+  "enum_rider_transaction_deduct_withdraw": "واپس لینا",
+  "enum_rider_transaction_deduct_correction": "تصحیح",
+  "enum_unknown": "نامعلوم",
+  "enum_rider_transaction_recharge_in_app_payment": "درون ایپ ادائیگی",
+  "enum_rider_transaction_recharge_gift": "تحفہ",
+  "enum_rider_transaction_recharge_correction": "تصحیح",
+  "enum_rider_transaction_recharge_bank_transfer": "بینک ٹرانسفر",
+  "top_up_sheet_pay_button": "ادا کریں۔",
+  "service_selection_book_now": "ابھی بک کریں۔",
+  "action_cancel": "منسوخ کریں۔",
+  "copyright_notice": "کاپی رائٹ © {company}، جملہ حقوق محفوظ ہیں۔",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "کے بارے میں",
+  "menu_login": "لاگ ان کریں",
+  "menu_profile": "پروفائل",
+  "menu_wallet": "پرس",
+  "menu_trip_history": "سفر کی تاریخ",
+  "menu_announcements": "اعلانات",
+  "menu_saved_locations": "محفوظ کردہ مقامات",
+  "action_save": "محفوظ کریں۔",
+  "create_address_name_empty_error": "براہ کرم مقام کا نام درج کریں۔",
+  "create_address_title_textfield_hint": "عنوان",
+  "action_delete": "حذف کریں۔",
+  "trip_history_empty_state_message": "ماضی کا کوئی آرڈر ریکارڈ نہیں کیا گیا ہے۔",
+  "profile_firstname": "پہلا نام",
+  "profile_lastname": "آخری نام",
+  "profile_email": "ای میل",
+  "profile_gender": "صنف",
+  "enum_gender_male": "مرد",
+  "enum_gender_female": "عورت",
+  "login_cell_number_textfield_hint": "سیل نمبر",
+  "login_cell_number_empty_error": "براہ کرم فون نمبر درست فارمیٹ میں درج کریں۔",
+  "action_next": "اگلے",
+  "verify_phone_code_empty_message": "تصدیقی کوڈ درج نہیں کیا گیا ہے۔",
+  "wallet_activities_heading": "سرگرمی",
+  "menu_logout": "لاگ آوٹ",
+  "enum_gender_unknown": "نامعلوم",
+  "enum_address_type_home": "گھر",
+  "enum_address_type_work": "کام",
+  "enum_address_type_partner": "ساتھی",
+  "enum_address_type_other": "دیگر",
+  "message_notification_permission_denined_message": "اطلاع کی اجازت پہلے مسترد کر دی گئی تھی۔ نئے آرڈر کی اطلاعات حاصل کرنے کے لیے، آپ ایپ کی ترتیبات سے اجازت کو فعال کر سکتے ہیں۔",
+  "message_notification_permission_title": "اطلاع کی اجازت",
+  "action_ok": "ٹھیک ہے",
+  "menu_website": "ویب سائٹ",
+  "action_confirm_and_reserve_ride": "تصدیق کریں اور سواری ریزرو کریں۔",
+  "title_reserve_ride": "ریزرو رائیڈ",
+  "error_region_unsupported": "علاقہ تعاون یافتہ نہیں ہے۔",
+  "action_confirm": "تصدیق کریں۔",
+  "title_wait_time": "وقت کا انتظار کریں۔",
+  "notice_tip_title": "کیا آپ ایک ٹپ شامل کرنا چاہیں گے؟",
+  "notice_tip_description": "ٹپ شامل کرنا اختیاری ہے۔ آپ ڈرائیور کے لیے ٹپ کے طور پر اپنی پسند کی کوئی بھی رقم شامل کر سکتے ہیں۔",
+  "action_pay_for_ride": "سواری کے لیے ادائیگی کریں۔",
+  "action_confirm_and_pay": "تصدیق کریں اور ادائیگی کریں۔",
+  "action_add_photo": "تصویر لگاو",
+  "complaint_submit_success_message": "شکایت جمع کرائی جاتی ہے۔ براہ کرم اپنی انکوائری کے بارے میں ہمارے سپورٹ نمائندے کے رابطے کا انتظار کریں۔",
+  "error_field_cant_be_empty": "خالی نہیں ہو سکتا",
+  "issue_description_placeholder": "اپنے مسئلے کی تفصیل لکھیں...",
+  "issue_subject_placeholder": "مضمون",
+  "issue_submit_description": "آپ اپنی سواری سے متعلق کسی بھی مسئلے کی اطلاع دے سکتے ہیں۔ ہم ایک کال کے اندر اس مسئلے میں آپ کی مدد کریں گے۔",
+  "issue_submit_title": "ایک مسئلہ کی اطلاع دیں",
+  "issue_submit_button": "مسئلہ کی اطلاع دیں۔",
+  "trip_information_title": "سفر کی معلومات",
+  "payment_in_cash": "نقد",
+  "payment_method_title": "ادائیگی کا طریقہ",
+  "button_ride_safety": "سواری کی حفاظت",
+  "status_title_driver_arrived": "پک اپ پوائنٹ پر ڈرائیور سے ملیں۔",
+  "status_title_trip_started": "منزل کی طرف بڑھ رہا ہے۔",
+  "welcome_card_subtitle": "تم کہاں جا رہے ہو؟",
+  "welcome_card_textbox_placeholder": "آپ کی منزل کہاں ہے؟",
+  "welcome_card_greeting": "ہیلو {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "سائن ان",
+  "login_body": "سب سے پہلے، آپ کو اپنی سواری بک کرنے کے لیے سائن ان کرنا ہوگا۔ آپ کے فون نمبر پر ایک تصدیقی کوڈ بھیجا جائے گا۔",
+  "terms_and_condition_text": "میں نے پڑھا ہے اور اس سے متفق ہوں۔",
+  "terms_and_condition_button": "شرائط و ضوابط",
+  "login_verify_code_title": "کوڈ درج کریں",
+  "login_verify_code_body": "کوڈ آپ کے فون نمبر پر بھیج دیا گیا ہے۔",
+  "action_continue": "جاری رہے",
+  "current_location": "موجودہ مقام",
+  "your_destination": "آپ کی منزل",
+  "add_stop": "اسٹاپ شامل کریں۔",
+  "action_choose_on_map": "نقشے پر منتخب کریں۔",
+  "message_title_location": "مقام",
+  "message_body_location": "ہم آپ کے آلے کے GPS سے آپ کا موجودہ مقام حاصل نہیں کر سکے۔ اپنے پک اپ لوکیشن کو منتخب کرنے کے لیے براہ کرم سرچ فیلڈ کا استعمال کریں۔",
+  "menu_reserved_rides": "محفوظ سواریاں",
+  "reservation_empty_state_title": "کوئی تحفظات نہیں!",
+  "reservation_empty_state_body": "آپ اپنی مستقبل کی بکنگز کو مرکزی اسکرین پر بنانے کے بعد دیکھ سکیں گے۔",
+  "action_cancel_ride": "سواری منسوخ کریں۔",
+  "enum_address_type_gym": "جم",
+  "enum_address_type_parent_house": "والدین کا گھر",
+  "enum_address_type_cafe": "کیفے",
+  "enum_address_type_park": "پارک",
+  "action_add_favorite_location": "پسندیدہ مقام شامل کریں۔",
+  "favorite_locations_list_title": "پسندیدہ مقامات",
+  "favorite_locations_list_body": "آپ آسانی سے رسائی کے لیے اپنے پسندیدہ مقامات کو محفوظ کر سکتے ہیں۔",
+  "favorite_location_details_title": "اپنے پسندیدہ مقام کا نام بتائیں",
+  "textbox_error_select_type_address": "براہ کرم پتے کی قسم منتخب کریں۔",
+  "placeholder_type": "قسم",
+  "action_delete_account": "کھاتہ مٹا دو",
+  "message_delete_account_title": "اکاؤنٹ ڈیلیٹ کرنا",
+  "message_delete_account_body": "کیا آپ واقعی اپنا اکاؤنٹ حذف کرنا چاہتے ہیں؟ آپ اکاؤنٹ کو بحال کرنے کے لیے 30 دنوں کے اندر دوبارہ لاگ ان کر سکتے ہیں۔ اس مدت کے بعد، آپ کا ڈیٹا مکمل طور پر ہٹا دیا جاتا ہے، بشمول آپ کے باقی تمام کریڈٹس۔",
+  "action_edit": "ترمیم",
+  "action_confirm_location": "مقام کی تصدیق کریں۔",
+  "action_coupon_code": "کوپن کوڈ",
+  "enter_coupon_dialog_title": "کوپن کوڈ",
+  "enter_coupon_dialog_body": "قیمت پر لاگو ہونے کے لیے اپنا کوپن کوڈ داخل کریں۔",
+  "enter_coupon_placeholder": "کوپن کوڈ درج کریں۔",
+  "looking_dialog_title": "سواری کی درخواست کی گئی۔",
+  "looking_dialog_body": "ہم آپ کے لیے قریب ترین ڈرائیور تلاش کر رہے ہیں۔",
+  "action_cancel_request": "درخواست منسوخ",
+  "rate_ride_title": "آپ کی سواری کیسی رہی؟",
+  "rate_ride_body": "اپنے ڈرائیور کی درجہ بندی کرکے اپنے تجربے کو بہتر بنانے میں ہماری مدد کریں۔",
+  "rate_ride_good_points": "اچھے پوائنٹس",
+  "rate_ride_negative_points": "منفی پوائنٹس",
+  "rate_ride_comment_title": "تبصرہ شامل کریں",
+  "rate_ride_comment_placeholder": "اپنا تبصرہ لکھیں...",
+  "action_send_feedback": "رائے بھیجیں",
+  "action_ride_options": "سواری کے اختیارات",
+  "ride_options_title": "سواری کے اختیارات",
+  "ride_options_wait_time_action": "وقت کا انتظار کریں۔",
+  "ride_safety_title": "سواری کی حفاظت",
+  "ride_safety_share_trip_information": "سفر کی معلومات کا اشتراک کریں۔",
+  "ride_safety_sos": "SOS",
+  "sos_title": "پریشانی کا سگنل",
+  "sos_body": "پریشانی کے اشارے ہنگامی حالات کے لیے ہوتے ہیں اور آپ کی جانب سے پولیس جیسے حکام کو کال کی جا سکتی ہے۔ براہ کرم اس خصوصیت کو صرف ہنگامی حالات میں استعمال کریں جس سے آپ کو خطرہ ہو سکتا ہے۔",
+  "sos_sent_alert": "SOS بھیجا گیا ہے۔",
+  "sos_ok_action": "یہ ایک ایمرجنسی ہے۔",
+  "share_trip_text_locations": "میں {pickup} سے {destination} کے راستے پر ہوں۔",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " میرے ڈرائیور کا نام {firstName} {lastName} ہے اور اس کا موبائل نمبر +{mobileNumber} ہے۔",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " ٹرپ {startTime} کو شروع ہوا ہے اور مجھے امید ہے کہ اس سفر میں تقریباً {duration} منٹ لگیں گے۔",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " میں توقع کرتا ہوں کہ ایک بار جب میں ڈرائیور کی گاڑی پر سوار ہو جاؤں گا تو سفر میں تقریباً {duration} منٹ لگیں گے۔",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "ابھی تک کوئی اعلان نہیں!",
+  "announcements_empty_state_body": "نئے اعلانات آنے پر ہم آپ کو مطلع کریں گے۔",
+  "action_set_location": "مقام متعین کریں۔",
+  "trip_history_empty_state_title": "کوئی ریکارڈ نہیں!",
+  "location_not_found_alert_dialog_title": "مقام",
+  "location_not_found_alert_dialog_body": "ہم آپ کے آلے کے GPS کا استعمال کرتے ہوئے آپ کا موجودہ مقام حاصل نہیں کر سکے۔ براہ کرم ڈیوائس کی سیٹنگز سے ایپ کے لیے ڈیوائس لوکیشن کی اجازت چیک کریں۔ متبادل طور پر، آپ اپنے پک اپ پوائنٹ کو منتخب کرنے کے لیے اوپر دی گئی سرچ فیلڈ کا استعمال کر سکتے ہیں۔",
+  "gift_card_title": "گفٹ کوڈ درج کریں۔",
+  "gift_card_body": "اپنے گفٹ کارڈ کا کوڈ درج کریں۔",
+  "gift_card_text_placeholder": "گفٹ کارڈ کوڈ درج کریں۔",
+  "action_apply": "درخواست دیں",
+  "order_status_should_be_arrived": "پہنچنا چاہئے",
+  "order_status_arriving_in": "{minutes} میں پہنچ رہا ہے",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "وارننگ",
+  "cancelation_fee_confirmation_body": "ڈرائیور کے سفر کو قبول کرنے کے بعد سروس کی منسوخی {fee} کی منسوخی کے جرمانے سے مشروط ہے۔ کیا آپ تصدیق کرتے ہیں؟",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "تصدیق کریں۔",
+  "add_credit_select_payment_method": "ادائیگی کا طریقہ منتخب کریں:",
+  "add_credit_custom_credit_placeholder": "حسب ضرورت کریڈٹ شامل کریں۔",
+  "add_credit_custom_credit_text_placeholder": "اپنی مرضی کے مطابق",
+  "invoice_item_tip": "ٹپ",
+  "invoice_item_wallet": "پرس",
+  "invoice_item_total": "کل",
+  "add_credit_dialog_title": "کریڈٹ شامل کریں۔",
+  "add_credit_chose_amount": "رقم کا انتخاب کریں۔",
+  "action_ride_preferences": "سواری کی ترجیحات",
+  "ride_preferences_title": "سواری کی ترجیحات",
+  "action_confirm_and_continue": "تصدیق کریں اور جاری رکھیں",
+  "action_see_reserved_rides": "محفوظ سواریاں دیکھیں",
+  "ride_reserved_dialog_title": "آپ کی سواری محفوظ ہے۔",
+  "ride_reserved_dialog_body": "اس سواری کی ریزرو معلومات دیکھنے کے لیے آپ مینو میں محفوظ سواریوں کو چیک کر سکتے ہیں۔",
+  "alert_coupon_unavailable": "کوپن دستیاب نہیں ہے۔",
+  "minutes_format": "{minutes} منٹ",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "پیچھے",
+  "wallet_card_title": "{appName} والیٹ",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "گفٹ کارڈ چھڑائیں۔",
+  "order_status_canceled": "منسوخ",
+  "action_skip_for_now": "اب کے لئے چھوڑ دیں",
+  "onboarding_select_language_title": "زبان منتخب کریں۔",
+  "onboarding_first_page_title": "{appName} میں خوش آمدید!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "ٹیکسی سروس آپ کے آرام کے لیے بنائی گئی ہے۔\n اپنے پسندیدہ ڈرائیوروں کے ساتھ سفر کریں اور اپنی سواری کی ترجیحات کا انتخاب کریں۔",
+  "onboarding_second_page_title": "انعام حاصل کریں!",
+  "onboarding_second_page_body": "دوست کا حوالہ دینے، ٹرپس مکمل کرنے اور بہت کچھ کرنے کے لیے اضافی بونس حاصل کریں...",
+  "onboarding_sign_in_title": "سائن ان",
+  "onboarding_sign_in_body": "سائن ان کرنے اور آرام دہ سواری شروع کرنے سے چند سیکنڈ دور"
+}

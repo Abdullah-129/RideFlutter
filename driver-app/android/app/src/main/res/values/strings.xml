@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="notification_new_request_title">New Request</string>
+  <string name="notification_new_request_body">A new ride request is available.</string>
+  <string name="notification_new_message_title">New Message</string>
+  <string name="notification_paid_title">Paid!</string>
+  <string name="notification_paid_body">Trip payment is done!</string>
+  <string name="notification_cancel_title">Canceled</string>
+  <string name="notification_cancel_body">Your upcoming ride has been cancelled.</string>
+  <string name="notification_assigned_title">Assigned</string>
+  <string name="notification_assigned_body">Hey! You have been assigned to a booked ride planned on %1$s. From: %2$s -> %3$s.</string>
+  <string name="notification_upcoming_ride_title">Upcoming ride</string>
+  <string name="notification_upcoming_ride_body">Hey! You have an upcoming ride in less than 10 minutes.</string>
+</resources>

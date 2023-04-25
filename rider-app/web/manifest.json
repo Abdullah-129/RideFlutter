@@ -1,0 +1,33 @@
+{
+    "name": "Ridy",
+    "short_name": "Ridy",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "Rider Application of Taxi",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": true,
+    "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=com.ridy.taxi.rider",
+        "id": "com.ridy.taxi.rider"
+      }, {
+        "platform": "itunes",
+        "url": "https://apps.apple.com/us/app/ridy-flutter/id1592809954"
+      }
+    ],
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

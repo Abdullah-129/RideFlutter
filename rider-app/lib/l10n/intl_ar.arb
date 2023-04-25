@@ -1,0 +1,237 @@
+{
+  "loading": "تحميل",
+  "wallet_empty_state_message": "لا يوجد بيانات سابقة",
+  "enum_rider_transaction_deduct_order_fee": "ضريبة القيمة المضافة",
+  "enum_rider_transaction_deduct_withdraw": "سحب",
+  "enum_rider_transaction_deduct_correction": "تصحيح",
+  "enum_unknown": "غير معروف",
+  "enum_rider_transaction_recharge_in_app_payment": "الدفع من خلال التطبيق",
+  "enum_rider_transaction_recharge_gift": "هدية",
+  "enum_rider_transaction_recharge_correction": "تصحيح",
+  "enum_rider_transaction_recharge_bank_transfer": "تحويل بنكي",
+  "top_up_sheet_pay_button": "ادفع",
+  "service_selection_book_now": "احجز الآن",
+  "action_cancel": "إلغاء",
+  "copyright_notice": "{company} © كل الحقوق محفوظة لشركة ",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "حول",
+  "menu_login": "تسجيل الدخول",
+  "menu_profile": "الملف الشخصي",
+  "menu_wallet": "المحفظة",
+  "menu_trip_history": "تاريخ الرحلات",
+  "menu_announcements": "الإشعارات",
+  "menu_saved_locations": "الأماكن المحفوظة",
+  "action_save": "حفظ",
+  "create_address_name_empty_error": "الرجال ادخال اسم الموقع",
+  "create_address_title_textfield_hint": "العنوان",
+  "action_delete": "حذف",
+  "trip_history_empty_state_message": "لا يوجد بيانات سابقة",
+  "profile_firstname": "الاسم الأول",
+  "profile_lastname": "الاسم الأخير",
+  "profile_email": "الايميل",
+  "profile_gender": "الجنس",
+  "enum_gender_male": "ذكر",
+  "enum_gender_female": "انثى",
+  "login_cell_number_textfield_hint": "رقم الجوال",
+  "login_cell_number_empty_error": "الرجال ادخال رقم الجوال بصيغة صحيحة",
+  "action_next": "التالي",
+  "verify_phone_code_empty_message": "لم يتم ادخال رمز التحقق",
+  "wallet_activities_heading": "تفعيل",
+  "menu_logout": "تسجيل الخروج",
+  "enum_gender_unknown": "غير معروف",
+  "enum_address_type_home": "الرئيسي",
+  "enum_address_type_work": "العمل",
+  "enum_address_type_partner": "شركاء",
+  "enum_address_type_other": "اخرى",
+  "message_notification_permission_denined_message": "لم يتم السماح باستقبال الاشعارات. تستطيع التفعيل الآن عن طريق الإعدادات In order to get new order\\'s notifications you can enable the permission from app settings.",
+  "message_notification_permission_title": "السماح بالتنبيهات،",
+  "action_ok": "موافق",
+  "menu_website": "الموقع",
+  "action_confirm_and_reserve_ride": "التأكيد وحجز رحلة",
+  "title_reserve_ride": "حجز رحلة",
+  "error_region_unsupported": "لم يتم التعرف على المنطقة",
+  "action_confirm": "تأكيد",
+  "title_wait_time": "وقت الانتظار",
+  "notice_tip_title": "هل تريد اضافة عمولة؟",
+  "notice_tip_description": "يمكنك اضافة أي قيمة كعمولة للسائق",
+  "action_pay_for_ride": "ادفع للرحلة",
+  "action_confirm_and_pay": "تأكيد ودفع",
+  "action_add_photo": "اضافة صورة",
+  "complaint_submit_success_message": "تم ارسال الشكوى",
+  "error_field_cant_be_empty": "لا يمكن ترك الخانة فارغة",
+  "issue_description_placeholder": "اكتب وصف للمشكلة",
+  "issue_subject_placeholder": "الموضوع",
+  "issue_submit_description": "تستطيع رفع بلاغ بأي اشكالية وسوف يتم التواصل معك  في أقرب وقت ممكن",
+  "issue_submit_title": "رفع بلاغ",
+  "issue_submit_button": "رفع بلاغ",
+  "trip_information_title": "معلومات الرحلة",
+  "payment_in_cash": "نقدي",
+  "payment_method_title": "طرق الدفع",
+  "button_ride_safety": "سلامة الرحلة",
+  "status_title_driver_arrived": "السائق على وشك الوصول",
+  "status_title_trip_started": "ذاهب للوجهة",
+  "welcome_card_subtitle": "إلى أين الوجهة",
+  "welcome_card_textbox_placeholder": "أين وجهتك؟",
+  "welcome_card_greeting": "{firstName}هلا ",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "تسجيل الدخول",
+  "login_body": "يجب تسجيل الدخول لحجز رحلة",
+  "terms_and_condition_text": "تم القراءة والمواققة على الشروط",
+  "terms_and_condition_button": "الشروط والاحكام",
+  "login_verify_code_title": "ادخل الرمز",
+  "login_verify_code_body": "تم ارسال الرمز إلى الجوال",
+  "action_continue": "المتابعة",
+  "current_location": "الموقع الحالي",
+  "your_destination": "وجهتك",
+  "add_stop": "اضافة نقطة",
+  "action_choose_on_map": "اختيار على الخريطة",
+  "message_title_location": "الموقع",
+  "message_body_location": "لم يتم التعرف على موقعك الحالي، نرجو كتابة الموقع اعلاه",
+  "menu_reserved_rides": "الرحلات المحجوزة",
+  "reservation_empty_state_title": "لا حجوزات قادمة",
+  "reservation_empty_state_body": "ستتمكن من رؤية حجوزاتك المستقبلية بعد الحجز ",
+  "action_cancel_ride": "إلغاء الرحلة",
+  "enum_address_type_gym": "نادي",
+  "enum_address_type_parent_house": "بيت العائلة",
+  "enum_address_type_cafe": "مقهى",
+  "enum_address_type_park": "حديقة",
+  "action_add_favorite_location": "اضافة المواقع المفضلة",
+  "favorite_locations_list_title": "المواقع المفضلة",
+  "favorite_locations_list_body": "تستطيع حفظ المواقع المفضلة لتسهيل عملية الوصول لهم",
+  "favorite_location_details_title": "اسم الموقع المفضل",
+  "textbox_error_select_type_address": "اختر نوع الموقع المفضل",
+  "placeholder_type": "النوع",
+  "action_delete_account": "حذف الحساب",
+  "message_delete_account_title": "حذف الحساب",
+  "message_delete_account_body": "هل أنت متأكد من حذف الحساب؟ تستطيع الدخول خلال 30 يوم لتنشيط الحساب. بعد هذه المدة سيتم حذف الحساب مع كافة بياناته شاملاً ذلك المبالغ المتبقية",
+  "action_edit": "تعديل",
+  "action_confirm_location": "تأكيد الموقع",
+  "action_coupon_code": "رمز الخصم",
+  "enter_coupon_dialog_title": " رمز الخصم",
+  "enter_coupon_dialog_body": "ادخل رمز الخصم لتطبيقه على المبلغ",
+  "enter_coupon_placeholder": "ادخال رمز الخصم",
+  "looking_dialog_title": "تم ارسال طلب الرحلة",
+  "looking_dialog_body": "يتم البحث على سائق",
+  "action_cancel_request": "إلغاء الطلب",
+  "rate_ride_title": "كيف كانت رحلتك؟",
+  "rate_ride_body": "ساعدنا بتطوير الخدمة بتقييم قائد المركبة",
+  "rate_ride_good_points": "نقاط ايجابية",
+  "rate_ride_negative_points": "نقاط سلبية",
+  "rate_ride_comment_title": "اضافة تعليق",
+  "rate_ride_comment_placeholder": "اكتب تعليقك هنا",
+  "action_send_feedback": "ارسال التعليق",
+  "action_ride_options": "خيارات الرحلة",
+  "ride_options_title": "خيارات الرحلة",
+  "ride_options_wait_time_action": "وقت الانتظار",
+  "ride_safety_title": "سلامة الرحلة",
+  "ride_safety_share_trip_information": "مشاركة معلومات الرحلة",
+  "ride_safety_sos": "خطر",
+  "sos_title": "اشعار خطر",
+  "sos_body": "نرجو استخدام هذه الميزة في اوقات الخطر",
+  "sos_sent_alert": "طلب نجدة",
+  "sos_ok_action": "خطير جداً",
+  "share_trip_text_locations": "{destination} في طريقي إلى .",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": "{mobileNumber} ورقم جوالي {lastName} {firstName} اسمي",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": "دقيقة {duration} وستنتهي خلال {startTime} بدآت الرحلة",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": "دقيقة {duration} الوقت المتوقع",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "لا اشعارات حتى الآن",
+  "announcements_empty_state_body": "!من يصير في شيء جديد بنعلمك",
+  "action_set_location": "حدد الموقع",
+  "trip_history_empty_state_title": "لا بيانات سابقة",
+  "location_not_found_alert_dialog_title": "الموقع",
+  "location_not_found_alert_dialog_body": "لم يتم الوصول إلى موقعك، نرجو تحديد الموقع اعلاه",
+  "gift_card_title": "ادخل رمز الخصم",
+  "gift_card_body": "ادخل رمز الخصم",
+  "gift_card_text_placeholder": "ادخل رمز الخصم",
+  "action_apply": "تطبيق",
+  "order_status_should_be_arrived": "على وشك الوصول",
+  "order_status_arriving_in": " {minutes} يصل خلال",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "تحذير",
+  "cancelation_fee_confirmation_body": "{fee} الإلغاء بعد قبول قائد المركبة قد يعرضك لرسوم",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "التأكيد",
+  "add_credit_select_payment_method": "تحديد طريقة الدفع",
+  "add_credit_custom_credit_placeholder": "اضف بطاقة الدفع",
+  "add_credit_custom_credit_text_placeholder": "تخصيص",
+  "invoice_item_tip": "عمولة",
+  "invoice_item_wallet": "المحفظة",
+  "invoice_item_total": "المجموع",
+  "add_credit_dialog_title": "اضف بطاقة",
+  "add_credit_chose_amount": "تحديد القيمة",
+  "action_ride_preferences": "خيارات الرحلة",
+  "ride_preferences_title": "خيارات الرحلة",
+  "action_confirm_and_continue": "الموافقة والاستمرار",
+  "action_see_reserved_rides": "الحجوزات المستقبلية",
+  "ride_reserved_dialog_title": "تم حجز رحلتك",
+  "ride_reserved_dialog_body": "يمكنك معرفة رحلاتك المستقبلية",
+  "alert_coupon_unavailable": "ليس متوفر",
+  "minutes_format": "{minutes} دقيقة",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "الخلف",
+  "wallet_card_title": "{appName} المحفظة",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "استخدم رمز الخصم",
+  "order_status_canceled": "ألغيت",
+  "action_skip_for_now": "تخطي في الوقت الراهن",
+  "onboarding_select_language_title": "اختار اللغة",
+  "onboarding_first_page_title": "مرحبًا بك في {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "خدمة سيارات الأجرة مصممة لراحتك\n احصل على رحلات مع السائقين المفضلين لديك واختر ما تفضله",
+  "onboarding_second_page_title": "تحصل على مكافأة!",
+  "onboarding_second_page_body": "احصل على مكافآت إضافية لإحالة صديق وإكمال الرحلات وغيرها الكثير ...",
+  "onboarding_sign_in_title": "تسجيل الدخول",
+  "onboarding_sign_in_body": "على بعد ثوانٍ قليلة من تسجيل الدخول وبدء رحلة مريحة"
+}

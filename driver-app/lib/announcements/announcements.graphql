@@ -1,0 +1,8 @@
+query Announcements {
+    announcements {
+        title
+        description
+        startAt
+        url
+    }
+}

@@ -1,0 +1,85 @@
+# query GetCurrentOrder {
+#   currentOrder {
+#     ...CurrentOrder
+#   }
+# }
+
+query Me($versionCode: Int!) {
+  driver(id: 1) {
+    ...BasicProfile
+  }
+  requireUpdate(versionCode: $versionCode)
+}
+
+query AvailableOrders {
+  availableOrders {
+    ...AvailableOrder
+  }
+}
+
+subscription OrderCreated {
+  orderCreated {
+    ...AvailableOrder
+  }
+}
+
+subscription OrderRemoved {
+  orderRemoved {
+    id
+  }
+}
+
+subscription OrderUpdated {
+  orderUpdated {
+    id
+  }
+}
+
+mutation UpdateDriverLocation($point: PointInput!) {
+  updateDriversLocationNew(point: $point) {
+    ...AvailableOrder
+  }
+}
+
+mutation UpdateOrderStatus(
+  $orderId: ID!
+  $status: OrderStatus!
+  $cashPayment: Float
+) {
+  updateOneOrder(
+    input: {
+      id: $orderId
+      update: { status: $status, paidAmount: $cashPayment }
+    }
+  ) {
+    ...CurrentOrder
+  }
+}
+
+mutation UpdateDriverStatus($status: DriverStatus!, $fcmId: String) {
+  updateOneDriver(
+    input: {
+      id: "1"
+      update: { status: $status, notificationPlayerId: $fcmId }
+    }
+  ) {
+    ...BasicProfile
+  }
+}
+
+mutation UpdateDriverFCMId($fcmId: String) {
+  updateOneDriver(
+    input: {
+      id: "1"
+      update: { notificationPlayerId: $fcmId }
+    }
+  ) {
+    id
+  }
+}
+
+mutation UpdateDriverSearchDistance($distance: Int!) {
+  updateOneDriver(input: { id: "1", update: {searchDistance: $distance}}) {
+    id
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "loading": "Chargement",
+  "wallet_empty_state_message": "Aucun historique enregistré.",
+  "enum_rider_transaction_deduct_order_fee": "Frais de commande",
+  "enum_rider_transaction_deduct_withdraw": "Se désister",
+  "enum_rider_transaction_deduct_correction": "Correction",
+  "enum_unknown": "Inconnu",
+  "enum_rider_transaction_recharge_in_app_payment": "Paiement intégré à l'application",
+  "enum_rider_transaction_recharge_gift": "Cadeau",
+  "enum_rider_transaction_recharge_correction": "Correction",
+  "enum_rider_transaction_recharge_bank_transfer": "Virement",
+  "top_up_sheet_pay_button": "Payer",
+  "service_selection_book_now": "Reserve maintenant",
+  "action_cancel": "Annuler",
+  "copyright_notice": "Copyright © {company}, Tous droits réservés.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "À propos de",
+  "menu_login": "Connexion",
+  "menu_profile": "Profil",
+  "menu_wallet": "Porte monnaie",
+  "menu_trip_history": "Historique des trajets",
+  "menu_announcements": "Annonces",
+  "menu_saved_locations": "Emplacements enregistrés",
+  "action_save": "sauvegarder",
+  "create_address_name_empty_error": "Veuillez saisir le nom du lieu",
+  "create_address_title_textfield_hint": "Titre",
+  "action_delete": "Effacer",
+  "trip_history_empty_state_message": "Aucune commande passée n'a été enregistrée.",
+  "profile_firstname": "Prénom",
+  "profile_lastname": "Nom de famille",
+  "profile_email": "E-mail",
+  "profile_gender": "Le genre",
+  "enum_gender_male": "Homme",
+  "enum_gender_female": "Femelle",
+  "login_cell_number_textfield_hint": "Numéro de téléphone",
+  "login_cell_number_empty_error": "Veuillez saisir le numéro de téléphone au format correct",
+  "action_next": "Prochain",
+  "verify_phone_code_empty_message": "Le code de vérification n'est pas entré.",
+  "wallet_activities_heading": "Activité",
+  "menu_logout": "Se déconnecter",
+  "enum_gender_unknown": "Inconnue",
+  "enum_address_type_home": "Maison",
+  "enum_address_type_work": "Travailler",
+  "enum_address_type_partner": "Partenaire",
+  "enum_address_type_other": "Autre",
+  "message_notification_permission_denined_message": "L'autorisation de notification a été refusée précédemment. Afin d'obtenir les notifications de nouvelle commande, vous pouvez activer l'autorisation à partir des paramètres de l'application.",
+  "message_notification_permission_title": "Autorisation de notification",
+  "action_ok": "D'ACCORD",
+  "menu_website": "Site Internet",
+  "action_confirm_and_reserve_ride": "Confirmer et réserver le trajet",
+  "title_reserve_ride": "Réserver un tour",
+  "error_region_unsupported": "La région n'est pas prise en charge.",
+  "action_confirm": "Confirmer",
+  "title_wait_time": "Temps d'attente",
+  "notice_tip_title": "Souhaitez-vous ajouter un conseil ?",
+  "notice_tip_description": "L'ajout d'un pourboire est facultatif. Vous pouvez ajouter le montant de votre choix comme pourboire au chauffeur.",
+  "action_pay_for_ride": "Payer pour le trajet",
+  "action_confirm_and_pay": "Confirmer et payer",
+  "action_add_photo": "Ajouter une photo",
+  "complaint_submit_success_message": "La plainte est déposée. Veuillez attendre un contact de notre représentant du support au sujet de votre demande.",
+  "error_field_cant_be_empty": "Ne peux pas être vide",
+  "issue_description_placeholder": "Rédigez une description de votre problème...",
+  "issue_subject_placeholder": "Matière",
+  "issue_submit_description": "Vous pouvez signaler tout problème rencontré avec votre trajet. Nous vous aiderons à résoudre le problème dans le cadre d'un appel.",
+  "issue_submit_title": "Signaler un problème",
+  "issue_submit_button": "Signaler un problème",
+  "trip_information_title": "Informations sur le voyage",
+  "payment_in_cash": "En espèces",
+  "payment_method_title": "Mode de paiement",
+  "button_ride_safety": "Sécurité de conduite",
+  "status_title_driver_arrived": "Rencontrer le chauffeur au point de ramassage",
+  "status_title_trip_started": "En route vers la destination",
+  "welcome_card_subtitle": "Où allez-vous?",
+  "welcome_card_textbox_placeholder": "Où est votre destination?",
+  "welcome_card_greeting": "Bonjour {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "S'identifier",
+  "login_body": "Tout d'abord, vous devez vous connecter pour réserver votre course. Un code de vérification sera envoyé à votre numéro de téléphone.",
+  "terms_and_condition_text": "J'ai lu et suis d'accord avec",
+  "terms_and_condition_button": "termes et conditions",
+  "login_verify_code_title": "Entrez le code",
+  "login_verify_code_body": "Le code a été envoyé à votre numéro de téléphone",
+  "action_continue": "Continuer",
+  "current_location": "Localisation actuelle",
+  "your_destination": "Votre destination",
+  "add_stop": "Ajouter un arrêt",
+  "action_choose_on_map": "choisir sur la carte",
+  "message_title_location": "Emplacement",
+  "message_body_location": "Nous n'avons pas pu obtenir votre position actuelle à partir du GPS de votre appareil. Veuillez utiliser le champ de recherche pour sélectionner votre lieu de ramassage.",
+  "menu_reserved_rides": "Manèges réservés",
+  "reservation_empty_state_title": "Pas de réservations!",
+  "reservation_empty_state_body": "Vous pourrez voir vos futures réservations une fois que vous les aurez effectuées sur l'écran principal.",
+  "action_cancel_ride": "Annuler le trajet",
+  "enum_address_type_gym": "Gym",
+  "enum_address_type_parent_house": "La maison des parents",
+  "enum_address_type_cafe": "Café",
+  "enum_address_type_park": "Se garer",
+  "action_add_favorite_location": "Ajouter un lieu favori",
+  "favorite_locations_list_title": "Lieux favoris",
+  "favorite_locations_list_body": "Vous pouvez enregistrer vos emplacements favoris pour un accès plus facile",
+  "favorite_location_details_title": "Nommez votre lieu préféré",
+  "textbox_error_select_type_address": "Veuillez sélectionner le type d'adresse",
+  "placeholder_type": "Taper",
+  "action_delete_account": "Supprimer le compte",
+  "message_delete_account_title": "Suppression de compte",
+  "message_delete_account_body": "Êtes-vous sûr de vouloir supprimer votre compte ? Vous pouvez vous reconnecter dans les 30 jours pour restaurer le compte. Après cette période, vos données sont complètement supprimées, y compris tous vos crédits restants.",
+  "action_edit": "Éditer",
+  "action_confirm_location": "Confirmer l'emplacement",
+  "action_coupon_code": "Code promo",
+  "enter_coupon_dialog_title": "Code promo",
+  "enter_coupon_dialog_body": "Insérez votre code promo à appliquer au prix",
+  "enter_coupon_placeholder": "Entrer le code de réduction",
+  "looking_dialog_title": "Course demandée",
+  "looking_dialog_body": "Nous recherchons pour vous le chauffeur le plus proche.",
+  "action_cancel_request": "Demande d'annulation",
+  "rate_ride_title": "Comment s'est passé votre trajet ?",
+  "rate_ride_body": "Aidez-nous à améliorer votre expérience en évaluant votre chauffeur",
+  "rate_ride_good_points": "Points sympas",
+  "rate_ride_negative_points": "Points négatifs",
+  "rate_ride_comment_title": "Ajouter un commentaire",
+  "rate_ride_comment_placeholder": "écrivez votre commentaire...",
+  "action_send_feedback": "Envoyer des commentaires",
+  "action_ride_options": "Options de trajet",
+  "ride_options_title": "Options de trajet",
+  "ride_options_wait_time_action": "Temps d'attente",
+  "ride_safety_title": "Sécurité de conduite",
+  "ride_safety_share_trip_information": "Partager des informations sur le voyage",
+  "ride_safety_sos": "SOS",
+  "sos_title": "Signal de détresse",
+  "sos_body": "Les signaux de détresse sont destinés aux urgences et les appels aux autorités telles que la police peuvent être effectués en votre nom. Veuillez n'utiliser cette fonction qu'en cas d'urgence où vous pourriez être en danger.",
+  "sos_sent_alert": "SOS est envoyé",
+  "sos_ok_action": "C'est une urgence",
+  "share_trip_text_locations": "Je suis en route pour {destination} depuis {pickup}.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " Mon nom de chauffeur est {firstName} {lastName} et son numéro de portable est +{mobileNumber}.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " Le trajet a commencé le {startTime} et je m'attends à ce qu'il dure environ {duration} minutes",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " Je m'attends à ce que le trajet lui-même prenne environ {duration} minutes une fois que je monte dans la voiture du conducteur.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "Pas encore d'annonces !",
+  "announcements_empty_state_body": "Nous vous informerons lorsque de nouvelles annonces arriveront.",
+  "action_set_location": "Définir l'emplacement",
+  "trip_history_empty_state_title": "Pas d'enregistrements!",
+  "location_not_found_alert_dialog_title": "Emplacement",
+  "location_not_found_alert_dialog_body": "Nous n'avons pas pu obtenir votre position actuelle à l'aide du GPS de votre appareil. Veuillez vérifier l'autorisation de localisation de l'appareil pour l'application à partir des paramètres de l'appareil. Vous pouvez également utiliser le champ de recherche ci-dessus pour sélectionner votre point de prise en charge.",
+  "gift_card_title": "Entrez le code cadeau",
+  "gift_card_body": "Saisissez le code de votre carte cadeau",
+  "gift_card_text_placeholder": "Entrez le code de la carte-cadeau",
+  "action_apply": "Appliquer",
+  "order_status_should_be_arrived": "devrait être arrivé",
+  "order_status_arriving_in": "Arrivée dans {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "Avertissement",
+  "cancelation_fee_confirmation_body": "L'annulation du service après que le conducteur a accepté le voyage est soumise à une pénalité d'annulation de {fee}. Vous confirmez ?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "Confirmer",
+  "add_credit_select_payment_method": "Sélectionnez le mode de paiement:",
+  "add_credit_custom_credit_placeholder": "Ajouter un crédit personnalisé",
+  "add_credit_custom_credit_text_placeholder": "Personnalisé",
+  "invoice_item_tip": "Pointe",
+  "invoice_item_wallet": "Porte monnaie",
+  "invoice_item_total": "Total",
+  "add_credit_dialog_title": "Ajouter un crédit",
+  "add_credit_chose_amount": "Choisissez le montant",
+  "action_ride_preferences": "Préférences de conduite",
+  "ride_preferences_title": "Préférences de conduite",
+  "action_confirm_and_continue": "Confirmer et continuer",
+  "action_see_reserved_rides": "Voir les trajets réservés",
+  "ride_reserved_dialog_title": "Votre trajet est réservé.",
+  "ride_reserved_dialog_body": "Vous pouvez consulter les trajets réservés dans le menu pour voir les informations de réservation de ce trajet.",
+  "alert_coupon_unavailable": "Le coupon n'est pas disponible",
+  "minutes_format": "{minutes} minutes",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "Retour",
+  "wallet_card_title": "Portefeuille {appName}",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "Échanger une carte-cadeau",
+  "order_status_canceled": "Annulé",
+  "action_skip_for_now": "Ignorer pour l'instant",
+  "onboarding_select_language_title": "Choisir la langue",
+  "onboarding_first_page_title": "Bienvenue sur {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "Service de taxi conçu pour votre confort\n faites des trajets avec vos chauffeurs préférés et choisissez vos préférences de trajet",
+  "onboarding_second_page_title": "Soyez récompensé !",
+  "onboarding_second_page_body": "obtenez des bonus supplémentaires pour avoir parrainé un ami, effectué des voyages et bien d'autres...",
+  "onboarding_sign_in_title": "S'identifier",
+  "onboarding_sign_in_body": "À quelques secondes de la connexion et du démarrage d'un trajet confortable"
+}

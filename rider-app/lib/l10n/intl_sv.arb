@@ -1,0 +1,237 @@
+{
+  "loading": "Laddar",
+  "wallet_empty_state_message": "Din plånbok är tom.",
+  "enum_rider_transaction_deduct_order_fee": "Avgift",
+  "enum_rider_transaction_deduct_withdraw": "Utdrag",
+  "enum_rider_transaction_deduct_correction": "Korrigering",
+  "enum_unknown": "Okänd",
+  "enum_rider_transaction_recharge_in_app_payment": "App Betalning",
+  "enum_rider_transaction_recharge_gift": "Gåva",
+  "enum_rider_transaction_recharge_correction": "Korrigering",
+  "enum_rider_transaction_recharge_bank_transfer": "Bank Överföring",
+  "top_up_sheet_pay_button": "Betala",
+  "service_selection_book_now": "Boka Nu",
+  "action_cancel": "Avbryt",
+  "copyright_notice": "Copyright © {company}, Alla rättigheter förbehållna.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "Om",
+  "menu_login": "Login",
+  "menu_profile": "Profil",
+  "menu_wallet": "Plånbok",
+  "menu_trip_history": "Resor - Historik",
+  "menu_announcements": "Meddelande",
+  "menu_saved_locations": "Sparade Platser",
+  "action_save": "Spara",
+  "create_address_name_empty_error": "Var god ange namn och plats",
+  "create_address_title_textfield_hint": "Titel",
+  "action_delete": "Radera",
+  "trip_history_empty_state_message": "Inga tidigare resor har registrerats.",
+  "profile_firstname": "Förnamn",
+  "profile_lastname": "Efternamn",
+  "profile_email": "E-post",
+  "profile_gender": "Kön",
+  "enum_gender_male": "Man",
+  "enum_gender_female": "Kvinna",
+  "login_cell_number_textfield_hint": "Mobilnummer",
+  "login_cell_number_empty_error": "Var god ange telefon nummer i korrekt format",
+  "action_next": "Nästa",
+  "verify_phone_code_empty_message": "Verifieringskod har ej angivits.",
+  "wallet_activities_heading": "Aktivitet",
+  "menu_logout": "Logga Ut",
+  "enum_gender_unknown": "Okänd",
+  "enum_address_type_home": "Hem",
+  "enum_address_type_work": "Arbete",
+  "enum_address_type_partner": "Partner",
+  "enum_address_type_other": "Annan",
+  "message_notification_permission_denined_message": "Notifikationer var ej godkända förr. För att få nya order notifikationer kan du ge ditt godkännande under inställningar.",
+  "message_notification_permission_title": "Notifikation Tillåtelse",
+  "action_ok": "OK",
+  "menu_website": "Webbsida",
+  "action_confirm_and_reserve_ride": "Bekräfta & Reservera resa",
+  "title_reserve_ride": "Reservera Resa",
+  "error_region_unsupported": "Region stöds ej.",
+  "action_confirm": "Godkänn",
+  "title_wait_time": "Väntetid",
+  "notice_tip_title": "Vill du lämna dricks?",
+  "notice_tip_description": "Dricks är alternativt. Du kan lämna vilken summa du vill till föraren.",
+  "action_pay_for_ride": "Betala för resan",
+  "action_confirm_and_pay": "Godkänn & Betala",
+  "action_add_photo": "Lägg till foto",
+  "complaint_submit_success_message": "Klagomålet har skickats. Var god vänta på att vår support kontaktar er.",
+  "error_field_cant_be_empty": "Kan ej vara tom",
+  "issue_description_placeholder": "Var god beskriv ditt problem...",
+  "issue_subject_placeholder": "Ämne",
+  "issue_submit_description": "Du kan rapportera problem eller bekymmer med din resa. Vi hjälper dig med ett telefonsamtal.",
+  "issue_submit_title": "Rapportera ett problem",
+  "issue_submit_button": "Rapportera problem",
+  "trip_information_title": "Resa - Information",
+  "payment_in_cash": "Pengar",
+  "payment_method_title": "Betalningsmetod",
+  "button_ride_safety": "Resa - Säkerhet",
+  "status_title_driver_arrived": "Möt förare vid upphämtningsplats",
+  "status_title_trip_started": "På väg till destination",
+  "welcome_card_subtitle": "Vart är du på väg?",
+  "welcome_card_textbox_placeholder": "Var är din destination?",
+  "welcome_card_greeting": "Hallå{firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "Logga in",
+  "login_body": "Först, måste du logga in för att boka din tur. En verifikationskod kommer skickas till ditt mobilnummer.",
+  "terms_and_condition_text": "Jag har läst och godkänner ",
+  "terms_and_condition_button": "Villkor",
+  "login_verify_code_title": "Tryck in kod",
+  "login_verify_code_body": "En kod har skickats till ditt mobilnummer",
+  "action_continue": "Fortsätt",
+  "current_location": "Nuvarande Plats",
+  "your_destination": "Din destination",
+  "add_stop": "Lägg till hållplats",
+  "action_choose_on_map": "Välj på karta",
+  "message_title_location": "Plats",
+  "message_body_location": "Vi kunde ej hitta din nuvarande plats via din GPS. Var god använd sökfältet för att välja din upphämtningsplats.",
+  "menu_reserved_rides": "Reserverade Turer",
+  "reservation_empty_state_title": "Inga Reservationer!",
+  "reservation_empty_state_body": "Du kommer kunna se dina framtida bokningar när du gör dem via huvudsidan.",
+  "action_cancel_ride": "Avbryt Resa",
+  "enum_address_type_gym": "Gym",
+  "enum_address_type_parent_house": "Föräldrars Hus",
+  "enum_address_type_cafe": "Cafe",
+  "enum_address_type_park": "Park",
+  "action_add_favorite_location": "Lägg till platser",
+  "favorite_locations_list_title": "Sparade Platser",
+  "favorite_locations_list_body": "Du kan spara dina favoritplatser för enklare tillgång",
+  "favorite_location_details_title": "Namnge din favoritplats",
+  "textbox_error_select_type_address": "Var god välj typen av adress",
+  "placeholder_type": "Typ",
+  "action_delete_account": "Radera Konto",
+  "message_delete_account_title": "Kontoradering",
+  "message_delete_account_body": "Är du säker att du vill radera ditt konto? Du kan logga in igen inom 30 dagar för att återställa kontot. Efter denna period, tar vi helt bort din data, inklusive återstående kredit.",
+  "action_edit": "Redigera",
+  "action_confirm_location": "Bekräfta plats",
+  "action_coupon_code": "Kupong Kod",
+  "enter_coupon_dialog_title": "Kupong Kod",
+  "enter_coupon_dialog_body": "Tryck in din kupong kod för att applicera den på priset",
+  "enter_coupon_placeholder": "Tryck in kupong kod",
+  "looking_dialog_title": "Resa Begärd",
+  "looking_dialog_body": "Vi söker efter närmaste förare.",
+  "action_cancel_request": "Avbryt begäran",
+  "rate_ride_title": "Hur var din resa?",
+  "rate_ride_body": "Hjälp oss förbättra din upplevelse genom att betygsätta din förare",
+  "rate_ride_good_points": "Goda Punkter",
+  "rate_ride_negative_points": "Negativa Punkter",
+  "rate_ride_comment_title": "Skriv kommentar",
+  "rate_ride_comment_placeholder": "skriv din kommentar...",
+  "action_send_feedback": "Skicka Feedback",
+  "action_ride_options": "Resealternativ",
+  "ride_options_title": "Resealternativ",
+  "ride_options_wait_time_action": "Väntetid",
+  "ride_safety_title": "Resa - Säkerhet",
+  "ride_safety_share_trip_information": "Dela reseinformation",
+  "ride_safety_sos": "SOS",
+  "sos_title": "Nödsignal",
+  "sos_body": "Nödsignaler är för nödsituationer och kallelser på exempelvis polis kan göras åt dig. Var god använd endast detta verktyg i farliga nödsituationer.",
+  "sos_sent_alert": "SOS har skickats",
+  "sos_ok_action": "Det är en Nödsituation",
+  "share_trip_text_locations": "Jag är på väg till {destination} från {pickup}.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " Mitt namn är {firstName} {lastName} och mitt mobilnummer som förare är +{mobileNumber}.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " Resa har börjat {startTime} och förväntas ta {duration} minuter",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " Jag förväntar att resan tar ungefär {duration} minuter när jag kommer till förarens bil.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "Inga meddelanden än!",
+  "announcements_empty_state_body": "Vi kommer meddela dig när nyheter kommer.",
+  "action_set_location": "Ställ in Plats",
+  "trip_history_empty_state_title": "Ingen historik registrerat!",
+  "location_not_found_alert_dialog_title": "Plats",
+  "location_not_found_alert_dialog_body": "Vi kunde ej hitta din nuvarande plats via din GPS. Var god kolla din apparats inställningar för tillgång till plats. Alternativt kan du använda sökfältet ovan för att välja din upphämtningsplats.",
+  "gift_card_title": "Ange Presentkod",
+  "gift_card_body": "Ange din Presentkortskod",
+  "gift_card_text_placeholder": "Ange Presentkortskod",
+  "action_apply": "Ansök",
+  "order_status_should_be_arrived": "bör vara framme",
+  "order_status_arriving_in": "Ankomst inom {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "Varning",
+  "cancelation_fee_confirmation_body": "Om du avbryter efter att föraren har accepterat turen kan det medföja en extra kostnad på {fee}. Bekräftar du?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "Bekräfta",
+  "add_credit_select_payment_method": "Välj Betalningsmetod:",
+  "add_credit_custom_credit_placeholder": "Utöka din Kredit",
+  "add_credit_custom_credit_text_placeholder": "Belopp",
+  "invoice_item_tip": "Dricks",
+  "invoice_item_wallet": "Plånbok",
+  "invoice_item_total": "Total",
+  "add_credit_dialog_title": "Betala din resa",
+  "add_credit_chose_amount": "Välj summa",
+  "action_ride_preferences": "Preferenser",
+  "ride_preferences_title": "Preferenser",
+  "action_confirm_and_continue": "Bekräfta & Fortsätt",
+  "action_see_reserved_rides": "Se reserverade resor",
+  "ride_reserved_dialog_title": "Din tur är reserverad.",
+  "ride_reserved_dialog_body": "Du kan kolla dina reserverade resor i menyn för att se info om din resa.",
+  "alert_coupon_unavailable": "Kupong är otillgänglig",
+  "minutes_format": "{minutes} minuter",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "Tillbaka",
+  "wallet_card_title": "{appName} Plånbok",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "Lös in Presentkort",
+  "order_status_canceled": "Avbruten",
+  "action_skip_for_now": "Skippa",
+  "onboarding_select_language_title": "Välj Språk",
+  "onboarding_first_page_title": "Välkommen till {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "Taxi service designad för din trivsel \n ha resor med dina favoritförare och välj dina preferenser",
+  "onboarding_second_page_title": "Skaffa bonus!",
+  "onboarding_second_page_body": "Få extra bonusar genom att rekommendera till en kompis, slutföra dina resor och mycket mer...",
+  "onboarding_sign_in_title": "Logga in",
+  "onboarding_sign_in_body": "Bara ett par steg ifrån att börja din resa"
+}

@@ -1,0 +1,237 @@
+{
+  "loading": "بارگذاری",
+  "wallet_empty_state_message": "هیچ سابقه ای ثبت نشده است.",
+  "enum_rider_transaction_deduct_order_fee": "سفارش رایگان",
+  "enum_rider_transaction_deduct_withdraw": "کنار کشیدن",
+  "enum_rider_transaction_deduct_correction": "تصحیح",
+  "enum_unknown": "ناشناس",
+  "enum_rider_transaction_recharge_in_app_payment": "پرداخت درون برنامه ای",
+  "enum_rider_transaction_recharge_gift": "هدیه",
+  "enum_rider_transaction_recharge_correction": "تصحیح",
+  "enum_rider_transaction_recharge_bank_transfer": "حواله بانکی",
+  "top_up_sheet_pay_button": "پرداخت",
+  "service_selection_book_now": "اکنون ثبت کن",
+  "action_cancel": "لغو کنید",
+  "copyright_notice": "حق نشر © {company}، بسیار خوب محفوظ است.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "در باره",
+  "menu_login": "وارد شدن",
+  "menu_profile": "مشخصات",
+  "menu_wallet": "کیف پول",
+  "menu_trip_history": "تاریخچه سفر",
+  "menu_announcements": "اطلاعیه ها",
+  "menu_saved_locations": "مکان های ذخیره شده",
+  "action_save": "ذخیره",
+  "create_address_name_empty_error": "لطفا نام مکان را وارد کنید",
+  "create_address_title_textfield_hint": "عنوان",
+  "action_delete": "حذف",
+  "trip_history_empty_state_message": "هیچ سفارش قبلی ثبت نشده است.",
+  "profile_firstname": "نام کوچک",
+  "profile_lastname": "نام خانوادگی",
+  "profile_email": "پست الکترونیک",
+  "profile_gender": "جنسیت",
+  "enum_gender_male": "نر",
+  "enum_gender_female": "مونث",
+  "login_cell_number_textfield_hint": "شماره همراه",
+  "login_cell_number_empty_error": "لطفا شماره تلفن را با فرمت صحیح وارد کنید",
+  "action_next": "بعد",
+  "verify_phone_code_empty_message": "کد تایید وارد نشده است.",
+  "wallet_activities_heading": "فعالیت ها",
+  "menu_logout": "خروج از حساب",
+  "enum_gender_unknown": "نامشخص",
+  "enum_address_type_home": "خانه",
+  "enum_address_type_work": "محل کار",
+  "enum_address_type_partner": "شریک",
+  "enum_address_type_other": "دیگر",
+  "message_notification_permission_denined_message": "دسترسی به نوتیفیکیشن ها غیر فعال است. جهت فعال کردن به تنظیمات مراجعه کنید.",
+  "message_notification_permission_title": "دسترسی به نوتیفیکشن",
+  "action_ok": "تایید",
+  "menu_website": "وب سایت",
+  "action_confirm_and_reserve_ride": "تایید و رزور",
+  "title_reserve_ride": "رزرو سفر",
+  "error_region_unsupported": "منطقه پشتیبانی نمیشود.",
+  "action_confirm": "تایید",
+  "title_wait_time": "مدت انتظار",
+  "notice_tip_title": "آیا تمایل به اضافه کردن انعام دارید؟",
+  "notice_tip_description": "اضافه کردن انعام اختیاری است. شما هر مقداری که تمایل دارید میتوانید اضافه کنید.",
+  "action_pay_for_ride": "پرداخت برای سفر",
+  "action_confirm_and_pay": "تایید و پرداخت",
+  "action_add_photo": "اضافه کردن تصویر",
+  "complaint_submit_success_message": "شکایت ثبت شد. منتظر تماس تیم پشتیبانی باشید.",
+  "error_field_cant_be_empty": "نمی تواند خالی باشد",
+  "issue_description_placeholder": "درباره مشکلتان توضیح دهید",
+  "issue_subject_placeholder": "عنوان",
+  "issue_submit_description": "شما میتوانید هر مشکلی که با سفرتان داشتید را گزارش دهید. ما با تماس کمکتان خواهید کرد.",
+  "issue_submit_title": "گزارش مشکل",
+  "issue_submit_button": "ثبت گزارش",
+  "trip_information_title": "اطلاعات سفر",
+  "payment_in_cash": "نقدی",
+  "payment_method_title": "شیوه پرداخت",
+  "button_ride_safety": "امنیت سفر",
+  "status_title_driver_arrived": "راننده در انتظار شماست",
+  "status_title_trip_started": "به سمت مقصد",
+  "welcome_card_subtitle": "به کجا می روید؟",
+  "welcome_card_textbox_placeholder": "مقصدتان را وارد کنید",
+  "welcome_card_greeting": "سلام {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "ورود به حساب",
+  "login_body": "یک کد برای شما ارسال خواهد شد. برای درخواست سفر شما نیاز به تایید شماره تماس خود دارید.",
+  "terms_and_condition_text": "من مطالعه کردم و قبول دارم ",
+  "terms_and_condition_button": "شرابط استفاده از خدمات را",
+  "login_verify_code_title": "کد را وارد کنید",
+  "login_verify_code_body": "کد برای شما ارسال شده است",
+  "action_continue": "ادامه",
+  "current_location": "مکان فعلی",
+  "your_destination": "مقصد",
+  "add_stop": "مقصد بین راهی",
+  "action_choose_on_map": "انتخاب روی نقشه",
+  "message_title_location": "مکان",
+  "message_body_location": "ما نتوانستیم به کمک جی پی اس مکان شمارا دریافت کنیم. لطفا مکان فعلی را بصورت دستی در نقشه مشخص کنید.",
+  "menu_reserved_rides": "سفرهای رزور شده",
+  "reservation_empty_state_title": "بدون رزرو!",
+  "reservation_empty_state_body": "شما در این صفحه قادر خواهید بود سفرهای آینده خود را مشاهده کنید.",
+  "action_cancel_ride": "انصراف از سفر",
+  "enum_address_type_gym": "باشگاه",
+  "enum_address_type_parent_house": "منزل والدین",
+  "enum_address_type_cafe": "کافی شاپ",
+  "enum_address_type_park": "پارک",
+  "action_add_favorite_location": "اضافه کردن مقصد مورد علاقه",
+  "favorite_locations_list_title": "مقصدهای موردعلاقه",
+  "favorite_locations_list_body": "شما میتوانید مقصدهای مورد علاقه خود را برای دسترسی آسان تر ذخیره کنید",
+  "favorite_location_details_title": "اطلاعات مقصد مورد علاقه را وارد کنید",
+  "textbox_error_select_type_address": "لطفا نوع مقصد را مشخص کنید",
+  "placeholder_type": "نوع",
+  "action_delete_account": "حذف حساب کاربری",
+  "message_delete_account_title": "حذف حساب",
+  "message_delete_account_body": "آیا از حذف حساب مطمئنید؟ تا ۳۰ روز پس از حذف با ورود مجدد به حسابتان می توانید حساب خود را بازیابی کنید. پس از آن تمام اطلاعات حساب شما حذف خواهد شد.",
+  "action_edit": "ویرایش",
+  "action_confirm_location": "تائید مکان",
+  "action_coupon_code": "کد کوپن",
+  "enter_coupon_dialog_title": "کد کوپن",
+  "enter_coupon_dialog_body": "کد کوپن را در اینجا وارد کنید",
+  "enter_coupon_placeholder": "ورود کد کوپن",
+  "looking_dialog_title": "سرویس درخواست شده",
+  "looking_dialog_body": "ما در جستجوی نزدیک ترین راننده برای شما هستیم",
+  "action_cancel_request": "انصراف از درخواست",
+  "rate_ride_title": "سفرتان چگونه بود؟",
+  "rate_ride_body": "با ثبت نظرات خود در بهبود خدمات ما را یاری کنید.",
+  "rate_ride_good_points": "نکات مثبت",
+  "rate_ride_negative_points": "نکات منفی",
+  "rate_ride_comment_title": "توضیحات",
+  "rate_ride_comment_placeholder": "توضیحات اضافه را در این کادر وارد کنید",
+  "action_send_feedback": "ارسال بازخورد",
+  "action_ride_options": "گزینه های سفر",
+  "ride_options_title": "گزینه های سفر",
+  "ride_options_wait_time_action": "زمان انتظار",
+  "ride_safety_title": "امنیت سفر",
+  "ride_safety_share_trip_information": "اشتراک گذاری اطلاعات سفر",
+  "ride_safety_sos": "سیگنال خطر",
+  "sos_title": "سیگنال خطر",
+  "sos_body": "سیگنال خطر جهت موارد ضروری استفاده می گردد که امنیت شما یا راننده در خطر است. با انتخاب این گزینه ممکن است از سمت شما با پلیس تماس گرفته شود.",
+  "sos_sent_alert": "سیگنال هشدار ارسال شد",
+  "sos_ok_action": "تائید میکنم",
+  "share_trip_text_locations": "من در مسیرم به سمت {destination} از {pickup} هستم.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " نام راننده ام {firstName} {lastName} و شماره موبایلش +{mobileNumber} است.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " سفرم در ساعت {startTime} شروع شد و انتظار دارم حدود {duration} دقیقه طول بکشد.",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " انتظار دارم سفرم از زمانی که سوار ماشین شوم {duration} دقیقه طول بکشد.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "بدون اطلاعیه!",
+  "announcements_empty_state_body": "اطلاعیه های جدید را در این قسمت میتوانید مشاهده کنید.",
+  "action_set_location": "انتخاب مکان",
+  "trip_history_empty_state_title": "یافت نشد!",
+  "location_not_found_alert_dialog_title": "مکان",
+  "location_not_found_alert_dialog_body": "ما نتوانستیم به کمک جی پی اس مکان شما را بیابیم. شما می توانید به صورت دستی مکان خود را وارد کنید.",
+  "gift_card_title": "کارت هدیه",
+  "gift_card_body": "کد کارت هدیه را در کادر زیر وارد کنید.",
+  "gift_card_text_placeholder": "کد کارت هدیه را وارد کنید",
+  "action_apply": "ثبت",
+  "order_status_should_be_arrived": "راننده رسیده است",
+  "order_status_arriving_in": "در {minutes} دقیقه میرسد",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "هشدار",
+  "cancelation_fee_confirmation_body": "Cancelation of service after driver has accepted the trip is subject to cancellation penalty of {fee}. Do you confirm?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "تائید",
+  "add_credit_select_payment_method": "درگاه پرداخت را انتخاب کنید:",
+  "add_credit_custom_credit_placeholder": "شارژ مازاد",
+  "add_credit_custom_credit_text_placeholder": "مقدار",
+  "invoice_item_tip": "انعام",
+  "invoice_item_wallet": "کیف پول",
+  "invoice_item_total": "جمع",
+  "add_credit_dialog_title": "شارژ حساب",
+  "add_credit_chose_amount": "مقدار را وارد کنید",
+  "action_ride_preferences": "ترجیحات سفر",
+  "ride_preferences_title": "ترجیحات سفر",
+  "action_confirm_and_continue": "تائید و ادامه",
+  "action_see_reserved_rides": "دیدن سفرهای رزرو شده",
+  "ride_reserved_dialog_title": "سفر شما رزرو شد",
+  "ride_reserved_dialog_body": "شما می توانید به منو سفرهای رزرو شده جهت مشاهده ی آن ها مراجعه کنید.",
+  "alert_coupon_unavailable": "کوپن در دسترس نیست.",
+  "minutes_format": "{minutes} دقیقه",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "برگشت",
+  "wallet_card_title": "{appName} کیف پول",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "فعال سازی کارت هدیه",
+  "order_status_canceled": "کنسل شده",
+  "action_skip_for_now": "فعلا نه!",
+  "onboarding_select_language_title": "انتخاب زبان",
+  "onboarding_first_page_title": "به {appName} خوش آمدید!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "خدمات تاکسی برای راحتی شما\nبا رانندگان مورد علاقه ت سفر برو و سفرهات رو مطابق میلت تنظیم کن",
+  "onboarding_second_page_title": "جایزه بگیر!",
+  "onboarding_second_page_body": "با معرفی به دوستات و استفاده از خدمات اپ اعتبار کسب کن و جایزه بگیر.",
+  "onboarding_sign_in_title": "ورود به حساب",
+  "onboarding_sign_in_body": "چند ثانیه مانده به ورود به حساب و درخواست سفر راحت."
+}

@@ -1,0 +1,39 @@
+query Wallet {
+    driverWallets {
+        id
+        balance
+        currency
+    }
+    driverTransacions(sorting: { field: id, direction: DESC }) {
+        edges {
+            node {
+                createdAt
+                amount
+                currency
+                refrenceNumber
+                deductType
+                action
+                rechargeType
+            }
+        }
+    }
+}
+
+query PaymentGateways {
+    paymentGateways {
+        id
+        title
+        type
+        publicKey
+        media {
+          address
+        }
+    }
+}
+
+mutation TopUpWallet($input: TopUpWalletInput!) {
+    topUpWallet(input: $input) {
+        status
+        url
+    }
+}

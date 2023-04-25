@@ -1,0 +1,237 @@
+{
+  "loading": "Memuat",
+  "wallet_empty_state_message": "Tidak ada sejarah yang tercatat.",
+  "enum_rider_transaction_deduct_order_fee": "Biaya Pemesanan",
+  "enum_rider_transaction_deduct_withdraw": "Menarik",
+  "enum_rider_transaction_deduct_correction": "Koreksi",
+  "enum_unknown": "tidak diketahui",
+  "enum_rider_transaction_recharge_in_app_payment": "Pembayaran dalam Aplikasi",
+  "enum_rider_transaction_recharge_gift": "Hadiah",
+  "enum_rider_transaction_recharge_correction": "Koreksi",
+  "enum_rider_transaction_recharge_bank_transfer": "Transfer Bank",
+  "top_up_sheet_pay_button": "Membayar",
+  "service_selection_book_now": "Pesan sekarang",
+  "action_cancel": "Membatalkan",
+  "copyright_notice": "Hak Cipta © {company}, Semua hak dilindungi undang-undang.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "Tentang",
+  "menu_login": "Gabung",
+  "menu_profile": "Profil",
+  "menu_wallet": "Dompet",
+  "menu_trip_history": "Sejarah Perjalanan",
+  "menu_announcements": "Pengumuman",
+  "menu_saved_locations": "Lokasi Tersimpan",
+  "action_save": "Menyimpan",
+  "create_address_name_empty_error": "Silakan masukkan nama lokasi",
+  "create_address_title_textfield_hint": "Judul",
+  "action_delete": "Menghapus",
+  "trip_history_empty_state_message": "Tidak ada pesanan sebelumnya yang dicatat.",
+  "profile_firstname": "Nama depan",
+  "profile_lastname": "Nama keluarga",
+  "profile_email": "Surel",
+  "profile_gender": "Jenis kelamin",
+  "enum_gender_male": "Pria",
+  "enum_gender_female": "Perempuan",
+  "login_cell_number_textfield_hint": "Nomor handphone",
+  "login_cell_number_empty_error": "Silakan masukkan nomor telepon dalam format yang benar",
+  "action_next": "Lanjut",
+  "verify_phone_code_empty_message": "Kode verifikasi tidak dimasukkan.",
+  "wallet_activities_heading": "Aktivitas",
+  "menu_logout": "Keluar",
+  "enum_gender_unknown": "Tidak dikenal",
+  "enum_address_type_home": "Rumah",
+  "enum_address_type_work": "Kerja",
+  "enum_address_type_partner": "Mitra",
+  "enum_address_type_other": "Lainnya",
+  "message_notification_permission_denined_message": "Izin pemberitahuan ditolak sebelumnya. Untuk mendapatkan notifikasi pesanan baru, Anda dapat mengaktifkan izin dari pengaturan aplikasi.",
+  "message_notification_permission_title": "Izin Pemberitahuan",
+  "action_ok": "Oke",
+  "menu_website": "Situs web",
+  "action_confirm_and_reserve_ride": "Konfirmasi & Reservasi perjalanan",
+  "title_reserve_ride": "Pesan Perjalanan",
+  "error_region_unsupported": "Wilayah tidak didukung.",
+  "action_confirm": "Mengonfirmasi",
+  "title_wait_time": "Waktu tunggu",
+  "notice_tip_title": "Apakah Anda ingin menambahkan tip?",
+  "notice_tip_description": "Menambahkan tip adalah opsional. Anda dapat menambahkan jumlah berapa pun yang Anda suka sebagai tip untuk pengemudi.",
+  "action_pay_for_ride": "Bayar untuk perjalanan",
+  "action_confirm_and_pay": "Konfirmasi & Bayar",
+  "action_add_photo": "Tambahkan Foto",
+  "complaint_submit_success_message": "Pengaduan disampaikan. Harap tunggu kontak dari perwakilan dukungan kami tentang pertanyaan Anda.",
+  "error_field_cant_be_empty": "Tidak boleh kosong",
+  "issue_description_placeholder": "Tulis deskripsi masalah Anda...",
+  "issue_subject_placeholder": "Subjek",
+  "issue_submit_description": "Anda dapat melaporkan masalah apa pun yang Anda alami dengan perjalanan Anda. Kami akan membantu Anda dengan masalah dalam panggilan.",
+  "issue_submit_title": "Laporkan masalah",
+  "issue_submit_button": "Laporkan masalah",
+  "trip_information_title": "Informasi Perjalanan",
+  "payment_in_cash": "Uang tunai",
+  "payment_method_title": "Cara Pembayaran",
+  "button_ride_safety": "Keamanan Berkendara",
+  "status_title_driver_arrived": "Temui pengemudi di titik penjemputan",
+  "status_title_trip_started": "Menuju ke tujuan",
+  "welcome_card_subtitle": "Kemana kamu pergi?",
+  "welcome_card_textbox_placeholder": "Di mana tujuan Anda?",
+  "welcome_card_greeting": "Halo {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "Masuk",
+  "login_body": "Pertama, Anda harus masuk untuk memesan perjalanan Anda. Kode verifikasi akan dikirimkan ke nomor telepon Anda.",
+  "terms_and_condition_text": "Saya telah membaca dan setuju dengan",
+  "terms_and_condition_button": "Syarat & Ketentuan",
+  "login_verify_code_title": "Memasukkan kode",
+  "login_verify_code_body": "Kode telah dikirim ke nomor telepon Anda",
+  "action_continue": "Melanjutkan",
+  "current_location": "Lokasi saat ini",
+  "your_destination": "Tujuan Anda",
+  "add_stop": "Tambahkan Berhenti",
+  "action_choose_on_map": "pilih di peta",
+  "message_title_location": "Lokasi",
+  "message_body_location": "Kami tidak bisa mendapatkan lokasi Anda saat ini dari GPS perangkat Anda. Silakan gunakan bidang pencarian untuk memilih lokasi penjemputan Anda.",
+  "menu_reserved_rides": "Wahana yang Dipesan",
+  "reservation_empty_state_title": "Tidak ada pemesanan!",
+  "reservation_empty_state_body": "Anda akan dapat melihat pemesanan berikutnya setelah Anda membuatnya di layar utama.",
+  "action_cancel_ride": "Batalkan Perjalanan",
+  "enum_address_type_gym": "Gym",
+  "enum_address_type_parent_house": "Rumah orang tua",
+  "enum_address_type_cafe": "Kafe",
+  "enum_address_type_park": "Taman",
+  "action_add_favorite_location": "Tambahkan lokasi Favorit",
+  "favorite_locations_list_title": "Lokasi favorit",
+  "favorite_locations_list_body": "Anda dapat menyimpan lokasi favorit Anda untuk akses yang lebih mudah",
+  "favorite_location_details_title": "Beri nama lokasi favorit Anda",
+  "textbox_error_select_type_address": "Silakan pilih jenis alamat",
+  "placeholder_type": "Jenis",
+  "action_delete_account": "Hapus akun",
+  "message_delete_account_title": "Penghapusan akun",
+  "message_delete_account_body": "Apakah Anda yakin ingin menghapus akun Anda? Anda dapat masuk lagi dalam waktu 30 hari untuk memulihkan akun. Setelah periode ini, data Anda akan dihapus sepenuhnya, termasuk semua sisa kredit Anda.",
+  "action_edit": "Sunting",
+  "action_confirm_location": "Konfirmasi lokasi",
+  "action_coupon_code": "Kode Kupon",
+  "enter_coupon_dialog_title": "Kode Kupon",
+  "enter_coupon_dialog_body": "Masukkan kode kupon Anda untuk diterapkan ke harga",
+  "enter_coupon_placeholder": "Masukkan kode kupon",
+  "looking_dialog_title": "Naik Diminta",
+  "looking_dialog_body": "Kami sedang mencari driver terdekat untuk Anda.",
+  "action_cancel_request": "Batalkan permintaan",
+  "rate_ride_title": "Bagaimana perjalanan Anda?",
+  "rate_ride_body": "Bantu kami meningkatkan pengalaman Anda dengan menilai pengemudi Anda",
+  "rate_ride_good_points": "Poin Bagus",
+  "rate_ride_negative_points": "Poin Negatif",
+  "rate_ride_comment_title": "Tambahkan komentar",
+  "rate_ride_comment_placeholder": "tulis komentarmu...",
+  "action_send_feedback": "Kirim Umpan Balik",
+  "action_ride_options": "Opsi Perjalanan",
+  "ride_options_title": "Opsi Perjalanan",
+  "ride_options_wait_time_action": "Waktu tunggu",
+  "ride_safety_title": "Keamanan Berkendara",
+  "ride_safety_share_trip_information": "Bagikan informasi perjalanan",
+  "ride_safety_sos": "SOS",
+  "sos_title": "Sinyal marabahaya",
+  "sos_body": "Sinyal marabahaya adalah untuk keadaan darurat dan panggilan ke pihak berwenang seperti polisi mungkin dilakukan atas nama Anda. Harap gunakan fitur ini hanya dalam keadaan darurat yang mungkin membuat Anda dalam bahaya.",
+  "sos_sent_alert": "SOS dikirim",
+  "sos_ok_action": "Ini darurat",
+  "share_trip_text_locations": "Saya dalam perjalanan ke {destination} dari {pickup}.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " Nama pengemudi saya adalah {firstName} {lastName} dan nomor ponselnya adalah +{mobileNumber}.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " Perjalanan telah dimulai pada {startTime} dan saya memperkirakan perjalanan akan memakan waktu sekitar {duration} menit",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " Saya berharap perjalanan itu sendiri memakan waktu sekitar {duration} menit setelah saya naik mobil pengemudi.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "Belum ada Pengumuman!",
+  "announcements_empty_state_body": "Kami akan memberi tahu Anda ketika ada pengumuman baru.",
+  "action_set_location": "Tetapkan Lokasi",
+  "trip_history_empty_state_title": "Tidak Ada Catatan!",
+  "location_not_found_alert_dialog_title": "Lokasi",
+  "location_not_found_alert_dialog_body": "Kami tidak bisa mendapatkan lokasi Anda saat ini menggunakan GPS perangkat Anda. Silakan periksa izin lokasi perangkat untuk aplikasi dari pengaturan perangkat. Atau, Anda dapat menggunakan kolom pencarian di atas untuk memilih titik penjemputan Anda.",
+  "gift_card_title": "Masukkan Kode Hadiah",
+  "gift_card_body": "Masukkan kode kartu hadiah Anda",
+  "gift_card_text_placeholder": "Masukkan kode kartu hadiah",
+  "action_apply": "Berlaku",
+  "order_status_should_be_arrived": "harus tiba",
+  "order_status_arriving_in": "Tiba dalam {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "Peringatan",
+  "cancelation_fee_confirmation_body": "Pembatalan layanan setelah pengemudi menerima perjalanan akan dikenakan denda pembatalan sebesar {fee}. Apakah Anda mengkonfirmasi?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "Mengonfirmasi",
+  "add_credit_select_payment_method": "Pilih metode pembayaran:",
+  "add_credit_custom_credit_placeholder": "Tambahkan Kredit Kustom",
+  "add_credit_custom_credit_text_placeholder": "Kebiasaan",
+  "invoice_item_tip": "Tip",
+  "invoice_item_wallet": "Dompet",
+  "invoice_item_total": "Total",
+  "add_credit_dialog_title": "Tambahkan Kredit",
+  "add_credit_chose_amount": "Pilih jumlah",
+  "action_ride_preferences": "Preferensi Berkendara",
+  "ride_preferences_title": "Preferensi Berkendara",
+  "action_confirm_and_continue": "Konfirmasi & Lanjutkan",
+  "action_see_reserved_rides": "Lihat wahana yang dipesan",
+  "ride_reserved_dialog_title": "Perjalanan Anda sudah dipesan.",
+  "ride_reserved_dialog_body": "Anda dapat melihat wahana yang dipesan di menu untuk melihat informasi pemesanan wahana ini.",
+  "alert_coupon_unavailable": "Kupon tidak tersedia",
+  "minutes_format": "{minutes} menit",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "Kembali",
+  "wallet_card_title": "Dompet {appName}",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "Tukarkan Kartu Hadiah",
+  "order_status_canceled": "Dibatalkan",
+  "action_skip_for_now": "Lewati untuk sekarang",
+  "onboarding_select_language_title": "Pilih bahasa",
+  "onboarding_first_page_title": "Selamat datang di {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "Layanan taksi dirancang untuk kenyamanan Anda\n memiliki Perjalanan dengan pengemudi favorit Anda dan memilih preferensi perjalanan Anda",
+  "onboarding_second_page_title": "Dapatkan imbalan!",
+  "onboarding_second_page_body": "dapatkan bonus tambahan untuk merujuk teman, menyelesaikan perjalanan, dan banyak lagi...",
+  "onboarding_sign_in_title": "Masuk",
+  "onboarding_sign_in_body": "Beberapa detik lagi untuk masuk dan memulai perjalanan yang nyaman"
+}

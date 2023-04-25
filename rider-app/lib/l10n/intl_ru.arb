@@ -1,0 +1,237 @@
+{
+  "loading": "Загрузка",
+  "wallet_empty_state_message": "История не записана.",
+  "enum_rider_transaction_deduct_order_fee": "Плата за заказ",
+  "enum_rider_transaction_deduct_withdraw": "Отзывать",
+  "enum_rider_transaction_deduct_correction": "Коррекция",
+  "enum_unknown": "Неизвестный",
+  "enum_rider_transaction_recharge_in_app_payment": "Оплата в приложении",
+  "enum_rider_transaction_recharge_gift": "Подарок",
+  "enum_rider_transaction_recharge_correction": "Коррекция",
+  "enum_rider_transaction_recharge_bank_transfer": "Банковский перевод",
+  "top_up_sheet_pay_button": "Платить",
+  "service_selection_book_now": "Забронируйте сейчас",
+  "action_cancel": "Отмена",
+  "copyright_notice": "Copyright © {company}, Все права защищены.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "О",
+  "menu_login": "Авторизоваться",
+  "menu_profile": "Профиль",
+  "menu_wallet": "Бумажник",
+  "menu_trip_history": "История поездок",
+  "menu_announcements": "Объявления",
+  "menu_saved_locations": "Сохраненные местоположения",
+  "action_save": "Сохранять",
+  "create_address_name_empty_error": "Пожалуйста, введите название местоположения",
+  "create_address_title_textfield_hint": "Заголовок",
+  "action_delete": "Удалить",
+  "trip_history_empty_state_message": "Прошлый заказ не зарегистрирован.",
+  "profile_firstname": "Имя",
+  "profile_lastname": "Фамилия",
+  "profile_email": "Эл. почта",
+  "profile_gender": "Пол",
+  "enum_gender_male": "Мужской",
+  "enum_gender_female": "женский",
+  "login_cell_number_textfield_hint": "Сотовый номер",
+  "login_cell_number_empty_error": "Пожалуйста, введите номер телефона в правильном формате",
+  "action_next": "Следующий",
+  "verify_phone_code_empty_message": "Код подтверждения не введен.",
+  "wallet_activities_heading": "Мероприятия",
+  "menu_logout": "Выйти",
+  "enum_gender_unknown": "Неизвестный",
+  "enum_address_type_home": "Дом",
+  "enum_address_type_work": "Работа",
+  "enum_address_type_partner": "Партнер",
+  "enum_address_type_other": "Другой",
+  "message_notification_permission_denined_message": "Ранее разрешение на уведомление было отклонено. Чтобы получать уведомления о новых заказах, вы можете включить разрешение в настройках приложения.",
+  "message_notification_permission_title": "Разрешение на уведомление",
+  "action_ok": "ХОРОШО",
+  "menu_website": "Веб-сайт",
+  "action_confirm_and_reserve_ride": "Подтвердить и зарезервировать поездку",
+  "title_reserve_ride": "Забронировать поездку",
+  "error_region_unsupported": "Регион не поддерживается.",
+  "action_confirm": "Подтверждать",
+  "title_wait_time": "Время ожидания",
+  "notice_tip_title": "Хотите добавить совет?",
+  "notice_tip_description": "Добавление чаевых не является обязательным. Вы можете добавить любую сумму в качестве чаевых водителю.",
+  "action_pay_for_ride": "Платить за поездку",
+  "action_confirm_and_pay": "Подтвердить и оплатить",
+  "action_add_photo": "Добавить фото",
+  "complaint_submit_success_message": "Жалоба подается. Пожалуйста, подождите, пока наш представитель службы поддержки свяжется с вами по поводу вашего запроса.",
+  "error_field_cant_be_empty": "Не может быть пустым",
+  "issue_description_placeholder": "Напишите описание проблемы...",
+  "issue_subject_placeholder": "Предмет",
+  "issue_submit_description": "Вы можете сообщить о любой проблеме, возникшей во время поездки. Поможем решить вопрос в рамках звонка.",
+  "issue_submit_title": "Сообщить о проблеме",
+  "issue_submit_button": "Сообщить о проблеме",
+  "trip_information_title": "Информация о поездке",
+  "payment_in_cash": "Наличные",
+  "payment_method_title": "Метод оплаты",
+  "button_ride_safety": "Безопасность вождения",
+  "status_title_driver_arrived": "Встреча с водителем в пункте выдачи",
+  "status_title_trip_started": "Направление к месту назначения",
+  "welcome_card_subtitle": "Куда ты идешь?",
+  "welcome_card_textbox_placeholder": "Где находится ваш пункт назначения?",
+  "welcome_card_greeting": "Привет {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "Войти",
+  "login_body": "Во-первых, вы должны войти в систему, чтобы забронировать поездку. Код подтверждения будет отправлен на ваш номер телефона.",
+  "terms_and_condition_text": "Я прочитал и согласен с",
+  "terms_and_condition_button": "Условия",
+  "login_verify_code_title": "Введите код",
+  "login_verify_code_body": "Код отправлен на ваш номер телефона",
+  "action_continue": "Продолжать",
+  "current_location": "Текущее местоположение",
+  "your_destination": "Ваш пункт назначения",
+  "add_stop": "Добавить остановку",
+  "action_choose_on_map": "выбрать на карте",
+  "message_title_location": "Расположение",
+  "message_body_location": "Нам не удалось определить ваше текущее местоположение с помощью GPS вашего устройства. Пожалуйста, используйте поле поиска, чтобы выбрать место получения.",
+  "menu_reserved_rides": "Зарезервированные поездки",
+  "reservation_empty_state_title": "Нет бронирования!",
+  "reservation_empty_state_body": "Вы сможете увидеть свои будущие заказы, как только сделаете их на главном экране.",
+  "action_cancel_ride": "Отменить поездку",
+  "enum_address_type_gym": "Спортзал",
+  "enum_address_type_parent_house": "Родительский дом",
+  "enum_address_type_cafe": "Кафе",
+  "enum_address_type_park": "Парк",
+  "action_add_favorite_location": "Добавить любимое место",
+  "favorite_locations_list_title": "Любимые места",
+  "favorite_locations_list_body": "Вы можете сохранить свои любимые места для более легкого доступа",
+  "favorite_location_details_title": "Назовите свое любимое место",
+  "textbox_error_select_type_address": "Пожалуйста, выберите тип адреса",
+  "placeholder_type": "Тип",
+  "action_delete_account": "Удалить аккаунт",
+  "message_delete_account_title": "Удаление аккаунта",
+  "message_delete_account_body": "Вы уверены, что хотите удалить свой аккаунт? Вы можете снова войти в систему в течение 30 дней, чтобы восстановить учетную запись. По истечении этого периода ваши данные будут полностью удалены, включая все оставшиеся кредиты.",
+  "action_edit": "Редактировать",
+  "action_confirm_location": "Подтвердить местоположение",
+  "action_coupon_code": "код купона",
+  "enter_coupon_dialog_title": "код купона",
+  "enter_coupon_dialog_body": "Введите код купона, который будет применен к цене",
+  "enter_coupon_placeholder": "Введите код купона",
+  "looking_dialog_title": "Поездка запрошена",
+  "looking_dialog_body": "Мы ищем ближайшего водителя для вас.",
+  "action_cancel_request": "Отменить запрос",
+  "rate_ride_title": "Как прошла твоя поездка?",
+  "rate_ride_body": "Помогите нам улучшить ваш опыт, оценив вашего водителя",
+  "rate_ride_good_points": "Хорошие очки",
+  "rate_ride_negative_points": "Отрицательные моменты",
+  "rate_ride_comment_title": "Добавить комментарий",
+  "rate_ride_comment_placeholder": "напишите свой комментарий...",
+  "action_send_feedback": "Отправить отзыв",
+  "action_ride_options": "Варианты поездки",
+  "ride_options_title": "Варианты поездки",
+  "ride_options_wait_time_action": "Время ожидания",
+  "ride_safety_title": "Безопасность вождения",
+  "ride_safety_share_trip_information": "Поделитесь информацией о поездке",
+  "ride_safety_sos": "SOS",
+  "sos_title": "Сигнал бедствия",
+  "sos_body": "Сигналы бедствия предназначены для чрезвычайных ситуаций, и от вашего имени может быть сделан звонок в органы власти, например в полицию. Пожалуйста, используйте эту функцию только в экстренных случаях, когда вы можете быть в опасности.",
+  "sos_sent_alert": "SOS отправлен",
+  "sos_ok_action": "Это аварийная",
+  "share_trip_text_locations": "Я еду в {destination} из {pickup}.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " Моего водителя зовут {firstName} {lastName}, а номер его мобильного телефона - +{mobileNumber}.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " Поездка началась {startTime}, и я ожидаю, что поездка займет около {duration} минут.",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " Я ожидаю, что сама поездка займет около {duration} минут, как только я сяду в машину водителя.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "Объявлений пока нет!",
+  "announcements_empty_state_body": "Мы сообщим вам, когда появятся новые объявления.",
+  "action_set_location": "Установить местоположение",
+  "trip_history_empty_state_title": "Нет записей!",
+  "location_not_found_alert_dialog_title": "Расположение",
+  "location_not_found_alert_dialog_body": "Нам не удалось определить ваше текущее местоположение с помощью GPS вашего устройства. Пожалуйста, проверьте разрешение на определение местоположения устройства для приложения в настройках устройства. Кроме того, вы можете использовать поле поиска выше, чтобы выбрать пункт выдачи.",
+  "gift_card_title": "Введите подарочный код",
+  "gift_card_body": "Введите код подарочной карты",
+  "gift_card_text_placeholder": "Введите код подарочной карты",
+  "action_apply": "Подать заявление",
+  "order_status_should_be_arrived": "должен быть доставлен",
+  "order_status_arriving_in": "Прибытие через {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "Предупреждение",
+  "cancelation_fee_confirmation_body": "Отмена услуги после того, как водитель принял поездку, подлежит штрафу за отмену в размере {fee}. Вы подтверждаете?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "Подтверждать",
+  "add_credit_select_payment_method": "Выберите метод оплаты:",
+  "add_credit_custom_credit_placeholder": "Добавить пользовательский кредит",
+  "add_credit_custom_credit_text_placeholder": "Обычай",
+  "invoice_item_tip": "Кончик",
+  "invoice_item_wallet": "Бумажник",
+  "invoice_item_total": "Общий",
+  "add_credit_dialog_title": "Добавить кредит",
+  "add_credit_chose_amount": "Выберите сумму",
+  "action_ride_preferences": "Настройки поездки",
+  "ride_preferences_title": "Настройки поездки",
+  "action_confirm_and_continue": "Подтвердить и продолжить",
+  "action_see_reserved_rides": "Посмотреть зарезервированные поездки",
+  "ride_reserved_dialog_title": "Ваша поездка зарезервирована.",
+  "ride_reserved_dialog_body": "Вы можете проверить зарезервированные поездки в меню, чтобы увидеть информацию о резервах этой поездки.",
+  "alert_coupon_unavailable": "Купон недоступен",
+  "minutes_format": "{minutes} минут",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "Назад",
+  "wallet_card_title": "Кошелек {appName}",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "Использовать подарочную карту",
+  "order_status_canceled": "Отменено",
+  "action_skip_for_now": "Пропустить сейчас",
+  "onboarding_select_language_title": "Выберите язык",
+  "onboarding_first_page_title": "Добро пожаловать в {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "Служба такси для вашего комфорта\n совершайте поездки с вашими любимыми водителями и выбирайте свои предпочтения в поездках",
+  "onboarding_second_page_title": "Получите вознаграждение!",
+  "onboarding_second_page_body": "получайте дополнительные бонусы за приглашение друга, выполнение поездок и многое другое...",
+  "onboarding_sign_in_title": "Войти",
+  "onboarding_sign_in_body": "Несколько секунд до входа в систему и начала комфортной поездки"
+}

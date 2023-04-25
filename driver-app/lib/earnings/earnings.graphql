@@ -1,0 +1,28 @@
+query GetStats($startDate: DateTime!, $endDate: DateTime!) {
+    getStatsNew(timeframe: Daily, startDate: $startDate, endDate: $endDate) {
+        currency
+        dataset {
+            count
+            current
+            distance
+            earning
+            name
+            time
+        }
+    }
+    orders(filter: { status: {in: [Finished, WaitingForReview]}, createdOn: {between: { lower: $startDate, upper: $endDate}}}) {
+      ...historyOrderItem
+    }
+    orderAggregate(filter: { createdOn: { between: { lower: $startDate, upper: $endDate}}}) {
+        groupBy {
+          createdOn
+        }
+        count {
+          id
+        }
+        
+        sum {
+          costBest
+        }
+    }
+}

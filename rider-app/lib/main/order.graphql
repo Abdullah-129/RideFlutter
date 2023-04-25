@@ -1,0 +1,206 @@
+query GetCurrentOrder($versionCode: Int!) {
+  rider(id: "1") {
+    id
+    mobileNumber
+    firstName
+    lastName
+    gender
+    email
+    media {
+      address
+    }
+    orders(
+      filter: {
+        status: {
+          in: [
+            Requested
+            Found
+            NotFound
+            NoCloseFound
+            DriverAccepted
+            Arrived
+            Started
+            WaitingForReview
+            WaitingForPostPay
+            WaitingForPrePay
+          ]
+        }
+      }
+    ) {
+      ...CurrentOrder
+    }
+    bookedOrders: ordersAggregate(filter: { status: { eq: Booked } }) {
+      count {
+        id
+      }
+    }
+  }
+  requireUpdate(versionCode: $versionCode)
+  getCurrentOrderDriverLocation {
+    ...Point
+  }
+}
+mutation CreateOrder(
+  $input: CreateOrderInput!
+  $notificationPlayerId: String!
+) {
+  createOrder(input: $input) {
+    ...CurrentOrder
+  }
+  updateOneRider(
+    input: { id: "1", update: { notificationPlayerId: $notificationPlayerId } }
+  ) {
+    id
+  }
+}
+
+mutation CancelOrder {
+  cancelOrder {
+    ...CurrentOrder
+  }
+}
+mutation updateOrder($id: ID!, $update: UpdateOrderInput!) {
+  updateOneOrder(input: { id: $id, update: $update }) {
+    ...CurrentOrder
+  }
+}
+
+subscription UpdatedOrder {
+  orderUpdated {
+    id
+    status
+    points {
+      ...Point
+    }
+    driver {
+      firstName
+      lastName
+      media {
+        address
+      }
+      mobileNumber
+      carPlate
+      car {
+        name
+      }
+      carColor {
+        name
+      }
+      rating
+    }
+    directions {
+      ...Point
+    }
+    service {
+      media {
+        address
+      }
+      name
+      prepayPercent
+      cancellationTotalFee
+    }
+    etaPickup
+    paidAmount
+    costAfterCoupon
+    durationBest
+    startTimestamp
+    costBest
+    currency
+    addresses
+    waitMinutes
+  }
+}
+subscription DriverLocationUpdated($driverId: ID!) {
+  driverLocationUpdated(driverId: $driverId) {
+    ...Point
+  }
+}
+
+mutation SubmitFeedback(
+  $score: Int!
+  $description: String!
+  $orderId: ID!
+  $parameterIds: [ID!]!
+) {
+  submitReview(
+    review: {
+      score: $score
+      description: $description
+      requestId: $orderId
+      parameterIds: $parameterIds
+    }
+  ) {
+    ...CurrentOrder
+  }
+}
+
+query GetDriversLocation($point: PointInput) {
+  getDriversLocation(center: $point) {
+    ...Point
+  }
+}
+query GetReviewParameters {
+  feedbackParameters {
+    id
+    title
+    isGood
+  }
+}
+query GetFare(
+  $points: [PointInput!]!
+  $couponCode: String
+  $selectedOptionIds: [String!]
+) {
+  getFare(
+    input: {
+      points: $points
+      couponCode: $couponCode
+      selectedOptionIds: $selectedOptionIds
+    }
+  ) {
+    distance
+    duration
+    currency
+    directions {
+      lat
+      lng
+    }
+    services {
+      id
+      name
+      services {
+        id
+        name
+        description
+        personCapacity
+        prepayPercent
+        twoWayAvailable
+        media {
+          address
+        }
+        options {
+          id
+          name
+          type
+          additionalFee
+          icon
+        }
+        cost
+        costAfterCoupon
+      }
+    }
+    error
+  }
+}
+
+mutation ApplyCoupon($code: String!) {
+  applyCoupon(code: $code) {
+    ...CurrentOrder
+  }
+}
+
+mutation SendSOS($orderId: ID!, $location: PointInput) {
+  sosSignal(orderId: $orderId, location: $location) {
+    id
+  }
+}

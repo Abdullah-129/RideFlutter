@@ -1,0 +1,15 @@
+"notification_new_message_title" = "New Message";
+"notification_arrived_title" = "Arrived!";
+"notification_arrived_body" = "Driver has arrived";
+"notification_started_title" = "Started";
+"notification_started_body" = "Trip has been started";
+"notification_waiting_for_pay_title" = "Finished";
+"notification_waiting_for_pay_body" = "Trip was finished. Waiting for payment.";
+"notification_finished_title" = "Done!";
+"notification_finished_body" = "Trip has been finished and payment was settled.";
+"notification_cancel_title" = "Canceled";
+"notification_cancel_body" = "Your trip was canceled. You can order again.";
+"notification_found_title" = "Found";
+"notification_found_body" = "Driver is on your way";
+"notification_booking_assigned_title" = "Booking Assigned!";
+"notification_booking_assigned_body" = "Hey! Your ride on %@ has been confirmed and a driver has been assigned to you.";

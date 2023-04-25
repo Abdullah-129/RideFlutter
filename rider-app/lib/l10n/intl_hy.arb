@@ -1,0 +1,237 @@
+{
+  "loading": "Բեռնվում է",
+  "wallet_empty_state_message": "Պատմություն չի գրանցվել:",
+  "enum_rider_transaction_deduct_order_fee": "Պատվերի վճար",
+  "enum_rider_transaction_deduct_withdraw": "Հանել",
+  "enum_rider_transaction_deduct_correction": "Ուղղում",
+  "enum_unknown": "Անհայտ",
+  "enum_rider_transaction_recharge_in_app_payment": "Ներծրագրի վճարում",
+  "enum_rider_transaction_recharge_gift": "Նվեր",
+  "enum_rider_transaction_recharge_correction": "Ուղղում",
+  "enum_rider_transaction_recharge_bank_transfer": "Բանկային փոխանցում",
+  "top_up_sheet_pay_button": "Վճարել",
+  "service_selection_book_now": "Ամրագրեք հիմա",
+  "action_cancel": "Չեղարկել",
+  "copyright_notice": "Հեղինակային իրավունք © {company}, Բոլոր իրավունքները պաշտպանված են:",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "Մասին",
+  "menu_login": "Մուտք գործել",
+  "menu_profile": "Անձնագիր",
+  "menu_wallet": "Դրամապանակ",
+  "menu_trip_history": "Ուղևորության պատմություն",
+  "menu_announcements": "Հայտարարություններ",
+  "menu_saved_locations": "Պահված վայրեր",
+  "action_save": "Պահպանել",
+  "create_address_name_empty_error": "Խնդրում ենք մուտքագրել գտնվելու վայրը",
+  "create_address_title_textfield_hint": "Կոչում",
+  "action_delete": "Ջնջել",
+  "trip_history_empty_state_message": "Նախկին պատվեր չի գրանցվել:",
+  "profile_firstname": "Անուն",
+  "profile_lastname": "Ազգանուն",
+  "profile_email": "Էլեկտրոնային փոստ",
+  "profile_gender": "Սեռ",
+  "enum_gender_male": "Արական",
+  "enum_gender_female": "իգական",
+  "login_cell_number_textfield_hint": "Հեռախոսի համար",
+  "login_cell_number_empty_error": "Խնդրում ենք մուտքագրել հեռախոսահամարը ճիշտ ձևաչափով",
+  "action_next": "Հաջորդը",
+  "verify_phone_code_empty_message": "Ստուգման կոդը մուտքագրված չէ:",
+  "wallet_activities_heading": "Գործունեություն",
+  "menu_logout": "Դուրս գալ",
+  "enum_gender_unknown": "Անհայտ",
+  "enum_address_type_home": "տուն",
+  "enum_address_type_work": "Աշխատանք",
+  "enum_address_type_partner": "Գործընկեր",
+  "enum_address_type_other": "Այլ",
+  "message_notification_permission_denined_message": "Նախկինում ծանուցման թույլտվությունը մերժվել էր: Նոր պատվերի մասին ծանուցումներ ստանալու համար կարող եք միացնել թույլտվությունը հավելվածի կարգավորումներից:",
+  "message_notification_permission_title": "Ծանուցման թույլտվություն",
+  "action_ok": "լավ",
+  "menu_website": "Կայք",
+  "action_confirm_and_reserve_ride": "Հաստատեք և ամրագրեք ուղևորությունը",
+  "title_reserve_ride": "Պահուստային Ուղևորություն",
+  "error_region_unsupported": "Տարածաշրջանը չի աջակցվում:",
+  "action_confirm": "Հաստատել",
+  "title_wait_time": "Սպասեք ժամանակ",
+  "notice_tip_title": "Կցանկանայի՞ք հուշում ավելացնել:",
+  "notice_tip_description": "Հուշում ավելացնելը պարտադիր չէ: Դուք կարող եք ավելացնել ցանկացած գումար, որը ցանկանում եք, որպես թեյավճար վարորդի համար:",
+  "action_pay_for_ride": "Վճարեք զբոսանքի համար",
+  "action_confirm_and_pay": "Հաստատեք և վճարեք",
+  "action_add_photo": "Ավելացնել լուսանկար",
+  "complaint_submit_success_message": "Բողոք է ներկայացվում։ Խնդրում ենք սպասել մեր աջակցության ներկայացուցչի կողմից ձեր հարցման վերաբերյալ կապի:",
+  "error_field_cant_be_empty": "Չի կարող դատարկ լինել",
+  "issue_description_placeholder": "Գրեք ձեր խնդրի նկարագրությունը...",
+  "issue_subject_placeholder": "Առարկա",
+  "issue_submit_description": "Դուք կարող եք զեկուցել ձեր ուղևորության հետ կապված ցանկացած խնդրի մասին: Մենք ձեզ կօգնենք հարցի շուրջ զանգի ընթացքում։",
+  "issue_submit_title": "Հաղորդել խնդրի մասին",
+  "issue_submit_button": "Հաղորդել խնդրի մասին",
+  "trip_information_title": "Ուղևորության մասին տեղեկատվություն",
+  "payment_in_cash": "Կանխիկ",
+  "payment_method_title": "Վճարման եղանակ",
+  "button_ride_safety": "Ուղևորության անվտանգություն",
+  "status_title_driver_arrived": "Հանդիպեք վարորդին պիկապ կետում",
+  "status_title_trip_started": "Ուղևորություն դեպի նպատակակետ",
+  "welcome_card_subtitle": "Ուր ես գնում?",
+  "welcome_card_textbox_placeholder": "Որտե՞ղ է ձեր նպատակակետը:",
+  "welcome_card_greeting": "Բարև {firstName}",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "Մուտք գործել",
+  "login_body": "Նախ, դուք պետք է մուտք գործեք ձեր ուղևորությունը պատվիրելու համար: Ձեր հեռախոսահամարին կուղարկվի հաստատման կոդը:",
+  "terms_and_condition_text": "Ես կարդացել եմ և համաձայն եմ",
+  "terms_and_condition_button": "Պայմաններ եւ դրույթներ",
+  "login_verify_code_title": "Մուտքագրեք կոդը",
+  "login_verify_code_body": "Կոդն ուղարկվել է ձեր հեռախոսահամարին",
+  "action_continue": "Շարունակել",
+  "current_location": "Ընթացիկ գտնվելու վայրը",
+  "your_destination": "Ձեր նպատակակետը",
+  "add_stop": "Ավելացնել Stop",
+  "action_choose_on_map": "ընտրել քարտեզի վրա",
+  "message_title_location": "Գտնվելու վայրը",
+  "message_body_location": "Մենք չկարողացանք ստանալ ձեր ընթացիկ գտնվելու վայրը ձեր սարքի GPS-ից: Խնդրում ենք օգտագործել որոնման դաշտը՝ ձեր տեղափոխման վայրը ընտրելու համար:",
+  "menu_reserved_rides": "Վերապահված զբոսանքներ",
+  "reservation_empty_state_title": "Առանց վերապահումների:",
+  "reservation_empty_state_body": "Դուք կկարողանաք տեսնել ձեր ապագա ամրագրումները, երբ դրանք կատարեք հիմնական էկրանին:",
+  "action_cancel_ride": "Չեղարկել Ուղևորությունը",
+  "enum_address_type_gym": "մարզասրահ",
+  "enum_address_type_parent_house": "Ծնողական տուն",
+  "enum_address_type_cafe": "Սրճարան",
+  "enum_address_type_park": "Պուրակ",
+  "action_add_favorite_location": "Ավելացնել սիրելի գտնվելու վայրը",
+  "favorite_locations_list_title": "Սիրված վայրերը",
+  "favorite_locations_list_body": "Դուք կարող եք պահպանել ձեր նախընտրած վայրերը՝ ավելի հեշտ մուտք գործելու համար",
+  "favorite_location_details_title": "Անվանեք ձեր նախընտրած վայրը",
+  "textbox_error_select_type_address": "Խնդրում ենք ընտրել հասցեի տեսակը",
+  "placeholder_type": "Տիպ",
+  "action_delete_account": "Հաշիվը ջնջել",
+  "message_delete_account_title": "Հաշվի ջնջում",
+  "message_delete_account_body": "Իսկապե՞ս ուզում եք ջնջել ձեր հաշիվը: Հաշիվը վերականգնելու համար կարող եք նորից մուտք գործել 30 օրվա ընթացքում: Այս ժամանակահատվածից հետո ձեր տվյալները ամբողջությամբ կջնջվեն, ներառյալ ձեր մնացած բոլոր վարկերը:",
+  "action_edit": "Խմբագրել",
+  "action_confirm_location": "Հաստատեք գտնվելու վայրը",
+  "action_coupon_code": "Կտրոնի կոդը",
+  "enter_coupon_dialog_title": "Կտրոնի կոդը",
+  "enter_coupon_dialog_body": "Տեղադրեք ձեր կուպոնի կոդը, որը կկիրառվի գնի վրա",
+  "enter_coupon_placeholder": "Մուտքագրեք կտրոնի կոդը",
+  "looking_dialog_title": "Ուղևորություն է պահանջվում",
+  "looking_dialog_body": "Մենք փնտրում ենք ձեզ մոտակա վարորդին։",
+  "action_cancel_request": "Չեղարկել հարցումը",
+  "rate_ride_title": "Ինչպիսի՞ն էր ձեր ճանապարհորդությունը:",
+  "rate_ride_body": "Օգնեք մեզ բարելավել ձեր փորձը՝ գնահատելով ձեր վարորդին",
+  "rate_ride_good_points": "Հաճելի միավորներ",
+  "rate_ride_negative_points": "Բացասական միավորներ",
+  "rate_ride_comment_title": "Ավելացնել մեկնաբանություն",
+  "rate_ride_comment_placeholder": "գրեք ձեր մեկնաբանությունը...",
+  "action_send_feedback": "Ուղարկել գնահատական",
+  "action_ride_options": "Ուղևորության ընտրանքներ",
+  "ride_options_title": "Ուղևորության ընտրանքներ",
+  "ride_options_wait_time_action": "Սպասեք ժամանակ",
+  "ride_safety_title": "Ուղևորության անվտանգություն",
+  "ride_safety_share_trip_information": "Կիսվեք ուղևորության մասին տեղեկություններով",
+  "ride_safety_sos": "SOS",
+  "sos_title": "Աղետի ազդանշան",
+  "sos_body": "Աղետի ազդանշանները արտակարգ իրավիճակների համար են, և ձեր անունից կարող են զանգահարել այնպիսի իշխանություններին, ինչպիսին է ոստիկանությունը: Խնդրում ենք օգտագործել այս հնարավորությունը միայն արտակարգ իրավիճակներում, որոնք կարող են վտանգված լինել:",
+  "sos_sent_alert": "SOS ուղարկված է",
+  "sos_ok_action": "Արտակարգ դեպք է",
+  "share_trip_text_locations": "Ես ճանապարհին եմ դեպի {destination} {pickup}-ից:",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " Իմ վարորդի անունն է {firstName} {lastName} և նրա բջջային համարը +{mobileNumber}:",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " Ուղևորությունը սկսվել է {startTime}-ին, և ես ակնկալում եմ, որ ճանապարհորդությունը կտևի մոտ {duration} րոպե",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " Ես ակնկալում եմ, որ ճանապարհորդությունն ինքնին տևում է մոտ {duration} րոպե, երբ ես նստեմ վարորդի մեքենան:",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "Դեռևս հայտարարություններ չկան:",
+  "announcements_empty_state_body": "Մենք ձեզ կտեղեկացնենք, երբ նոր հայտարարություններ լինեն։",
+  "action_set_location": "Սահմանել տեղադրությունը",
+  "trip_history_empty_state_title": "Ոչ մի գրառում:",
+  "location_not_found_alert_dialog_title": "Գտնվելու վայրը",
+  "location_not_found_alert_dialog_body": "Մենք չկարողացանք ստանալ ձեր ընթացիկ գտնվելու վայրը՝ օգտագործելով ձեր սարքի GPS-ը: Խնդրում ենք ստուգել սարքի տեղադրության թույլտվությունը հավելվածի համար սարքի կարգավորումներից: Որպես այլընտրանք, դուք կարող եք օգտագործել վերևի որոնման դաշտը՝ ձեր հավաքման կետն ընտրելու համար:",
+  "gift_card_title": "Մուտքագրեք նվեր կոդը",
+  "gift_card_body": "Մուտքագրեք ձեր նվեր քարտի կոդը",
+  "gift_card_text_placeholder": "Մուտքագրեք նվեր քարտի կոդը",
+  "action_apply": "Դիմել",
+  "order_status_should_be_arrived": "պետք է ժամանել",
+  "order_status_arriving_in": "Ժամանում {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "Զգուշացում",
+  "cancelation_fee_confirmation_body": "Ծառայության չեղարկումը այն բանից հետո, երբ վարորդն ընդունել է ուղևորությունը, ենթակա է չեղարկման տույժի՝ {fee}: Դուք հաստատո՞ւմ եք:",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "Հաստատել",
+  "add_credit_select_payment_method": "Ընտրեք վճարման եղանակը.",
+  "add_credit_custom_credit_placeholder": "Ավելացնել անհատական վարկ",
+  "add_credit_custom_credit_text_placeholder": "Պատվերով",
+  "invoice_item_tip": "Հուշում",
+  "invoice_item_wallet": "Դրամապանակ",
+  "invoice_item_total": "Ընդամենը",
+  "add_credit_dialog_title": "Ավելացնել վարկ",
+  "add_credit_chose_amount": "Ընտրեք գումարը",
+  "action_ride_preferences": "Ուղևորության նախապատվություններ",
+  "ride_preferences_title": "Ուղևորության նախապատվություններ",
+  "action_confirm_and_continue": "Հաստատել և շարունակել",
+  "action_see_reserved_rides": "Տես վերապահված երթուղիները",
+  "ride_reserved_dialog_title": "Ձեր ուղևորությունը վերապահված է:",
+  "ride_reserved_dialog_body": "Դուք կարող եք ստուգել վերապահված ուղևորությունները մենյուում՝ այս ուղևորության մասին տեղեկությունները տեսնելու համար:",
+  "alert_coupon_unavailable": "Կտրոնն անհասանելի է",
+  "minutes_format": "{minutes} րոպե",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "Ետ",
+  "wallet_card_title": "{appName} դրամապանակ",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "Փրկեք նվեր քարտը",
+  "order_status_canceled": "Չեղարկված է",
+  "action_skip_for_now": "Առայժմ բաց թողեք",
+  "onboarding_select_language_title": "Ընտրել լեզուն",
+  "onboarding_first_page_title": "Բարի գալուստ {appName}",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "Ձեր հարմարավետության համար նախատեսված տաքսի ծառայություն\n Ուղևորություններ կատարեք ձեր սիրելի վարորդների հետ և ընտրեք ձեր երթևեկության նախասիրությունները",
+  "onboarding_second_page_title": "Ստացեք պարգևատրում:",
+  "onboarding_second_page_body": "ստացեք հավելյալ բոնուսներ ընկերոջը ուղղորդելու, ուղևորություններ ավարտելու և շատ ավելին...",
+  "onboarding_sign_in_title": "Մուտք գործել",
+  "onboarding_sign_in_body": "Մուտք գործելուց և հարմարավետ ճանապարհորդություն սկսելուց մի քանի վայրկյան է մնացել"
+}

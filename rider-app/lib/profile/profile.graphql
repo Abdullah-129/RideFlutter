@@ -1,0 +1,25 @@
+query GetRider {
+  rider(id: 1) {
+    id
+    mobileNumber
+    firstName
+    lastName
+    gender
+    email
+    media {
+      address
+    }
+  }
+}
+
+mutation UpdateProfile($firstName: String!, $lastName: String!, $gender: Gender, $email: String) {
+  updateOneRider(input: { id: "1", update: {firstName: $firstName, lastName: $lastName, gender: $gender, email: $email}}) {
+    id
+  }
+}
+
+mutation DeleteUser {
+  deleteUser {
+    id
+  }
+}

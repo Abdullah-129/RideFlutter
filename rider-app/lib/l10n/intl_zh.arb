@@ -1,0 +1,237 @@
+{
+  "loading": "正在加载",
+  "wallet_empty_state_message": "没有记录历史。",
+  "enum_rider_transaction_deduct_order_fee": "订购费",
+  "enum_rider_transaction_deduct_withdraw": "提取",
+  "enum_rider_transaction_deduct_correction": "更正",
+  "enum_unknown": "未知",
+  "enum_rider_transaction_recharge_in_app_payment": "应用内支付",
+  "enum_rider_transaction_recharge_gift": "礼物",
+  "enum_rider_transaction_recharge_correction": "更正",
+  "enum_rider_transaction_recharge_bank_transfer": "银行转帐",
+  "top_up_sheet_pay_button": "支付",
+  "service_selection_book_now": "现在预订",
+  "action_cancel": "取消",
+  "copyright_notice": "版权所有 © {company}，保留所有权利。",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "关于",
+  "menu_login": "登录",
+  "menu_profile": "轮廓",
+  "menu_wallet": "钱包",
+  "menu_trip_history": "旅行历史",
+  "menu_announcements": "公告",
+  "menu_saved_locations": "保存的位置",
+  "action_save": "节省",
+  "create_address_name_empty_error": "请输入地点名称",
+  "create_address_title_textfield_hint": "标题",
+  "action_delete": "删除",
+  "trip_history_empty_state_message": "没有记录过去的订单。",
+  "profile_firstname": "名",
+  "profile_lastname": "姓",
+  "profile_email": "电子邮件",
+  "profile_gender": "性别",
+  "enum_gender_male": "男性",
+  "enum_gender_female": "女性",
+  "login_cell_number_textfield_hint": "细胞数量",
+  "login_cell_number_empty_error": "请以正确的格式输入电话号码",
+  "action_next": "下一个",
+  "verify_phone_code_empty_message": "未输入验证码。",
+  "wallet_activities_heading": "活动",
+  "menu_logout": "登出",
+  "enum_gender_unknown": "未知",
+  "enum_address_type_home": "家",
+  "enum_address_type_work": "工作",
+  "enum_address_type_partner": "伙伴",
+  "enum_address_type_other": "其他",
+  "message_notification_permission_denined_message": "通知权限之前被拒绝。为了获得新订单的通知，您可以从应用设置中启用权限。",
+  "message_notification_permission_title": "通知权限",
+  "action_ok": "好的",
+  "menu_website": "网站",
+  "action_confirm_and_reserve_ride": "确认并预订行程",
+  "title_reserve_ride": "预留乘车",
+  "error_region_unsupported": "不支持区域。",
+  "action_confirm": "确认",
+  "title_wait_time": "等待时间",
+  "notice_tip_title": "您要添加提示吗？",
+  "notice_tip_description": "添加小费是可选的。您可以添加任何您喜欢的金额作为司机的小费。",
+  "action_pay_for_ride": "付车费",
+  "action_confirm_and_pay": "确认并付款",
+  "action_add_photo": "添加照片",
+  "complaint_submit_success_message": "投诉已提交。请等待我们的支持代表就您的询问与您联系。",
+  "error_field_cant_be_empty": "不能为空",
+  "issue_description_placeholder": "写下你的问题的描述...",
+  "issue_subject_placeholder": "主题",
+  "issue_submit_description": "您可以报告您在骑行过程中遇到的任何问题。我们将在电话中帮助您解决问题。",
+  "issue_submit_title": "报告问题",
+  "issue_submit_button": "报告问题",
+  "trip_information_title": "行程信息",
+  "payment_in_cash": "现金",
+  "payment_method_title": "付款方式",
+  "button_ride_safety": "乘坐安全",
+  "status_title_driver_arrived": "在接送点与司机会面",
+  "status_title_trip_started": "前往目的地",
+  "welcome_card_subtitle": "你要去哪里？",
+  "welcome_card_textbox_placeholder": "你的目的地在哪里？",
+  "welcome_card_greeting": "你好 {firstName}！",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "登入",
+  "login_body": "首先，您必须登录才能预订您的行程。验证码将发送到您的电话号码。",
+  "terms_and_condition_text": "我已阅读并同意",
+  "terms_and_condition_button": "条款和条件",
+  "login_verify_code_title": "输入代码",
+  "login_verify_code_body": "代码已发送到您的电话号码",
+  "action_continue": "继续",
+  "current_location": "当前位置",
+  "your_destination": "你的目的地",
+  "add_stop": "添加停止",
+  "action_choose_on_map": "在地图上选择",
+  "message_title_location": "地点",
+  "message_body_location": "我们无法从您设备的 GPS 中获取您的当前位置。请使用搜索字段选择您的取件地点。",
+  "menu_reserved_rides": "预约游乐设施",
+  "reservation_empty_state_title": "无需预订！",
+  "reservation_empty_state_body": "在主屏幕上进行预订后，您将能够看到未来的预订。",
+  "action_cancel_ride": "取消行程",
+  "enum_address_type_gym": "健身房",
+  "enum_address_type_parent_house": "父母之家",
+  "enum_address_type_cafe": "咖啡店",
+  "enum_address_type_park": "公园",
+  "action_add_favorite_location": "添加收藏位置",
+  "favorite_locations_list_title": "最喜欢的地点",
+  "favorite_locations_list_body": "您可以保存您喜欢的位置以便于访问",
+  "favorite_location_details_title": "命名您最喜欢的位置",
+  "textbox_error_select_type_address": "请选择地址类型",
+  "placeholder_type": "类型",
+  "action_delete_account": "删除帐户",
+  "message_delete_account_title": "帐户删除",
+  "message_delete_account_body": "您确定要删除您的帐户吗？您可以在 30 天内再次登录以恢复帐户。在此期间之后，您的数据将被完全删除，包括您所有剩余的信用。",
+  "action_edit": "编辑",
+  "action_confirm_location": "确认位置",
+  "action_coupon_code": "优惠券代码",
+  "enter_coupon_dialog_title": "优惠券代码",
+  "enter_coupon_dialog_body": "插入要应用于价格的优惠券代码",
+  "enter_coupon_placeholder": "输入优惠券代码",
+  "looking_dialog_title": "请求乘车",
+  "looking_dialog_body": "我们正在为您寻找最近的司机。",
+  "action_cancel_request": "取消请求",
+  "rate_ride_title": "你的骑行怎么样？",
+  "rate_ride_body": "评价您的司机，帮助我们改善您的体验",
+  "rate_ride_good_points": "好点",
+  "rate_ride_negative_points": "负分",
+  "rate_ride_comment_title": "添加评论",
+  "rate_ride_comment_placeholder": "写下你的评论...",
+  "action_send_feedback": "发送反馈",
+  "action_ride_options": "骑行选项",
+  "ride_options_title": "骑行选项",
+  "ride_options_wait_time_action": "等待时间",
+  "ride_safety_title": "乘坐安全",
+  "ride_safety_share_trip_information": "分享行程信息",
+  "ride_safety_sos": "求救",
+  "sos_title": "求救信号",
+  "sos_body": "求救信号用于紧急情况，可能会代表您致电警察等当局。请仅在您可能处于危险中的紧急情况下使用此功能。",
+  "sos_sent_alert": "SOS 已发送",
+  "sos_ok_action": "这是紧急情况",
+  "share_trip_text_locations": "我正在从 {pickup} 前往 {destination} 的路上。",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " 我的司机姓名是 {firstName} {lastName}，他的手机号码是 +{mobileNumber}。",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " 行程已于 {startTime} 开始，我预计行程大约需要 {duration} 分钟",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " 我预计一旦我上了司机的车，行程本身大约需要 {duration} 分钟。",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "暂无公告！",
+  "announcements_empty_state_body": "当有新的公告时，我们会通知您。",
+  "action_set_location": "设置位置",
+  "trip_history_empty_state_title": "没有记录！",
+  "location_not_found_alert_dialog_title": "地点",
+  "location_not_found_alert_dialog_body": "我们无法使用您设备的 GPS 获取您的当前位置。请从设备的设置中检查应用程序的设备位置权限。或者，您可以使用上面的搜索字段来选择您的接送点。",
+  "gift_card_title": "输入礼品码",
+  "gift_card_body": "输入您的礼品卡代码",
+  "gift_card_text_placeholder": "输入礼品卡代码",
+  "action_apply": "申请",
+  "order_status_should_be_arrived": "应该到达",
+  "order_status_arriving_in": "{minutes} 后到达",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "警告",
+  "cancelation_fee_confirmation_body": "司机接受行程后取消服务将收取 {fee} 的取消罚款。你确认吗？",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "确认",
+  "add_credit_select_payment_method": "选择付款方式：",
+  "add_credit_custom_credit_placeholder": "添加自定义信用",
+  "add_credit_custom_credit_text_placeholder": "风俗",
+  "invoice_item_tip": "小费",
+  "invoice_item_wallet": "钱包",
+  "invoice_item_total": "全部的",
+  "add_credit_dialog_title": "添加信用",
+  "add_credit_chose_amount": "选择金额",
+  "action_ride_preferences": "乘坐偏好",
+  "ride_preferences_title": "乘坐偏好",
+  "action_confirm_and_continue": "确认并继续",
+  "action_see_reserved_rides": "查看预订的游乐设施",
+  "ride_reserved_dialog_title": "您的行程已预订。",
+  "ride_reserved_dialog_body": "您可以在菜单中查看预订的游乐设施，以查看该游乐设施的预订信息。",
+  "alert_coupon_unavailable": "优惠券不可用",
+  "minutes_format": "{minutes} 分钟",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "后退",
+  "wallet_card_title": "{appName} 钱包",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "兑换礼品卡",
+  "order_status_canceled": "取消",
+  "action_skip_for_now": "暂时跳过",
+  "onboarding_select_language_title": "选择语言",
+  "onboarding_first_page_title": "欢迎来到 {appName}！",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "专为您的舒适而设计的出租车服务\n 与您最喜欢的司机一起旅行并选择您的乘车偏好",
+  "onboarding_second_page_title": "获得奖励！",
+  "onboarding_second_page_body": "通过推荐朋友、完成旅行等获得额外奖励......",
+  "onboarding_sign_in_title": "登入",
+  "onboarding_sign_in_body": "只需几秒钟即可登录并开始舒适的骑行"
+}

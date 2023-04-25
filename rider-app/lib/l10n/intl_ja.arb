@@ -1,0 +1,237 @@
+{
+  "loading": "読み込み中",
+  "wallet_empty_state_message": "履歴が記録されていません。",
+  "enum_rider_transaction_deduct_order_fee": "注文手数料",
+  "enum_rider_transaction_deduct_withdraw": "撤退",
+  "enum_rider_transaction_deduct_correction": "修正",
+  "enum_unknown": "不明",
+  "enum_rider_transaction_recharge_in_app_payment": "アプリ内決済",
+  "enum_rider_transaction_recharge_gift": "贈り物",
+  "enum_rider_transaction_recharge_correction": "修正",
+  "enum_rider_transaction_recharge_bank_transfer": "銀行振込",
+  "top_up_sheet_pay_button": "支払い",
+  "service_selection_book_now": "今予約する",
+  "action_cancel": "キャンセル",
+  "copyright_notice": "著作権 © {company}、無断複写・転載を禁じます。",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "約",
+  "menu_login": "ログイン",
+  "menu_profile": "プロフィール",
+  "menu_wallet": "財布",
+  "menu_trip_history": "旅行履歴",
+  "menu_announcements": "お知らせ",
+  "menu_saved_locations": "保存された場所",
+  "action_save": "保存",
+  "create_address_name_empty_error": "場所の名前を入力してください",
+  "create_address_title_textfield_hint": "題名",
+  "action_delete": "消去",
+  "trip_history_empty_state_message": "過去の注文は記録されていません。",
+  "profile_firstname": "ファーストネーム",
+  "profile_lastname": "苗字",
+  "profile_email": "Eメール",
+  "profile_gender": "性別",
+  "enum_gender_male": "男",
+  "enum_gender_female": "女性",
+  "login_cell_number_textfield_hint": "セル番号",
+  "login_cell_number_empty_error": "電話番号を正しい形式で入力してください",
+  "action_next": "次",
+  "verify_phone_code_empty_message": "認証コードが入力されていません。",
+  "wallet_activities_heading": "アクティビティ",
+  "menu_logout": "ログアウト",
+  "enum_gender_unknown": "わからない",
+  "enum_address_type_home": "家",
+  "enum_address_type_work": "仕事",
+  "enum_address_type_partner": "相棒",
+  "enum_address_type_other": "他の",
+  "message_notification_permission_denined_message": "以前に通知許可が拒否されました。新規注文の通知を受け取るために、アプリの設定から許可を有効にすることができます。",
+  "message_notification_permission_title": "通知許可",
+  "action_ok": "わかった",
+  "menu_website": "Webサイト",
+  "action_confirm_and_reserve_ride": "乗車の確認と予約",
+  "title_reserve_ride": "予約乗車",
+  "error_region_unsupported": "リージョンはサポートされていません。",
+  "action_confirm": "確認",
+  "title_wait_time": "待ち時間",
+  "notice_tip_title": "ヒントを追加しますか？",
+  "notice_tip_description": "チップの追加はオプションです。ドライバーへのチップとして、好きな金額を追加できます。",
+  "action_pay_for_ride": "乗車料金を支払う",
+  "action_confirm_and_pay": "確認して支払う",
+  "action_add_photo": "写真を追加",
+  "complaint_submit_success_message": "苦情が提出されます。お問い合わせ内容については、弊社サポート担当者からの連絡をお待ちください。",
+  "error_field_cant_be_empty": "空にすることはできません",
+  "issue_description_placeholder": "問題の説明を書いてください...",
+  "issue_subject_placeholder": "主題",
+  "issue_submit_description": "乗車中に発生した問題を報告できます。お電話で問題を解決いたします。",
+  "issue_submit_title": "問題を報告する",
+  "issue_submit_button": "問題を報告",
+  "trip_information_title": "旅行情報",
+  "payment_in_cash": "現金",
+  "payment_method_title": "支払方法",
+  "button_ride_safety": "乗り物の安全",
+  "status_title_driver_arrived": "ピックアップポイントでドライバーに会う",
+  "status_title_trip_started": "目的地に向かっています",
+  "welcome_card_subtitle": "どこに行くの？",
+  "welcome_card_textbox_placeholder": "目的地はどこですか？",
+  "welcome_card_greeting": "こんにちは {firstName}",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "ログイン",
+  "login_body": "まず、サインインして乗車を予約する必要があります。確認コードが電話番号に送信されます。",
+  "terms_and_condition_text": "私は読み、同意します",
+  "terms_and_condition_button": "利用規約",
+  "login_verify_code_title": "コードを入力する",
+  "login_verify_code_body": "コードがあなたの電話番号に送信されました",
+  "action_continue": "継続する",
+  "current_location": "現在位置",
+  "your_destination": "目的地",
+  "add_stop": "ストップを追加",
+  "action_choose_on_map": "地図で選ぶ",
+  "message_title_location": "位置",
+  "message_body_location": "デバイスの GPS から現在地を取得できませんでした。検索フィールドを使用して、ピックアップ場所を選択してください。",
+  "menu_reserved_rides": "貸切乗車",
+  "reservation_empty_state_title": "予約なし！",
+  "reservation_empty_state_body": "メイン画面で予約すると、将来の予約を見ることができます。",
+  "action_cancel_ride": "乗車をキャンセル",
+  "enum_address_type_gym": "ジム",
+  "enum_address_type_parent_house": "実家",
+  "enum_address_type_cafe": "カフェ",
+  "enum_address_type_park": "公園",
+  "action_add_favorite_location": "お気に入りの場所を追加",
+  "favorite_locations_list_title": "お気に入りの場所",
+  "favorite_locations_list_body": "お気に入りの場所を保存して簡単にアクセスできます",
+  "favorite_location_details_title": "お気に入りの場所に名前を付ける",
+  "textbox_error_select_type_address": "住所の種類を選択してください",
+  "placeholder_type": "タイプ",
+  "action_delete_account": "アカウントを削除する",
+  "message_delete_account_title": "アカウントの削除",
+  "message_delete_account_body": "アカウントを削除してもよろしいですか？アカウントを復元するには、30 日以内に再度ログインしてください。この期間が過ぎると、残りのすべてのクレジットを含め、データは完全に削除されます。",
+  "action_edit": "編集",
+  "action_confirm_location": "場所を確認",
+  "action_coupon_code": "クーポンコード",
+  "enter_coupon_dialog_title": "クーポンコード",
+  "enter_coupon_dialog_body": "価格に適用されるクーポンコードを入力してください",
+  "enter_coupon_placeholder": "クーポンコードを入力してください",
+  "looking_dialog_title": "リクエストされた乗車",
+  "looking_dialog_body": "最寄りのドライバーを探しています。",
+  "action_cancel_request": "リクエストをキャンセル",
+  "rate_ride_title": "乗り心地はいかがでしたか？",
+  "rate_ride_body": "ドライバーを評価して、エクスペリエンスの向上にご協力ください",
+  "rate_ride_good_points": "ナイスポイント",
+  "rate_ride_negative_points": "マイナスポイント",
+  "rate_ride_comment_title": "コメントを追加する",
+  "rate_ride_comment_placeholder": "あなたのコメントを書いてください...",
+  "action_send_feedback": "フィードバックを送信",
+  "action_ride_options": "乗車オプション",
+  "ride_options_title": "乗車オプション",
+  "ride_options_wait_time_action": "待ち時間",
+  "ride_safety_title": "乗り物の安全",
+  "ride_safety_share_trip_information": "旅行情報を共有する",
+  "ride_safety_sos": "SOS",
+  "sos_title": "遭難信号",
+  "sos_body": "遭難信号は緊急用であり、警察などの当局への呼び出しがあなたに代わって行われる場合があります。この機能は、危険にさらされる可能性がある緊急時にのみ使用してください。",
+  "sos_sent_alert": "SOSが送信されます",
+  "sos_ok_action": "緊急です",
+  "share_trip_text_locations": "{pickup} から {destination} に向かう途中です。",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " 私のドライバーの名前は {firstName} {lastName} で、彼の携帯電話番号は +{mobileNumber} です。",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " 旅行は {startTime} に開始されました。旅行には約 {duration} 分かかると予想されます",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " 運転手の車に乗ってから、移動自体は {duration} 分ほどかかると思います。",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "お知らせはまだありません！",
+  "announcements_empty_state_body": "新しい発表が来たらお知らせします。",
+  "action_set_location": "場所を設定",
+  "trip_history_empty_state_title": "記録なし！",
+  "location_not_found_alert_dialog_title": "位置",
+  "location_not_found_alert_dialog_body": "デバイスの GPS を使用して現在地を取得できませんでした。デバイスの設定から、アプリに対するデバイスの位置情報の許可を確認してください。または、上の検索フィールドを使用して、ピックアップ ポイントを選択することもできます。",
+  "gift_card_title": "ギフトコードを入力",
+  "gift_card_body": "ギフトカードコードを入力してください",
+  "gift_card_text_placeholder": "ギフトカードコードを入力",
+  "action_apply": "申し込み",
+  "order_status_should_be_arrived": "到着する必要があります",
+  "order_status_arriving_in": "{minutes} 後に到着",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "警告",
+  "cancelation_fee_confirmation_body": "ドライバーが乗車を承諾した後のサービスのキャンセルには、{fee} のキャンセル ペナルティが適用されます。確認しますか？",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "確認",
+  "add_credit_select_payment_method": "お支払い方法の選択:",
+  "add_credit_custom_credit_placeholder": "カスタムクレジットを追加",
+  "add_credit_custom_credit_text_placeholder": "カスタム",
+  "invoice_item_tip": "ヒント",
+  "invoice_item_wallet": "財布",
+  "invoice_item_total": "合計",
+  "add_credit_dialog_title": "クレジットを追加",
+  "add_credit_chose_amount": "金額を選択",
+  "action_ride_preferences": "乗車設定",
+  "ride_preferences_title": "乗車設定",
+  "action_confirm_and_continue": "確認して続行",
+  "action_see_reserved_rides": "予約済みの乗り物を見る",
+  "ride_reserved_dialog_title": "あなたの乗車は予約されています。",
+  "ride_reserved_dialog_body": "メニューで予約済みの乗り物をチェックして、この乗り物の予約情報を確認できます。",
+  "alert_coupon_unavailable": "クーポンは利用できません",
+  "minutes_format": "{minutes} 分",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "戻る",
+  "wallet_card_title": "{appName} ウォレット",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "ギフトカードの交換",
+  "order_status_canceled": "キャンセル",
+  "action_skip_for_now": "今のところスキップ",
+  "onboarding_select_language_title": "言語を選択する",
+  "onboarding_first_page_title": "{appName} へようこそ！",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "快適さを追求したタクシーサービス\n お気に入りのドライバーと一緒に乗車し、乗車の好みを選択してください",
+  "onboarding_second_page_title": "報酬を受ける！",
+  "onboarding_second_page_body": "友達を紹介したり、旅行を完了したりすると、追加のボーナスを獲得できます...",
+  "onboarding_sign_in_title": "ログイン",
+  "onboarding_sign_in_body": "サインインして快適なライドを開始するまであと数秒"
+}

@@ -1,0 +1,112 @@
+fragment Point on Point {
+  lat
+  lng
+}
+fragment AvailableOrder on Order {
+  id
+  status
+  currency
+  costBest
+  addresses
+  distanceBest
+  durationBest
+  directions {
+    ...Point
+  }
+  options {
+    name
+    icon
+  }
+  service {
+    name
+  }
+  points {
+    ...Point
+  }
+}
+
+fragment CurrentOrder on Order {
+  id
+  createdOn
+  expectedTimestamp
+  status
+  currency
+  costBest
+  costAfterCoupon
+  paidAmount
+  etaPickup
+  tipAmount
+  directions {
+    ...Point
+  }
+  points {
+    ...Point
+  }
+  service {
+    name
+  }
+  options {
+    id
+    name
+    icon
+  }
+  addresses
+  rider {
+    mobileNumber
+    firstName
+    lastName
+    media {
+      address
+    }
+    wallets {
+      currency
+      balance
+    }
+  }
+}
+
+fragment historyOrderItem on OrderConnection {
+  edges {
+    node {
+      id
+      status
+      createdOn
+      currency
+      costAfterCoupon
+      providerShare
+      service {
+        name
+      }
+    }
+  }
+  pageInfo {
+    hasNextPage
+    endCursor
+    startCursor
+    hasPreviousPage
+  }
+}
+
+fragment ChatMessage on OrderMessage {
+  id
+  content
+  sentByDriver
+}
+
+fragment ChatDriver on Driver {
+  id
+  firstName
+  lastName
+  media {
+    address
+  }
+}
+
+fragment ChatRider on Rider {
+  id
+  firstName
+  lastName
+  media {
+    address
+  }
+}

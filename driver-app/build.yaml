@@ -1,0 +1,29 @@
+targets:
+  $default:
+    sources:
+      - $package$
+      - lib/**
+      - graphql/**
+      - driver.schema.gql
+    builders:
+      json_serializable:
+        options:
+          include_if_null: false
+      artemis:
+        options:
+          scalar_mapping:
+            - custom_parser_import: '../scalars/connection_cursor.dart'
+              graphql_type: ConnectionCursor
+              dart_type: String
+            - custom_parser_import: '../scalars/timestamp.dart'
+              graphql_type: Timestamp
+              dart_type: DateTime
+            - custom_parser_import: '../scalars/datetime.dart'
+              graphql_type: DateTime
+              dart_type: DateTime
+              
+          fragments_glob: graphql/**.fragment.graphql
+          schema_mapping:
+            - output: lib/graphql/generated/graphql_api.dart
+              schema: driver.schema.gql
+              queries_glob: lib/**.graphql

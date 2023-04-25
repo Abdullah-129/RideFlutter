@@ -1,0 +1,39 @@
+query GetProfile {
+  driver(id: "1") {
+    id
+    firstName
+    lastName
+    mobileNumber
+    accountNumber
+    bankName
+    address
+    rating
+    documents {
+      id
+      address
+    }
+    bankSwift
+    media {
+      id
+      address
+    }
+    carPlate
+    enabledServices {
+      name
+    }
+    carColor {
+      name
+    }
+    car {
+      name
+    }
+    historyOrdersAggregate {
+      sum {
+        distanceBest
+      }
+      count {
+        id
+      }
+    }
+  }
+}

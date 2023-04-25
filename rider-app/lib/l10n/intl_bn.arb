@@ -1,0 +1,237 @@
+{
+  "loading": "লোড হচ্ছে",
+  "wallet_empty_state_message": "কোন ইতিহাস নথিভুক্ত.",
+  "enum_rider_transaction_deduct_order_fee": "অর্ডার ফি",
+  "enum_rider_transaction_deduct_withdraw": "প্রত্যাহার করুন",
+  "enum_rider_transaction_deduct_correction": "সংশোধন",
+  "enum_unknown": "অজানা",
+  "enum_rider_transaction_recharge_in_app_payment": "ইন-অ্যাপ পেমেন্ট",
+  "enum_rider_transaction_recharge_gift": "উপহার",
+  "enum_rider_transaction_recharge_correction": "সংশোধন",
+  "enum_rider_transaction_recharge_bank_transfer": "ব্যাংক লেনদেন",
+  "top_up_sheet_pay_button": "বেতন",
+  "service_selection_book_now": "এখন বুক করুন",
+  "action_cancel": "বাতিল করুন",
+  "copyright_notice": "কপিরাইট © {company}, সর্বস্বত্ব সংরক্ষিত৷",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "সম্পর্কিত",
+  "menu_login": "প্রবেশ করুন",
+  "menu_profile": "প্রোফাইল",
+  "menu_wallet": "ওয়ালেট",
+  "menu_trip_history": "ভ্রমণের ইতিহাস",
+  "menu_announcements": "ঘোষণা",
+  "menu_saved_locations": "সংরক্ষিত অবস্থান",
+  "action_save": "সংরক্ষণ",
+  "create_address_name_empty_error": "অবস্থানের নাম লিখুন দয়া করে",
+  "create_address_title_textfield_hint": "শিরোনাম",
+  "action_delete": "মুছে ফেলা",
+  "trip_history_empty_state_message": "কোন অতীত আদেশ রেকর্ড করা হয়েছে.",
+  "profile_firstname": "নামের প্রথম অংশ",
+  "profile_lastname": "নামের শেষাংশ",
+  "profile_email": "ই-মেইল",
+  "profile_gender": "লিঙ্গ",
+  "enum_gender_male": "পুরুষ",
+  "enum_gender_female": "মহিলা",
+  "login_cell_number_textfield_hint": "সেল নম্বর",
+  "login_cell_number_empty_error": "সঠিক বিন্যাসে ফোন নম্বর লিখুন",
+  "action_next": "পরবর্তী",
+  "verify_phone_code_empty_message": "যাচাইকরণ কোড প্রবেশ করা হয় না.",
+  "wallet_activities_heading": "কার্যকলাপ",
+  "menu_logout": "প্রস্থান",
+  "enum_gender_unknown": "অজানা",
+  "enum_address_type_home": "বাড়ি",
+  "enum_address_type_work": "কাজ",
+  "enum_address_type_partner": "অংশীদার",
+  "enum_address_type_other": "অন্যান্য",
+  "message_notification_permission_denined_message": "বিজ্ঞপ্তি অনুমতি আগে অস্বীকার করা হয়েছে. নতুন অর্ডারের বিজ্ঞপ্তি পেতে, আপনি অ্যাপ সেটিংস থেকে অনুমতি সক্ষম করতে পারেন।",
+  "message_notification_permission_title": "বিজ্ঞপ্তির অনুমতি",
+  "action_ok": "ঠিক আছে",
+  "menu_website": "ওয়েবসাইট",
+  "action_confirm_and_reserve_ride": "নিশ্চিত করুন এবং রাইড রিজার্ভ করুন",
+  "title_reserve_ride": "রিজার্ভ রাইড",
+  "error_region_unsupported": "অঞ্চল সমর্থিত নয়।",
+  "action_confirm": "নিশ্চিত করুন",
+  "title_wait_time": "অপেক্ষার সময়",
+  "notice_tip_title": "আপনি একটি টিপ যোগ করতে চান?",
+  "notice_tip_description": "টিপ যোগ করা ঐচ্ছিক। আপনি ড্রাইভারের জন্য টিপ হিসাবে আপনার পছন্দ মতো যে কোনও পরিমাণ যোগ করতে পারেন।",
+  "action_pay_for_ride": "যাত্রার জন্য অর্থ প্রদান করুন",
+  "action_confirm_and_pay": "নিশ্চিত করুন এবং অর্থ প্রদান করুন",
+  "action_add_photo": "ছবি যোগ করুন",
+  "complaint_submit_success_message": "অভিযোগ জমা হয়। আপনার অনুসন্ধান সম্পর্কে আমাদের সহায়তা প্রতিনিধির কাছ থেকে একটি যোগাযোগের জন্য অনুগ্রহ করে অপেক্ষা করুন।",
+  "error_field_cant_be_empty": "খালি হতে পারেনা",
+  "issue_description_placeholder": "আপনার সমস্যার একটি বিবরণ লিখুন...",
+  "issue_subject_placeholder": "বিষয়",
+  "issue_submit_description": "আপনি আপনার রাইডের সাথে আপনার যে কোনো সমস্যা রিপোর্ট করতে পারেন। আমরা একটি কলের মধ্যে সমস্যাটি নিয়ে আপনাকে সাহায্য করব৷",
+  "issue_submit_title": "একটি সমস্যা রিপোর্ট",
+  "issue_submit_button": "রিপোর্ট সমস্যা",
+  "trip_information_title": "ট্রিপ তথ্য",
+  "payment_in_cash": "নগদ",
+  "payment_method_title": "মূল্যপরিশোধ পদ্ধতি",
+  "button_ride_safety": "রাইড নিরাপত্তা",
+  "status_title_driver_arrived": "পিকআপ পয়েন্টে ড্রাইভারের সাথে দেখা করুন",
+  "status_title_trip_started": "গন্তব্যের দিকে যাচ্ছে",
+  "welcome_card_subtitle": "আপনি কোথায় যাচ্ছেন?",
+  "welcome_card_textbox_placeholder": "তোমার গন্তব্য কোথায়?",
+  "welcome_card_greeting": "হ্যালো{firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "সাইন ইন করুন",
+  "login_body": "প্রথমে, আপনাকে আপনার রাইড বুক করতে সাইন ইন করতে হবে। আপনার ফোন নম্বরে একটি যাচাইকরণ কোড পাঠানো হবে।",
+  "terms_and_condition_text": "আমি পড়েছি এবং এর সাথে একমত",
+  "terms_and_condition_button": "শর্তাবলী",
+  "login_verify_code_title": "কোড লিখুন",
+  "login_verify_code_body": "আপনার ফোন নম্বরে কোড পাঠানো হয়েছে",
+  "action_continue": "চালিয়ে যান",
+  "current_location": "এখন যেখানে আছ",
+  "your_destination": "আপনার গন্তব্য",
+  "add_stop": "স্টপ যোগ করুন",
+  "action_choose_on_map": "মানচিত্রে চয়ন করুন",
+  "message_title_location": "অবস্থান",
+  "message_body_location": "আমরা আপনার ডিভাইসের GPS থেকে আপনার বর্তমান অবস্থান পেতে পারিনি৷ আপনার পিক আপ অবস্থান নির্বাচন করতে অনুসন্ধান ক্ষেত্র ব্যবহার করুন.",
+  "menu_reserved_rides": "সংরক্ষিত রাইডস",
+  "reservation_empty_state_title": "কোন রিজার্ভেশন!",
+  "reservation_empty_state_body": "আপনি আপনার ভবিষ্যত বুকিংগুলিকে মূল স্ক্রিনে তৈরি করার পরে দেখতে সক্ষম হবেন৷",
+  "action_cancel_ride": "রাইড বাতিল করুন",
+  "enum_address_type_gym": "জিম",
+  "enum_address_type_parent_house": "পিতামাতার বাড়ি",
+  "enum_address_type_cafe": "ক্যাফে",
+  "enum_address_type_park": "পার্ক",
+  "action_add_favorite_location": "প্রিয় অবস্থান যোগ করুন",
+  "favorite_locations_list_title": "প্রিয় অবস্থান",
+  "favorite_locations_list_body": "আপনি সহজে অ্যাক্সেসের জন্য আপনার প্রিয় অবস্থানগুলি সংরক্ষণ করতে পারেন",
+  "favorite_location_details_title": "আপনার প্রিয় অবস্থানের নাম দিন",
+  "textbox_error_select_type_address": "ঠিকানার ধরন নির্বাচন করুন",
+  "placeholder_type": "টাইপ",
+  "action_delete_account": "হিসাব মুছে ফেলা",
+  "message_delete_account_title": "অ্যাকাউন্ট মুছে ফেলা",
+  "message_delete_account_body": "আপনি আপনার অ্যাকাউন্ট মুছে ফেলতে চান আপনি কি নিশ্চিত? অ্যাকাউন্ট পুনরুদ্ধার করতে আপনি 30 দিনের মধ্যে আবার লগ ইন করতে পারেন। এই সময়ের পরে, আপনার সমস্ত অবশিষ্ট ক্রেডিট সহ আপনার ডেটা সম্পূর্ণরূপে মুছে ফেলা হবে।",
+  "action_edit": "সম্পাদনা করুন",
+  "action_confirm_location": "অবস্থান নিশ্চিত করুন",
+  "action_coupon_code": "কুপন কোড",
+  "enter_coupon_dialog_title": "কুপন কোড",
+  "enter_coupon_dialog_body": "মূল্য প্রয়োগ করতে আপনার কুপন কোড সন্নিবেশ করুন",
+  "enter_coupon_placeholder": "কুপন এর কোডটি প্রবেশ করান",
+  "looking_dialog_title": "রাইড অনুরোধ করা হয়েছে",
+  "looking_dialog_body": "আমরা আপনার জন্য নিকটতম ড্রাইভার খুঁজছি.",
+  "action_cancel_request": "অনুরোধ বাতিল",
+  "rate_ride_title": "আপনার যাত্রা কেমন ছিল?",
+  "rate_ride_body": "আপনার ড্রাইভারকে রেটিং দিয়ে আপনার অভিজ্ঞতা উন্নত করতে আমাদের সাহায্য করুন",
+  "rate_ride_good_points": "চমৎকার পয়েন্ট",
+  "rate_ride_negative_points": "নেতিবাচক পয়েন্ট",
+  "rate_ride_comment_title": "মন্তব্য যোগ করুন",
+  "rate_ride_comment_placeholder": "আপনার মন্তব্য লিখুন...",
+  "action_send_feedback": "মতামত পাঠানো",
+  "action_ride_options": "রাইড অপশন",
+  "ride_options_title": "রাইড অপশন",
+  "ride_options_wait_time_action": "অপেক্ষার সময়",
+  "ride_safety_title": "রাইড নিরাপত্তা",
+  "ride_safety_share_trip_information": "ভ্রমণের তথ্য শেয়ার করুন",
+  "ride_safety_sos": "এসওএস",
+  "sos_title": "দুর্দশার সংকেত",
+  "sos_body": "দুর্দশার সংকেত জরুরী অবস্থার জন্য এবং আপনার পক্ষ থেকে পুলিশের মতো কর্তৃপক্ষকে কল করা হতে পারে। দয়া করে এই বৈশিষ্ট্যটি শুধুমাত্র জরুরী পরিস্থিতিতে ব্যবহার করুন যাতে আপনি বিপদে পড়তে পারেন।",
+  "sos_sent_alert": "এসওএস পাঠানো হয়",
+  "sos_ok_action": "এটা একটা জরুরি অবস্থা",
+  "share_trip_text_locations": "আমি {destination} থেকে {pickup} যাচ্ছি।",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " আমার ড্রাইভারের নাম {firstName} {lastName} এবং তার মোবাইল নম্বর হল +{mobileNumber}।",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " {startTime} তারিখে ট্রিপ শুরু হয়েছে এবং আমি আশা করি ট্রিপে প্রায় {duration} মিনিট সময় লাগবে",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " আমি আশা করি ড্রাইভারের গাড়িতে উঠলে ট্রিপটি প্রায় {duration} মিনিট লাগবে।",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "এখনো কোনো ঘোষণা নেই!",
+  "announcements_empty_state_body": "নতুন ঘোষণা এলে আমরা আপনাকে অবহিত করব।",
+  "action_set_location": "স্থান নির্ধারণ করা",
+  "trip_history_empty_state_title": "কোন রেকর্ড নেই!",
+  "location_not_found_alert_dialog_title": "অবস্থান",
+  "location_not_found_alert_dialog_body": "আমরা আপনার ডিভাইসের GPS ব্যবহার করে আপনার বর্তমান অবস্থান পেতে পারিনি৷ অনুগ্রহ করে ডিভাইসের সেটিংস থেকে অ্যাপটির জন্য ডিভাইসের অবস্থানের অনুমতি পরীক্ষা করুন। বিকল্পভাবে, আপনি আপনার পিক-আপ পয়েন্ট নির্বাচন করতে উপরের অনুসন্ধান ক্ষেত্রটি ব্যবহার করতে পারেন।",
+  "gift_card_title": "উপহার কোড লিখুন",
+  "gift_card_body": "আপনার উপহার কার্ড কোড লিখুন",
+  "gift_card_text_placeholder": "উপহার কার্ড কোড লিখুন",
+  "action_apply": "আবেদন করুন",
+  "order_status_should_be_arrived": "পৌঁছানো উচিত",
+  "order_status_arriving_in": "{minutes} এ পৌঁছাচ্ছে",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "সতর্কতা",
+  "cancelation_fee_confirmation_body": "ড্রাইভার ট্রিপ গ্রহন করার পরে পরিষেবা বাতিল করলে {fee} এর বাতিলকরণ জরিমানা সাপেক্ষে। আপনি কি নিশ্চিত?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "নিশ্চিত করুন",
+  "add_credit_select_payment_method": "পেমেন্ট পদ্ধতি নির্বাচন করুন:",
+  "add_credit_custom_credit_placeholder": "কাস্টম ক্রেডিট যোগ করুন",
+  "add_credit_custom_credit_text_placeholder": "কাস্টম",
+  "invoice_item_tip": "টিপ",
+  "invoice_item_wallet": "ওয়ালেট",
+  "invoice_item_total": "মোট",
+  "add_credit_dialog_title": "ক্রেডিট যোগ করুন",
+  "add_credit_chose_amount": "পরিমাণ চয়ন করুন",
+  "action_ride_preferences": "রাইড পছন্দ",
+  "ride_preferences_title": "রাইড পছন্দ",
+  "action_confirm_and_continue": "নিশ্চিত করুন এবং চালিয়ে যান",
+  "action_see_reserved_rides": "সংরক্ষিত রাইড দেখুন",
+  "ride_reserved_dialog_title": "আপনার রাইড সংরক্ষিত.",
+  "ride_reserved_dialog_body": "আপনি এই রাইডের রিজার্ভ তথ্য দেখতে মেনুতে সংরক্ষিত রাইডগুলি দেখতে পারেন৷",
+  "alert_coupon_unavailable": "কুপন অনুপলব্ধ",
+  "minutes_format": "{minutes} মিনিট",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "পেছনে",
+  "wallet_card_title": "{appName} ওয়ালেট",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "উপহার কার্ড খালাস",
+  "order_status_canceled": "বাতিল",
+  "action_skip_for_now": "এখন জন্য লাফালাফি",
+  "onboarding_select_language_title": "ভাষা নির্বাচন কর",
+  "onboarding_first_page_title": "{appName}-এ স্বাগতম!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "আপনার আরামের জন্য ডিজাইন করা ট্যাক্সি পরিষেবা\n আপনার প্রিয় ড্রাইভারের সাথে ট্রিপ করুন এবং আপনার রাইড পছন্দগুলি বেছে নিন",
+  "onboarding_second_page_title": "পুরস্কৃত পান!",
+  "onboarding_second_page_body": "বন্ধুকে রেফার করা, ট্রিপ সম্পূর্ণ করা এবং আরও অনেক কিছুর জন্য অতিরিক্ত বোনাস পান...",
+  "onboarding_sign_in_title": "সাইন ইন করুন",
+  "onboarding_sign_in_body": "সাইন ইন করা এবং আরামদায়ক যাত্রা শুরু করা থেকে কয়েক সেকেন্ড দূরে"
+}

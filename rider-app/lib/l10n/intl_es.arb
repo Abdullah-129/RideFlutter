@@ -1,0 +1,237 @@
+{
+  "loading": "Cargando",
+  "wallet_empty_state_message": "Sin antecedentes registrados.",
+  "enum_rider_transaction_deduct_order_fee": "Tarifa de pedido",
+  "enum_rider_transaction_deduct_withdraw": "Retirar",
+  "enum_rider_transaction_deduct_correction": "Corrección",
+  "enum_unknown": "Desconocido",
+  "enum_rider_transaction_recharge_in_app_payment": "Pago en la aplicación",
+  "enum_rider_transaction_recharge_gift": "Regalo",
+  "enum_rider_transaction_recharge_correction": "Corrección",
+  "enum_rider_transaction_recharge_bank_transfer": "Transferencia bancaria",
+  "top_up_sheet_pay_button": "Pagar",
+  "service_selection_book_now": "Reservar ahora",
+  "action_cancel": "Cancelar",
+  "copyright_notice": "Copyright © {company}, Todos los derechos reservados.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "Sobre",
+  "menu_login": "Acceso",
+  "menu_profile": "Perfil",
+  "menu_wallet": "Cartera",
+  "menu_trip_history": "Historial de viajes",
+  "menu_announcements": "Anuncios",
+  "menu_saved_locations": "Ubicaciones guardadas",
+  "action_save": "Ahorrar",
+  "create_address_name_empty_error": "Por favor ingrese el nombre de la ubicación",
+  "create_address_title_textfield_hint": "Título",
+  "action_delete": "Borrar",
+  "trip_history_empty_state_message": "No se ha registrado ningún pedido anterior.",
+  "profile_firstname": "Primer nombre",
+  "profile_lastname": "Apellido",
+  "profile_email": "Email",
+  "profile_gender": "Género",
+  "enum_gender_male": "Masculino",
+  "enum_gender_female": "Femenino",
+  "login_cell_number_textfield_hint": "Numero de celular",
+  "login_cell_number_empty_error": "Ingrese el número de teléfono en el formato correcto",
+  "action_next": "próximo",
+  "verify_phone_code_empty_message": "No se ingresa el código de verificación.",
+  "wallet_activities_heading": "Actividad",
+  "menu_logout": "Cerrar sesión",
+  "enum_gender_unknown": "Desconocido",
+  "enum_address_type_home": "Hogar",
+  "enum_address_type_work": "Trabajar",
+  "enum_address_type_partner": "Compañero",
+  "enum_address_type_other": "Otro",
+  "message_notification_permission_denined_message": "El permiso de notificación fue denegado anteriormente. Para recibir notificaciones de nuevos pedidos, puede habilitar el permiso desde la configuración de la aplicación.",
+  "message_notification_permission_title": "Permiso de notificación",
+  "action_ok": "OK",
+  "menu_website": "Sitio web",
+  "action_confirm_and_reserve_ride": "Confirmar y reservar viaje",
+  "title_reserve_ride": "Reservar viaje",
+  "error_region_unsupported": "La región no es compatible.",
+  "action_confirm": "Confirmar",
+  "title_wait_time": "Tiempo de espera",
+  "notice_tip_title": "¿Quieres añadir un consejo?",
+  "notice_tip_description": "Agregar propina es opcional. Puede agregar la cantidad que desee como propina para el conductor.",
+  "action_pay_for_ride": "Pagar por el viaje",
+  "action_confirm_and_pay": "Confirmar y pagar",
+  "action_add_photo": "Añadir foto",
+  "complaint_submit_success_message": "Se presenta denuncia. Espere un contacto de nuestro representante de soporte sobre su consulta.",
+  "error_field_cant_be_empty": "No puede estar vacío",
+  "issue_description_placeholder": "Escribe una descripción de tu problema...",
+  "issue_subject_placeholder": "Tema",
+  "issue_submit_description": "Puede informar cualquier problema que haya tenido con su viaje. Le ayudaremos con el problema dentro de una llamada.",
+  "issue_submit_title": "Reportar un problema",
+  "issue_submit_button": "Reportar problema",
+  "trip_information_title": "Información del viaje",
+  "payment_in_cash": "Dinero",
+  "payment_method_title": "Método de pago",
+  "button_ride_safety": "Seguridad en la conducción",
+  "status_title_driver_arrived": "Conozca al conductor en el punto de recogida.",
+  "status_title_trip_started": "Rumbo al destino",
+  "welcome_card_subtitle": "¿A dónde vas?",
+  "welcome_card_textbox_placeholder": "¿Dónde está tu destino?",
+  "welcome_card_greeting": "¡Hola, {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "Registrarse",
+  "login_body": "Primero, debe iniciar sesión para reservar su viaje. Se enviará un código de verificación a su número de teléfono.",
+  "terms_and_condition_text": "He leído y estoy de acuerdo con",
+  "terms_and_condition_button": "Términos y condiciones",
+  "login_verify_code_title": "Introduzca el código",
+  "login_verify_code_body": "El código ha sido enviado a su número de teléfono",
+  "action_continue": "Continuar",
+  "current_location": "Ubicación actual",
+  "your_destination": "Tu destino",
+  "add_stop": "Añadir parada",
+  "action_choose_on_map": "elige en el mapa",
+  "message_title_location": "Ubicación",
+  "message_body_location": "No pudimos obtener su ubicación actual del GPS de su dispositivo. Utilice el campo de búsqueda para seleccionar su lugar de recogida.",
+  "menu_reserved_rides": "Viajes reservados",
+  "reservation_empty_state_title": "¡No reservaciones!",
+  "reservation_empty_state_body": "Podrás ver tus futuras reservas una vez que las realices en la pantalla principal.",
+  "action_cancel_ride": "Cancelar viaje",
+  "enum_address_type_gym": "Gimnasia",
+  "enum_address_type_parent_house": "Casa de los padres",
+  "enum_address_type_cafe": "Cafetería",
+  "enum_address_type_park": "Parque",
+  "action_add_favorite_location": "Agregar ubicación favorita",
+  "favorite_locations_list_title": "Ubicaciones favoritas",
+  "favorite_locations_list_body": "Puede guardar sus ubicaciones favoritas para un acceso más fácil",
+  "favorite_location_details_title": "Nombra tu ubicación favorita",
+  "textbox_error_select_type_address": "Por favor seleccione el tipo de dirección",
+  "placeholder_type": "Escribe",
+  "action_delete_account": "Borrar cuenta",
+  "message_delete_account_title": "Eliminación de cuenta",
+  "message_delete_account_body": "¿Está seguro de que desea eliminar su cuenta? Puede iniciar sesión nuevamente dentro de los 30 días para restaurar la cuenta. Después de este período, sus datos se eliminan por completo, incluidos todos sus créditos restantes.",
+  "action_edit": "Editar",
+  "action_confirm_location": "Confirmar ubicación",
+  "action_coupon_code": "Código promocional",
+  "enter_coupon_dialog_title": "Código promocional",
+  "enter_coupon_dialog_body": "Introduce tu código de cupón para que se aplique al precio",
+  "enter_coupon_placeholder": "Introduce el código de cupón",
+  "looking_dialog_title": "Viaje solicitado",
+  "looking_dialog_body": "Estamos buscando el conductor más cercano para usted.",
+  "action_cancel_request": "Cancelar petición",
+  "rate_ride_title": "¿Cómo estuvo tu viaje?",
+  "rate_ride_body": "Ayúdanos a mejorar tu experiencia calificando a tu conductor",
+  "rate_ride_good_points": "Buenos puntos",
+  "rate_ride_negative_points": "Puntos negativos",
+  "rate_ride_comment_title": "Agregar comentario",
+  "rate_ride_comment_placeholder": "escribe tu comentario...",
+  "action_send_feedback": "Enviar comentarios",
+  "action_ride_options": "Opciones de viaje",
+  "ride_options_title": "Opciones de viaje",
+  "ride_options_wait_time_action": "Tiempo de espera",
+  "ride_safety_title": "Seguridad en la conducción",
+  "ride_safety_share_trip_information": "Compartir información de viaje",
+  "ride_safety_sos": "llamada de socorro",
+  "sos_title": "Señal de socorro",
+  "sos_body": "Las señales de socorro son para emergencias y es posible que se realice una llamada a las autoridades, como la policía, en su nombre. Utilice esta función solo en emergencias en las que pueda estar en peligro.",
+  "sos_sent_alert": "Se envía SOS",
+  "sos_ok_action": "Es una emergencia",
+  "share_trip_text_locations": "Estoy en camino a {destination} desde {pickup}.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " El nombre de mi conductor es {firstName} {lastName} y su número de móvil es +{mobileNumber}.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " El viaje comenzó el {startTime} y espero que dure alrededor de {duration} minutos",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " Espero que el viaje en sí tome alrededor de {duration} minutos una vez que suba al auto del conductor.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "¡Aún no hay anuncios!",
+  "announcements_empty_state_body": "Te avisaremos cuando lleguen nuevos anuncios.",
+  "action_set_location": "Escoger localización",
+  "trip_history_empty_state_title": "¡No hay registros!",
+  "location_not_found_alert_dialog_title": "Ubicación",
+  "location_not_found_alert_dialog_body": "No pudimos obtener su ubicación actual usando el GPS de su dispositivo. Verifique el permiso de ubicación del dispositivo para la aplicación desde la configuración del dispositivo. Alternativamente, puede usar el campo de búsqueda de arriba para seleccionar su punto de recogida.",
+  "gift_card_title": "Introduce el código de regalo",
+  "gift_card_body": "Introduce el código de tu tarjeta de regalo",
+  "gift_card_text_placeholder": "Ingrese el código de la tarjeta de regalo",
+  "action_apply": "Aplicar",
+  "order_status_should_be_arrived": "debe ser llegado",
+  "order_status_arriving_in": "Llegando en {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "Advertencia",
+  "cancelation_fee_confirmation_body": "La cancelación del servicio después de que el conductor haya aceptado el viaje está sujeta a una penalización por cancelación de {fee}. ¿Confirmas?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "Confirmar",
+  "add_credit_select_payment_method": "Seleccione el método de pago:",
+  "add_credit_custom_credit_placeholder": "Agregar crédito personalizado",
+  "add_credit_custom_credit_text_placeholder": "Disfraz",
+  "invoice_item_tip": "Consejo",
+  "invoice_item_wallet": "Cartera",
+  "invoice_item_total": "Total",
+  "add_credit_dialog_title": "Añadir crédito",
+  "add_credit_chose_amount": "Elija la cantidad",
+  "action_ride_preferences": "Preferencias de viaje",
+  "ride_preferences_title": "Preferencias de viaje",
+  "action_confirm_and_continue": "Confirmar y continuar",
+  "action_see_reserved_rides": "Ver viajes reservados",
+  "ride_reserved_dialog_title": "Su viaje está reservado.",
+  "ride_reserved_dialog_body": "Puede consultar los viajes reservados en el menú para ver la información de reserva de este viaje.",
+  "alert_coupon_unavailable": "El cupón no está disponible",
+  "minutes_format": "{minutes} minutos",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "atrás",
+  "wallet_card_title": "Billetera {appName}",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "Canjear tarjeta de regalo",
+  "order_status_canceled": "Cancelado",
+  "action_skip_for_now": "Saltar por ahora",
+  "onboarding_select_language_title": "Seleccione el idioma",
+  "onboarding_first_page_title": "¡Bienvenido a {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "Servicio de taxi diseñado para tu comodidad\n tenga viajes con sus conductores favoritos y elija sus preferencias de viaje",
+  "onboarding_second_page_title": "¡Ser recompensado!",
+  "onboarding_second_page_body": "obtén bonos extra por recomendar a un amigo, completar viajes y mucho más...",
+  "onboarding_sign_in_title": "Iniciar sesión",
+  "onboarding_sign_in_body": "A unos segundos de iniciar sesión y comenzar un viaje cómodo"
+}

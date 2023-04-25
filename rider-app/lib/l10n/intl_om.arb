@@ -1,0 +1,237 @@
+{
+  "loading": "Loading",
+  "wallet_empty_state_message": "Seenaan galmaa'e hin jiru.",
+  "enum_rider_transaction_deduct_order_fee": "Kaffaltii Ajajaa",
+  "enum_rider_transaction_deduct_withdraw": "Withdraw",
+  "enum_rider_transaction_deduct_correction": "Sirreeffama",
+  "enum_unknown": "Unkonwn",
+  "enum_rider_transaction_recharge_in_app_payment": "Kaffaltii Appii Keessaa",
+  "enum_rider_transaction_recharge_gift": "Kennaa",
+  "enum_rider_transaction_recharge_correction": "Sirreeffama",
+  "enum_rider_transaction_recharge_bank_transfer": "Baankiin Dabarsuu",
+  "top_up_sheet_pay_button": "Kaffaltii",
+  "service_selection_book_now": "Amma ajajadhu",
+  "action_cancel": "Haqi",
+  "copyright_notice": "Copyright © {company}, Mirgi Qopheessaa Seeraan Kan Eegame.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "Waa'ee",
+  "menu_login": "Login",
+  "menu_profile": "Profaayilii",
+  "menu_wallet": "Waleetii",
+  "menu_trip_history": "Seenaa Imala",
+  "menu_announcements": "Beeksisa",
+  "menu_saved_locations": "Bakkeewwan Qusataman",
+  "action_save": "Save",
+  "create_address_name_empty_error": "Maaloo maqaa iddoo galchaa",
+  "create_address_title_textfield_hint": "Title",
+  "action_delete": "Delete",
+  "trip_history_empty_state_message": "Ajajni kanaan dura hin galmoofne.",
+  "profile_firstname": "Maqaa Duraa",
+  "profile_lastname": "Maqaa Abba",
+  "profile_email": "Imeelii",
+  "profile_gender": "Saala",
+  "enum_gender_male": "Dhiira",
+  "enum_gender_female": "Dhalaa",
+  "login_cell_number_textfield_hint": "Lakkoofsa Bilbilaa",
+  "login_cell_number_empty_error": "Maaloo lakkoofsa bilbilaa bifa sirrii ta'een galchaa",
+  "action_next": "itti aansee",
+  "verify_phone_code_empty_message": "Koodiin mirkaneessaa hin galfamne",
+  "wallet_activities_heading": "Activity",
+  "menu_logout": "Ba'i",
+  "enum_gender_unknown": "Unknown",
+  "enum_address_type_home": "Home",
+  "enum_address_type_work": "Work",
+  "enum_address_type_partner": "Partner",
+  "enum_address_type_other": "Other",
+  "message_notification_permission_denined_message": "Notification permission was denied previously. In order to get new order\\'s notifications, you can enable the permission from app settings.",
+  "message_notification_permission_title": "Notification Permission",
+  "action_ok": "OK",
+  "menu_website": "Website",
+  "action_confirm_and_reserve_ride": "Mirkaneessi & Reserve ride",
+  "title_reserve_ride": "Yaabbannoo Reserve gochuu",
+  "error_region_unsupported": "Tajaajilli Naannoo kana Ammaaf Hin Argamu",
+  "action_confirm": "Mirkaneessi",
+  "title_wait_time": "Yeroo eeguu",
+  "notice_tip_title": "Tiipii itti dabaluu ni barbaadduu?",
+  "notice_tip_description": "tiipii itti dabaluun filannoodha. Tiitii Hamma barbaadde konkolaachisaaf itti dabaluun ni danda'ama.",
+  "action_pay_for_ride": "Imalaaf kaffali",
+  "action_confirm_and_pay": "Mirkaneessi & Kafali",
+  "action_add_photo": "Suuraa Galchi",
+  "complaint_submit_success_message": "Koomiin dhiyaateera. Maaloo waa'ee gaaffii keessanii bakka bu'aa deeggarsa keenyaa irraa quunnamtii eegaa.",
+  "error_field_cant_be_empty": "Duwwaa ta'uu hin danda'u",
+  "issue_description_placeholder": "Ibsa dhimma keessanii barreessaa...",
+  "issue_subject_placeholder": "Mata duree",
+  "issue_submit_description": "Dhimma konkolaataa keessan irratti qabdan kamiyyuu gabaasuu dandeessu. Dhimma kana irratti bilbila keessaniin isiniif bilbila.",
+  "issue_submit_title": "Dhimma keessan nuuf gabaasaa",
+  "issue_submit_button": "Dhimma gabaasaa",
+  "trip_information_title": "Odeeffannoo Imala",
+  "payment_in_cash": "Maallaqa callaa",
+  "payment_method_title": "Akkaataa Kaffaltii",
+  "button_ride_safety": "Safety imalaa",
+  "status_title_driver_arrived": "Bakka ka'umsaatti konkolaachisaa waliin wal arguu",
+  "status_title_trip_started": "Gara bakka itti deemnutti qajeeluu",
+  "welcome_card_subtitle": "Eessa deemaa jirtu?",
+  "welcome_card_textbox_placeholder": "Bakki itti deemtan eessa jira?",
+  "welcome_card_greeting": "Hello {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "Sign In",
+  "login_body": "Jalqaba, Yabachuuf sign in gochuu qabdu. Koodiin mirkaneessaa gara lakkoofsa bilbilaa keessaniitti ni ergama.",
+  "terms_and_condition_text": "Ani dubbisee walii galeera ",
+  "terms_and_condition_button": "Haala fi Dambiiwwan",
+  "login_verify_code_title": "Koodii galchi",
+  "login_verify_code_body": "Koodiin gara lakkoofsa bilbilaa keessaniitti ergameera",
+  "action_continue": "Itti fufuu",
+  "current_location": "Bakka Ammaa Jirtan",
+  "your_destination": "Bakki itti deemtan",
+  "add_stop": "Dhaabbii itti dabali",
+  "action_choose_on_map": "kaartaa irratti filadhu",
+  "message_title_location": "Bakka",
+  "message_body_location": "Bakka amma jirtan GPS Bilbila keessan irraa argachuu hin dandeenye. Maaloo dirree barbaacha fayyadamii bakka Yaabanno filadhaa.",
+  "menu_reserved_rides": "imala Reserved ta'e",
+  "reservation_empty_state_title": "Reservation Hin Qabu!",
+  "reservation_empty_state_body": "You will be able to see your future bookings once you make them on the main screen.",
+  "action_cancel_ride": "Imala haqi",
+  "enum_address_type_gym": "Gym",
+  "enum_address_type_parent_house": "Mana Warraa",
+  "enum_address_type_cafe": "Kaaffee",
+  "enum_address_type_park": "Paarkii",
+  "action_add_favorite_location": "Bakka jaallattan itti dabala",
+  "favorite_locations_list_title": "Bakkeewwan jaallattan",
+  "favorite_locations_list_body": "Bakkeewwan jaallattan salphaatti argachuuf saaguu dandeessu",
+  "favorite_location_details_title": "Bakka jaallattan maqaa dhaha",
+  "textbox_error_select_type_address": "Maaloo gosa teessoo filadhu",
+  "placeholder_type": "Akaakuu",
+  "action_delete_account": "Akkaawuntii Haquu",
+  "message_delete_account_title": "Akkaawuntii haquuf",
+  "message_delete_account_body": "Akkaawuntii keessan haquu akka barbaaddu mirkaneeffatteettaa? Akkaawuntii sana deebisuuf guyyoota 30 keessatti deebitee seenuu dandeessa. Yeroo kana booda, daataa keessan guutummaatti ni haqama, Creditii keessan hafe hunda dabalatee.",
+  "action_edit": "Gulaaluu",
+  "action_confirm_location": "Bakka amma jirtu mirkaneessi",
+  "action_coupon_code": "Koodii Kuuppoonii",
+  "enter_coupon_dialog_title": "Koodii Kuuppoonii",
+  "enter_coupon_dialog_body": "Koodii kuuppani keessan gatii irratti hojiirra oolu galchaa",
+  "enter_coupon_placeholder": "Koodii kuuppanichaa galchaa",
+  "looking_dialog_title": "imala Gaafatame",
+  "looking_dialog_body": "Konkolaachisaa isinitti dhihoo jiru barbaadaa jirra.",
+  "action_cancel_request": "Gaaffii Haqi",
+  "rate_ride_title": "Yaabannoo keessan akkam ture?",
+  "rate_ride_body": "Konkolaachisaa keessaniif sadarkaa kennuudhaan muuxannoo fooyyessuuf nu gargaaraa",
+  "rate_ride_good_points": "Qabxiilee Mimmiidhagoo",
+  "rate_ride_negative_points": "Qabxiilee Negaatiivii",
+  "rate_ride_comment_title": "Yaada itti dabalaa",
+  "rate_ride_comment_placeholder": "yaada keessan barreessaa ...",
+  "action_send_feedback": "Yaada Ergaa",
+  "action_ride_options": "Filannoo Yaabbannoo",
+  "ride_options_title": "Filannoo Yaabbannoo",
+  "ride_options_wait_time_action": "Yeroo eegaa",
+  "ride_safety_title": "Safety imalaa",
+  "ride_safety_share_trip_information": "Odeeffannoo imala waliif qoodaa",
+  "ride_safety_sos": "SOS",
+  "sos_title": "Mallattoo Rakkoo",
+  "sos_body": "Mallattoon rakkoo yeroo muddamaa kan ta’ee fi waamichi aangawoota akka poolisii bakka keessan bu’uun godhamuu danda’a. Please use this feature only in emergencies that you might be in danger.",
+  "sos_sent_alert": "SOS ergameera",
+  "sos_ok_action": "Yeroo muddamaadha",
+  "share_trip_text_locations": "Ani karaa irra jira {destination} irraa {pickup}.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " Maqaan konkolaachisaa koo {firstName} {lastName} lakkoofsi moobaayilaa isaas +{mobileNumber}.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " Imalli keessan eegalameera {startTime} and i expect the trip to take around {duration} minutes",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " I expect the trip itself take around {duration} minutes once i get on the driver's car.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "Ammatti Beeksisa hin jiru!",
+  "announcements_empty_state_body": "Yeroo beeksisni haaraan dhufu isin beeksifna.",
+  "action_set_location": "Bakka saagi",
+  "trip_history_empty_state_title": "Galmee Hin Qabu!",
+  "location_not_found_alert_dialog_title": "Bakka",
+  "location_not_found_alert_dialog_body": "GPS moobaayilaa keessanii fayyadamuun bakka amma jirtan argachuu hin dandeenye. Maaloo hayyama bakka meeshaa appichaaf jiru qindaa'ina meeshaa irraa ilaali. Akka filannootti, dirree barbaacha armaan olii fayyadamuun bakka fudhachuu kee filachuu dandeessa.",
+  "gift_card_title": "Koodii Kennaa galchi",
+  "gift_card_body": "Koodii kaardii kennaa keessanii galchaa",
+  "gift_card_text_placeholder": "Koodii kaardii kennaa galchi",
+  "action_apply": "Iyyadhu",
+  "order_status_should_be_arrived": "bira gahuu qaba",
+  "order_status_arriving_in": "Arriving in {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "Akeekkachiisa",
+  "cancelation_fee_confirmation_body": "Konkolaachisaan imala erga fudhatee booda tajaajila haquun adabbii haquu kan {fee}. Mirkaneessituu?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "Mirkaneessuu",
+  "add_credit_select_payment_method": "Mala Kaffaltii Filadhu:",
+  "add_credit_custom_credit_placeholder": "Creditii Aadaa Dabaluu",
+  "add_credit_custom_credit_text_placeholder": "Custom",
+  "invoice_item_tip": "Tiipii",
+  "invoice_item_wallet": "Walleetii",
+  "invoice_item_total": "Total",
+  "add_credit_dialog_title": "Creditii itti dabalaa",
+  "add_credit_chose_amount": "Hanga filatte",
+  "action_ride_preferences": "Filannoo imaltootaa",
+  "ride_preferences_title": "Filannoo imaltootaa",
+  "action_confirm_and_continue": "Mirkaneessaa fi Itti Fufaa",
+  "action_see_reserved_rides": "See reserved rides",
+  "ride_reserved_dialog_title": "Your ride is reserved.",
+  "ride_reserved_dialog_body": "You can check out reserved rides in the menu to see reserve information of this ride.",
+  "alert_coupon_unavailable": "Kuuppaniin hin argamu",
+  "minutes_format": "{minutes} minutes",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "Back",
+  "wallet_card_title": "{appName} Wallet",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "Kaardii Kennaa furuu",
+  "order_status_canceled": "Haqameera",
+  "action_skip_for_now": "Ammaaf darbi",
+  "onboarding_select_language_title": "Afaan filadhu",
+  "onboarding_first_page_title": "Welcome to {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "Tajaajilli BlueRide akka isiniif mijatutti kan qophaa'e \n Konkolaachiftoota jaallattan waliin Imala qabaachuu fi filannoo yaabbannoo keessan filadhaa",
+  "onboarding_second_page_title": "Badhaasa argadhaa!",
+  "onboarding_second_page_body": "hiriyyaa kee erguu keetiin bonasii dabalataa argadhu, imala xumuruu fi kanneen biroo hedduu...",
+  "onboarding_sign_in_title": "Sign in",
+  "onboarding_sign_in_body": "Sekondii muraasa booda galmaa'uu fi yaabbannoo mijataa jalqabuuf"
+}

@@ -1,0 +1,237 @@
+{
+  "loading": "로딩 중",
+  "wallet_empty_state_message": "기록된 기록이 없습니다.",
+  "enum_rider_transaction_deduct_order_fee": "주문 수수료",
+  "enum_rider_transaction_deduct_withdraw": "철회하다",
+  "enum_rider_transaction_deduct_correction": "보정",
+  "enum_unknown": "불명",
+  "enum_rider_transaction_recharge_in_app_payment": "인앱 결제",
+  "enum_rider_transaction_recharge_gift": "선물",
+  "enum_rider_transaction_recharge_correction": "보정",
+  "enum_rider_transaction_recharge_bank_transfer": "은행 송금",
+  "top_up_sheet_pay_button": "지불",
+  "service_selection_book_now": "지금 예약",
+  "action_cancel": "취소",
+  "copyright_notice": "Copyright © {company}, All rights reserved.",
+  "@copyright_notice": {
+    "placeholders": {
+      "company": {}
+    }
+  },
+  "menu_about": "에 대한",
+  "menu_login": "로그인",
+  "menu_profile": "프로필",
+  "menu_wallet": "지갑",
+  "menu_trip_history": "여행 이력",
+  "menu_announcements": "공지사항",
+  "menu_saved_locations": "저장된 위치",
+  "action_save": "구하다",
+  "create_address_name_empty_error": "위치 이름을 입력하세요.",
+  "create_address_title_textfield_hint": "제목",
+  "action_delete": "삭제",
+  "trip_history_empty_state_message": "기록된 과거 주문이 없습니다.",
+  "profile_firstname": "이름",
+  "profile_lastname": "성",
+  "profile_email": "이메일",
+  "profile_gender": "성별",
+  "enum_gender_male": "남성",
+  "enum_gender_female": "여성",
+  "login_cell_number_textfield_hint": "셀 번호",
+  "login_cell_number_empty_error": "전화번호를 올바른 형식으로 입력하세요.",
+  "action_next": "다음",
+  "verify_phone_code_empty_message": "인증 코드가 입력되지 않았습니다.",
+  "wallet_activities_heading": "활동",
+  "menu_logout": "로그 아웃",
+  "enum_gender_unknown": "알려지지 않은",
+  "enum_address_type_home": "집",
+  "enum_address_type_work": "일하다",
+  "enum_address_type_partner": "파트너",
+  "enum_address_type_other": "다른",
+  "message_notification_permission_denined_message": "이전에 알림 권한이 거부되었습니다. 새로운 주문 알림을 받기 위해 앱 설정에서 권한을 활성화할 수 있습니다.",
+  "message_notification_permission_title": "알림 권한",
+  "action_ok": "확인",
+  "menu_website": "웹사이트",
+  "action_confirm_and_reserve_ride": "승차 확인 및 예약",
+  "title_reserve_ride": "예약 라이드",
+  "error_region_unsupported": "지역이 지원되지 않습니다.",
+  "action_confirm": "확인하다",
+  "title_wait_time": "기다리는 시간",
+  "notice_tip_title": "팁을 추가하시겠습니까?",
+  "notice_tip_description": "팁 추가는 선택 사항입니다. 운전자를 위한 팁으로 원하는 만큼 추가할 수 있습니다.",
+  "action_pay_for_ride": "요금 지불",
+  "action_confirm_and_pay": "확인 및 지불",
+  "action_add_photo": "사진 추가",
+  "complaint_submit_success_message": "불만 사항이 제출되었습니다. 귀하의 문의에 대한 지원 담당자의 연락을 기다리십시오.",
+  "error_field_cant_be_empty": "비워둘 수 없습니다.",
+  "issue_description_placeholder": "문제에 대한 설명을 작성하세요...",
+  "issue_subject_placeholder": "주제",
+  "issue_submit_description": "라이드와 관련된 모든 문제를 신고할 수 있습니다. 통화 내에서 문제를 도와드리겠습니다.",
+  "issue_submit_title": "문제 신고",
+  "issue_submit_button": "문제 신고",
+  "trip_information_title": "여행 정보",
+  "payment_in_cash": "현금",
+  "payment_method_title": "지불 방법",
+  "button_ride_safety": "승차 안전",
+  "status_title_driver_arrived": "픽업 지점에서 운전기사를 만나세요.",
+  "status_title_trip_started": "목적지로 향하는 중",
+  "welcome_card_subtitle": "어디 가세요?",
+  "welcome_card_textbox_placeholder": "목적지는 어디입니까?",
+  "welcome_card_greeting": "안녕하세요 {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "로그인",
+  "login_body": "먼저 라이드를 예약하려면 로그인해야 합니다. 인증 코드가 귀하의 전화번호로 전송됩니다.",
+  "terms_and_condition_text": "나는 읽었고 동의합니다",
+  "terms_and_condition_button": "이용약관",
+  "login_verify_code_title": "코드를 입력",
+  "login_verify_code_body": "코드가 귀하의 전화번호로 전송되었습니다",
+  "action_continue": "계속하다",
+  "current_location": "현재 위치",
+  "your_destination": "목적지",
+  "add_stop": "경유지 추가",
+  "action_choose_on_map": "지도에서 선택",
+  "message_title_location": "위치",
+  "message_body_location": "기기의 GPS에서 현재 위치를 가져올 수 없습니다. 검색 필드를 사용하여 픽업 위치를 선택하십시오.",
+  "menu_reserved_rides": "예약된 놀이기구",
+  "reservation_empty_state_title": "예약 불가!",
+  "reservation_empty_state_body": "메인 화면에서 예약을 완료하면 향후 예약을 볼 수 있습니다.",
+  "action_cancel_ride": "승차 취소",
+  "enum_address_type_gym": "체육관",
+  "enum_address_type_parent_house": "부모의 집",
+  "enum_address_type_cafe": "카페",
+  "enum_address_type_park": "공원",
+  "action_add_favorite_location": "즐겨찾는 위치 추가",
+  "favorite_locations_list_title": "즐겨찾는 위치",
+  "favorite_locations_list_body": "더 쉽게 액세스할 수 있도록 즐겨찾는 위치를 저장할 수 있습니다.",
+  "favorite_location_details_title": "좋아하는 위치 이름 지정",
+  "textbox_error_select_type_address": "주소 유형을 선택하세요.",
+  "placeholder_type": "유형",
+  "action_delete_account": "계정 삭제",
+  "message_delete_account_title": "계정 삭제",
+  "message_delete_account_body": "계정을 삭제하시겠습니까? 30일 이내에 다시 로그인하여 계정을 복원할 수 있습니다. 이 기간이 지나면 남은 크레딧을 포함하여 데이터가 완전히 제거됩니다.",
+  "action_edit": "편집하다",
+  "action_confirm_location": "위치 확인",
+  "action_coupon_code": "쿠폰 코드",
+  "enter_coupon_dialog_title": "쿠폰 코드",
+  "enter_coupon_dialog_body": "가격에 적용할 쿠폰 코드를 입력하세요.",
+  "enter_coupon_placeholder": "쿠폰 코드 입력",
+  "looking_dialog_title": "라이드 요청",
+  "looking_dialog_body": "가장 가까운 운전기사를 찾고 있습니다.",
+  "action_cancel_request": "요청 취소",
+  "rate_ride_title": "승차감은 어땠나요?",
+  "rate_ride_body": "드라이버를 평가하여 경험을 개선할 수 있도록 도와주세요.",
+  "rate_ride_good_points": "나이스 포인트",
+  "rate_ride_negative_points": "마이너스 포인트",
+  "rate_ride_comment_title": "댓글 추가",
+  "rate_ride_comment_placeholder": "귀하의 의견을 작성 ...",
+  "action_send_feedback": "피드백 보내기",
+  "action_ride_options": "라이드 옵션",
+  "ride_options_title": "라이드 옵션",
+  "ride_options_wait_time_action": "기다리는 시간",
+  "ride_safety_title": "승차 안전",
+  "ride_safety_share_trip_information": "여행 정보 공유",
+  "ride_safety_sos": "위급 신호",
+  "sos_title": "조난 신호",
+  "sos_body": "조난 신호는 긴급 상황을 위한 것이며 경찰과 같은 당국에 전화를 걸 수 있습니다. 위험에 처할 수 있는 긴급 상황에서만 이 기능을 사용하십시오.",
+  "sos_sent_alert": "SOS를 보낸다",
+  "sos_ok_action": "비상이다",
+  "share_trip_text_locations": "{pickup} 에서 {destination} 으로 가는 중입니다.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " 제 드라이버 이름은 {firstName} {lastName} 이고 그의 휴대폰 번호는 +{mobileNumber} 입니다.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " 여행이 {startTime} 에 시작되었으며 약 {duration} 분 정도 소요될 것으로 예상됩니다.",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " 운전기사의 차를 타고 이동하는 데 {duration} 분 정도 소요될 것으로 예상합니다.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "아직 공지가 없습니다!",
+  "announcements_empty_state_body": "새로운 공지사항이 나오면 알려드리겠습니다.",
+  "action_set_location": "위치 설정",
+  "trip_history_empty_state_title": "기록이 없습니다!",
+  "location_not_found_alert_dialog_title": "위치",
+  "location_not_found_alert_dialog_body": "장치의 GPS를 사용하여 현재 위치를 가져올 수 없습니다. 기기 설정에서 앱에 대한 기기 위치 권한을 확인하세요. 또는 위의 검색 필드를 사용하여 픽업 지점을 선택할 수 있습니다.",
+  "gift_card_title": "기프트 코드 입력",
+  "gift_card_body": "기프트 카드 코드를 입력하세요.",
+  "gift_card_text_placeholder": "기프트 카드 코드 입력",
+  "action_apply": "적용하다",
+  "order_status_should_be_arrived": "도착해야",
+  "order_status_arriving_in": "{minutes} 후에 도착",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "경고",
+  "cancelation_fee_confirmation_body": "운전기사가 여행을 수락한 후 서비스를 취소하는 경우 {fee} 의 취소 위약금이 부과됩니다. 확인합니까?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "확인하다",
+  "add_credit_select_payment_method": "지불 방법 선택:",
+  "add_credit_custom_credit_placeholder": "맞춤 크레딧 추가",
+  "add_credit_custom_credit_text_placeholder": "관습",
+  "invoice_item_tip": "팁",
+  "invoice_item_wallet": "지갑",
+  "invoice_item_total": "총",
+  "add_credit_dialog_title": "크레딧 추가",
+  "add_credit_chose_amount": "금액 선택",
+  "action_ride_preferences": "라이드 기본 설정",
+  "ride_preferences_title": "라이드 기본 설정",
+  "action_confirm_and_continue": "확인 및 계속",
+  "action_see_reserved_rides": "예약된 놀이기구 보기",
+  "ride_reserved_dialog_title": "당신의 라이드는 예약되어 있습니다.",
+  "ride_reserved_dialog_body": "메뉴에서 예약된 놀이기구를 확인하여 해당 놀이기구의 예약 정보를 볼 수 있습니다.",
+  "alert_coupon_unavailable": "쿠폰을 사용할 수 없습니다.",
+  "minutes_format": "{minutes} 분",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "뒤",
+  "wallet_card_title": "{appName} 지갑",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "기프트 카드 사용",
+  "order_status_canceled": "취소 된",
+  "action_skip_for_now": "일단은 스킵",
+  "onboarding_select_language_title": "언어 선택",
+  "onboarding_first_page_title": "{appName} 에 오신 것을 환영합니다!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "당신의 편안함을 위해 설계된 택시 서비스\n 좋아하는 드라이버와 여행을 하고 선호하는 라이드를 선택하세요.",
+  "onboarding_second_page_title": "보상을 받다!",
+  "onboarding_second_page_body": "친구 추천, 여행 완료 등을 위한 추가 보너스를 받으세요...",
+  "onboarding_sign_in_title": "로그인",
+  "onboarding_sign_in_body": "로그인하고 편안한 라이딩을 시작하기 몇 초 후"
+}

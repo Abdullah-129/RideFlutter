@@ -1,0 +1,13 @@
+query GetAnnouncements {
+  announcements(paging: { first: 50 }) {
+    edges {
+      node {
+        id
+        title
+        startAt
+        description
+        url
+      }
+    }
+  }
+}

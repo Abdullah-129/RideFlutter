@@ -1,0 +1,44 @@
+query GetAddresses {
+  riderAddresses {
+    id
+    title
+    type
+    details
+    location {
+      lat
+      lng
+    }
+  }
+}
+
+mutation CreateAddress(
+  $input: CreateRiderAddressInput!
+) {
+  createOneRiderAddress(
+    input: {
+      riderAddress: $input
+    }
+  ) {
+    id
+  }
+}
+
+mutation UpdateAddress(
+  $id: ID!,
+  $update: CreateRiderAddressInput!
+) {
+  updateOneRiderAddress(
+    input: {
+      id: $id,
+      update: $update
+    }
+  ) {
+    id
+  }
+}
+
+mutation DeleteAddress($id: ID!) {
+  deleteOneRiderAddress(input: { id: $id }) {
+    id
+  }
+}

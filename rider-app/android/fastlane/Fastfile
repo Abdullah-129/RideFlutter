@@ -1,0 +1,23 @@
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Submit a new Beta Build to Play Store Internal Testing Track"
+  lane :beta do
+    sh("flutter", "build", "appbundle")
+    
+    upload_to_play_store(
+      track: "internal",
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      skip_upload_changelogs: true,
+      changes_not_sent_for_review: true,
+      aab: "../build/app/outputs/bundle/release/app-release.aab"
+    )
+  end
+end

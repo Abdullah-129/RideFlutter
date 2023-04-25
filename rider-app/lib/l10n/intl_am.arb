@@ -1,0 +1,237 @@
+{
+  "loading": "በመጫን ላይ..",
+  "wallet_empty_state_message": "ምንም የተመዘገበ ታሪክ የለም።",
+  "enum_rider_transaction_deduct_order_fee": "የክፍያ ትዕዛዝ",
+  "enum_rider_transaction_deduct_withdraw": "ገንዘብ ማውጣት",
+  "enum_rider_transaction_deduct_correction": "እርማት",
+  "enum_unknown": "Unkonwn",
+  "enum_rider_transaction_recharge_in_app_payment": "የውስጠ-መተግበሪያ ክፍያ",
+  "enum_rider_transaction_recharge_gift": "ስጦታ",
+  "enum_rider_transaction_recharge_correction": "እርማት",
+  "enum_rider_transaction_recharge_bank_transfer": "በባንክ ያስተላልፉ",
+  "top_up_sheet_pay_button": "ይክፈሉ",
+  "service_selection_book_now": "አሁን ይዘዙ",
+  "action_cancel": "ሰርዝ",
+  "copyright_notice": "የቅጂ መብት © {company}, 2022 መብቱ በህግ የተጠበቀ ነው።",
+  "@copyright_notice": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "menu_about": "ስለእኛ",
+  "menu_login": "ይግቡ",
+  "menu_profile": "ፕሮፋይል",
+  "menu_wallet": "ዋሌት",
+  "menu_trip_history": "የጉዞ ታሪክ",
+  "menu_announcements": "ማስታወቂያዎች",
+  "menu_saved_locations": "Saved የተደረጉ ቦታዎች",
+  "action_save": "Save",
+  "create_address_name_empty_error": "እባክዎን የአካባቢ ስም ያስገቡ",
+  "create_address_title_textfield_hint": "ርዕስ",
+  "action_delete": "Delete",
+  "trip_history_empty_state_message": "ምንም ያለፈ ትዕዛዝ አልተመዘገበም።",
+  "profile_firstname": "መጠሪያ ስም",
+  "profile_lastname": "ያኣባት ስም",
+  "profile_email": "ኢ-ሜይል",
+  "profile_gender": "ጾታ",
+  "enum_gender_male": "ወንድ",
+  "enum_gender_female": "ሴት",
+  "login_cell_number_textfield_hint": "ስልክ ቁጥር",
+  "login_cell_number_empty_error": "እባክዎን ስልክ ቁጥሩን በትክክለኛው ቅርጸት ያስገቡ",
+  "action_next": "Next",
+  "verify_phone_code_empty_message": "የማረጋገጫ ኮድ አልገባም።",
+  "wallet_activities_heading": "Activity",
+  "menu_logout": "ይውጡ",
+  "enum_gender_unknown": "የማይታወቅ",
+  "enum_address_type_home": "Home",
+  "enum_address_type_work": "Work",
+  "enum_address_type_partner": "Partner",
+  "enum_address_type_other": "Other",
+  "message_notification_permission_denined_message": "የማሳወቂያ ፈቃድ ቀደም ብሎ ተከልክሏል። አዲስ ትዕዛዝ ለማግኘት\\ ማሳወቂያዎች, ፈቃዱን ከመተግበሪያ ቅንጅቶች ማንቃት ይችላሉ።",
+  "message_notification_permission_title": "የማሳወቂያ ፍቃድ",
+  "action_ok": "እሺ",
+  "menu_website": "Website",
+  "action_confirm_and_reserve_ride": "ያረጋግጡ እና ጉዞ ያስይዙ",
+  "title_reserve_ride": "ጉዞ ያስይዙ",
+  "error_region_unsupported": "በዚህ አካባቢ ለጊዜው አገልግሎት አልጀመርንም",
+  "action_confirm": "ያረጋግጡ",
+  "title_wait_time": "Wait time",
+  "notice_tip_title": "ተጨማሪ Tip መስጠት ይፈልጋሉ?",
+  "notice_tip_description": "Tip መስጠት አማራጭ ነው። ለሹፌሩ የፈለጉትን ያህል መጠን Tip ማከል ዎይም መስጥት ይችላሉ።",
+  "action_pay_for_ride": "ለአገልግልቱ ይክፈሉ።",
+  "action_confirm_and_pay": "ያረጋግጡ እና ይክፈሉ",
+  "action_add_photo": "ፎቶ ያስገቡ",
+  "complaint_submit_success_message": "ቅሬታዎን ተቀብልናል። እባክዎን ስለጥያቄዎን የድጋፍ ወኪሎቻቸን እስኪገናኙ ይጠብቁ።",
+  "error_field_cant_be_empty": "ባዶ መሆን አይቻልም",
+  "issue_description_placeholder": "ስለጉዳይዎ ማብራሪያ ይጻፉ…",
+  "issue_subject_placeholder": "Subject",
+  "issue_submit_description": "በጉዞዎ ላይ ያለዎትን ማንኛውንም ችግር ሪፖርት ማድረግ ይችላሉ። ስለ በጉዳዩ በእጅ ስልኮ በመደውል እንረዳዎታለን.",
+  "issue_submit_title": "ሪፖርት ስለሚያደርጉት ጉዳይ",
+  "issue_submit_button": "ችግሮን ሪፖርት ያድርጉ",
+  "trip_information_title": "የጉዞ መረጃ",
+  "payment_in_cash": "ካሽ",
+  "payment_method_title": "የመክፈያ ዘዴ",
+  "button_ride_safety": "የጉዞ ደህንነት",
+  "status_title_driver_arrived": "የመውሰጃ ቦታ ላይ ሾፌሩን ያግኙ",
+  "status_title_trip_started": "ወደ መድረሻው በመሄድ ላይ ነው",
+  "welcome_card_subtitle": "ወዴት ነው የምትሄደት?",
+  "welcome_card_textbox_placeholder": "መድረሻዎ ወዴት ነው?",
+  "welcome_card_greeting": "Hello {firstName}!",
+  "@welcome_card_greeting": {
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "login_title": "ይግቡ",
+  "login_body": "በመጀመሪያ፣ የጉዞ ቦታዎን ለማስያዝ በመለያ መግባት አለብዎት። የማረጋገጫ ኮድ ወደ ስልክ ቁጥርህ ይላካል።",
+  "terms_and_condition_text": "አንብቤ ተስማምቻለሁ ",
+  "terms_and_condition_button": "ውሎች እና ሁኔታዎች",
+  "login_verify_code_title": "ኮድ ያስገቡ",
+  "login_verify_code_body": "ኮድ ወደ ስልክ ቁጥርዎ ተልኳል።",
+  "action_continue": "ይቀጥሉ",
+  "current_location": "አሁን ያሉበት ቦታ",
+  "your_destination": "የእርሶ መድረሻ",
+  "add_stop": "ማቆሚያ ይጨምሩ",
+  "action_choose_on_map": "በካርታው ላይ ይምረጡ",
+  "message_title_location": "አካባቢ/ቦታ",
+  "message_body_location": "አሁን ያሉበት ቦታ ከስልክዎ ጂፒኤስ ማግኘት አልቻልንም። እባክዎን የመፈለጊያ ቦታዎን በመጠቀም የመንሻ ቦታዎን ይምረጡ።",
+  "menu_reserved_rides": "የተያዘ ጉዞ",
+  "reservation_empty_state_title": "ጉዞ አልተያዘም!",
+  "reservation_empty_state_body": "የወደፊት ቦታ ማስያዣዎችዎን በዋናው ማያ ገጽ ላይ ካደረጉት በኋላ ማየት ይችላሉ።",
+  "action_cancel_ride": "ጉዞ ይሰርዙ",
+  "enum_address_type_gym": "ጂም",
+  "enum_address_type_parent_house": "የእርስዎ ቤት",
+  "enum_address_type_cafe": "ካፌ",
+  "enum_address_type_park": "ፓርክ",
+  "action_add_favorite_location": "ተወዳጅ ቦታን ጨምር",
+  "favorite_locations_list_title": "ተወዳጅ ቦታዎች",
+  "favorite_locations_list_body": "በቀላሉ ለመድረስ የሚወዷቸውን ቦታዎች ማስቀመጥ ይችላሉ።",
+  "favorite_location_details_title": "የሚወዱትን ቦታ ይሰይሙ",
+  "textbox_error_select_type_address": "እባክዎ የአድራሻውን አይነት ይምረጡ",
+  "placeholder_type": "ዓይነት",
+  "action_delete_account": "መለያ ሰርዝ",
+  "message_delete_account_title": "መለያ ስረዛ",
+  "message_delete_account_body": "እርግጠኛ ነህ መለያህን መሰረዝ ትፈልጋለህ? መለያውን ወደነበረበት ለመመለስ በ30 ቀናት ውስጥ እንደገና መግባት ይችላሉ። ከዚህ ጊዜ በኋላ፣ ሁሉንም ቀሪ ክሬዲቶችዎን ጨምሮ ውሂብዎ ሙሉ በሙሉ ይወገዳል።",
+  "action_edit": "አርትዕ",
+  "action_confirm_location": "ያሉበትን ቦታ ያረጋግጡ",
+  "action_coupon_code": "የኩፖን ኮድ",
+  "enter_coupon_dialog_title": "የኩፖን ኮድ",
+  "enter_coupon_dialog_body": "በዋጋው ላይ እንዲተገበር የኩፖን ኮድዎን ያስገቡ",
+  "enter_coupon_placeholder": "የኩፖን ኮድ ያስገቡ",
+  "looking_dialog_title": "ጉዞ አዞዋል",
+  "looking_dialog_body": "ለእርስዎ ቅርብ የሆነውን ሹፌር እየፈለግን ነው።",
+  "action_cancel_request": "ትዕዛዙን ይሰሪዙ",
+  "rate_ride_title": "ጉዞህ እንዴት ነበር?",
+  "rate_ride_body": "ለአሽከርካሪዎ ደረጃ በመስጠት ልምድዎን እንድናሻሽል ያግዙን።",
+  "rate_ride_good_points": "ቆንጆ ነጥብ",
+  "rate_ride_negative_points": "አሉታዊ ነጥብ",
+  "rate_ride_comment_title": "አስተያየት ያክሉ",
+  "rate_ride_comment_placeholder": "አስተያየትዎን ይፃፉ…",
+  "action_send_feedback": "ግብረመልስ ይላኩ",
+  "action_ride_options": "የጉዞ አማራጮች",
+  "ride_options_title": "የጉዞ አማራጮች",
+  "ride_options_wait_time_action": "የቆይታ ጊዜ",
+  "ride_safety_title": "የጉዞ ደህንነት",
+  "ride_safety_share_trip_information": "የጉዞ መረጃን ያጋሩ",
+  "ride_safety_sos": "SOS",
+  "sos_title": "የአደጋ ምልክት",
+  "sos_body": "የአደጋ ምልክቱ ለአደጋ ጊዜ እርስዎን ለመርዳት እንደ ፖሊስ ያሉ ህግ አስከባሪዎች ያሉበት ድርስ ይመጣሉ። እባኮትን ይህንን የአደጋ ጥሪ እርስዎ አደጋ ላይ ሊወድቁ በሚችሉ ሁኔታዎች ውስጥ ብቻ ይጠቀሙ።",
+  "sos_sent_alert": "SOS/የአደጋ ጊዜ ጥሪ ተልኳል።",
+  "sos_ok_action": "ድንገተኛ አደጋ ነው።",
+  "share_trip_text_locations": "I am on my way to {destination} from {pickup}.",
+  "@share_trip_text_locations": {
+    "placeholders": {
+      "destination": {},
+      "pickup": {}
+    }
+  },
+  "share_trip_text_driver": " የሹፌሩ ስም {firstName} {lastName} እና የሞባይል ቁጥሩ  +{mobileNumber}.",
+  "@share_trip_text_driver": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {},
+      "mobileNumber": {}
+    }
+  },
+  "share_trip_started_time": " Trip has started on {startTime} and i expect the trip to take around {duration} minutes",
+  "@share_trip_started_time": {
+    "placeholders": {
+      "startTime": {},
+      "duration": {}
+    }
+  },
+  "share_trip_not_arrived_time": " I expect the trip itself take around {duration} minutes once i get on the driver's car.",
+  "@share_trip_not_arrived_time": {
+    "placeholders": {
+      "duration": {}
+    }
+  },
+  "announcements_empty_state_title": "እስካሁን ምንም ማስታወቂያዎች የሉም!",
+  "announcements_empty_state_body": "አዲስ ማስታወቂያዎች ሲመጡ እናሳውቅዎታለን።",
+  "action_set_location": "ቦታውን ያዘጋጁ",
+  "trip_history_empty_state_title": "ምንም የተምዘገበ የለም!",
+  "location_not_found_alert_dialog_title": "ቦታ",
+  "location_not_found_alert_dialog_body": "የእርስዎን የስልክ ጂፒኤስ በመጠቀም አሁን ያለዎትን ቦታ ማግኘት አልቻልንም። እባኮትን ከስልኮን መተግበሪያው መቼት በመጠቀም የስልኮን የአካባቢ ፍቃድ ያረጋግጡ። Alternatively, የመንሻ ቦታዎን ለመምረጥ ከላይ ያለውን የፍለጋ መስክ መጠቀም ይችላሉ.",
+  "gift_card_title": "የስጦታ ኮድ ያስገቡ",
+  "gift_card_body": "የስጦታ ካርድ ኮድዎን ያስገቡ",
+  "gift_card_text_placeholder": "የስጦታ ካርድ ኮድ ያስገቡ",
+  "action_apply": "ያመልክቱ",
+  "order_status_should_be_arrived": "መድረስ አለበት",
+  "order_status_arriving_in": "Arriving in {minutes}",
+  "@order_status_arriving_in": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "message_title_warning": "ማስጠንቀቂያ",
+  "cancelation_fee_confirmation_body": "አሽከርካሪው ጉዞውን ከተቀበለ በኋላ የአገልግሎቱን መሰረዝ የመሰረዝ ቅጣት ይጣልበታል {fee}. አረጋግጠዋል?",
+  "@cancelation_fee_confirmation_body": {
+    "placeholders": {
+      "fee": {}
+    }
+  },
+  "confirm": "ያረጋግጡ",
+  "add_credit_select_payment_method": "የመክፈያ ዘዴን ይምረጡ፡-",
+  "add_credit_custom_credit_placeholder": "ብጁ ክሬዲት ይጨምሩ",
+  "add_credit_custom_credit_text_placeholder": "ብጁ",
+  "invoice_item_tip": "ትፕ",
+  "invoice_item_wallet": "ዋሌት",
+  "invoice_item_total": "ጠቅላላ",
+  "add_credit_dialog_title": "ክሬዲት ይጨምሩ",
+  "add_credit_chose_amount": "መጠኑን ይምረጡ",
+  "action_ride_preferences": "የጉዞ ምርጫዎች",
+  "ride_preferences_title": "የጉዞ ምርጫዎች",
+  "action_confirm_and_continue": "ያረጋግጡ እና ይቀጥሉ",
+  "action_see_reserved_rides": "የተያዘውን ጉዞ ይመልከቱ",
+  "ride_reserved_dialog_title": "የእርስዎ ጉዞ የተጠበቀ ነው።",
+  "ride_reserved_dialog_body": "የዚህን ጉዞ የተያዙ መረጃዎችን ለማየት በmenu ውስጥ የተያዙ ጉዞዎችን መመልከት ይችላሉ።",
+  "alert_coupon_unavailable": "ኩፖን የለም።",
+  "minutes_format": "{minutes} minutes",
+  "@minutes_format": {
+    "placeholders": {
+      "minutes": {}
+    }
+  },
+  "action_back": "ተመለስ",
+  "wallet_card_title": "{appName} ዋሌት",
+  "@wallet_card_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "action_redeem_gift_card": "የስጦታ ካርድ ይውሰዱ",
+  "order_status_canceled": "ተሰርዟል።",
+  "action_skip_for_now": "ለአሁን ይዝለሉት",
+  "onboarding_select_language_title": "ቋንቋ ይምረጡ",
+  "onboarding_first_page_title": "እንኳን በደህና መጡ ወደ {appName}!",
+  "@onboarding_first_page_title": {
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "onboarding_first_page_body": "ብሉ ራይድ ለእርስዎ ምቾት የተነደፈ የታክሲ አገልግሎት \n ከሚወዷቸው ሾፌሮች ጋር ጉዞ ያድርጉ እና የመጓጓዣ ምርጫዎችዎን ይምረጡ",
+  "onboarding_second_page_title": "አሁኑኑ ይሸለሙ!",
+  "onboarding_second_page_body": "ለጓደኛዎ በመላክ ፣ ጉዞዎችን ለማጠናቀቅ እና ሌሎች ብዙ ተጨማሪ ጉርሻዎችን ያግኙ...",
+  "onboarding_sign_in_title": "Sign in",
+  "onboarding_sign_in_body": "ለመግባት እና ምቹ ጉዞ ለመጀመር ጥቂት ሰከንዶች ቀርተውታል።"
+}

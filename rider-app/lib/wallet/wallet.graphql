@@ -1,0 +1,71 @@
+query Wallet {
+  riderWallets {
+    id
+    balance
+    currency
+  }
+  riderTransacions(sorting: { field: id, direction: DESC }) {
+    edges {
+      node {
+        createdAt
+        amount
+        currency
+        refrenceNumber
+        deductType
+        action
+        rechargeType
+      }
+    }
+  }
+}
+
+query PaymentGateways {
+  paymentGateways {
+    id
+    title
+    type
+    publicKey
+    media {
+      address
+    }
+  }
+}
+
+query PayForRide {
+  paymentGateways {
+    id
+    title
+    type
+    publicKey
+    media {
+      address
+    }
+  }
+  riderWallets {
+    id
+    balance
+    currency
+  }
+}
+
+mutation PayRide(
+  $input: TopUpWalletInput!
+  $orderId: ID!
+  $tipAmount: Float
+  $shouldPreauth: Boolean!
+) {
+  topUpWallet(input: $input, shouldPreauth: $shouldPreauth) {
+    status
+    url
+  }
+  updateOneOrder(input: { id: $orderId, update: { tipAmount: $tipAmount } }) {
+    id
+  }
+}
+
+mutation TopUpWallet($input: TopUpWalletInput!) {
+  topUpWallet(input: $input) {
+    status
+    url
+  }
+}

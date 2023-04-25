@@ -1,0 +1,54 @@
+query GetHistory {
+  orders(sorting: { field: id, direction: DESC }, paging: { first: 20 }) {
+    ...historyOrderItem
+  }
+}
+query GetOrderDetails($id: ID!) {
+  order(id: $id) {
+    points {
+      ...Point
+    }
+    addresses
+    costAfterCoupon
+    currency
+    startTimestamp
+    finishTimestamp
+    expectedTimestamp
+    driver {
+      firstName
+      lastName
+      rating
+      carPlate
+      media {
+        address
+      }
+      car {
+        name
+      }
+    }
+    service {
+      name
+      media {
+        address
+      }
+    }
+    paymentGateway {
+      title
+      media {
+        address
+      }
+    }
+  }
+}
+
+mutation CancelBooking($id: ID!) {
+  cancelBooking(id: $id) {
+    id
+  }
+}
+
+mutation SubmitComplaint($id: ID!, $subject: String!, $content: String!) {
+  createOneComplaint(input: { complaint: { requestId: $id, requestedByDriver: false, subject: $subject, content: $content}}) {
+    id
+  }
+}

@@ -1,0 +1,8 @@
+projects:
+  api:
+    schema: http://localhost:3001/graphql
+    documents: graphql/**/*.graphql
+    extensions:
+      endpoints:
+        default: 
+          url: http://localhost:3001/graphql

@@ -1,0 +1,27 @@
+query GetMessages {
+  currentOrder {
+    id
+    rider {
+      ...ChatRider
+    }
+    driver {
+      ...ChatDriver
+    }
+    conversations(sorting: { field: id, direction: DESC }) {
+      ...ChatMessage
+    }
+  }
+}
+mutation SendMessage($requestId: ID!, $content: String!) {
+  createOneOrderMessage(
+    input: { orderMessage: { requestId: $requestId, content: $content } }
+  ) {
+    ...ChatMessage
+  }
+}
+
+subscription NewMessageReceived {
+  newMessageReceived {
+    ...ChatMessage
+  }
+}
