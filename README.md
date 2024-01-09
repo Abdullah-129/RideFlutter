@@ -1,4 +1,4 @@
-# Flutter-Based-Taxi-app
+# RideFlutter
 Flutter Based Two Taxi apps.
 
 The driver app would enable taxi drivers to receive ride requests, navigate to pick up locations, and complete rides. It would include features such as real-time GPS tracking, push notifications, trip history, and payment integration. The app would also provide drivers with information about the rider, including their name, location, and destination.
