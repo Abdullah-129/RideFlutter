@@ -119,6 +119,59 @@ flutter build appbundle --release
 \```
 <br>
 <b> IOS</b>
+<br>
+flutter build ipa
+<br>
+# Web Application
+<b>Guide for web app configuration </b>
+<br>
+Ridy maintains support for the Rider Application's web version. This is useful for having the same rider application experience that is offered on Android & iOS to web users as well. The benefit here would be greater portability. Clients don't have to install the application from stores. They will go to the address and submit their request with the same UI as Android & iOS users whether it is from their Mobile or Desktop or any device with support for modern web browsers.
+
+![part 3](https://i.ibb.co/jwqTZ2P/spaces-D1-Hfy-Xgyy-Bd-FLmty-KDu-P-uploads-ayq-PJks3-D8ywo-OCYLunh-Simulator-Screenshot-i-Pad-Pro-12.png).
+
+<b>Icon & Name Customization</b>
+<br>
+You can find the title of the web page in the index.html file under the meta tag named apple-mobile-web-app-title and the title tag:
+<b>
+<meta name="apple-mobile-web-app-title" content="Ridy">
+<link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png"/>
+
+<title>Ridy</title>
+<link rel="manifest" href="manifest.json">
+</b>
+<br>
+favicon and Mobile icons are also here. Please note the format of the favicon is png. You can replace them with your assets.
+<br>
+<b> Compile </b>
+<br>
+Open a terminal in the apps/rider-frontend folder and run the below command:
+<br>
+<b>flutter build web --release</b>
+<br>
+Once the above command succeeds you will have the compiled website for the rider application located in the build/web folder. You can serve this file on your server in any manner you see fit using the web server of your choice.
+<br>
+
+# Update
+Depending on which path you have taken for backend installation before with the current server you can update your backend to the latest version from the same path as guided below.
+<br>
+
+<b> Backend </b> <br>
+To update the backend you would have to first remove the volume created for CMS assets (translation, logo, etc.) so the new assets would replace the old ones. Keep a backup of volume contents if you need to.
+<br>
+<b> docker volume rm root_taxiassets -f </b> <br>
+Running the above command would remove the volume. Now using the below command backend & CMS would be updated to the latest version. <br>
+<b>wget -qO- https://uploads.ridy.io/docker-compose-flutter.yaml > docker-compose.yaml && docker-compose pull && docker-compose up -d</b> <br>
+Then login into the dashboard in some cases if required to configure you will be redirected to the configuration page.
+<br>
+<b>Client</b>
+<br>
+With each new version, client codes are usually subject to updates so it would be better if you had your Version Control system in place with one branch being the files downloaded from Codecanyon and the other one your customizations. This way you could release with each new release that comes and resolve conflicts easier.
+
+
+
 
 
   
