@@ -1,0 +1,5 @@
+mutation CreateDriver($input: CreateDriver!) {
+    createOneDriver(input: {driver: $input}) {
+        id
+    }
+}

@@ -1,0 +1,22 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="User Role" nzSubtitle="Admin Panel user role definition">
+</nz-page-header>
+<nz-card style="mt-16">
+    <form nz-form [formGroup]="form" nzLayout="vertical" (ngSubmit)="onSubmit()">
+        <input formControlName="id" type="hidden" hidden>
+        <div class="lg:grid lg:grid-cols-3 lg:gap-2">
+            <nz-form-item>
+                <nz-form-label nzRequired nzFor="title">Title</nz-form-label>
+                <nz-form-control>
+                    <input nz-input required id="title" formControlName="title">
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+        <h4>Permissions</h4>
+        <div *ngFor="let category of getPermissionsCategories()" class="lg:grid lg:grid-cols-3 lg:gap-2 pt-2">
+            <h6>{{category}}</h6>
+            <label nz-checkbox (nzCheckedChange)="onPermissionCheckChanged(category, permission, $event)" [nzChecked]="isPermissionChecked(category, permission)" *ngFor="let permission of getCategoryPermissions(category)">{{permission}}</label>
+        </div>
+        <button nz-button class="mt-2 float-right" nzType="primary" [disabled]="form.invalid" type="submit">{{ 'profile.submit' | translate
+            }}</button>
+    </form>
+</nz-card>

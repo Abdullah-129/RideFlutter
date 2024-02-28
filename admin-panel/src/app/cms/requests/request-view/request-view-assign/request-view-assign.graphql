@@ -1,0 +1,41 @@
+query AvailableDriversForOrder($center: PointInput!, $count: Int!) {
+    getDriversLocationWithData(center: $center, count: $count) {
+      id
+      location {
+        lat
+        lng
+      }
+      mobileNumber
+      firstName
+      lastName
+      lastUpdatedAt
+      rating
+      reviewCount
+      status
+    }
+}
+
+query DriverSearch($filter: String!) {
+  drivers(filter: {
+    or: [
+      { mobileNumber: { like: $filter}},
+      { lastName: {like: $filter}},
+    ]
+  }) {
+    nodes {
+      id
+      mobileNumber
+      firstName
+      lastName
+      rating
+      reviewCount
+      status
+    }
+  }
+}
+
+mutation AssignDriverToOrder($orderId: ID!, $driverId: ID!) {
+  assignDriverToOrder(orderId: $orderId, driverId: $driverId) {
+    id
+  }
+}

@@ -1,0 +1,16 @@
+
+<div *ngIf="(query | async)?.data?.order as order">
+  <nz-empty *ngIf="order.conversations.length === 0" class="empty-state"></nz-empty>
+  <nz-comment [nzAuthor]="!chat.sentByDriver ? ((order.rider?.firstName ?? '-') + ' ' + (order.rider?.lastName ?? '-')) : ((order.driver?.firstName ?? '-') + ' ' + (order.driver?.lastName ?? ''))" [nzDatetime]="((chat.sentAt | date: 'short') ?? '')" *ngFor="let chat of order.conversations">
+    <nz-avatar
+      nz-comment-avatar
+      [nzIcon]="!chat.sentByDriver ? 'user' : 'car'"
+      [nzSrc]="!chat.sentByDriver ? (order.rider?.media?.address ?? '') : (order.driver?.media?.address ?? '')"
+    ></nz-avatar>
+    <nz-comment-content>
+      <p>
+        {{chat.content}}
+      </p>
+    </nz-comment-content>
+  </nz-comment>
+</div>

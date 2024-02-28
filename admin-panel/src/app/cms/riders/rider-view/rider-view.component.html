@@ -1,0 +1,66 @@
+<nz-card *ngIf="(query | async)?.data?.rider == null">
+  <nz-empty
+  [nzNotFoundContent]="contentTpl"
+  [nzNotFoundFooter]="footerTpl">
+  <ng-template #contentTpl>
+    <span>
+      {{'riders.notFoundMessage' | translate}}
+    </span>
+  </ng-template>
+  <ng-template #footerTpl>
+    <button nz-button nzType="primary" routerLink="/riders">{{'profile.goToList' | translate}}</button>
+  </ng-template>
+</nz-empty>
+</nz-card>
+<nz-card *ngIf="(query | async)?.data?.rider as rider">
+<nz-page-header>
+  <nz-page-header-title
+    ><nz-avatar nzIcon="user" [nzSrc]="environment.root + rider.media?.address"></nz-avatar>{{ rider.firstName }}
+    {{ rider.lastName }}</nz-page-header-title
+  >
+  <nz-page-header-tags>
+    <!--nz-tag [nzColor]="tagColor.rider(rider.status)">{{ ('enum.rider.status.' + rider.status) | translate }}</nz-tag-->
+  </nz-page-header-tags>
+  <nz-page-header-extra>
+    <button nz-button [nzType]="'dashed'" nzDanger class="mr-2" (click)="deleteRider(rider.id)">
+      <i nz-icon nzType="delete"></i>
+    </button>
+    <button nz-button nz-dropdown [nzDropdownMenu]="menu4">
+      {{ 'driver.profile.changeStatus' | translate }}
+      <i nz-icon nzType="down"></i>
+    </button>
+    <nz-dropdown-menu #menu4="nzDropdownMenu">
+      <ul nz-menu>
+        <li nz-menu-item *ngIf="rider.status === 'Enabled'" (click)="changeStatus('blocked')">{{ 'enum.rider.status.blocked' | translate }}</li>
+        <li nz-menu-item *ngIf="rider.status === 'Disabled'" (click)="changeStatus('enabled')">{{ 'enum.rider.status.enabled' | translate }}</li>
+      </ul>
+    </nz-dropdown-menu>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+        <nz-descriptions>
+          <nz-descriptions-item nzTitle="{{ 'profile.mobileNumber' | translate }}" [nzSpan]="1">{{rider.mobileNumber | phone}}</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="{{ 'profile.registeredOn' | translate }}">{{rider.registrationTimestamp | date: "short"}}</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="{{'profile.status' | translate}}">
+            <nz-badge [nzStatus]="rider.status === 'Enabled' ? 'success' : 'error'" [nzText]="rider.status"></nz-badge>
+          </nz-descriptions-item>
+        </nz-descriptions>
+  </nz-page-header-content>
+  <nz-page-header-footer>
+    <nz-tabset nzLinkRouter [nzLinkExact]="false" class="mb-4">
+      <nz-tab>
+        <a *nzTabLink nz-tab-link routerLink="details">{{ 'riders.tab.details' | translate }}</a>
+      </nz-tab>
+      <nz-tab>
+        <a *nzTabLink nz-tab-link routerLink="financials">{{ 'riders.tab.creditrecords' | translate }}</a>
+      </nz-tab>
+      <nz-tab>
+        <a *nzTabLink nz-tab-link routerLink="orders">{{ 'riders.tab.orders' | translate }}</a>
+      </nz-tab>
+      <nz-tab>
+        <a *nzTabLink nz-tab-link routerLink="addresses">{{ 'riders.tab.addresses' | translate }}</a>
+      </nz-tab>
+    </nz-tabset>
+    <router-outlet></router-outlet>
+  </nz-page-header-footer>
+</nz-page-header>
+</nz-card>

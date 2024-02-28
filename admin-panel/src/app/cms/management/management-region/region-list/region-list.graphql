@@ -1,0 +1,15 @@
+query RegionList($paging: OffsetPaging) {
+    regions(paging: $paging) {
+        nodes {
+            id
+            name
+            currency
+            enabled
+            location {
+                lat
+                lng
+            }
+        }
+        totalCount
+    }
+}

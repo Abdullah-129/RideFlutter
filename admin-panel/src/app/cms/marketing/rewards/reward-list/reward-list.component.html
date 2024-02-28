@@ -1,0 +1,37 @@
+<nz-page-header [nzGhost]="false" nzBackIcon [nzTitle]="'menu.marketing.rewards' | translate" nzSubtitle="List of all the reward & referral rules">
+  <nz-page-header-extra>
+    <button nz-button nzType="primary" routerLink="new"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate
+      }}</button>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <nz-alert
+     class="mb-2"
+      nzType="warning"
+      nzMessage="Warning"
+      nzDescription="This feature is still under development and the application side is yet to be integrated. Full roll-out of this feature is planned for coming weeks."
+      nzShowIcon></nz-alert>
+    <nz-table #table nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.rewards as rewards"
+      [nzData]="rewards.nodes" [nzTotal]="rewards.totalCount"
+      (nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+      <thead>
+        <tr>
+          <th>{{ 'profile.title' | translate }}</th>
+          <th>{{ 'profile.beneficiary' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of table.data" [routerLink]="'../view/' + data.id" class="group cursor-pointer">
+          <td><div>
+              <div class="text-sm text-neutral-700 group-hover:text-neutral-900">
+                {{ data.title }}
+              </div>
+              <div class="text-sm text-neutral-400 group-hover:text-neutral-700">
+                {{ data.startDate | date: 'mediumDate' }} - {{ data.endDate | date: 'mediumDate' }}
+              </div>
+          </div></td>
+          <td>{{ data.beneficiary }}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>

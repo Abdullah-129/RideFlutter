@@ -1,0 +1,28 @@
+query ViewReward($id: ID!) {
+    reward(id: $id) {
+        id
+        title
+        startDate
+        endDate
+        appType
+        beneficiary
+        event
+        creditGift
+        tripFeePercentGift
+        creditCurrency
+        conditionTripCountsLessThan
+        conditionUserNumberFirstDigits
+    }
+}
+
+mutation CreateReward($input: CreateReward!) {
+    createOneReward(input: {reward: $input}){
+        id
+    }
+}
+
+mutation UpdateReward($id: ID!, $input: UpdateReward!){
+    updateOneReward(input: {id: $id, update: $input}){
+        id
+    }
+}

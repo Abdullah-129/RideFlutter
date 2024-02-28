@@ -1,0 +1,47 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Fleets" nzSubtitle="List of all the fleets registered">
+  <nz-page-header-extra>
+    <button nz-button nzType="primary" routerLink="new"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate
+      }}</button>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <nz-table #table nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.fleets as fleets"
+      [nzData]="fleets.nodes" [nzTotal]="fleets.totalCount"
+      (nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+      <thead>
+        <tr>
+          <th nzCustomFilter nzColumnKey="lastName" [nzSortFn]="true">
+            {{ 'profile.name' | translate }}
+            <nz-filter-trigger [nzActive]="(route.params | async)?.filter?.includes('lastName') === true"
+              [nzDropdownMenu]="filtername">
+              <i nz-icon nzType="search"></i>
+            </nz-filter-trigger>
+          </th>
+          <th nzCustomFilter nzColumnKey="mobileNumber" [nzSortFn]="true">
+            {{ 'profile.mobileNumber' | translate }}
+            <nz-filter-trigger [nzActive]="(route.params | async)?.filter?.includes('mobileNumber') === true">
+              <i nz-icon nzType="search"></i>
+            </nz-filter-trigger>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of table.data" [routerLink]="'view/' + data.id" class="group cursor-pointer">
+          <td>{{ data.name }}</td>
+          <td>{{ data.phoneNumber | phone }}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>
+
+<nz-dropdown-menu #filtername="nzDropdownMenu">
+  <div class="ant-table-filter-dropdown">
+    <div class="search-box">
+      <input type="text" nz-input placeholder="{{ 'profile.name' | translate }}" [(ngModel)]="nameSearchValue" />
+      <button nz-button nzSize="small" nzType="primary" (click)="filter()" class="search-button">
+        {{ 'profile.view' | translate }}
+      </button>
+      <button nz-button nzSize="small" (click)="filter()">{{ 'profile.reset' | translate }}</button>
+    </div>
+  </div>
+</nz-dropdown-menu>

@@ -1,0 +1,71 @@
+<div *ngIf="(query | async)?.data?.order as order">
+<nz-table #basicTable2 [nzData]="order.riderTransactions" nzTitle="{{ 'profile.rider' | translate }}" nzBordered>
+  <thead>
+    <tr>
+      <th>{{ 'profile.amount' | translate }}</th>
+      <th>{{ 'profile.type' | translate }}</th>
+      <th>{{ 'profile.paymentGateway' | translate }}</th>
+      <th>{{ 'profile.documentNumber' | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable2.data">
+      <td>{{data.amount | currency: data.currency}}</td>
+      <td>{{ data.action === 'Deduct' ? ('enum.transactionType.' + data.deductType | translate) : ('enum.transactionType.' + data.rechargeType | translate) }}</td>
+      <td>{{data.paymentGateway?.title}}</td>
+      <td>{{data.refrenceNumber}}</td>
+    </tr>
+  </tbody>
+</nz-table>
+<br>
+<nz-table #basicTable [nzData]="order.driverTransactions" [nzFrontPagination]='false' nzTitle="{{ 'profile.driver' | translate }}" nzBordered>
+    <thead>
+      <tr>
+        <th>{{ 'profile.amount' | translate }}</th>
+        <th>{{ 'profile.type' | translate }}</th>
+        <th>{{ 'profile.documentNumber' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{data.amount | currency: data.currency}}</td>
+        <td>{{ data.action === 'Deduct' ? ('enum.transactionType.' + data.deductType | translate) : ('enum.transactionType.' + data.rechargeType | translate) }}</td>
+        <td>{{data.refrenceNumber}}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+  <br>
+  <nz-table #basicTable3 [nzData]="order.providerTransactions" [nzFrontPagination]='false' nzTitle="{{ 'profile.admin' | translate }}" nzBordered>
+    <thead>
+      <tr>
+        <th>{{ 'profile.amount' | translate }}</th>
+        <th>{{ 'profile.type' | translate }}</th>
+        <th>{{ 'profile.documentNumber' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable3.data">
+        <td>{{data.amount | currency: data.currency}}</td>
+        <td>{{ data.action === 'Deduct' ? ('enum.transactionType.' + data.deductType | translate) : ('enum.transactionType.' + data.rechargeType | translate) }}</td>
+        <td>{{data.refrenceNumber}}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+  <br>
+  <nz-table *ngIf="order.fleetTransactions.length > 0" #basicTable4 [nzData]="order.fleetTransactions" [nzFrontPagination]='false' nzTitle="Fleet" nzBordered>
+    <thead>
+      <tr>
+        <th>{{ 'profile.amount' | translate }}</th>
+        <th>{{ 'profile.type' | translate }}</th>
+        <th>{{ 'profile.documentNumber' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable4.data">
+        <td>{{data.amount | currency: data.currency}}</td>
+        <td>{{ data.action === 'Deduct' ? ('enum.transactionType.' + data.deductType | translate) : ('enum.transactionType.' + data.rechargeType | translate) }}</td>
+        <td>{{data.refrenceNumber}}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>

@@ -1,0 +1,11 @@
+<nz-card>
+  <div class="grid grid-cols-1"></div>
+  <nz-steps [nzCurrent]="current">
+    <nz-step nzTitle="{{ 'dispatcher.rider.title' | translate }}" nzDescription="{{ 'dispatcher.rider.description' | translate }}"></nz-step>
+    <nz-step nzTitle="{{ 'dispatcher.location.title' | translate }}" nzDescription="{{ 'dispatcher.location.description' | translate }}"></nz-step>
+    <nz-step nzTitle="{{ 'dispatcher.service.title' | translate }}" nzDescription="{{ 'dispatcher.service.description' | translate }}"></nz-step>
+    <nz-step nzTitle="{{ 'dispatcher.looking.title' | translate }}" nzDescription="{{ 'dispatcher.looking.description' | translate }}"></nz-step>
+  </nz-steps>
+  <div class="h-4 w-full"></div>
+  <router-outlet></router-outlet>
+</nz-card>

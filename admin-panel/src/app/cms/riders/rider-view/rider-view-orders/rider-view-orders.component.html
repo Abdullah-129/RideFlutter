@@ -1,0 +1,34 @@
+
+<nz-table #table nzShowSizeChanger class="mt-4" [nzFrontPagination]="false" *ngIf="(query | async)?.data?.rider?.orders as orders" [nzData]="orders.nodes"  [nzTotal]="orders.totalCount"
+(nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+  <thead>
+    <tr>
+      <th [nzSortFn]="true" nzColumnKey="createdOn">
+        {{ 'profile.dateTime' | translate }}
+      </th>
+      <th class="hidden lg:table-cell">
+        {{ 'profile.locations' | translate }}
+      </th>
+      <th>
+        {{ 'profile.cost' | translate }}
+      </th>
+      <th>
+        {{ 'profile.status' | translate }}
+      </th>
+      <th>{{ 'profile.actions' | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of table.data">
+      <td [nz-tooltip]="data.createdOn | date:'short'">{{ data.createdOn | timeago }}</td>
+      <td class="hidden lg:table-cell">{{ data.addresses[0] }}</td>
+      <td>{{ data.costAfterCoupon | currency: data.currency }}</td>
+      <td>
+        <nz-tag [nzColor]="tagColor.orderStatus(data.status)">{{('enum.request.' + data.status) | translate }}</nz-tag>
+      </td>
+      <td>
+        <a [routerLink]="'/requests/view/' + data.id">{{ 'profile.view' | translate }}</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

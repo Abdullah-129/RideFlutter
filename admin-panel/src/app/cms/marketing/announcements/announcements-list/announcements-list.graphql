@@ -1,0 +1,12 @@
+query AnnouncementsList($paging: OffsetPaging) {
+    announcements(paging: $paging) {
+        nodes {
+            id
+            title
+            description
+            startAt
+            expireAt
+        }
+        totalCount
+    }
+}

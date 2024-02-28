@@ -1,0 +1,13 @@
+query RewardList($paging: OffsetPaging) {
+    rewards(paging: $paging) {
+        nodes {
+            id
+            title
+            startDate
+            endDate
+            beneficiary
+            event
+        }
+        totalCount
+    }
+}

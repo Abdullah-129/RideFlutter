@@ -1,0 +1,55 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Fleet Wallets" nzSubtitle="List of fleets current wallet balance">
+    <nz-page-header-extra>
+        <button nz-button nz-dropdown [nzDropdownMenu]="menuExport">
+            <i nz-icon nzType="export"></i>
+            {{ 'profile.export' | translate }}
+            <i nz-icon nzType="down"></i>
+        </button>
+        <nz-dropdown-menu #menuExport="nzDropdownMenu">
+            <ul nz-menu>
+                <li nz-menu-item (click)="exportTo('csv')">CSV</li>
+            </ul>
+        </nz-dropdown-menu>
+    </nz-page-header-extra>
+    <nz-page-header-content *ngIf="(query | async)?.data as data">
+        <nz-table #table nzShowSizeChanger [nzFrontPagination]="false"
+            *ngIf="(query | async)?.data?.fleetWallets as wallets" [nzData]="wallets.nodes"
+            [nzTotal]="wallets.totalCount" (nzQueryParams)="tableService.onTableQueryParamsChange($event)"
+            nzBordered>
+            <thead>
+                <tr>
+                    <th>{{ 'profile.name' | translate }}</th>
+                    <th nzShowSort nzColumnKey="amount" nzCustomFilter>{{ 'profile.amount' | translate }}
+                        <nz-filter-trigger [nzActive]="amountRange[0] !== -1" [nzDropdownMenu]="filteramount">
+                            <i nz-icon nzType="search"></i>
+                        </nz-filter-trigger>
+                    </th>
+                    <th nzShowSort nzColumnKey="currency" nzShowFilter [nzFilters]="(currencies | async) ?? []" [nzFilterFn]="true">{{ 'profile.currency' | translate }}</th>
+                    <th>{{ 'profile.actions' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of table.data">
+                    <td>{{ data.fleet.name }}</td>
+                    <td>{{ data.balance | currency: data.currency }}</td>
+                    <td>{{ data.currency }}</td>
+                    <td>
+                        <a [routerLink]="'/management/fleets/view/' + data.fleetId">{{ 'table.viewFleet' | translate }}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </nz-page-header-content>
+</nz-page-header>
+
+<nz-dropdown-menu #filteramount="nzDropdownMenu">
+    <div class="ant-table-filter-dropdown">
+        <div class="search-box">
+            <input nz-input type="number" placeholder="{{ 'table.min' | translate }}" [(ngModel)]="amountRange[0]">
+            <input nz-input type="number" placeholder="{{ 'table.max' | translate }}" [(ngModel)]="amountRange[1]">
+            <button nz-button nzSize="small" nzType="primary" (click)="tableService.filterRange('balance', amountRange)"
+                class="search-button">{{ 'profile.search' | translate }}</button>
+            <button nz-button nzSize="small" (click)="tableService.filterRange('balance', undefined)">{{ 'profile.reset' | translate }}</button>
+        </div>
+    </div>
+</nz-dropdown-menu>

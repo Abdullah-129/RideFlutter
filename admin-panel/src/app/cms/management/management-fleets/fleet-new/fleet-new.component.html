@@ -1,0 +1,67 @@
+<nz-page-header
+      [nzGhost]="false"
+      nzBackIcon
+      nzTitle="New Fleet"
+      nzSubtitle="Input new Fleet's details below.">
+    </nz-page-header>
+    <nz-card style="mt-16">
+      <form nz-form #frm [formGroup]="form" (ngSubmit)="submitForm()">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="name">Name</nz-form-label>
+          <nz-form-control nzErrorTip="The input is not valid Name">
+            <input nz-input formControlName="name" id="name" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="phoneNumber" nzRequired>Phone Number</nz-form-label>
+          <nz-form-control>
+            <nz-input-group [nzAddOnBefore]="addOnBeforeTemplate">
+              <ng-template #addOnBeforeTemplate>
+                <nz-select formControlName="phoneNumberPrefix" class="phone-select">
+                  <nz-option *ngFor="let code of countryCodes" [nzLabel]="code.name + ' (' + code.dial_code + ')'" [nzValue]="code.dial_code"></nz-option>
+                </nz-select>
+              </ng-template>
+              <nz-input-number formControlName="phoneNumber" id="phoneNumber" class="w-full"></nz-input-number>
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="mobileNumber" nzRequired>Mobile Number</nz-form-label>
+          <nz-form-control>
+            <nz-input-group [nzAddOnBefore]="addOnBeforeTemplate">
+              <ng-template #addOnBeforeTemplate>
+                <nz-select formControlName="mobileNumberPrefix" class="phone-select">
+                  <nz-option *ngFor="let code of countryCodes" [nzLabel]="code.name + ' (' + code.dial_code + ')'" [nzValue]="code.dial_code"></nz-option>
+                </nz-select>
+              </ng-template>
+              <nz-input-number formControlName="mobileNumber" id="mobileNumber" class="w-full"></nz-input-number>
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="commissionSharePercent">Commission Percentage</nz-form-label>
+          <nz-form-control>
+            <nz-input-number [nzMin]="0" [nzMax]="100" class="w-full" required id="commissionSharePercent" formControlName="commissionSharePercent"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="commissionShareFlat">Commission Flat</nz-form-label>
+          <nz-form-control>
+            <nz-input-number [nzMin]="0" [nzMax]="100" required class="w-full" id="commissionShareFlat" formControlName="commissionSharePercent"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="accountNumber">Bank Account Info</nz-form-label>
+          <nz-form-control>
+            <input nz-input required id="accountNumber" formControlName="accountNumber">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="address">Address</nz-form-label>
+          <nz-form-control>
+            <input nz-input id="address" formControlName="address">
+          </nz-form-control>
+        </nz-form-item>
+        <button nz-button nzType="primary" type="submit" [disabled]="form.invalid" class="float-right">Register</button>
+      </form>
+    </nz-card>

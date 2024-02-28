@@ -1,0 +1,18 @@
+<nz-result nzStatus="info" *ngIf="(query | async)?.data?.orderUpdated == null" nzTitle="Looking For suitable driver. Please wait...">
+    <div nz-result-extra>
+      <button nz-button (click)="cancelRequest()" nzType="primary">Cancel Request</button>
+    </div>
+  </nz-result>
+
+  <div *ngIf="(query | async)?.data?.orderUpdated as order">
+    <nz-result *ngIf="order.status == 'DriverAccepted'" nzStatus="success" nzTitle="{{order.driver?.firstName}} {{order.driver?.lastName}} ({{order.driver?.mobileNumber}}) has accepted the request. Go to the trip page for more information.">
+      <div nz-result-extra>
+        <button nz-button [routerLink]="'/requests/view/' + order.id" nzType="primary">View Request Details</button>
+      </div>
+    </nz-result>
+    <nz-result *ngIf="order.status != 'DriverAccepted'" nzStatus="info" nzTitle="Trip status is updated to {{order.status}}.">
+      <div nz-result-extra>
+        <button nz-button [routerLink]="'/requests/view/' + order.id" nzType="primary">View Request Details</button>
+      </div>
+    </nz-result>
+  </div>

@@ -1,0 +1,16 @@
+overwrite: true
+schema: 
+  - "http://127.0.0.1:3000/graphql"
+documents: "apps/admin-panel/src/**/*.graphql"
+generates:
+  apps/admin-panel/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-apollo-angular"
+
+  ./admin.schema.json:
+    plugins:
+      - introspection
+
+        

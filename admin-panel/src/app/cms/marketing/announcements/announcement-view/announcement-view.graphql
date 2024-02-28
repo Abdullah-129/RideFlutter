@@ -1,0 +1,24 @@
+query ViewAnnouncement($id: ID!) {
+  announcement(id: $id) {
+    id
+    title
+    userType
+    description
+    url
+    startAt
+    expireAt
+  }
+}
+
+
+mutation CreateAnnouncement($input: CreateAnnouncement!) {
+    createOneAnnouncement(input: {announcement: $input}) {
+        id
+    }
+}
+
+mutation UpdateAnnouncement($id: ID!, $input: UpdateAnnouncement!) {
+    updateOneAnnouncement(input: {id: $id, update: $input}) {
+        id
+    }
+}

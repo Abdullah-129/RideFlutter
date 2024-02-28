@@ -1,0 +1,70 @@
+  <nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Provider Wallet" nzSubtitle="List of system provider (you) income of services.">
+    <nz-page-header-extra>
+        <button nz-button nz-dropdown [nzDropdownMenu]="menuExport">
+            <i nz-icon nzType="export"></i>
+            {{ 'profile.export' | translate }}
+            <i nz-icon nzType="down"></i>
+        </button>
+        <nz-dropdown-menu #menuExport="nzDropdownMenu">
+            <ul nz-menu>
+                <li nz-menu-item (click)="exportTo('csv')">CSV</li>
+            </ul>
+        </nz-dropdown-menu>
+    </nz-page-header-extra>
+    <nz-page-header-content *ngIf="(query | async)?.data as data">
+        <nz-table #table nzShowSizeChanger [nzFrontPagination]="false"
+            *ngIf="(query | async)?.data?.providerTransactions as wallets" [nzData]="wallets.nodes"
+            [nzTotal]="wallets.totalCount" (nzQueryParams)="tableService.onTableQueryParamsChange($event)"
+            nzBordered>
+            <thead>
+                <tr>
+                  <th nzShowSort nzColumnKey="createdAt">{{ 'profile.dateTime' | translate }}</th>
+                  <th nzShowSort nzColumnKey="action">{{ 'profile.transactionType' | translate }}</th>
+                  <th>{{ 'profile.amount' | translate }}</th>
+                  <th>{{ 'profile.details' | translate }}</th>
+                  <th>{{ 'profile.actions' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of table.data">
+                  <td [nz-tooltip]="data.createdAt | date:'short'">{{ data.createdAt | timeago }}</td>
+                  <td>{{ data.action === 'Deduct' ? ('enum.transactionType.' + data.deductType | translate) : ('enum.transactionType.' + data.rechargeType | translate) }}</td>
+                  <td>{{ data.amount | currency: data.currency }}</td>
+                  <td>{{ data.description }}</td>
+                  <td>
+                    <a *ngIf="data.operatorId !== null" [routerLink]="'/management/users/view/' + data.operatorId">{{ 'table.viewOperator' | translate }}</a>
+                    <a *ngIf="data.requestId !== null" [routerLink]="'/requests/view/' + data.requestId">{{ 'table.viewRequest' | translate }}</a>
+                  </td>
+                </tr>
+            </tbody>
+        </nz-table>
+        <nz-table
+        #summaryTable
+        [nzData]="data.providerWallets"
+        nzBordered
+        class="mt-2">
+        <thead>
+          <tr>
+            <th>{{ 'profile.total' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of summaryTable.data">
+            <td>{{ data.balance | currency: data.currency }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </nz-page-header-content>
+</nz-page-header>
+
+<nz-dropdown-menu #filteramount="nzDropdownMenu">
+    <div class="ant-table-filter-dropdown">
+        <div class="search-box">
+            <input nz-input type="number" placeholder="{{ 'table.min' | translate }}" [(ngModel)]="amountRange[0]">
+            <input nz-input type="number" placeholder="{{ 'table.max' | translate }}" [(ngModel)]="amountRange[1]">
+            <button nz-button nzSize="small" nzType="primary" (click)="tableService.filterRange('balance', amountRange)"
+                class="search-button">{{ 'profile.search' | translate }}</button>
+            <button nz-button nzSize="small" (click)="tableService.filterRange('balance', undefined)">{{ 'profile.reset' | translate }}</button>
+        </div>
+    </div>
+</nz-dropdown-menu>

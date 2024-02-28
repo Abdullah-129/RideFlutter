@@ -1,0 +1,14 @@
+query CouponList($paging: OffsetPaging) {
+    coupons(paging: $paging) {
+        nodes {
+            id
+            code
+            title
+            isEnabled
+            description
+            startAt
+            expireAt
+        }
+        totalCount
+    }
+}

@@ -1,0 +1,19 @@
+<google-places-autocomplete (setAddress)="getAddress($event)" adressType="geocode"></google-places-autocomplete>
+    <google-map height="700px" width="100%" (mapClick)="mapClicked($event)">
+      <map-marker #marker *ngFor="let markerPosition of drivers" [position]="markerPosition.location"
+        [options]="{ draggable: false }"
+        [title]="markerPosition.driverId.toString()"></map-marker>
+      <map-marker *ngFor="let point of points" [position]="point.location" [options]="{ draggable: false }"
+        [title]="point.address"></map-marker>
+    </google-map>
+    <nz-card>
+    <nz-timeline class="pt-16">
+      <nz-timeline-item *ngFor="let point of points">{{point.address}}</nz-timeline-item>
+    </nz-timeline>
+  </nz-card>
+    <button nz-button nzDanger (click)="removeLastPoint()" style="margin-top: 8px; margin-right: 4px;">
+      <span>{{'dispatcher.removeLastPoint' | translate }}</span>
+    </button>
+    <button nz-button nzType="default" (click)="goToServiceSelection()" [disabled]="points.length === 0" style="margin-top: 8px;">
+      <span>{{'profile.next' | translate }}</span>
+    </button>

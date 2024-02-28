@@ -1,0 +1,23 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="New Review Parameter" nzSubtitle="Pramaters of reviews that rider can select for his rating.">
+</nz-page-header>
+<nz-card [nzActions]="[tmplActions]" style="mt-16">
+  <form nz-form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input formControlName="id" type="hidden" hidden>
+    <nz-form-item>
+      <nz-form-label nzRequired nzFor="title">Title</nz-form-label>
+      <nz-form-control nzErrorTip="The input is not valid name">
+        <input nz-input formControlName="title" id="title" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="isGood" nzRequired>Is Good</nz-form-label>
+      <nz-form-control>
+        <nz-switch formControlName="isGood" id="isGood"></nz-switch>
+      </nz-form-control>
+    </nz-form-item>
+    
+    <ng-template #tmplActions>
+      <button nz-button nzType="primary" [disabled]="form.invalid" (click)="onSubmit()">Save</button>
+    </ng-template>
+  </form>
+</nz-card>

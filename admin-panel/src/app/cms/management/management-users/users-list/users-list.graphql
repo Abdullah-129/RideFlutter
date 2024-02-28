@@ -1,0 +1,14 @@
+query UsersList($paging: OffsetPaging) {
+    operators(paging: $paging){
+        nodes {
+            id
+            userName
+            firstName
+            lastName
+            role {
+                title
+            }
+        }
+        totalCount
+    }
+}

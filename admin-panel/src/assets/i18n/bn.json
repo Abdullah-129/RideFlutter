@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "অনুরোধ",
+			"NotFound": "পাওয়া যায়নি",
+			"NoCloseFound": "বন্ধ পাওয়া যায়নি",
+			"Found": "পাওয়া গেছে",
+			"DriverAccepted": "ড্রাইভার গৃহীত",
+			"Arrived": "পৌঁছেছে",
+			"WaitingForPrePay": "প্রি-পেমেন্টের জন্য অপেক্ষা করা হচ্ছে",
+			"DriverCanceled": "ড্রাইভার বাতিল",
+			"RiderCanceled": "রাইডার বাতিল",
+			"Started": "শুরু হয়েছে",
+			"WaitingForPostPay": "পোস্ট-পেমেন্টের জন্য অপেক্ষা করা হচ্ছে",
+			"WaitingForReview": "পর্যালোচনার জন্য অপেক্ষা করছি",
+			"Finished": "সমাপ্ত",
+			"Booked": "বুক করা হয়েছে",
+			"Expired": "মেয়াদোত্তীর্ণ"
+		},
+		"transactionType": {
+			"OrderFee": "অর্ডার ফি",
+			"Cash": "নগদ",
+			"BankTransfer": "ব্যাংক লেনদেন",
+			"Gift": "উপহার",
+			"Commission": "কমিশন",
+			"Correction": "সংশোধন",
+			"InAppPayment": "অ্যাপ পেমেন্টে",
+			"Withdraw": "প্রত্যাহার করুন"
+		},
+		"transactionStatus": {
+			"Processing": "প্রক্রিয়াকরণ",
+			"Done": "সম্পন্ন",
+			"Canceled": "বাতিল",
+			"Rejected": "প্রত্যাখ্যাত"
+		},
+		"gender": {
+			"male": "পুরুষ",
+			"female": "মহিলা",
+			"genderless": "লিঙ্গহীন"
+		},
+		"complaintStatus": {
+			"submitted": "জমা দেওয়া হয়েছে",
+			"underInvestigation": "তদন্ত অধীন",
+			"resolved": "সমাধান করা হয়েছে"
+		},
+		"sosStatus": {
+			"submitted": "জমা দেওয়া হয়েছে",
+			"underReview": "পর্যালোচনা অধীনে",
+			"falseAlarm": "মিথ্যা সতর্কতা",
+			"resolved": "সমাধান করা হয়েছে"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "অনুমোদন অপেক্ষারত",
+				"approved": "অনুমোদিত",
+				"blocked": "অবরুদ্ধ",
+				"softReject": "নরম প্রত্যাখ্যান",
+				"hardReject": "কঠিন প্রত্যাখ্যান",
+				"offline": "অফলাইন",
+				"waitingDocuments": "মুলতুবি জমা",
+				"inService": "সেবা",
+				"online": "অনলাইন"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "অবরুদ্ধ",
+				"enabled": "সক্রিয়"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "জমা দেওয়া হয়েছে",
+			"seen": "দেখা হয়েছে",
+			"contactDriver": "ড্রাইভারের সাথে যোগাযোগ করেন",
+			"contactAuthorities": "কর্তৃপক্ষের সাথে যোগাযোগ করেছেন",
+			"markedAsResolved": "সমাধান করা হিসাবে চিহ্নিত",
+			"markedAsFalseAlarm": "ফলস অ্যালার্ম হিসাবে চিহ্নিত৷"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "রাইডস"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "সমস্ত অধিকার সংরক্ষিত."
+		},
+		"page": {
+			"title": "রিডি অ্যাডমিন প্যানেল"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "ওভারভিউ",
+			"dispatcher": "প্রেরণকারী",
+			"header": "বাড়ি"
+		},
+		"driver": {
+			"pendingVerification": "অপেক্ষারত যাচাই",
+			"all": "সব দেখ",
+			"header": "ড্রাইভার"
+		},
+		"marketing": {
+			"coupons": "কুপন",
+			"announcements": "ঘোষণা",
+			"rewards": "পুরস্কার এবং রেফারেল",
+			"header": "মার্কেটিং"
+		},
+		"accounting": {
+			"admin": "অ্যাডমিন",
+			"fleets": "নৌবহর",
+			"drivers": "ড্রাইভার",
+			"riders": "রাইডার্স",
+			"header": "অ্যাকাউন্টিং"
+		},
+		"riders": "রাইডার্স",
+		"requests": "অনুরোধ",
+		"sos": "এসওএস",
+		"complaints": "অভিযোগ",
+		"management": {
+			"regions": "অঞ্চলসমূহ",
+			"services": "সেবা",
+			"serviceOptions": "",
+			"fleets": "নৌবহর",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "গাড়ি",
+			"userRoles": "ব্যবহারকারীর ভূমিকা",
+			"users": "ব্যবহারকারীদের",
+			"paymentGateways": "পেমেন্ট গেটওয়ে",
+			"settings": "সেটিংস",
+			"header": "ব্যবস্থাপনা"
+		},
+		"drivers": {
+			"header": "ড্রাইভার",
+			"subtitle": "নিবন্ধিত সমস্ত ড্রাইভারের তালিকা।"
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "ভাষা পরিবর্তন করুন"
+		},
+		"notification": {
+			"title": "নোটিশ কেন্দ্র"
+		},
+		"logout": "প্রস্থান",
+		"driversOnline": "অনলাইন ড্রাইভার",
+		"autoZoom": "অটো জুম",
+		"viewDriver": "ড্রাইভার দেখুন",
+		"complaints": {
+			"title": "অভিযোগ",
+			"suffix": "পর্যালোচনা করা হয়নি"
+		},
+		"activeOrders": {
+			"title": "সক্রিয় আদেশ",
+			"suffix": "আদেশ"
+		},
+		"pendingDrivers": {
+			"title": "মুলতুবি ড্রাইভার",
+			"suffix": "যাচাই করা হয়নি"
+		},
+		"bookedOrders": {
+			"title": "অর্ডার বুক করা",
+			"suffix": "বুক করা হয়েছে"
+		},
+		"chart": {
+			"requestsTitle": "অনুরোধ",
+			"incomeTitle": "আয়"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "অভিযোগগুলি পর্যালোচনা করা হয়নি৷"
+		},
+		"pendingDrivers": {
+			"suffix": "চালকদের যাচাই করা হয়নি"
+		},
+		"paymentRequests": {
+			"suffix": "অর্থপ্রদানের অনুরোধগুলি নিষ্পত্তি হয়নি৷"
+		}
+	},
+	"requests": {
+		"expectedTime": "প্রত্যাশিত সময়",
+		"startTime": "সময় শুরু",
+		"finishTime": "ফিনিস সময়",
+		"costAfterCoupon": "কুপন পরে খরচ",
+		"estimatedCost": "আনুমানিক খরচ",
+		"header": "অনুরোধ #",
+		"requestTIme": "অনুরোধ সময়",
+		"service": "সেবা",
+		"distance": "দূরত্ব",
+		"duration": "সময়কাল",
+		"chats": "চ্যাট",
+		"complaints": "অভিযোগ",
+		"assign": "ড্রাইভার বরাদ্দ করুন (আলফা)"
+	},
+	"profile": {
+		"status": "স্ট্যাটাস",
+		"locations": "অবস্থানসমূহ",
+		"view": "দেখুন",
+		"requestInfo": "তথ্য অনুরোধ",
+		"name": "নাম",
+		"mobileNumber": "মোবাইল নম্বর",
+		"registeredOn": "নিবন্ধিত অন",
+		"driverInfo": "ড্রাইভার তথ্য",
+		"riderInfo": "রাইডার তথ্য",
+		"details": "বিস্তারিত",
+		"title": "শিরোনাম",
+		"content": "বিষয়বস্তু",
+		"firstName": "নামের প্রথম অংশ",
+		"lastName": "নামের শেষাংশ",
+		"gender": "লিঙ্গ",
+		"email": "ই-মেইল",
+		"fleet": "নৌবহর",
+		"carModel": "গাড়ির মডেল",
+		"carColor": "গাড়ির রঙ",
+		"carProductionYear": "গাড়ি উৎপাদনের বছর",
+		"carPlateNumber": "গাড়ির প্লেট নম্বর",
+		"accountNumber": "হিসাব নাম্বার",
+		"bankName": "ব্যাংকের নাম",
+		"bankRoutingNumber": "ব্যাঙ্ক রাউটিং নম্বর",
+		"bankSwift": "ব্যাংক সুইফট",
+		"address": "ঠিকানা",
+		"services": "সেবা",
+		"avatarImage": "অবতার ছবি",
+		"upload": "আপলোড করুন",
+		"save": "সংরক্ষণ",
+		"dateTime": "তারিখ সময়",
+		"rating": "রেটিং",
+		"review": "পুনঃমূল্যায়ন",
+		"actions": "কর্ম",
+		"transactionType": "লেনদেন প্রকার",
+		"amount": "পরিমাণ",
+		"documentNumber": "ডকুমেন্ট সংখ্যা",
+		"submit": "জমা দিন",
+		"insertTransaction": "লেনদেন সন্নিবেশ করান",
+		"cost": "খরচ",
+		"goToList": "তালিকায় যান",
+		"add": "যোগ করুন",
+		"search": "অনুসন্ধান করুন",
+		"reset": "রিসেট",
+		"export": "রপ্তানি",
+		"total": "মোট",
+		"currency": "মুদ্রা",
+		"next": "পরবর্তী",
+		"select": "নির্বাচন করুন",
+		"delete": "মুছে ফেলা",
+		"phoneNumber": "ফোন নম্বর",
+		"financialRecords": "আর্থিক রেকর্ড",
+		"enabled": "সক্রিয়",
+		"disabled": "অক্ষম",
+		"deleteNotice": "আপনি কি এই ডেটা মুছে ফেলার বিষয়ে নিশ্চিত? এই ক্রিয়াটি অপরিবর্তনীয়",
+		"dangerArea": "বিপজ্জনক এলাকা",
+		"userAgent": "ব্যবহারিক দূত",
+		"loginTimestamp": "লগইন তারিখ এবং সময়",
+		"logoutTimestamp": "লগআউট তারিখ এবং সময়",
+		"userName": "ব্যবহারকারীর নাম",
+		"code": "কোড",
+		"beneficiary": "মৃত ব্যক্তির সম্পত্তির উত্তরাধিকারী",
+		"availabilityTime": "প্রাপ্যতা সময়",
+		"appType": "অ্যাপের ধরন",
+		"creditGift": "ক্রেডিট উপহার",
+		"tripFeePercentGift": "ট্রিপ ফি শতাংশ উপহার",
+		"creditCurrency": "ক্রেডিট কারেন্সি",
+		"conditionTripCountsLessThan": "ট্রিপ থেকে কম গণনা",
+		"conditionUserNumberFirstDigits": "সুবিধাভোগী মোবাইল নম্বরের প্রথম সংখ্যা (তালিকা, কমা আলাদা)",
+		"subject": "বিষয়",
+		"type": "টাইপ",
+		"paymentGateway": "পেমেন্ট গেটওয়ে",
+		"rider": "রাইডার",
+		"driver": "ড্রাইভার",
+		"admin": "অ্যাডমিন",
+		"coupon": "কুপন",
+		"activities": "কার্যক্রমের টাইমলাইন",
+		"location": "অবস্থান",
+		"submittedBy": "জমাদানকারী"
+	},
+	"complaint": {
+		"inscriptionTime": "শিলালিপি সময়",
+		"content": "বিষয়বস্তু"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "স্থিতি আপডেট করুন",
+			"lastSeenAt": "শেষবার দেখা",
+			"rating": "রেটিং",
+			"details": "বিস্তারিত",
+			"orders": "আদেশ",
+			"financials": "ক্রেডিট রেকর্ডস",
+			"reviews": "রিভিউ",
+			"documents": "নথিপত্র"
+		}
+	},
+	"table": {
+		"viewRequest": "অনুরোধ দেখুন",
+		"viewOperator": "অপারেটর দেখুন",
+		"viewGateway": "গেটওয়ে দেখুন",
+		"min": "মিন",
+		"max": "সর্বোচ্চ",
+		"viewDriver": "ড্রাইভার দেখুন",
+		"viewFleet": "ফ্লিট দেখুন",
+		"viewRider": "রাইডার দেখুন",
+		"details": "বিস্তারিত",
+		"viewComplaint": "অভিযোগ দেখুন"
+	},
+	"drivers": {
+		"notFoundMessage": "চালক পাওয়া যাচ্ছে না!"
+	},
+	"dispatcher": {
+		"removeLastPoint": "শেষ বিন্দু সরান",
+		"rider": {
+			"title": "রাইডার",
+			"description": "অনুরোধ বরাদ্দ করতে রাইডার নির্বাচন করুন"
+		},
+		"location": {
+			"title": "অবস্থান",
+			"description": "পিকআপ এবং ড্রপ-অফ অবস্থান(গুলি)"
+		},
+		"service": {
+			"title": "সেবা",
+			"description": "পরিষেবা অনুরোধ করা হবে"
+		},
+		"looking": {
+			"title": "খুঁজছি",
+			"description": "যোগ্য ড্রাইভার খোঁজা হচ্ছে"
+		},
+		"determiningLocation": "অবস্থান নির্ধারণ করা হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন..."
+	},
+	"chart": {
+		"emptyState": "এখানে দেখার মতো কিছু নেই."
+	},
+	"message": {
+		"areYouSure": "তুমি কি নিশ্চিত?",
+		"deleteDriverConfirmation": {
+			"title": "আপনি কি ড্রাইভার মুছতে চান?",
+			"content": "ড্রাইভারের তথ্য মুছে ফেলা হলে ড্রাইভারের তালিকা থেকে ড্রাইভার লুকিয়ে রাখবে এবং প্রোফাইলটি আর অ্যাক্সেসযোগ্য হবে না।"
+		},
+		"deleteDriverCofirmAlert": "ড্রাইভার মুছে ফেলা হয়েছে",
+		"driverAssignedSuccessfully": "ড্রাইভার সফলভাবে বরাদ্দ করা হয়েছে",
+		"deleteConfirmation": {
+			"title": "আপনি মুছে ফেলতে চান?"
+		},
+		"deleteRiderConfirmation": {
+			"content": "রাইডারের তথ্য মুছে দিলে রাইডারদের তালিকা থেকে রাইডার লুকিয়ে রাখবে এবং প্রোফাইল আর অ্যাক্সেসযোগ্য হবে না।"
+		},
+		"deleteRiderCofirmAlert": "রাইডার মুছে ফেলা হয়েছে."
+	},
+	"reviewParameters": {
+		"title": "পরামিতি পর্যালোচনা করুন",
+		"subtitle": "পরামিতিগুলির তালিকা যা রাইডার পরিষেবা অভিজ্ঞতার জন্য বরাদ্দ করতে পারে"
+	},
+	"services": {
+		"editCategory": "বিভাগ সম্পাদনা করুন",
+		"newCategory": "নতুন বিভাগ",
+		"newService": "নতুন পরিষেবা"
+	},
+	"service": {
+		"createFirstNotice": "ক্লায়েন্ট অ্যাপ্লিকেশনগুলিতে প্রদর্শিত হওয়ার জন্য আপনার প্রথম পরিষেবা বিভাগ তৈরি করুন",
+		"Regions": "অঞ্চলসমূহ",
+		"timeMultiplierTable": {
+			"startTime": "সময় শুরু",
+			"endTime": "শেষ সময়",
+			"multiplyBy": "গুন করা"
+		},
+		"insertRule": "বিধি সন্নিবেশ করান",
+		"distanceMultiplierTable": {
+			"distanceFrom": "থেকে দূরত্ব",
+			"distanceTo": "দূরত্ব থেকে"
+		}
+	},
+	"settings": {
+		"generalSettings": "সাধারণ সেটিংস"
+	},
+	"users": {
+		"tab": {
+			"details": "বিস্তারিত"
+		},
+		"noRole": "কোন ভূমিকা বরাদ্দ নেই"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "প্রাপ্যতা সময়",
+		"expirationTime": "মেয়াদ শেষ হওয়ার সময়"
+	},
+	"riders": {
+		"notFoundMessage": "রাইডার পাওয়া যায়নি!",
+		"tab": {
+			"details": "বিস্তারিত",
+			"creditrecords": "ক্রেডিট রেকর্ডস",
+			"orders": "আদেশ",
+			"addresses": "ঠিকানা"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "অনুমতি দেওয়া হয় না"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "গন্তব্যে পৌঁছেছে",
+		"arrivedToPickupPoint": "পিকআপ পয়েন্টে পৌঁছেছে",
+		"bookedByOperator": "অপারেটর দ্বারা বুক",
+		"bookedByRider": "রাইডার দ্বারা বুকড",
+		"canceledByDriver": "ড্রাইভার দ্বারা বাতিল",
+		"canceledByOperator": "অপারেটর দ্বারা বাতিল",
+		"canceledByRider": "রাইডার দ্বারা বাতিল",
+		"driverAccepted": "ড্রাইভার গৃহীত",
+		"expired": "মেয়াদোত্তীর্ণ",
+		"paid": "পেড",
+		"requestedByOperator": "অপারেটর দ্বারা অনুরোধ করা হয়েছে",
+		"requestedByRider": "রাইডার দ্বারা অনুরোধ করা হয়েছে",
+		"reviewed": "পর্যালোচনা এবং রেট",
+		"started": "শুরু হয়েছে"
+	}
+}

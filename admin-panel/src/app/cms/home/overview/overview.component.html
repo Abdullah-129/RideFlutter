@@ -1,0 +1,53 @@
+<div class="lg:grid lg:grid-cols-4 lg:gap-2 mb-2" *ngIf="(query | async)?.data as data">
+  <div class="mt-2">
+    <nz-card>
+      <nz-statistic [nzValue]="data.complaintAggregate[0].count?.id ?? 0" [nzTitle]="'overview.complaints.title' | translate" [nzPrefix]="prefixTplComplaints" [nzSuffix]="'overview.complaints.suffix' | translate">
+      </nz-statistic>
+      <ng-template #prefixTplComplaints><i nz-icon nzType="customer-service"></i></ng-template>
+    </nz-card>
+  </div>
+  <div class="mt-2">
+    <nz-card>
+      <nz-statistic [nzValue]="data.activeOrders[0].count?.id ?? 0" [nzTitle]="'overview.activeOrders.title' | translate"
+        [nzPrefix]="prefixTplpaymentRequests" [nzSuffix]="'overview.activeOrders.suffix' | translate">
+      </nz-statistic>
+      <ng-template #prefixTplpaymentRequests><i nz-icon nzType="field-time"></i></ng-template>
+    </nz-card>
+  </div>
+  <div class="mt-2">
+    <nz-card>
+      <nz-statistic [nzValue]="data.driverAggregate[0].count?.id ?? 0" [nzTitle]="'overview.pendingDrivers.title' | translate" [nzPrefix]="prefixTplPendingDrivers" [nzSuffix]="'overview.pendingDrivers.suffix' | translate">
+      </nz-statistic>
+      <ng-template #prefixTplPendingDrivers><i nz-icon nzType="car"></i></ng-template>
+    </nz-card>
+  </div>
+  <div class="mt-2">
+    <nz-card>
+      <nz-statistic [nzValue]="data.bookedOrders[0].count?.id ?? 0" [nzTitle]="'overview.bookedOrders.title' | translate"
+        [nzPrefix]="prefixTplAvailableDrivers" [nzSuffix]="'overview.bookedOrders.suffix' | translate">
+      </nz-statistic>
+      <ng-template #prefixTplAvailableDrivers><i nz-icon nzType="schedule"></i></ng-template>
+    </nz-card>
+  </div>
+</div>
+<app-overview-drivers-map></app-overview-drivers-map>
+<div class="lg:grid lg:grid-cols-2 lg:gap-2">
+  <div class="mt-2">
+    <nz-card [nzTitle]="'overview.chart.requestsTitle' | translate" [nzExtra]="requestsExtrasTmpl">
+        <div [ngClass]="{ hidden : isChartRequestsEmpty }" nz-g2 [nzChartOptions]="{ height: 300 }" (nzChartInitialized)="onChartRequestsInit($event)"></div>
+        <p class="w-full text-center py-16 text-gray-500" *ngIf="isChartRequestsEmpty">{{'chart.emptyState' | translate}}</p>
+    </nz-card>
+    <ng-template #requestsExtrasTmpl>
+      <nz-segmented [nzOptions]="chartTimeOptions" [(ngModel)]="requestMode" (ngModelChange)="refreshRequests()"></nz-segmented>
+    </ng-template>
+  </div>
+  <div class="mt-2">
+    <nz-card [nzTitle]="'overview.chart.incomeTitle' | translate" [nzExtra]="incomeExtrasTmpl">
+        <div [ngClass]="{ hidden : isChartIncomeEmpty }" nz-g2 [nzChartOptions]="{ height: 300 }" (nzChartInitialized)="onChartIncomeInit($event)"></div>
+        <p class="w-full text-center py-16 text-gray-500" *ngIf="isChartIncomeEmpty">{{'chart.emptyState' | translate}}</p>
+    </nz-card>
+    <ng-template #incomeExtrasTmpl>
+      <nz-segmented [nzOptions]="chartTimeOptions" [(ngModel)]="incomeMode" (ngModelChange)="refreshIncome()"></nz-segmented>
+    </ng-template>
+  </div>
+</div>

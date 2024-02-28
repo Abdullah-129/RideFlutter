@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "مطلوب",
+			"NotFound": "لم يتم العثور على",
+			"NoCloseFound": "لم يتم العثور على إغلاق",
+			"Found": "وجد",
+			"DriverAccepted": "قبل السائق",
+			"Arrived": "وصل",
+			"WaitingForPrePay": "في انتظار الدفع المسبق",
+			"DriverCanceled": "السائق ملغى",
+			"RiderCanceled": "تم إلغاء رايدر",
+			"Started": "بدأت",
+			"WaitingForPostPay": "في انتظار الدفع المؤجل",
+			"WaitingForReview": "في انتظار المراجعة",
+			"Finished": "تم الانتهاء من",
+			"Booked": "حجز",
+			"Expired": "منتهي الصلاحية"
+		},
+		"transactionType": {
+			"OrderFee": "رسوم الطلب",
+			"Cash": "نقدي",
+			"BankTransfer": "حوالة بنكية",
+			"Gift": "هدية",
+			"Commission": "عمولة",
+			"Correction": "تصحيح",
+			"InAppPayment": "الدفع داخل التطبيق",
+			"Withdraw": "ينسحب"
+		},
+		"transactionStatus": {
+			"Processing": "يعالج",
+			"Done": "فعله",
+			"Canceled": "ألغيت",
+			"Rejected": "مرفوض"
+		},
+		"gender": {
+			"male": "ذكر",
+			"female": "أنثى",
+			"genderless": "بلا جنس"
+		},
+		"complaintStatus": {
+			"submitted": "مُقَدَّم",
+			"underInvestigation": "قيد التحقيق",
+			"resolved": "تم الحل"
+		},
+		"sosStatus": {
+			"submitted": "مُقَدَّم",
+			"underReview": "قيد المراجعة",
+			"falseAlarm": "تنبيه كاذب",
+			"resolved": "تم الحل"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "ما زال يحتاج بتصدير",
+				"approved": "وافق",
+				"blocked": "محظور",
+				"softReject": "الرفض الناعم",
+				"hardReject": "رفض صعب",
+				"offline": "غير متصل على الانترنت",
+				"waitingDocuments": "إرسال معلق",
+				"inService": "في الخدمة",
+				"online": "متصل"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "محظور",
+				"enabled": "ممكن"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "مُقَدَّم",
+			"seen": "مرئي",
+			"contactDriver": "اتصلت بالسائق",
+			"contactAuthorities": "السلطات التي تم الاتصال بها",
+			"markedAsResolved": "تم وضع علامة \"تم الحل\" عليها",
+			"markedAsFalseAlarm": "تم وضع علامة إنذار كاذب"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "ركوب"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "كل الحقوق محفوظة."
+		},
+		"page": {
+			"title": "لوحة إدارة Ridy"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "ملخص",
+			"dispatcher": "المرسل",
+			"header": "مسكن"
+		},
+		"driver": {
+			"pendingVerification": "في انتظار التحقق",
+			"all": "مشاهدة الكل",
+			"header": "السائقين"
+		},
+		"marketing": {
+			"coupons": "كوبونات",
+			"announcements": "الإعلانات",
+			"rewards": "المكافآت والإحالات",
+			"header": "تسويق"
+		},
+		"accounting": {
+			"admin": "مسؤل",
+			"fleets": "أساطيل",
+			"drivers": "السائقين",
+			"riders": "الراكبون",
+			"header": "محاسبة"
+		},
+		"riders": "الراكبون",
+		"requests": "الطلبات",
+		"sos": "SOS",
+		"complaints": "شكاوي",
+		"management": {
+			"regions": "المناطق",
+			"services": "خدمات",
+			"serviceOptions": "",
+			"fleets": "أساطيل",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "سيارات",
+			"userRoles": "أدوار المستخدمين",
+			"users": "المستخدمون",
+			"paymentGateways": "بوابات الدفع",
+			"settings": "إعدادات",
+			"header": "إدارة"
+		},
+		"drivers": {
+			"header": "السائقين",
+			"subtitle": "قائمة بجميع السائقين المسجلين."
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "تبديل اللغة"
+		},
+		"notification": {
+			"title": "مركز إعلام"
+		},
+		"logout": "تسجيل خروج",
+		"driversOnline": "السائقين عبر الإنترنت",
+		"autoZoom": "تكبير تلقائي",
+		"viewDriver": "مشاهدة ملف Driver",
+		"complaints": {
+			"title": "شكاوي",
+			"suffix": "غير مراجع"
+		},
+		"activeOrders": {
+			"title": "أوامر نشطة",
+			"suffix": "الطلب #٪ s"
+		},
+		"pendingDrivers": {
+			"title": "السائقين المعلقة",
+			"suffix": "لم يتم التحقق منه"
+		},
+		"bookedOrders": {
+			"title": "الطلبات المحجوزة",
+			"suffix": "حجز"
+		},
+		"chart": {
+			"requestsTitle": "الطلبات",
+			"incomeTitle": "دخل"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "الشكاوى التي لم تتم مراجعتها"
+		},
+		"pendingDrivers": {
+			"suffix": "لم يتم التحقق من السائقين"
+		},
+		"paymentRequests": {
+			"suffix": "طلبات الدفع لم تتم تسويتها"
+		}
+	},
+	"requests": {
+		"expectedTime": "الوقت المتوقع",
+		"startTime": "وقت البدء",
+		"finishTime": "وقت الانتهاء",
+		"costAfterCoupon": "التكلفة بعد القسيمة",
+		"estimatedCost": "التكلفة المتوقعة",
+		"header": "طلب #",
+		"requestTIme": "وقت الطلب",
+		"service": "خدمة",
+		"distance": "مسافه: بعد",
+		"duration": "مدة",
+		"chats": "الدردشات",
+		"complaints": "شكاوي",
+		"assign": "تعيين سائق (ألفا)"
+	},
+	"profile": {
+		"status": "حالة",
+		"locations": "المواقع",
+		"view": "رأي",
+		"requestInfo": "اطلب معلومات",
+		"name": "اسم",
+		"mobileNumber": "رقم الهاتف المحمول",
+		"registeredOn": "مسجلة على",
+		"driverInfo": "معلومات السائق",
+		"riderInfo": "معلومات رايدر",
+		"details": "تفاصيل",
+		"title": "عنوان",
+		"content": "محتوى",
+		"firstName": "الاسم الاول",
+		"lastName": "الكنية",
+		"gender": "جنس",
+		"email": "البريد الإلكتروني",
+		"fleet": "سريع",
+		"carModel": "طراز السيارة",
+		"carColor": "لون السيارة",
+		"carProductionYear": "سنة إنتاج السيارة",
+		"carPlateNumber": "رقم لوحة سيارة",
+		"accountNumber": "رقم حساب",
+		"bankName": "اسم البنك",
+		"bankRoutingNumber": "رقم التحويل المصرفي",
+		"bankSwift": "تحويل بنكي",
+		"address": "تبوك",
+		"services": "خدمات",
+		"avatarImage": "الصورة الرمزية",
+		"upload": "تحميل",
+		"save": "يحفظ",
+		"dateTime": "التاريخ والوقت",
+		"rating": "تقييم",
+		"review": "إعادة النظر",
+		"actions": "أجراءات",
+		"transactionType": "نوع المعاملة",
+		"amount": "مقدار",
+		"documentNumber": "رقم المستند",
+		"submit": "يُقدِّم",
+		"insertTransaction": "أدخل المعاملة",
+		"cost": "كلفة",
+		"goToList": "اذهب إلى القائمة",
+		"add": "يضيف",
+		"search": "يبحث",
+		"reset": "إعادة ضبط",
+		"export": "يصدّر",
+		"total": "المجموع",
+		"currency": "عملة",
+		"next": "التالي",
+		"select": "يختار",
+		"delete": "حذف",
+		"phoneNumber": "رقم الهاتف",
+		"financialRecords": "السجلات المالية",
+		"enabled": "ممكن",
+		"disabled": "عاجز",
+		"deleteNotice": "هل أنت متأكد أنك تريد حذف هذه البيانات؟ هذا العمل لا رجوع فيه",
+		"dangerArea": "منطقة خطيرة",
+		"userAgent": "وكيل المستخدم",
+		"loginTimestamp": "تاريخ ووقت تسجيل الدخول",
+		"logoutTimestamp": "تاريخ ووقت تسجيل الخروج",
+		"userName": "اسم االمستخدم",
+		"code": "شفرة",
+		"beneficiary": "المستفيد",
+		"availabilityTime": "وقت التوفر",
+		"appType": "نوع التطبيق",
+		"creditGift": "هدية ائتمانية",
+		"tripFeePercentGift": "هدية النسبة المئوية لرسوم الرحلة",
+		"creditCurrency": "عملة الائتمان",
+		"conditionTripCountsLessThan": "تعد الرحلة أقل من",
+		"conditionUserNumberFirstDigits": "الأرقام الأولى لأرقام هواتف المستفيدين (قائمة ، مفصولة بفواصل)",
+		"subject": "موضوعات",
+		"type": "يكتب",
+		"paymentGateway": "بوابة الدفع",
+		"rider": "رايدر",
+		"driver": "سائق",
+		"admin": "مسؤل",
+		"coupon": "قسيمة",
+		"activities": "الجدول الزمني للأنشطة",
+		"location": "موقع",
+		"submittedBy": "مقدم من"
+	},
+	"complaint": {
+		"inscriptionTime": "وقت التسجيل",
+		"content": "محتوى"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "تحديث الحالة",
+			"lastSeenAt": "شوهد آخر مرة في",
+			"rating": "تقييم",
+			"details": "تفاصيل",
+			"orders": "الطلب #٪ s",
+			"financials": "سجلات الائتمان",
+			"reviews": "المراجعات",
+			"documents": "وثائق"
+		}
+	},
+	"table": {
+		"viewRequest": "عرض الطلب",
+		"viewOperator": "مشاهدة المشغل",
+		"viewGateway": "مشاهدة ملف Gateway",
+		"min": "دقيقة",
+		"max": "الأعلى",
+		"viewDriver": "مشاهدة ملف Driver",
+		"viewFleet": "مشاهدة ملف Fleet",
+		"viewRider": "مشاهدة ملف Rider",
+		"details": "تفاصيل",
+		"viewComplaint": "عرض شكوى"
+	},
+	"drivers": {
+		"notFoundMessage": "السائق غير موجود!"
+	},
+	"dispatcher": {
+		"removeLastPoint": "إزالة آخر نقطة",
+		"rider": {
+			"title": "رايدر",
+			"description": "حدد متسابق لتعيين الطلب"
+		},
+		"location": {
+			"title": "موقع",
+			"description": "مواقع الالتقاط والتوصيل"
+		},
+		"service": {
+			"title": "خدمة",
+			"description": "سيتم طلب الخدمة"
+		},
+		"looking": {
+			"title": "يبحث",
+			"description": "البحث عن سائق مؤهل"
+		},
+		"determiningLocation": "تحديد الموقع ، الرجاء الانتظار ..."
+	},
+	"chart": {
+		"emptyState": "لا شيء لتراه هنا."
+	},
+	"message": {
+		"areYouSure": "هل أنت واثق؟",
+		"deleteDriverConfirmation": {
+			"title": "هل أنت متأكد أنك تريد حذف برنامج التشغيل؟",
+			"content": "سيؤدي حذف معلومات برنامج التشغيل إلى إخفاء برنامج التشغيل من قائمة برامج التشغيل ولن يمكن الوصول إلى ملف التعريف بعد الآن."
+		},
+		"deleteDriverCofirmAlert": "تم حذف برنامج التشغيل",
+		"driverAssignedSuccessfully": "تم تعيين السائق بنجاح",
+		"deleteConfirmation": {
+			"title": "هل أنت متأكد أنك تريد حذف؟"
+		},
+		"deleteRiderConfirmation": {
+			"content": "سيؤدي حذف معلومات الراكب إلى إخفاء الراكب من قائمة الراكبين ولن يمكن الوصول إلى الملف الشخصي بعد الآن."
+		},
+		"deleteRiderCofirmAlert": "تم حذف رايدر."
+	},
+	"reviewParameters": {
+		"title": "مراجعة المعلمات",
+		"subtitle": "قائمة المعلمات التي يمكن للمتسابق تعيينها لتجربة الخدمة"
+	},
+	"services": {
+		"editCategory": "تحرير الفئة",
+		"newCategory": "فئة جديدة",
+		"newService": "خدمة جديدة"
+	},
+	"service": {
+		"createFirstNotice": "قم بإنشاء فئة الخدمة الأولى الخاصة بك ليتم عرضها في تطبيقات العميل",
+		"Regions": "المناطق",
+		"timeMultiplierTable": {
+			"startTime": "وقت البدء",
+			"endTime": "وقت النهاية",
+			"multiplyBy": "اضرب ب"
+		},
+		"insertRule": "أدخل القاعدة",
+		"distanceMultiplierTable": {
+			"distanceFrom": "المسافة من",
+			"distanceTo": "المسافة إلى"
+		}
+	},
+	"settings": {
+		"generalSettings": "الاعدادات العامة"
+	},
+	"users": {
+		"tab": {
+			"details": "تفاصيل"
+		},
+		"noRole": "لم يتم تعيين دور"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "وقت التوفر",
+		"expirationTime": "تاريخ انتهاء الصلاحية"
+	},
+	"riders": {
+		"notFoundMessage": "لم يتم العثور على رايدر!",
+		"tab": {
+			"details": "تفاصيل",
+			"creditrecords": "سجلات الائتمان",
+			"orders": "الطلب #٪ s",
+			"addresses": "عناوين"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "لم يتم منح الإذن"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "وصل إلى الوجهة",
+		"arrivedToPickupPoint": "وصل إلى نقطة الالتقاط",
+		"bookedByOperator": "الحجز حسب المشغل",
+		"bookedByRider": "Bookd By Rider",
+		"canceledByDriver": "ألغى السائق",
+		"canceledByOperator": "ألغى المشغل",
+		"canceledByRider": "ألغى بواسطة رايدر",
+		"driverAccepted": "قبل السائق",
+		"expired": "منتهي الصلاحية",
+		"paid": "مدفوع",
+		"requestedByOperator": "طلب من قبل المشغل",
+		"requestedByRider": "طلب من قبل رايدر",
+		"reviewed": "تمت المراجعة والتقييم",
+		"started": "بدأت"
+	}
+}

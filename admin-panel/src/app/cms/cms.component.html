@@ -1,0 +1,207 @@
+<nz-layout class="app-layout">
+  <nz-sider nzCollapsible nzWidth="256px" style="background-color: white;" nzBreakpoint="md"
+    [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a href="{{'branding.footer.address' | translate}}" target="_blank">
+        <img src="../../assets/logo.png" alt="logo">
+        <h1>{{'branding.menu.header' | translate}}</h1>
+      </a>
+    </div>
+    <ul nz-menu nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzTitle="{{'menu.home.header' | translate}}" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/home/overview">{{ 'menu.home.overview' | translate }}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/home/dispatcher">{{ 'menu.home.dispatcher' | translate }}</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu [nzTitle]="'menu.driver.header' | translate" nzIcon="car">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/drivers" [queryParams]="{filter: 'status|in|PendingApproval'}"
+              routerLinkActive="router-link-active">{{'menu.driver.pendingVerification' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/drivers" [queryParams]="{sort:'id|DESC'}">{{'menu.driver.all' | translate}}</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu [nzTitle]="'menu.marketing.header' | translate" nzIcon="fund">
+        <ul>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/marketing/coupons">{{'menu.marketing.coupons' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/marketing/announcements">{{'menu.marketing.announcements' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/marketing/rewards">{{'menu.marketing.rewards' | translate}}</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu [nzTitle]="'menu.accounting.header' | translate" nzIcon="bank">
+        <ul>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/financials/provider">{{'menu.accounting.admin' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/financials/fleet">{{'menu.accounting.fleets' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/financials/driver">{{'menu.accounting.drivers' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+            <a routerLink="/financials/rider">{{'menu.accounting.riders' | translate}}</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+        <a routerLink="/riders" [queryParams]="{sort:'id|DESC'}"><i nz-icon nzType="user"></i><span
+            *ngIf="!isCollapsed">{{'menu.riders' |
+            translate}}</span></a>
+      </li>
+      <li nz-menu-item nzMatchRouter nzMatchRouterExact="false">
+        <a routerLink="/requests" [queryParams]="{sort:'id|DESC'}"><i nz-icon nzType="container"></i><span
+            *ngIf="!isCollapsed">{{'menu.requests' |
+            translate}}</span></a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/sos" [queryParams]="{sort:'id|DESC'}"><i nz-icon nzType="alert"></i><span
+            *ngIf="!isCollapsed">{{'menu.sos' | translate}}</span></a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/complaints" [queryParams]="{sort:'id|DESC'}"><i nz-icon nzType="customer-service"></i><span
+            *ngIf="!isCollapsed">{{'menu.complaints' | translate}}</span></a>
+      </li>
+      <li nz-submenu [nzTitle]="'menu.management.header' | translate" nzIcon="control">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/regions">{{'menu.management.regions' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/services">{{'menu.management.services' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/service-options">{{'menu.management.serviceOptions' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/fleets">{{'menu.management.fleets' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/zone-prices">{{'menu.management.zonePrices' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/review-parameters">{{'menu.management.reviewParameters' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/cars">{{'menu.management.cars' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/user-roles">{{'menu.management.userRoles' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/users">{{'menu.management.users' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/payment-gateways">{{'menu.management.paymentGateways' | translate}}</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/management/settings">{{'menu.management.settings' | translate}}</a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <nz-page-header [nzGhost]="false">
+        <nz-page-header-title>
+          <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+            <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+          </span>
+        </nz-page-header-title>
+        <nz-page-header-extra>
+          <span class="header-trigger" style="margin-right: 15px;">
+            <a nz-dropdown [nzDropdownMenu]="menu">
+              <i class="trigger" nz-icon nz-tooltip="{{ 'overview.switch.language' | translate }}" nzType="global"></i>
+            </a>
+            <nz-dropdown-menu #menu="nzDropdownMenu">
+              <ul nz-menu nzSelectable>
+                <li nz-menu-item (click)="changeLanguage('en')">English</li>
+                <li nz-menu-item (click)="changeLanguage('es')">Español</li>
+                <li nz-menu-item (click)="changeLanguage('fr')">français</li>
+                <li nz-menu-item (click)="changeLanguage('de')">Deutsch</li>
+                <li nz-menu-item (click)="changeLanguage('pt')">Português</li>
+                <li nz-menu-item (click)="changeLanguage('sv')">Svenska</li>
+                <li nz-menu-item (click)="changeLanguage('hy')">Հայերեն</li>
+                <li nz-menu-item (click)="changeLanguage('ja')">日本語</li>
+                <li nz-menu-item (click)="changeLanguage('zh')">中文</li>
+                <li nz-menu-item (click)="changeLanguage('ru')">русский</li>
+                <li nz-menu-item (click)="changeLanguage('ur')">اردو</li>
+                <li nz-menu-item (click)="changeLanguage('hi')">हिन्दी</li>
+                <li nz-menu-item (click)="changeLanguage('bn')">বাংলা</li>
+                <li nz-menu-item (click)="changeLanguage('ko')">한국어</li>
+                <li nz-menu-item (click)="changeLanguage('id')">Indonesian</li>
+                <li nz-menu-item (click)="changeLanguage('ar')">العربية</li>
+              </ul>
+            </nz-dropdown-menu>
+          </span>
+          <!-- <span class="header-trigger" (click)="changeTheme()" style="margin-right: 15px;">
+            <i class="trigger" nz-icon nz-tooltip="{{ 'overview.switch.darkMode' | translate }}" nzType="bulb"></i>
+          </span> -->
+          <nz-badge [nzDot]="(stats.complaints !== 0 || stats.driversPending !== 0 || stats.paymentRequests !== 0)"
+            style="margin-right: 15px;">
+            <span nz-popover nzPopoverTitle="{{ 'overview.notification.title' | translate }}"
+              [nzPopoverContent]="notificationTemplate" nzPopoverPlacement="bottomRight" class="header-trigger">
+              <i class="trigger" nz-icon nzType="notification"></i>
+            </span>
+          </nz-badge>
+          <ng-template #notificationTemplate>
+            <nz-row>
+              <div *ngIf="stats.complaints !== 0">
+                <nz-avatar class="not-avatar" nzSize="large" nzShape="square" nzIcon="customer-service"
+                  [routerLink]='["/complaints"]' style="background-color:#b7eb8f;"></nz-avatar><span
+                  class="not-desc"><b>{{stats.complaints}}</b>
+                  {{'notification.complaints.suffix' | translate}}</span>
+              </div>
+            </nz-row>
+            <nz-row>
+              <nz-divider *ngIf="stats.driversPending !== 0 && stats.complaints !== 0"></nz-divider>
+              <div *ngIf="stats.driversPending !== 0">
+                <nz-avatar class="not-avatar" nzSize="large" nzShape="square" nzIcon="car"
+                  [routerLink]='["/drivers/pending"]' [queryParams]="{status: 'pending approval'}"
+                  style="background-color:#87e8de;"></nz-avatar><span class="not-desc"><b>{{stats.driversPending}}</b>
+                  {{'notification.pendingDrivers.suffix' | translate}}</span>
+              </div>
+            </nz-row>
+            <nz-row>
+              <nz-divider *ngIf="stats.paymentRequests !== 0 && (stats.complaints !== 0 || stats.driversPending !== 0)">
+              </nz-divider>
+              <div *ngIf="stats.paymentRequests !== 0">
+                <nz-avatar class="not-avatar" [routerLink]='["/drivers/payment-requests"]'
+                  [queryParams]="{status: 'Pending'}" nzSize="large" nzShape="square" nzIcon="bank"
+                  style="background-color:#d3adf7;"></nz-avatar><span class="not-desc"><b>{{stats.paymentRequests}}</b>
+                  {{'notification.paymentRequests.suffix' | translate}}</span>
+              </div>
+            </nz-row>
+          </ng-template>
+          <span class="header-trigger" (click)="logout()">
+            <i class="trigger" nz-icon nzType="logout" nz-tooltip="{{ 'overview.logout' | translate }}"></i>
+          </span>
+        </nz-page-header-extra>
+      </nz-page-header>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+    <nz-footer><span>{{'branding.footer.prefix' | translate}} <a
+          href="{{'branding.footer.address' | translate}}">{{'branding.footer.title' | translate}}</a>
+        {{'branding.footer.suffix' | translate}}</span></nz-footer>
+  </nz-layout>
+</nz-layout>

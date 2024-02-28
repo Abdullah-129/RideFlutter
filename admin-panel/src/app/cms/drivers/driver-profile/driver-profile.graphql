@@ -1,0 +1,183 @@
+query ViewDriver($id: ID!) {
+  driver(id: $id) {
+    id
+    firstName
+    lastName
+    mobileNumber
+    registrationTimestamp
+    lastSeenTimestamp
+    status
+    gender
+    carId
+    carColorId
+    fleetId
+    carProductionYear
+    carPlate
+    accountNumber
+    bankName
+    bankRoutingNumber
+    bankSwift
+    address
+    email
+    feedbacks {
+      nodes {
+        parametersAggregate {
+          groupBy {
+            title
+            isGood
+          }
+          count {
+            id
+          }
+        }
+      }
+    }
+    enabledServices {
+      id
+    }
+    documents {
+      id
+      address
+    }
+    media {
+      address
+    }
+    rating
+    reviewCount
+  }
+  services {
+    id
+    name
+  }
+  fleets {
+    nodes {
+      id
+      name
+    }
+  }
+  carModels(paging: { limit: 100 }) {
+    nodes {
+      id
+      name
+    }
+  }
+  carColors {
+    id
+    name
+  }
+}
+
+mutation UpdateDriverProfile(
+  $id: ID!
+  $update: UpdateDriverInput!
+  $serviceIds: [ID!]!
+) {
+  updateOneDriver(input: { id: $id, update: $update }) {
+    id
+  }
+
+  setEnabledServicesOnDriver(input: { id: $id, relationIds: $serviceIds }) {
+    id
+  }
+}
+
+mutation UpdateDriverStatus($id: ID!, $status: DriverStatus) {
+  updateOneDriver(input: { id: $id, update: { status: $status } }) {
+    id
+  }
+}
+
+query DriverFinancials(
+  $id: ID!
+  $paging: OffsetPaging
+  $filter: DriverTransactionFilter
+  $sorting: [DriverTransactionSort!]
+) {
+  driver(id: $id) {
+    transactions(filter: $filter, paging: $paging, sorting: $sorting) {
+      nodes {
+        status
+        createdAt
+        amount
+        description
+        currency
+        action
+        deductType
+        rechargeType
+        refrenceNumber
+        requestId
+        paymentGatewayId
+        operatorId
+      }
+      totalCount
+    }
+    wallets {
+      balance
+      currency
+    }
+  }
+
+  regions {
+    nodes {
+      currency
+    }
+  }
+}
+
+query DriverFeedbacks($id: ID!, $paging: OffsetPaging) {
+  feedbacks(filter: { driverId: { eq: $id } }, paging: $paging) {
+    nodes {
+      id
+      requestId
+      reviewTimestamp
+      score
+      description
+
+      parameters {
+        isGood
+        title
+      }
+    }
+  }
+}
+
+query DriverOrders(
+  $driverId: ID!
+  $filter: OrderFilter
+  $paging: OffsetPaging
+  $sorting: [OrderSort!]
+) {
+  driver(id: $driverId) {
+    orders(filter: $filter, paging: $paging, sorting: $sorting) {
+      nodes {
+        id
+        createdOn
+        status
+        distanceBest
+        durationBest
+        costBest
+        costAfterCoupon
+        currency
+        addresses
+        points {
+          lat
+          lng
+        }
+        expectedTimestamp
+      }
+      totalCount
+    }
+  }
+}
+
+mutation CreateDriverTransaction($input: DriverTransactionInput!) {
+  createDriverTransaction(input: $input) {
+    id
+  }
+}
+
+mutation DeleteDriver($id: ID!) {
+  deleteOneDriver(id: $id) {
+    id
+  }
+}

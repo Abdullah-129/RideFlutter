@@ -1,0 +1,43 @@
+<nz-card [nzTitle]="'overview.driversOnline' | translate" [nzExtra]="extraTemplate" [nzCover]="mapTpl">
+  <nz-table #ajaxTable [nzFrontPagination]="false" [nzData]="listOfData" [nzTotal]="total" [(nzPageIndex)]="page"
+    [nzPageSize]="5" (nzPageIndexChange)="searchData()" (nzPageSizeChange)="searchData()" nzBordered>
+    <thead>
+      <tr>
+        <th>
+          {{ 'profile.name' | translate }}
+        </th>
+        <th>
+          {{ 'profile.mobileNumber' | translate }}
+        </th>
+        <th nzColumnKey="status">{{ 'profile.status' | translate }}</th>
+        <th>{{ 'profile.actions' | translate}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of ajaxTable.data">
+        <td>{{ data.firstName || '' }} {{ data.lastName || '' }}</td>
+        <td>{{ (data.mobileNumber !== null) ? (data.mobileNumber | phone) : '' }}</td>
+        <td>
+          <nz-tag [nzColor]="tagColor.driver(data.status)">{{'enum.driver.status.' + toCamelCase(data.status) | translate }}</nz-tag>
+        </td>
+        <td>
+          <a (click)="showDriverOnMap(data.id)">Show on Map</a>
+          <nz-divider nzType="vertical"></nz-divider>
+          <a [routerLink]="'/drivers/view/' + data.id">{{ 'profile.view' | translate }}</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</nz-card>
+<ng-template #extraTemplate>
+  <span style="padding-right: 10px;">{{'overview.autoZoom' | translate}}</span>
+  <nz-switch [(ngModel)]="autoZoom" nzCheckedChildren="1" nzUnCheckedChildren="0"></nz-switch>
+</ng-template>
+<ng-template #mapTpl>
+  <google-map height="400px" width="100%" *ngIf="(query | async)?.data?.getDriversLocation as drivers">
+    <map-marker #marker="mapMarker" icon="assets/marker_taxi.png" *ngFor="let markerPosition of drivers" [position]="markerPosition.location"
+      [options]="{ draggable: false }" (mapClick)="openInfoWindow(marker, markerPosition.driverId)"></map-marker>
+    <map-info-window><a [routerLink]="'/drivers/view/' + selectedDriverId">{{'overview.viewDriver' |
+        translate}}</a></map-info-window>
+  </google-map>
+</ng-template>

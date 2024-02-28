@@ -1,0 +1,20 @@
+query DriverWalletsList($paging: OffsetPaging) {
+    driverWallets(paging: $paging) {
+        nodes {
+            id
+            driverId
+            balance
+            currency
+            driver {
+                firstName
+                lastName
+            }
+        }
+        totalCount
+    }
+    regions {
+        nodes {
+            currency
+        }
+    }
+}

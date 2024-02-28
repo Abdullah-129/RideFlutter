@@ -1,0 +1,120 @@
+<div fxLayout="row" fxLayoutGap="4px" class="dt-actionbar">
+  <!--<button nz-button nzType="primary"><i nz-icon nzType="plus"></i>Add</button>-->
+</div>
+<nz-table #table nzTitle="Transactions Records" nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.driver?.transactions as transactions"
+  [nzData]="transactions.nodes" [nzTotal]="transactions.totalCount" (nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+  <thead>
+    <tr>
+      <th [nzSortFn]="true" nzColumnKey="createdAt">
+        {{ 'profile.dateTime' | translate }}
+      </th>
+      <th>
+        {{ 'profile.transactionType' | translate }}
+      </th>
+      <th>
+        {{ 'profile.amount' | translate }}
+      </th>
+      <th class="hidden lg:table-cell">
+        {{ 'profile.documentNumber' | translate }}
+      </th>
+      <th class="hidden xl:table-cell">
+        {{ 'profile.details' | translate }}
+      </th>
+      <th>{{ 'profile.actions' | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of table.data">
+      <td [nz-tooltip]="data.createdAt | date:'short'">{{ data.createdAt | timeago }}</td>
+      <td>{{ data.action === 'Deduct' ? ('enum.transactionType.' + data.deductType | translate) :
+        ('enum.transactionType.' + data.rechargeType | translate) }}
+        <nz-tag *ngIf="data.status != 'Done'" [nzColor]="tagColor.getTransactionStatusStatusColor(data.status)">{{ 'enum.transactionStatus.' + data.status | translate }}</nz-tag></td>
+      <td [ngClass]="data.action === 'Recharge' ? 'text-green-500' : 'text-red-500'">{{data.action === 'Recharge' ? '+' : ''}}{{ data.amount | currency: data.currency }}</td>
+      <td class="hidden lg:table-cell">{{ data.refrenceNumber }}</td>
+      <td class="hidden xl:table-cell">{{ data.description }}</td>
+      <td>
+        <a *ngIf="data.operatorId !== null"
+          [routerLink]="'/management/users/view/' + data.operatorId">{{ 'table.viewOperator' | translate
+          }}</a>
+        <a *ngIf="data.paymentGatewayId !== null"
+          [routerLink]="'/management/payment-gateways/view/' + data.paymentGatewayId">{{ 'table.viewGateway' |
+          translate }}</a>
+        <a *ngIf="data.requestId !== null" [routerLink]="'/requests/view/' + data.requestId">{{ 'table.viewRequest'
+          | translate }}</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+<nz-table #walletTable *ngIf="(query | async)?.data?.driver?.wallets as driverWallets" nzTitle="Wallet Summary"
+  [nzFrontPagination] [nzData]="driverWallets" [nzTotal]="driverWallets.length" nzBordered class="mt-2">
+  <thead>
+    <tr>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of walletTable.data">
+      <td>{{ item.balance | currency: item.currency }}</td>
+    </tr>
+  </tbody>
+</nz-table>
+<nz-card nzTitle="{{ 'profile.insertTransaction' | translate }}" class="mt-2">
+  <form nz-form [formGroup]="formTransaction" (ngSubmit)="onSubmitTransaction()">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-2">
+    <nz-form-item>
+      <nz-form-label nzRequired>Type</nz-form-label>
+      <nz-form-control>
+        <nz-select formControlName="action" nzRequired>
+          <nz-option nzLabel="Deduct" nzValue="Deduct"></nz-option>
+          <nz-option nzLabel="Recharge" nzValue="Recharge"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <div *ngIf="formTransaction.value.action === null"></div>
+    <nz-form-item *ngIf="formTransaction.value.action === 'Recharge'">
+      <nz-form-label>Recharge Type</nz-form-label>
+      <nz-form-control>
+        <nz-select formControlName="rechargeType">
+          <nz-option *ngFor="let type of rechargeTypes" [nzLabel]="('enum.transactionType.' + type) | translate" [nzValue]="type"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item *ngIf="formTransaction.value.action === 'Deduct'">
+      <nz-form-label>Deduct Type</nz-form-label>
+      <nz-form-control>
+        <nz-select formControlName="deductType">
+          <nz-option *ngFor="let type of deductTypes" [nzLabel]="('enum.transactionType.' + type) | translate" [nzValue]="type"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzRequired nzFor="amount">Amount</nz-form-label>
+      <nz-form-control>
+        <nz-input-number formControlName="amount" id="amount" class="w-full" required></nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzRequired>Currency</nz-form-label>
+      <nz-form-control>
+        <nz-select formControlName="currency" id="currency" required>
+          <nz-option *ngFor="let currency of getUniquieCurrencies((query | async)?.data?.regions?.nodes)" [nzLabel]="currency.currency" [nzValue]="currency.currency"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="refrenceNumber">Document Number</nz-form-label>
+      <nz-form-control>
+        <input nz-input formControlName="refrenceNumber" id="refrenceNumber">
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="description">Description</nz-form-label>
+      <nz-form-control>
+        <input nz-input formControlName="description" id="description">
+      </nz-form-control>
+    </nz-form-item>
+  </div>
+  <button class="float-right mt-2" nz-button nzType="primary" type="submit" [disabled]="!formTransaction.valid">{{
+    'profile.submit' | translate }}</button>
+  </form>
+</nz-card>

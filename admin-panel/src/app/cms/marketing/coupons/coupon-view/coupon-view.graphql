@@ -1,0 +1,36 @@
+query ViewCoupon($id: ID!) {
+    coupon(id: $id) {
+        id
+        isEnabled
+        code
+        title
+        description
+        manyUsersCanUse
+        manyTimesUserCanUse
+        minimumCost
+        maximumCost
+        startAt
+        expireAt
+        discountPercent
+        discountFlat
+        creditGift
+        isEnabled
+        isFirstTravelOnly
+        allowedServices {
+            id
+            name
+        }
+    }
+}
+
+mutation CreateCoupon($input: CreateCoupon!) {
+    createOneCoupon(input: {coupon: $input}){
+        id
+    }
+}
+
+mutation UpdateCoupon($id: ID!, $input: UpdateCoupon!){
+    updateOneCoupon(input: {id: $id, update: $input}){
+        id
+    }
+}

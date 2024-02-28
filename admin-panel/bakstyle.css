@@ -1,0 +1,46 @@
+
+@layer components {
+    .dt-actionbar {
+      margin-bottom: 10px;
+    }
+    .editable-cell {
+      position: relative;
+    }
+    .editable-cell-value-wrap {
+      padding: 5px 12px;
+      cursor: pointer;
+    }
+    .editable-row:hover .editable-cell-value-wrap {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      padding: 4px 11px;
+    }
+    .search-box {
+      padding: 8px;
+    }
+    .search-box input {
+      width: 188px;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .search-box nz-range-picker {
+      margin: 0 0px 12px 0;
+    }
+    .search-box button {
+      width: 90px;
+    }
+    .search-button {
+      margin-right: 8px;
+    }
+    .empty-state {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .ant-select {
+      min-width: 120px;
+    }
+  
+    .ant-menu.ant-menu-dark {
+      background-color: transparent;
+    }
+  };

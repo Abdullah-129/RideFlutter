@@ -1,0 +1,125 @@
+query ViewRider($id: ID!) {
+  rider(id: $id) {
+    id
+    status
+    firstName
+    lastName
+    mobileNumber
+    isResident
+    idNumber
+    media {
+      address
+    }
+    mobileNumber
+    registrationTimestamp
+    email
+    gender
+    wallets(
+      sorting: [{ field: balance, direction: DESC }]
+      paging: { limit: 1 }
+    ) {
+      nodes {
+        balance
+        currency
+      }
+    }
+  }
+}
+
+query RiderAddresses($riderId: ID!, $paging: OffsetPaging) {
+  riderAddresses(filter: { riderId: { eq: $riderId } }, paging: $paging) {
+    nodes {
+      title
+      details
+      location {
+        lat
+        lng
+      }
+    }
+  }
+}
+
+query RiderWallet(
+  $riderId: ID!
+  $paging: OffsetPaging
+  $filter: RiderTransactionFilter
+  $sorting: [RiderTransactionSort!]
+) {
+  rider(id: $riderId) {
+    wallets {
+      nodes {
+        balance
+        currency
+      }
+    }
+    transactions(paging: $paging, sorting: $sorting, filter: $filter) {
+      nodes {
+        action
+        deductType
+        status
+        createdAt
+        rechargeType
+        amount
+        currency
+        refrenceNumber
+        description
+        paymentGatewayId
+        operatorId
+        requestId
+      }
+      totalCount
+    }
+  }
+  regions {
+    nodes {
+      currency
+    }
+  }
+}
+
+query RiderOrders(
+  $riderId: ID!
+  $filter: OrderFilter
+  $paging: OffsetPaging
+  $sorting: [OrderSort!]
+) {
+  rider(id: $riderId) {
+    orders(paging: $paging, filter: $filter, sorting: $sorting) {
+      nodes {
+        id
+        createdOn
+        status
+        distanceBest
+        durationBest
+        costBest
+        costAfterCoupon
+        currency
+        addresses
+        points {
+          lat
+          lng
+        }
+        expectedTimestamp
+      }
+      totalCount
+    }
+  }
+}
+
+mutation UpdateRider($id: ID!, $update: UpdateRider!) {
+  updateOneRider(input: { id: $id, update: $update }) {
+    id
+  }
+}
+
+mutation CreateRiderTransaction($input: RiderTransactionInput!) {
+  createRiderTransaction(input: $input) {
+    id
+  }
+}
+
+mutation DeleteRider($id: ID!) {
+  deleteOneRider(id: $id) {
+    id
+  }
+}

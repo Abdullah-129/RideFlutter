@@ -1,0 +1,105 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="New Zone price"
+  nzSubtitle="Define regions with static pricing to override the default distance-based calculation">
+</nz-page-header>
+<nz-card style="mt-16" *ngIf="(query | async)?.data as data">
+  <form nz-form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input formControlName="id" type="hidden" hidden>
+    <nz-form-item>
+      <nz-form-label nzRequired nzFor="name">{{'profile.name' | translate }}</nz-form-label>
+      <nz-form-control nzErrorTip="The input is not valid name">
+        <input nz-input formControlName="name" id="name" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="fleet">{{'profile.fleet' | translate}}</nz-form-label>
+      <nz-form-control>
+        <nz-select id="fleet" nzMode="multiple" nzPlaceHolder="Please select" formControlName="fleets">
+          <nz-option *ngFor="let fleet of data.fleets.nodes" [nzValue]="fleet.id" [nzLabel]="fleet.name"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item class="lg:col-span-4">
+      <nz-form-label nzRequired>
+        {{ 'profile.services' | translate }}
+      </nz-form-label>
+      <nz-form-control>
+        <nz-select nzMode="multiple" nzPlaceHolder="Please select" formControlName="services">
+          <nz-option *ngFor="let item of data.services" [nzLabel]="item.name" [nzValue]="item.id"></nz-option>
+        </nz-select>
+        <ng-template #tagPlaceHolder let-selectedList>and {{ selectedList.length }} more selected</ng-template>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="from" nzRequired>{{ 'zonePrice.pickupAreas' | translate }}</nz-form-label>
+      <nz-form-control>
+        <input type="hidden" hidden formControlName="from">
+        <google-map #mapFrom height="400px" width="100%" [center]="center" [zoom]="4">
+          <map-polygon #poly [paths]="form.value?.from">
+          </map-polygon>
+        </google-map>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="enabled" nzRequired>{{ 'zonePrice.destinationAres' | translate }}</nz-form-label>
+      <nz-form-control>
+        <input type="hidden" hidden formControlName="to">
+        <google-map #mapTo height="400px" width="100%" [center]="center" [zoom]="4">
+          <map-polygon #poly [paths]="form.value?.to">
+          </map-polygon>
+        </google-map>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="cost" nzRequired>{{'profile.cost' | translate }}</nz-form-label>
+      <nz-form-control>
+        <nz-input-number formControlName="cost" id="cost" nzRequired class="w-full">
+        </nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+
+</nz-card>
+
+<nz-card class="lg:col-span-4 mt-2" nzTitle="Time Multiplier">
+  <ul nz-list [nzDataSource]="form.value.timeMultipliers" nzBordered>
+    <li nz-list-item *ngFor="let item of form.value.timeMultipliers">
+      <span nz-typography><mark>{{item.multiply}}x</mark></span>
+      <ul nz-list-item-actions>
+        <nz-list-item-action>
+          <a (click)="removeTimeRule(item)">{{ 'profile.delete' | translate }}</a>
+        </nz-list-item-action>
+      </ul>
+      {{ item.startTime }} - {{ item.endTime }}
+    </li>
+  </ul>
+  <div class="md:grid md:grid-cols-3 md:gap-2 mt-2">
+    <nz-form-item>
+      <nz-form-label>{{ 'service.timeMultiplierTable.startTime' | translate }}</nz-form-label>
+      <nz-form-control>
+        <nz-time-picker #timeStartPicker nzPlaceHolder="{{ 'service.timeMultiplierTable.startTime' | translate }}"
+          nzFormat="HH:mm"></nz-time-picker>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label>{{ 'service.timeMultiplierTable.endTime' | translate }}</nz-form-label>
+      <nz-form-control>
+        <nz-time-picker #timeEndPicker nzPlaceHolder="{{ 'service.timeMultiplierTable.endTime' | translate }}"
+          nzFormat="HH:mm"></nz-time-picker>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label>{{ 'service.timeMultiplierTable.multiplyBy' | translate }}</nz-form-label>
+      <nz-form-control>
+        <nz-input-number #timeMultiplyInput nzPlaceHolder="{{ 'service.timeMultiplierTable.multiplyBy' | translate }}">
+        </nz-input-number>
+      </nz-form-control>
+    </nz-form-item>
+  </div>
+  <button nz-button nzType="primary" (click)="insertTimeRule()"
+    [disabled]="timeStartPicker.value == null || timeEndPicker.value == null || timeMultiplyInput.inputElement.nativeElement.value == ''"
+    class="float-right">{{
+    'service.insertRule' |
+    translate }}</button>
+</nz-card>
+
+<button nz-button class="mt-2 float-right" nzType="primary" [disabled]="form.invalid" (click)="onSubmit()">Save</button>

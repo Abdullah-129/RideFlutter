@@ -1,0 +1,50 @@
+<div *ngIf="(query | async)?.data?.complaint as complaint">
+<nz-descriptions nzTitle="{{ 'profile.requestInfo' | translate }}" nzBordered class="mt-2">
+    <nz-descriptions-item nzTitle="{{ 'requests.expectedTime' | translate }}">{{
+    complaint.order.expectedTimestamp !== null
+      ? (complaint.order.expectedTimestamp | date: "short")
+      : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.startTime' | translate }}">{{
+      complaint.order.startTimestamp !== null ? (complaint.order.startTimestamp | date: "short") : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.finishTime' | translate }}">{{
+    complaint.order.finishTimestamp !== null ? (complaint.order.finishTimestamp | date: "short") : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.costAfterCoupon' | translate }}">{{
+    complaint.order.costAfterCoupon | currency:complaint.order.currency
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.estimatedCost' | translate }}">{{
+    complaint.order.costBest | currency:complaint.order.currency
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+        <nz-badge [nzStatus]="tagColor.orderStatus(complaint.order.status)" [nzText]="'enum.request.' + complaint.order.status | translate"></nz-badge>
+    </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.locations' | translate }}" [nzSpan]="3">
+      {{ complaint.order.addresses.join(" -> ") }}
+  </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.view' | translate }}"><a [routerLink]="'/../requests/view/' + complaint.order.id">{{ 'profile.view' | translate }}</a></nz-descriptions-item>
+</nz-descriptions>
+
+<nz-descriptions *ngIf="complaint.order.driver as driver" nzTitle="{{ ('profile.driverInfo' | translate) + (complaint.requestedByDriver ? ' (Sender)' : '') }}" nzBordered class="mt-2">
+    <nz-descriptions-item nzTitle="{{ 'profile.name' | translate }}">{{driver.firstName }} {{driver.lastName}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.mobileNumber' | translate }}">{{driver.mobileNumber.toString() | phone }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.registeredOn' | translate }}">{{ driver.registrationTimestamp | date: "short" }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+        <nz-badge [nzStatus]="tagColor.driver(driver.status)" [nzText]="'enum.driver.status.' + camelCase(driver.status) | translate"></nz-badge>
+    </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.view' | translate }}"><a [routerLink]="'/../drivers/all/view/' + driver.id">View</a></nz-descriptions-item>
+</nz-descriptions>
+
+<nz-descriptions nzTitle="{{ ('profile.riderInfo' | translate) + (complaint.requestedByDriver ? '' : ' (Sender)') }}" nzBordered class="mt-2" *ngIf="complaint.order.rider as rider">
+    <nz-descriptions-item nzTitle="{{ 'profile.name' | translate }}">{{rider.firstName }} {{rider.lastName}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.mobileNumber' | translate }}">{{rider.mobileNumber | phone }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.registeredOn' | translate }}">{{
+    rider.registrationTimestamp !== null ? (rider.registrationTimestamp | date: "short") : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+        <nz-badge [nzStatus]="tagColor.rider(rider.status)" [nzText]="'enum.rider.status.' + rider.status.toLowerCase() | translate"></nz-badge>
+    </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.view' | translate }}"><a [routerLink]="'/../riders/view/' + rider.id">{{ 'profile.view' | translate }}</a></nz-descriptions-item>
+</nz-descriptions>
+</div>

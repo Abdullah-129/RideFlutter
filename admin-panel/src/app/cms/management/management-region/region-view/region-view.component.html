@@ -1,0 +1,46 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="New Region"
+  nzSubtitle="Pramaters of region app is operating within.">
+</nz-page-header>
+<nz-card [nzActions]="[tmplActions]" style="mt-16">
+  <form nz-form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input formControlName="id" type="hidden" hidden>
+    <nz-form-item>
+      <nz-form-label nzRequired nzFor="name">Name</nz-form-label>
+      <nz-form-control nzErrorTip="The input is not valid name">
+        <input nz-input formControlName="name" id="name" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzRequired nzFor="currency">Currency</nz-form-label>
+      <nz-form-control>
+        <nz-select formControlName="currency" id="currency" nzShowSearch>
+          <nz-option *ngFor="let currency of currencies" [nzLabel]="currency.label" [nzValue]="currency.value">
+          </nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="enabled" nzRequired>Is Enabled</nz-form-label>
+      <nz-form-control>
+        <nz-switch formControlName="enabled" id="enabled"></nz-switch>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzFor="enabled" nzRequired>Geofence</nz-form-label>
+      <nz-form-control>
+        <input type="hidden" hidden formControlName="location">
+        <google-map height="400px" width="100%" [center]="center" [zoom]="4">
+          <map-polygon #poly [paths]="form.value?.location">
+          </map-polygon>
+        </google-map>
+      </nz-form-control>
+    </nz-form-item>
+
+    <ng-template #tmplActions>
+      <button nz-button type="submit" [disabled]="form.invalid" (click)="onSubmit()">Save</button>
+      <button nz-button (click)="clearMap()" style="margin: 4px;" type="button" [disabled]="polygons.length == 0">Clear
+        Map</button>
+    </ng-template>
+  </form>
+</nz-card>

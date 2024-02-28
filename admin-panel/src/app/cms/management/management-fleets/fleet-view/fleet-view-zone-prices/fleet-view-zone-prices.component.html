@@ -1,0 +1,20 @@
+<div fxLayout="row" fxLayoutGap="4px" class="dt-actionbar">
+  <!--<button nz-button nzType="primary"><i nz-icon nzType="plus"></i>Add</button>-->
+</div>
+<nz-table #table nzShowSizeChanger [nzFrontPagination]="false"
+  *ngIf="(query | async)?.data?.fleet?.zonePrices as zonePrices" [nzData]="zonePrices.nodes"
+  [nzTotal]="zonePrices.totalCount" (nzQueryParams)="tableService.onTableQueryParamsChange" nzBordered>
+  <thead>
+    <tr>
+      <th>
+        {{ 'profile.name' | translate }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of table.data" [routerLink]="'/management/zone-prices/view/' + data.id"
+      class="group cursor-pointer">
+      <td>{{ data.name }}</td>
+    </tr>
+  </tbody>
+</nz-table>

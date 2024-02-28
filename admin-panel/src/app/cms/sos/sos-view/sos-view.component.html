@@ -1,0 +1,28 @@
+<nz-card>
+  <nz-page-header *ngIf="(query | async)?.data?.distressSignal as sos">
+    <nz-page-header-title>#{{sos.id}}</nz-page-header-title>
+    <nz-page-header-tags>
+      <nz-tag [nzColor]="tagColor.sosStatus(sos.status)">{{ ('enum.sosStatus.' + camelCase(sos.status)) | translate }}</nz-tag>
+    </nz-page-header-tags>
+    <nz-page-header-content>
+      <div class="content">
+        <div class="main">
+          <nz-descriptions>
+            <nz-descriptions-item nzTitle="{{ 'complaint.inscriptionTime' | translate }}" [nzSpan]="1">{{sos.createdAt | timeago}}
+            </nz-descriptions-item>
+            <!-- <nz-descriptions-item nzTitle="{{ 'complaint.reviewTime' | translate }}"></nz-descriptions-item> -->
+            <nz-descriptions-item nzTitle="{{ 'profile.submittedBy' | translate }}" [nzSpan]="2">{{sos.submittedByRider ? 'Rider' : 'Driver'}}</nz-descriptions-item>
+          </nz-descriptions>
+        </div>
+      </div>
+    </nz-page-header-content>
+    <nz-page-header-footer>
+      <nz-tabset nzLinkRouter class="mb-2">
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="info">{{ 'profile.details' | translate }}</a>
+        </nz-tab>
+      </nz-tabset>
+      <router-outlet></router-outlet>
+    </nz-page-header-footer>
+  </nz-page-header>
+</nz-card>

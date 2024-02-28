@@ -1,0 +1,49 @@
+<form nz-form [nzLayout]="'vertical'" [formGroup]="form" (ngSubmit)="onSubmit()"
+  class="lg:grid lg:grid-cols-3 lg:gap-2">
+  <input formControlName="id" type="hidden" hidden>
+  <nz-form-item>
+    <nz-form-label nzRequired nzFor="firstName">{{'profile.firstName' | translate}}</nz-form-label>
+    <nz-form-control nzErrorTip="The input is not valid First Name">
+      <input nz-input formControlName="firstName" id="firstName" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired nzFor="lastName">{{'profile.lastName' | translate}}</nz-form-label>
+    <nz-form-control nzErrorTip="The input is not valid Last Name">
+      <input nz-input formControlName="lastName" id="lastName" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="mobileNumber" nzRequired>{{'profile.mobileNumber' | translate}}</nz-form-label>
+    <nz-form-control nzErrorTip="The input is not valid Mobile Number">
+      <input nz-input formControlName="mobileNumber" id="mobileNumber" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="gender">{{'profile.gender' | translate}}</nz-form-label>
+    <nz-form-control>
+      <nz-select formControlName="gender">
+        <nz-option nzLabel="Male" nzValue="Male"></nz-option>
+        <nz-option nzLabel="Female" nzValue="Female"></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="email" nzRequired>{{'profile.email' | translate}}</nz-form-label>
+    <nz-form-control>
+      <input nz-input formControlName="email" id="email" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item [hidden]="form.value.isResident == null">
+    <nz-form-control>
+      <label nz-checkbox id="isResident" formControlName="isResident">Is Resident?</label>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item [hidden]="form.value.isResident == null">
+    <nz-form-label nzFor="idNumber" nzRequired>ID Number</nz-form-label>
+    <nz-form-control>
+      <input nz-input formControlName="idNumber" id="idNumber" />
+    </nz-form-control>
+  </nz-form-item>
+</form>
+<button class="float-right" nz-button nzType="primary" [disabled]="form.invalid" (click)="onSubmit()">{{'profile.save' | translate}}</button>

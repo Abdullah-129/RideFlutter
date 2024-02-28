@@ -1,0 +1,28 @@
+query ViewOperator($id: ID!) {
+    operator(id: $id) {
+        id
+        firstName
+        lastName
+        mobileNumber
+        userName
+        email
+        roleId
+    }
+    operatorRoles {
+        id
+        title
+    }
+}
+
+query NewOperator {
+    operatorRoles {
+        id
+        title
+    }
+}
+
+mutation UpdateOperator($id: ID!, $update: UpdateOperator!) {
+    updateOneOperator(input: {id: $id, update: $update}) {
+        id
+    }
+}

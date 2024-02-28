@@ -1,0 +1,24 @@
+query RegionView($id: ID!) {
+    region(id: $id) {
+        id
+        name
+        currency
+        enabled
+        location {
+            lat
+            lng
+        }
+    }
+}
+
+mutation UpdateRegion($id: ID!, $update: UpdateRegion!) {
+    updateOneRegion(input: {id: $id, update: $update}) {
+        id
+    }
+}
+
+mutation CreateRegion($input: CreateRegion!) {
+    createOneRegion(input: {region: $input}) {
+        id
+    }
+}

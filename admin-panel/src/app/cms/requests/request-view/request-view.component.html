@@ -1,0 +1,47 @@
+<nz-card *ngIf="(query | async)?.data?.order as order">
+  <nz-page-header>
+    <nz-page-header-title>{{ 'requests.header' | translate }}{{order.id}}</nz-page-header-title>
+    <nz-page-header-tags>
+      <nz-tag [nzColor]="tagColor.orderStatus(order.status)">{{'enum.request.' + order.status | translate}}</nz-tag>
+    </nz-page-header-tags>
+    <nz-page-header-extra>
+      <nz-statistic nzTitle="{{ 'profile.cost' | translate }}" [nzValue]="(order.costAfterCoupon | currency: order.currency) ?? 0"></nz-statistic>
+    </nz-page-header-extra>
+    <nz-page-header-content>
+      <div class="content">
+        <div class="main">
+          <nz-descriptions [nzColumn]="2">
+            <nz-descriptions-item nzTitle="{{ 'requests.requestTIme' | translate }}" [nzSpan]="1">{{(order.createdOn | date: 'short')}}</nz-descriptions-item>
+            <nz-descriptions-item [nzTitle]="'requests.service' | translate" [nzSpan]="1">{{order.service?.name || '-'}}</nz-descriptions-item>
+            <nz-descriptions-item [nzTitle]="'requests.distance' | translate" [nzSpan]="1">{{order.distanceBest }}m</nz-descriptions-item>
+            <nz-descriptions-item [nzTitle]="'requests.duration' | translate" [nzSpan]="1">{{ (order.durationBest / 60).toFixed() }}:{{order.durationBest % 60}}</nz-descriptions-item>
+            <nz-descriptions-item [nzTitle]="'profile.locations' | translate" [nzSpan]="2">{{order.addresses.join(' -> ')}}</nz-descriptions-item>
+          </nz-descriptions>
+        </div>
+      </div>
+    </nz-page-header-content>
+    <nz-page-header-footer>
+      <nz-tabset nzLinkRouter class="pb-2">
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="info">{{ 'profile.details' | translate }}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="activities">{{ 'profile.activities' | translate }}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="financials">{{ 'profile.financialRecords' | translate }}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="chats">{{ 'requests.chats' | translate }}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="complaints">{{ 'requests.complaints' | translate }}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="assign">{{ 'requests.assign' | translate }}</a>
+        </nz-tab>
+      </nz-tabset>
+      <router-outlet></router-outlet>
+    </nz-page-header-footer>
+  </nz-page-header>
+</nz-card>

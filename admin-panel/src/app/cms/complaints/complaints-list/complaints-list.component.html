@@ -1,0 +1,36 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Complaints" nzSubtitle="Complaints submitted by riders/drivers">
+  <nz-page-header-content>
+    <nz-table #table nzShowSizeChanger [nzFrontPagination]="false"
+      *ngIf="(query | async)?.data?.complaints as complaints" [nzData]="complaints.nodes"
+      [nzTotal]="complaints.totalCount" (nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+      <thead>
+        <tr>
+          <th>{{ 'profile.title' | translate }}</th>
+          <th>{{ 'profile.content' | translate }}</th>
+          <th>{{ 'profile.status' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of table.data" class="group cursor-pointer">
+          <td>
+            <div class="flex items-center ml-2" [routerLink]="'view/' + data.id">
+              <div>
+                <div class="text-sm text-neutral-700 group-hover:text-neutral-900">
+                  {{ data.subject }}
+                </div>
+                <div class="text-sm text-neutral-400 group-hover:text-neutral-700">
+                  Submitted on {{ data.inscriptionTimestamp | timeago }}
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="text-sm text-neutral-400 group-hover:text-neutral-700">{{ data.content }}</td>
+          <td>
+            <nz-tag [nzColor]="tagColor.complaintStatus(data.status)">{{ ('enum.complaintStatus.' +
+              camelCase(data.status)) | translate }}</nz-tag>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>

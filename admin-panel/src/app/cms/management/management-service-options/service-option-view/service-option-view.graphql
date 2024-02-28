@@ -1,0 +1,21 @@
+query ServiceOptionView($id: ID!) {
+    serviceOption(id: $id) {
+        id
+        name
+        type
+        icon
+        additionalFee
+    }
+}
+
+mutation UpdateServiceOption($id: ID!, $update: UpdateServiceOption!) {
+    updateOneServiceOption(input: {id: $id, update: $update}) {
+        id
+    }
+}
+
+mutation CreateServiceOption($input: CreateServiceOption!) {
+    createOneServiceOption(input: {serviceOption: $input}) {
+        id
+    }
+}

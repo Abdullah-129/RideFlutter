@@ -1,0 +1,24 @@
+query ViewServiceCategory($id: ID!) {
+    serviceCategory(id: $id) {
+        id
+        name
+    }
+}
+
+mutation CreateServiceCategory($input: CreateServiceCategory!) {
+    createOneServiceCategory(input: {serviceCategory: $input}) {
+        id
+    }
+}
+
+mutation UpdateServiceCategory($id: ID!, $input: UpdateServiceCategory!) {
+    updateOneServiceCategory(input: {id: $id, update: $input}) {
+        id
+    }
+}
+
+mutation DeleteServiceCategory($id: ID!) {
+    deleteOneServiceCategory(input: {id: $id}) {
+        id
+    }
+}

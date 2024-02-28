@@ -1,0 +1,89 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Coupon" nzSubtitle="Definitions of coupons.">
+  <nz-page-header-content>
+    <form nz-form nzLayout="vertical" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input formControlName="id" type="hidden" hidden>
+      <div class="lg:grid lg:grid-cols-4 lg:gap-2">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="title">Title</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="title" id="title">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="code">Code</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="code" id="code">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="description">Description</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="description" id="description">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="manyUsersCanUse"># Users can use</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="manyUsersCanUse" id="manyUsersCanUse"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="manyTimesUserCanUse"># Times User Can Use</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="manyTimesUserCanUse" id="manyTimesUserCanUse"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="minimumCost">Minimum Cost</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="minimumCost" id="minimumCost"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="maximumCost">Maximum Cost</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="maximumCost" id="maximumCost"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="maximumCost">{{ 'coupons.availabilityTime' | translate }}</nz-form-label>
+          <nz-form-control>
+            <nz-range-picker id="dates" formControlName="dates" class="w-full"></nz-range-picker>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="discountPercent">Discount Percent</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="discountPercent" id="discountPercent"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="discountFlat">Discount Flat</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="discountFlat" id="discountFlat"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="creditGift">Credit Gift</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="creditGift" id="creditGift"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="isEnabled">Is Enabled?</nz-form-label>
+          <nz-form-control>
+            <nz-switch formControlName="isEnabled" id="isEnabled"></nz-switch>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="isFirstTravelOnly">Is First Travel Only?</nz-form-label>
+          <nz-form-control>
+            <nz-switch formControlName="isFirstTravelOnly" id="isFirstTravelOnly"></nz-switch>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <button nz-button nzType="primary" type="submit" [disabled]="form.invalid" class="float-right">{{ 'profile.submit' |
+        translate }}</button>
+    </form>
+  </nz-page-header-content>
+</nz-page-header>

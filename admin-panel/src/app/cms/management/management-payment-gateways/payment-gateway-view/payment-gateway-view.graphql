@@ -1,0 +1,28 @@
+query ViewPaymentGateway($id: ID!){
+    paymentGateway(id: $id){
+        id
+        title
+        type
+        enabled
+        privateKey
+        publicKey
+        merchantId
+        saltKey
+        mediaId
+        media {
+            address
+        }
+    }
+}
+
+mutation CreatePaymentGateway($input: CreatePaymentGateway!) {
+    createOnePaymentGateway(input: {paymentGateway: $input}) {
+        id
+    }
+}
+
+mutation UpdatePaymentGateway($id: ID!, $input: UpdatePaymentGateway!){
+    updateOnePaymentGateway(input: {id: $id, update: $input}) {
+        id
+    }
+}

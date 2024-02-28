@@ -1,0 +1,31 @@
+query ProviderWalletsList($paging: OffsetPaging) {
+    providerTransactions(paging: $paging) {
+        nodes {
+            createdAt
+            action
+            deductType
+            rechargeType
+            amount
+            currency
+            description
+            requestId
+            operatorId
+        }
+        totalCount
+    }
+    providerWallets {
+        balance
+        currency
+    }
+    regions {
+        nodes {
+            currency
+        }
+    }
+}
+
+query Export($input: ExportArgs!) {
+    export(input: $input) {
+        url
+    }
+}

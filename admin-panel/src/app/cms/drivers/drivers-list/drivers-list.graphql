@@ -1,0 +1,14 @@
+query DriversList($paging: OffsetPaging, $filter: DriverFilter, $sorting: [DriverSort!]) {
+    drivers(paging: $paging, filter: $filter, sorting: $sorting) {
+        nodes {
+            id
+            firstName
+            lastName
+            gender
+            mobileNumber
+            status
+            registrationTimestamp
+        }
+        totalCount
+    }
+}

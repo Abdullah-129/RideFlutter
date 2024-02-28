@@ -1,0 +1,24 @@
+<nz-page-header
+      [nzGhost]="false"
+      nzBackIcon
+      nzTitle="Service Category"
+      nzSubtitle="Input service category details below.">
+    </nz-page-header>
+    <nz-card>
+      <form nz-form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="name">Name</nz-form-label>
+          <nz-form-control nzErrorTip="The input is not valid Name">
+            <input nz-input formControlName="name" id="name" />
+          </nz-form-control>
+        </nz-form-item>
+        <button nz-button class="float-right" nzType="primary" [disabled]="form.invalid">Save</button>
+      </form>
+    </nz-card>
+    <nz-card class="mt-2" [nzTitle]="'profile.dangerArea' | translate" *ngIf="this.form.value?.id !== null">
+      <div>
+        <p class="text-lg leading-6 font-medium text-gray-900">{{ 'profile.delete' | translate }}</p>
+        <p class="mt-2 max-w-xl text-sm text-gray-500">{{ 'profile.deleteNotice' | translate }}</p>
+        <button nz-button nzDanger class="mt-2" (click)="deleteCategory()">{{ 'profile.delete' | translate }}</button>
+      </div>
+    </nz-card>

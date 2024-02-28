@@ -1,0 +1,7 @@
+
+<div *ngIf="(query | async)?.data?.order as order" class="p-8">
+  <nz-empty *ngIf="order.activities.length === 0" class="empty-state"></nz-empty>
+  <nz-timeline nzMode="custom" *ngIf="order.activities.length !== 0" [nzPending]="isPending(order.activities)">
+    <nz-timeline-item *ngFor="let activity of order.activities" [nzPosition]="getPosition(activity.type)" [nzColor]="getColor(activity.type)">{{translateType(activity.type) }} {{activity.createdAt | date:'short'}}</nz-timeline-item>
+  </nz-timeline>
+</div>

@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "已请求",
+			"NotFound": "未找到",
+			"NoCloseFound": "未找到关闭",
+			"Found": "成立",
+			"DriverAccepted": "司机接受",
+			"Arrived": "到达的",
+			"WaitingForPrePay": "等待预付款",
+			"DriverCanceled": "司机取消",
+			"RiderCanceled": "骑手取消",
+			"Started": "开始",
+			"WaitingForPostPay": "等待后付款",
+			"WaitingForReview": "等待审核",
+			"Finished": "完成的",
+			"Booked": "已预订",
+			"Expired": "已到期"
+		},
+		"transactionType": {
+			"OrderFee": "订购费",
+			"Cash": "现金",
+			"BankTransfer": "银行转帐",
+			"Gift": "礼物",
+			"Commission": "委员会",
+			"Correction": "更正",
+			"InAppPayment": "应用内支付",
+			"Withdraw": "提取"
+		},
+		"transactionStatus": {
+			"Processing": "加工",
+			"Done": "完毕",
+			"Canceled": "取消",
+			"Rejected": "被拒绝"
+		},
+		"gender": {
+			"male": "男性",
+			"female": "女性",
+			"genderless": "无性别"
+		},
+		"complaintStatus": {
+			"submitted": "已提交",
+			"underInvestigation": "在调查中",
+			"resolved": "解决"
+		},
+		"sosStatus": {
+			"submitted": "已提交",
+			"underReview": "审查中",
+			"falseAlarm": "误报",
+			"resolved": "解决"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "待批",
+				"approved": "得到正式认可的",
+				"blocked": "被封锁",
+				"softReject": "软拒绝",
+				"hardReject": "硬拒绝",
+				"offline": "离线",
+				"waitingDocuments": "待提交",
+				"inService": "服务中",
+				"online": "在线的"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "被封锁",
+				"enabled": "启用"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "已提交",
+			"seen": "见过",
+			"contactDriver": "联系了司机",
+			"contactAuthorities": "联系当局",
+			"markedAsResolved": "标记为已解决",
+			"markedAsFalseAlarm": "标记为误报"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "游乐设施"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "版权所有。"
+		},
+		"page": {
+			"title": "Ridy 管理面板"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "概述",
+			"dispatcher": "调度员",
+			"header": "家"
+		},
+		"driver": {
+			"pendingVerification": "等待确认",
+			"all": "查看全部",
+			"header": "驱动程序"
+		},
+		"marketing": {
+			"coupons": "优惠券",
+			"announcements": "公告",
+			"rewards": "奖励和推荐",
+			"header": "营销"
+		},
+		"accounting": {
+			"admin": "行政",
+			"fleets": "舰队",
+			"drivers": "驱动程序",
+			"riders": "骑手",
+			"header": "会计"
+		},
+		"riders": "骑手",
+		"requests": "要求",
+		"sos": "求救",
+		"complaints": "投诉",
+		"management": {
+			"regions": "地区",
+			"services": "服务",
+			"serviceOptions": "",
+			"fleets": "舰队",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "汽车",
+			"userRoles": "用户角色",
+			"users": "用户",
+			"paymentGateways": "支付网关",
+			"settings": "设置",
+			"header": "管理"
+		},
+		"drivers": {
+			"header": "驱动程序",
+			"subtitle": "已注册的所有驱动程序的列表。"
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "切换语言"
+		},
+		"notification": {
+			"title": "通知中心"
+		},
+		"logout": "登出",
+		"driversOnline": "在线驱动程序",
+		"autoZoom": "自动缩放",
+		"viewDriver": "查看驱动程序",
+		"complaints": {
+			"title": "投诉",
+			"suffix": "未审核"
+		},
+		"activeOrders": {
+			"title": "活跃订单",
+			"suffix": "订单"
+		},
+		"pendingDrivers": {
+			"title": "待定驱动程序",
+			"suffix": "未经验证"
+		},
+		"bookedOrders": {
+			"title": "预订订单",
+			"suffix": "已预订"
+		},
+		"chart": {
+			"requestsTitle": "要求",
+			"incomeTitle": "收入"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "未经审查的投诉"
+		},
+		"pendingDrivers": {
+			"suffix": "驱动程序未经验证"
+		},
+		"paymentRequests": {
+			"suffix": "未解决的付款请求"
+		}
+	},
+	"requests": {
+		"expectedTime": "预计时间",
+		"startTime": "开始时间",
+		"finishTime": "完成时间",
+		"costAfterCoupon": "优惠券后的费用",
+		"estimatedCost": "估计成本",
+		"header": "要求 ＃",
+		"requestTIme": "请求时间",
+		"service": "服务",
+		"distance": "距离",
+		"duration": "期间",
+		"chats": "聊天",
+		"complaints": "投诉",
+		"assign": "分配驱动程序（Alpha）"
+	},
+	"profile": {
+		"status": "地位",
+		"locations": "地点",
+		"view": "看法",
+		"requestInfo": "请求信息",
+		"name": "姓名",
+		"mobileNumber": "手机号码",
+		"registeredOn": "注册时间",
+		"driverInfo": "司机信息",
+		"riderInfo": "骑手信息",
+		"details": "细节",
+		"title": "标题",
+		"content": "内容",
+		"firstName": "名",
+		"lastName": "姓",
+		"gender": "性别",
+		"email": "电子邮件",
+		"fleet": "舰队",
+		"carModel": "汽车模型",
+		"carColor": "汽车颜色",
+		"carProductionYear": "汽车生产年份",
+		"carPlateNumber": "车牌号",
+		"accountNumber": "帐号",
+		"bankName": "银行名称",
+		"bankRoutingNumber": "银行路由号码",
+		"bankSwift": "银行斯威夫特",
+		"address": "地址",
+		"services": "服务",
+		"avatarImage": "头像图片",
+		"upload": "上传",
+		"save": "节省",
+		"dateTime": "约会时间",
+		"rating": "评分",
+		"review": "审查",
+		"actions": "行动",
+		"transactionType": "交易类型",
+		"amount": "数量",
+		"documentNumber": "文件号码",
+		"submit": "提交",
+		"insertTransaction": "插入交易",
+		"cost": "成本",
+		"goToList": "前往列表",
+		"add": "添加",
+		"search": "搜索",
+		"reset": "重置",
+		"export": "出口",
+		"total": "全部的",
+		"currency": "货币",
+		"next": "下一个",
+		"select": "选择",
+		"delete": "删除",
+		"phoneNumber": "电话号码",
+		"financialRecords": "财务记录",
+		"enabled": "启用",
+		"disabled": "已禁用",
+		"deleteNotice": "您确定要删除此数据吗？此动作不可逆转",
+		"dangerArea": "危险区域",
+		"userAgent": "用户代理",
+		"loginTimestamp": "登录日期和时间",
+		"logoutTimestamp": "注销日期和时间",
+		"userName": "用户名",
+		"code": "代码",
+		"beneficiary": "受益人",
+		"availabilityTime": "可用时间",
+		"appType": "应用类型",
+		"creditGift": "信用礼物",
+		"tripFeePercentGift": "旅行费用百分比礼物",
+		"creditCurrency": "信用货币",
+		"conditionTripCountsLessThan": "旅行次数少于",
+		"conditionUserNumberFirstDigits": "收款人手机号码第一位（列表，逗号分隔）",
+		"subject": "主题",
+		"type": "类型",
+		"paymentGateway": "支付网关",
+		"rider": "骑士",
+		"driver": "司机",
+		"admin": "行政",
+		"coupon": "优惠券",
+		"activities": "活动时间表",
+		"location": "地点",
+		"submittedBy": "由...所提交"
+	},
+	"complaint": {
+		"inscriptionTime": "铭文时间",
+		"content": "内容"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "更新状态",
+			"lastSeenAt": "最后一次出现在",
+			"rating": "评分",
+			"details": "细节",
+			"orders": "订单",
+			"financials": "信用记录",
+			"reviews": "评论",
+			"documents": "文件"
+		}
+	},
+	"table": {
+		"viewRequest": "查看请求",
+		"viewOperator": "查看运算符",
+		"viewGateway": "查看网关",
+		"min": "敏",
+		"max": "最大限度",
+		"viewDriver": "查看驱动程序",
+		"viewFleet": "查看机队",
+		"viewRider": "查看骑手",
+		"details": "细节",
+		"viewComplaint": "查看投诉"
+	},
+	"drivers": {
+		"notFoundMessage": "找不到驱动程序！"
+	},
+	"dispatcher": {
+		"removeLastPoint": "删除最后一点",
+		"rider": {
+			"title": "骑士",
+			"description": "选择骑手以分配请求"
+		},
+		"location": {
+			"title": "地点",
+			"description": "接送地点"
+		},
+		"service": {
+			"title": "服务",
+			"description": "需要的服务"
+		},
+		"looking": {
+			"title": "看着",
+			"description": "寻找符合条件的司机"
+		},
+		"determiningLocation": "正在确定位置，请稍候..."
+	},
+	"chart": {
+		"emptyState": "这没东西看。"
+	},
+	"message": {
+		"areYouSure": "你确定吗？",
+		"deleteDriverConfirmation": {
+			"title": "您确定要删除驱动程序吗？",
+			"content": "删除驱动程序信息将从驱动程序列表中隐藏驱动程序，并且无法再访问配置文件。"
+		},
+		"deleteDriverCofirmAlert": "驱动程序已被删除",
+		"driverAssignedSuccessfully": "驱动分配成功",
+		"deleteConfirmation": {
+			"title": "你确定你要删除？"
+		},
+		"deleteRiderConfirmation": {
+			"content": "删除骑手信息会将骑手从骑手列表中隐藏，并且无法再访问该个人资料。"
+		},
+		"deleteRiderCofirmAlert": "骑士已被删除。"
+	},
+	"reviewParameters": {
+		"title": "查看参数",
+		"subtitle": "骑手可以分配给服务体验的参数列表"
+	},
+	"services": {
+		"editCategory": "编辑类别",
+		"newCategory": "新类别",
+		"newService": "新服务"
+	},
+	"service": {
+		"createFirstNotice": "创建要在客户端应用程序中显示的第一个服务类别",
+		"Regions": "地区",
+		"timeMultiplierTable": {
+			"startTime": "开始时间",
+			"endTime": "时间结束",
+			"multiplyBy": "乘以"
+		},
+		"insertRule": "插入规则",
+		"distanceMultiplierTable": {
+			"distanceFrom": "距离",
+			"distanceTo": "距离"
+		}
+	},
+	"settings": {
+		"generalSettings": "通用设置"
+	},
+	"users": {
+		"tab": {
+			"details": "细节"
+		},
+		"noRole": "未分配角色"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "可用时间",
+		"expirationTime": "到期时间"
+	},
+	"riders": {
+		"notFoundMessage": "未找到骑手！",
+		"tab": {
+			"details": "细节",
+			"creditrecords": "信用记录",
+			"orders": "订单",
+			"addresses": "地址"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "未授予权限"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "到达目的地",
+		"arrivedToPickupPoint": "到达取货点",
+		"bookedByOperator": "按运营商预订",
+		"bookedByRider": "由骑手预订",
+		"canceledByDriver": "被司机取消",
+		"canceledByOperator": "被运营商取消",
+		"canceledByRider": "骑手取消",
+		"driverAccepted": "司机接受",
+		"expired": "已到期",
+		"paid": "有薪酬的",
+		"requestedByOperator": "运营商要求",
+		"requestedByRider": "骑手要求",
+		"reviewed": "审查和评级",
+		"started": "开始"
+	}
+}

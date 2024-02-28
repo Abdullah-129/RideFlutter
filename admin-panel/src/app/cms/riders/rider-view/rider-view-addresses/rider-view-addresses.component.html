@@ -1,0 +1,24 @@
+<nz-table #table nzShowSizeChanger [nzFrontPagination]="false"
+  *ngIf="(query | async)?.data?.riderAddresses as addresses" [nzData]="addresses.nodes"
+  (nzQueryParams)="tableService.onTableQueryParamsChange" nzBordered>
+  <thead>
+    <tr>
+      <th>
+        {{ 'profile.title' | translate }}
+      </th>
+      <th class="hidden md:table-cell">
+        {{ 'profile.address' | translate }}
+      </th>
+      <th>
+        {{ 'profile.location' | translate }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of table.data">
+      <td>{{ data.title }}</td>
+      <td class="hidden md:table-cell">{{ data.details }}</td>
+      <td><a (click)="openMap(data.location)">Open In Google Maps</a></td>
+    </tr>
+  </tbody>
+</nz-table>

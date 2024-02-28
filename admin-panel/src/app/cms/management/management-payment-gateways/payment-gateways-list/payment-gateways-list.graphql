@@ -1,0 +1,14 @@
+query PaymentGateways($paging: OffsetPaging) {
+    paymentGateways(paging: $paging) {
+        nodes {
+            id
+            enabled
+            title
+            type
+            media {
+                address
+            }
+        }
+        totalCount
+    }
+}

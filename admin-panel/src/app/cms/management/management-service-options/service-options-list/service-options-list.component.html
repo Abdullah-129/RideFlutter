@@ -1,0 +1,27 @@
+<nz-page-header
+  [nzGhost]="false"
+  nzBackIcon
+  [nzTitle]="'reviewParameters.title' | translate"
+  [nzSubtitle]="'reviewParameters.subtitle' | translate">
+  <nz-page-header-extra>
+    <button nz-button nzType="primary" routerLink="new"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate }}</button>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <nz-table #ajaxTable nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.serviceOptions as serviceOptions" [nzData]="serviceOptions" [nzTotal]="serviceOptions.length" nzBordered>
+      <thead>
+        <tr>
+          <th>{{ 'profile.name' | translate }}</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of ajaxTable.data" [routerLink]="'view/' + data.id" class="group cursor-pointer">
+          <td>{{ data.name }}</td>
+          <td>
+            {{ data.type }} • {{ data.icon }}
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>

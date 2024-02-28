@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "درخواست کی۔",
+			"NotFound": "نہیں ملا",
+			"NoCloseFound": "بند نہیں ملا",
+			"Found": "ملا",
+			"DriverAccepted": "ڈرائیور نے قبول کر لیا۔",
+			"Arrived": "پہنچا",
+			"WaitingForPrePay": "پیشگی ادائیگی کا انتظار",
+			"DriverCanceled": "ڈرائیور نے منسوخ کر دیا۔",
+			"RiderCanceled": "رائڈر منسوخ کر دیا گیا۔",
+			"Started": "شروع",
+			"WaitingForPostPay": "بعد از ادائیگی کا انتظار",
+			"WaitingForReview": "جائزہ کا انتظار ہے۔",
+			"Finished": "ختم",
+			"Booked": "بک کروایا",
+			"Expired": "میعاد ختم"
+		},
+		"transactionType": {
+			"OrderFee": "آرڈر کی فیس",
+			"Cash": "نقد",
+			"BankTransfer": "بینک ٹرانسفر",
+			"Gift": "تحفہ",
+			"Commission": "کمیشن",
+			"Correction": "تصحیح",
+			"InAppPayment": "ایپ ادائیگی میں",
+			"Withdraw": "واپس لینا"
+		},
+		"transactionStatus": {
+			"Processing": "پروسیسنگ",
+			"Done": "ہو گیا",
+			"Canceled": "منسوخ",
+			"Rejected": "مسترد"
+		},
+		"gender": {
+			"male": "مرد",
+			"female": "عورت",
+			"genderless": "بے جنس"
+		},
+		"complaintStatus": {
+			"submitted": "جمع کرایا",
+			"underInvestigation": "زیر تفتیش",
+			"resolved": "حل ہو گیا۔"
+		},
+		"sosStatus": {
+			"submitted": "جمع کرایا",
+			"underReview": "زیر جائزہ",
+			"falseAlarm": "غلط انتباہ",
+			"resolved": "حل ہو گیا۔"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "زیر التواء منظوری",
+				"approved": "منظورشدہ",
+				"blocked": "مسدود",
+				"softReject": "نرم رد",
+				"hardReject": "سخت رد",
+				"offline": "آف لائن",
+				"waitingDocuments": "زیر التواء جمع آوری",
+				"inService": "سروس میں",
+				"online": "آن لائن"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "مسدود",
+				"enabled": "فعال"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "جمع کرایا",
+			"seen": "دیکھا",
+			"contactDriver": "ڈرائیور سے رابطہ کیا۔",
+			"contactAuthorities": "حکام سے رابطہ کیا۔",
+			"markedAsResolved": "حل شدہ کے بطور نشان زد",
+			"markedAsFalseAlarm": "غلط الارم کے بطور نشان زد"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "سواری"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "جملہ حقوق محفوظ ہیں."
+		},
+		"page": {
+			"title": "ریڈی ایڈمن پینل"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "جائزہ",
+			"dispatcher": "ڈسپیچر",
+			"header": "گھر"
+		},
+		"driver": {
+			"pendingVerification": "زیر التوا تصدیق",
+			"all": "سب دیکھیں",
+			"header": "ڈرائیورز"
+		},
+		"marketing": {
+			"coupons": "کوپن",
+			"announcements": "اعلانات",
+			"rewards": "انعامات اور حوالہ جات",
+			"header": "مارکیٹنگ"
+		},
+		"accounting": {
+			"admin": "ایڈمن",
+			"fleets": "بیڑے",
+			"drivers": "ڈرائیورز",
+			"riders": "سوار",
+			"header": "حساب کتاب"
+		},
+		"riders": "سوار",
+		"requests": "درخواستیں",
+		"sos": "SOS",
+		"complaints": "شکایات",
+		"management": {
+			"regions": "ریجنز",
+			"services": "خدمات",
+			"serviceOptions": "",
+			"fleets": "بیڑے",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "کاریں",
+			"userRoles": "صارف کے کردار",
+			"users": "صارفین",
+			"paymentGateways": "ادائیگی کے گیٹ ویز",
+			"settings": "ترتیبات",
+			"header": "انتظام"
+		},
+		"drivers": {
+			"header": "ڈرائیورز",
+			"subtitle": "رجسٹرڈ تمام ڈرائیوروں کی فہرست۔"
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "زبان سوئچ کریں۔"
+		},
+		"notification": {
+			"title": "اطلاعاتی مرکز"
+		},
+		"logout": "لاگ آوٹ",
+		"driversOnline": "آن لائن ڈرائیورز",
+		"autoZoom": "آٹو زوم",
+		"viewDriver": "ڈرائیور دیکھیں",
+		"complaints": {
+			"title": "شکایات",
+			"suffix": "غیر جائزہ لیا گیا۔"
+		},
+		"activeOrders": {
+			"title": "ایکٹو آرڈرز",
+			"suffix": "احکامات"
+		},
+		"pendingDrivers": {
+			"title": "زیر التواء ڈرائیورز",
+			"suffix": "غیر تصدیق شدہ"
+		},
+		"bookedOrders": {
+			"title": "بک شدہ آرڈرز",
+			"suffix": "بک کروایا"
+		},
+		"chart": {
+			"requestsTitle": "درخواستیں",
+			"incomeTitle": "آمدنی"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "شکایات کا جائزہ نہیں لیا گیا۔"
+		},
+		"pendingDrivers": {
+			"suffix": "ڈرائیور غیر تصدیق شدہ"
+		},
+		"paymentRequests": {
+			"suffix": "ادائیگی کی درخواستوں کا تصفیہ نہیں ہوا۔"
+		}
+	},
+	"requests": {
+		"expectedTime": "متوقع وقت",
+		"startTime": "وقت آغاز",
+		"finishTime": "ختم کرنے کا وقت",
+		"costAfterCoupon": "کوپن کے بعد لاگت",
+		"estimatedCost": "متوقع قیمت",
+		"header": "درخواست #",
+		"requestTIme": "وقت کی درخواست کریں۔",
+		"service": "سروس",
+		"distance": "فاصلے",
+		"duration": "دورانیہ",
+		"chats": "چیٹس",
+		"complaints": "شکایات",
+		"assign": "ڈرائیور کو تفویض کریں (الفا)"
+	},
+	"profile": {
+		"status": "حالت",
+		"locations": "مقامات",
+		"view": "دیکھیں",
+		"requestInfo": "معلومات کی درخواست کریں۔",
+		"name": "نام",
+		"mobileNumber": "موبائل نمبر",
+		"registeredOn": "رجسٹرڈ آن",
+		"driverInfo": "ڈرائیور کی معلومات",
+		"riderInfo": "سوار کی معلومات",
+		"details": "تفصیلات",
+		"title": "عنوان",
+		"content": "مواد",
+		"firstName": "پہلا نام",
+		"lastName": "آخری نام",
+		"gender": "صنف",
+		"email": "ای میل",
+		"fleet": "بیڑا",
+		"carModel": "کار ماڈل",
+		"carColor": "کار کا رنگ",
+		"carProductionYear": "کار کی پیداوار کا سال",
+		"carPlateNumber": "کار پلیٹ نمبر",
+		"accountNumber": "اکاؤنٹ نمبر",
+		"bankName": "بینک کا نام",
+		"bankRoutingNumber": "بینک روٹنگ نمبر",
+		"bankSwift": "بینک سوئفٹ",
+		"address": "پتہ",
+		"services": "خدمات",
+		"avatarImage": "اوتار کی تصویر",
+		"upload": "اپ لوڈ کریں۔",
+		"save": "محفوظ کریں۔",
+		"dateTime": "تاریخ وقت",
+		"rating": "درجہ بندی",
+		"review": "جائزہ لیں",
+		"actions": "اعمال",
+		"transactionType": "لین دین کی قسم",
+		"amount": "رقم",
+		"documentNumber": "دستاویز نمبر",
+		"submit": "جمع کرائیں",
+		"insertTransaction": "ٹرانزیکشن داخل کریں۔",
+		"cost": "لاگت",
+		"goToList": "فہرست پر جائیں۔",
+		"add": "شامل کریں۔",
+		"search": "تلاش کریں۔",
+		"reset": "دوبارہ ترتیب دیں۔",
+		"export": "برآمد کریں۔",
+		"total": "کل",
+		"currency": "کرنسی",
+		"next": "اگلے",
+		"select": "منتخب کریں۔",
+		"delete": "حذف کریں۔",
+		"phoneNumber": "فون نمبر",
+		"financialRecords": "مالیاتی ریکارڈز",
+		"enabled": "فعال",
+		"disabled": "معذور",
+		"deleteNotice": "کیا آپ واقعی اس ڈیٹا کو حذف کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔",
+		"dangerArea": "خطرناک علاقہ",
+		"userAgent": "صارف ایجنٹ",
+		"loginTimestamp": "لاگ ان کی تاریخ اور وقت",
+		"logoutTimestamp": "لاگ آؤٹ تاریخ اور وقت",
+		"userName": "صارف کا نام",
+		"code": "کوڈ",
+		"beneficiary": "فائدہ اٹھانے والا",
+		"availabilityTime": "دستیابی کا وقت",
+		"appType": "ایپ کی قسم",
+		"creditGift": "کریڈٹ گفٹ",
+		"tripFeePercentGift": "ٹرپ فیس فیصد گفٹ",
+		"creditCurrency": "کریڈٹ کرنسی",
+		"conditionTripCountsLessThan": "سفر سے کم شمار ہوتا ہے۔",
+		"conditionUserNumberFirstDigits": "فائدہ اٹھانے والے موبائل نمبر کے پہلے ہندسے (فہرست، کوما سے الگ)",
+		"subject": "مضمون",
+		"type": "قسم",
+		"paymentGateway": "پیسے ادا کرنے کا طریقہ",
+		"rider": "سوار",
+		"driver": "ڈرائیور",
+		"admin": "ایڈمن",
+		"coupon": "کوپن",
+		"activities": "سرگرمیوں کی ٹائم لائن",
+		"location": "مقام",
+		"submittedBy": "کی طرف سے پیش"
+	},
+	"complaint": {
+		"inscriptionTime": "نوشتہ وقت",
+		"content": "مواد"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "اپ ڈیٹ کی حیثیت",
+			"lastSeenAt": "آخری بار دیکھا گیا",
+			"rating": "درجہ بندی",
+			"details": "تفصیلات",
+			"orders": "احکامات",
+			"financials": "کریڈٹ ریکارڈز",
+			"reviews": "جائزے",
+			"documents": "دستاویزات"
+		}
+	},
+	"table": {
+		"viewRequest": "درخواست دیکھیں",
+		"viewOperator": "آپریٹر دیکھیں",
+		"viewGateway": "گیٹ وے دیکھیں",
+		"min": "کم از کم",
+		"max": "زیادہ سے زیادہ",
+		"viewDriver": "ڈرائیور دیکھیں",
+		"viewFleet": "فلیٹ دیکھیں",
+		"viewRider": "رائڈر دیکھیں",
+		"details": "تفصیلات",
+		"viewComplaint": "شکایت دیکھیں"
+	},
+	"drivers": {
+		"notFoundMessage": "ڈرائیور نہیں ملا!"
+	},
+	"dispatcher": {
+		"removeLastPoint": "آخری پوائنٹ کو ہٹا دیں۔",
+		"rider": {
+			"title": "سوار",
+			"description": "درخواست تفویض کرنے کے لیے سوار کو منتخب کریں۔"
+		},
+		"location": {
+			"title": "مقام",
+			"description": "پک اپ اور ڈراپ آف لوکیشن"
+		},
+		"service": {
+			"title": "سروس",
+			"description": "خدمت کی درخواست کی جائے۔"
+		},
+		"looking": {
+			"title": "تلاش کر رہا ہے۔",
+			"description": "اہل ڈرائیور کی تلاش ہے۔"
+		},
+		"determiningLocation": "مقام کا تعین ہو رہا ہے، براہ کرم انتظار کریں..."
+	},
+	"chart": {
+		"emptyState": "یہاں دیکھنے کے لیے کچھ نہیں ہے۔"
+	},
+	"message": {
+		"areYouSure": "کیا تمہیں یقین ہے؟",
+		"deleteDriverConfirmation": {
+			"title": "کیا آپ واقعی ڈرائیور کو حذف کرنا چاہتے ہیں؟",
+			"content": "ڈرائیور کی معلومات کو حذف کرنے سے ڈرائیور ڈرائیوروں کی فہرست سے چھپ جائے گا اور پروفائل تک مزید رسائی نہیں ہوگی۔"
+		},
+		"deleteDriverCofirmAlert": "ڈرائیور کو حذف کر دیا گیا ہے۔",
+		"driverAssignedSuccessfully": "ڈرائیور کو کامیابی کے ساتھ تفویض کیا گیا ہے۔",
+		"deleteConfirmation": {
+			"title": "کیا آپ واقعی حذف کرنا چاہتے ہیں؟"
+		},
+		"deleteRiderConfirmation": {
+			"content": "سوار کی معلومات کو حذف کرنے سے سوار سواروں کی فہرست سے چھپ جائے گا اور پروفائل تک مزید رسائی نہیں ہوگی۔"
+		},
+		"deleteRiderCofirmAlert": "رائڈر کو حذف کر دیا گیا ہے۔"
+	},
+	"reviewParameters": {
+		"title": "پیرامیٹرز کا جائزہ لیں۔",
+		"subtitle": "پیرامیٹرز کی فہرست جو سوار سروس کے تجربے کو تفویض کر سکتا ہے۔"
+	},
+	"services": {
+		"editCategory": "زمرہ میں ترمیم کریں۔",
+		"newCategory": "نیا زمرہ",
+		"newService": "نئی سروس"
+	},
+	"service": {
+		"createFirstNotice": "کلائنٹ ایپلی کیشنز میں ظاہر کرنے کے لیے اپنی پہلی سروس کیٹیگری بنائیں",
+		"Regions": "ریجنز",
+		"timeMultiplierTable": {
+			"startTime": "وقت آغاز",
+			"endTime": "اختتامی وقت",
+			"multiplyBy": "ضرب بذریعہ"
+		},
+		"insertRule": "قاعدہ داخل کریں۔",
+		"distanceMultiplierTable": {
+			"distanceFrom": "سے فاصلہ",
+			"distanceTo": "سے فاصلہ"
+		}
+	},
+	"settings": {
+		"generalSettings": "عام ترتیبات"
+	},
+	"users": {
+		"tab": {
+			"details": "تفصیلات"
+		},
+		"noRole": "کوئی کردار تفویض نہیں کیا گیا۔"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "دستیابی کا وقت",
+		"expirationTime": "میعاد ختم ہونے کا وقت"
+	},
+	"riders": {
+		"notFoundMessage": "سوار نہیں ملا!",
+		"tab": {
+			"details": "تفصیلات",
+			"creditrecords": "کریڈٹ ریکارڈز",
+			"orders": "احکامات",
+			"addresses": "پتے"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "اجازت نہیں دی جاتی"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "منزل تک پہنچا",
+		"arrivedToPickupPoint": "پک اپ پوائنٹ پر پہنچا",
+		"bookedByOperator": "آپریٹر کے ذریعہ کتاب",
+		"bookedByRider": "رائڈر کے ذریعہ بک کیا گیا۔",
+		"canceledByDriver": "ڈرائیور کی طرف سے منسوخ",
+		"canceledByOperator": "آپریٹر کے ذریعہ منسوخ",
+		"canceledByRider": "رائڈر کے ذریعے منسوخ کر دیا گیا۔",
+		"driverAccepted": "ڈرائیور نے قبول کر لیا۔",
+		"expired": "میعاد ختم",
+		"paid": "ادا کیا",
+		"requestedByOperator": "آپریٹر کے ذریعہ درخواست کی گئی۔",
+		"requestedByRider": "رائیڈر کے ذریعہ درخواست کی گئی۔",
+		"reviewed": "جائزہ لیا اور درجہ بندی کی۔",
+		"started": "شروع"
+	}
+}

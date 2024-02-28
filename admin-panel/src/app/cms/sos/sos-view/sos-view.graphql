@@ -1,0 +1,56 @@
+query ViewSOS($id: ID!) {
+    distressSignal(id: $id) {
+        id
+        createdAt
+        status
+        submittedByRider
+        location {
+          lat
+          lng
+        }
+        activities {
+            action
+            createdAt
+            note
+            operator {
+                id
+                firstName
+                lastName
+            }
+        }
+        order {
+            id
+            status
+            createdOn
+            startTimestamp
+            finishTimestamp
+            expectedTimestamp
+            costBest
+            costAfterCoupon
+            addresses
+            currency
+            rider {
+                id
+                mobileNumber
+                status
+                firstName
+                lastName
+                registrationTimestamp
+            }
+            driver {
+                id
+                mobileNumber
+                status
+                firstName
+                lastName
+                registrationTimestamp
+            }
+        }
+    }
+}
+
+mutation CreateSOSActivity($activity: CreateSOSAcitivtyInput!) {
+    createOneSOSActivity(input: {sOSActivity: $activity}) {
+        id 
+    }
+}

@@ -1,0 +1,35 @@
+<nz-card *ngIf="(query | async)?.data?.fleet as fleet">
+  <nz-page-header>
+    <nz-page-header-title>{{ fleet.name }}</nz-page-header-title>
+    <nz-page-header-tags>
+    </nz-page-header-tags>
+    <nz-page-header-extra>
+    </nz-page-header-extra>
+    <nz-page-header-content>
+      <div class="content">
+        <div class="main">
+          <nz-descriptions [nzColumn]="2">
+            <nz-descriptions-item nzTitle="{{ 'profile.phoneNumber' | translate }}" [nzSpan]="1">{{ fleet.phoneNumber }}
+            </nz-descriptions-item>
+            <nz-descriptions-item nzTitle="{{ 'profile.address' | translate }}" [nzSpan]="2">{{ fleet.address }}
+            </nz-descriptions-item>
+          </nz-descriptions>
+        </div>
+      </div>
+    </nz-page-header-content>
+    <nz-page-header-footer>
+      <nz-tabset class="mb-2" nzLinkRouter>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="details">{{ 'profile.details' | translate }}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="financials">{{ 'profile.financialRecords' | translate }}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="zone-prices">{{ 'menu.management.zonePrices' | translate }}</a>
+        </nz-tab>
+      </nz-tabset>
+      <router-outlet></router-outlet>
+    </nz-page-header-footer>
+  </nz-page-header>
+</nz-card>

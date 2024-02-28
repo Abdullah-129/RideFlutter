@@ -1,0 +1,44 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Announcement"
+  nzSubtitle="Definition of announcements & news that users will see under the menu on their app.">
+  <nz-page-header-content>
+    <form nz-form nzLayout="vertical" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="lg:grid lg:grid-cols-3 lg:gap-2">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="title">Title</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="title" id="title">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="userType">User Type</nz-form-label>
+          <nz-form-control>
+            <nz-select [nzMaxTagCount]="3" nzMode="multiple" nzPlaceHolder="Please select" formControlName="userType">
+              <nz-option nzLabel="Driver" nzValue="Driver"></nz-option>
+              <nz-option nzLabel="Rider" nzValue="Rider"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="description">Description</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="description" id="description">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="url">URL</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="url" id="url">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="dates">{{ 'coupons.availabilityTime' | translate }}</nz-form-label>
+          <nz-form-control>
+            <nz-range-picker id="dates" formControlName="dates" class="w-full"></nz-range-picker>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <button nz-button nzType="primary" type="submit" class="float-right" [disabled]="form.invalid">{{ 'profile.submit'
+        | translate }}</button>
+    </form>
+  </nz-page-header-content>
+</nz-page-header>

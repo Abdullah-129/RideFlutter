@@ -1,0 +1,15 @@
+query SOSList($paging: OffsetPaging) {
+    distressSignals(paging: $paging) {
+        nodes {
+            id
+            createdAt
+            status
+            location {
+                lat
+                lng
+            }
+            
+        }
+        totalCount
+    }
+}

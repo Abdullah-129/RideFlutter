@@ -1,0 +1,19 @@
+query ReviewParameterView($id: ID!) {
+    feedbackParameter(id: $id) {
+        id
+        title
+        isGood
+    }
+}
+
+mutation UpdateReviewParameter($id: ID!, $update: UpdateFeedbackParameter!) {
+    updateOneFeedbackParameter(input: {id: $id, update: $update}) {
+        id
+    }
+}
+
+mutation CreateReviewParameter($input: CreateFeedbackParameter!) {
+    createOneFeedbackParameter(input: {feedbackParameter: $input}) {
+        id
+    }
+}

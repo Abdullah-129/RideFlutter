@@ -1,0 +1,48 @@
+query CarsList {
+  carModels(paging: { limit: 100 }) {
+    nodes {
+      id
+      name
+    }
+  }
+  carColors {
+    id
+    name
+  }
+}
+
+mutation DeleteCarModel($id: ID!) {
+  deleteOneCarModel(input: { id: $id }) {
+    id
+  }
+}
+
+mutation DeleteCarColor($id: ID!) {
+  deleteOneCarColor(input: { id: $id }) {
+    id
+  }
+}
+
+mutation CreateCarModel($input: CreateCarModel!) {
+  createOneCarModel(input: { carModel: $input }) {
+    id
+  }
+}
+
+mutation CreateCarColor($input: CreateCarColor!) {
+  createOneCarColor(input: { carColor: $input }) {
+    id
+  }
+}
+
+mutation UpdateCarModel($id: ID!, $input: UpdateCarModel!) {
+  updateOneCarModel(input: { id: $id, update: $input }) {
+    id
+  }
+}
+
+mutation UpdateCarColor($id: ID!, $input: UpdateCarColor!) {
+  updateOneCarColor(input: { id: $id, update: $input }) {
+    id
+  }
+}

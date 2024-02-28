@@ -1,0 +1,33 @@
+<nz-tabset nzTabPosition="left">
+  <nz-tab nzTitle="{{ 'settings.generalSettings' | translate }}">
+    <nz-page-header
+      [nzGhost]="false"
+      nzTitle="Change Password"
+      nzSubtitle="Update your password used to access this panel">
+    </nz-page-header>
+    <nz-card style="mt-16">
+      <form nz-form #frm [formGroup]="form" (ngSubmit)="onSubmit()">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="oldPassword">Old Password</nz-form-label>
+          <nz-form-control nzErrorTip="Password is incorrect">
+            <input nz-input formControlName="oldPassword" id="oldPassword" type="password" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="newPassword">New Password</nz-form-label>
+          <nz-form-control nzErrorTip="Password is incorrect">
+            <input nz-input formControlName="newPassword" id="newPassword" type="password" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="newPasswordRepeat">New Password Repeat</nz-form-label>
+          <nz-form-control nzErrorTip="Password is incorrect">
+            <input nz-input formControlName="newPasswordRepeat" id="newPasswordRepeat" type="password" />
+          </nz-form-control>
+        </nz-form-item>
+        <button nz-button nzType="primary" type="submit" [disabled]="form.invalid" class="float-right">Save</button>
+      </form>
+    </nz-card>
+
+  </nz-tab>
+</nz-tabset>

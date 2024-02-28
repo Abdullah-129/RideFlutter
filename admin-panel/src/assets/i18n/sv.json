@@ -1,0 +1,422 @@
+{
+    "enum": {
+        "request": {
+            "Requested": "Beställd",
+            "NotFound": "Ej Hittad",
+            "NoCloseFound": "Nära Ej Hittad",
+            "Found": "Hittad",
+            "DriverAccepted": "Förare Accepterade",
+            "Arrived": "Anlänt",
+            "WaitingForPrePay": "Inväntar Förbetalning",
+            "DriverCanceled": "Förare Avbröt",
+            "RiderCanceled": "Kund Avbröt",
+            "Started": "Startade",
+            "WaitingForPostPay": "Inväntar Efterbetalning",
+            "WaitingForReview": "Väntar På Betyg",
+            "Finished": "Slutförd",
+            "Booked": "Bokad",
+            "Expired": "Utgått"
+        },
+        "transactionType": {
+            "OrderFee": "Avgift",
+            "Cash": "Kontant",
+            "BankTransfer": "Bank Överföring",
+            "Gift": "Gåva",
+            "Commission": "Beställning",
+            "Correction": "Korrigering",
+            "InAppPayment": "App Betalning",
+            "Withdraw": "Utdrag"
+        },
+        "transactionStatus": {
+            "Processing": "Bearbetas",
+            "Done": "Klar",
+            "Canceled": "Avbryten",
+            "Rejected": "Avvisad"
+        },
+        "gender": {
+            "male": "Man",
+            "female": "Kvinna",
+            "genderless": "Ickebinär"
+        },
+        "complaintStatus": {
+            "submitted": "Skickad",
+            "underInvestigation": "Under Granskning",
+            "resolved": "Slutförd"
+        },
+        "sosStatus": {
+            "submitted": "Skickad",
+            "underReview": "Under Granskning",
+            "falseAlarm": "Falskt Alarm",
+            "resolved": "Slutförd"
+        },
+        "driver": {
+            "status": {
+                "pendingApproval": "Väntar på Godkännande",
+                "approved": "Godkänd",
+                "blocked": "Blockerad",
+                "softReject": "Mjuk Avvisning",
+                "hardReject": "Hård Avvisning",
+                "offline": "Offline",
+                "waitingDocuments": "Inväntar Registrering",
+                "inService": "I tjänst",
+                "online": "Online"
+            }
+        },
+        "rider": {
+            "status": {
+                "blocked": "Blockerad",
+                "enabled": "Aktiverad"
+            }
+        },
+        "sosActivityAction": {
+            "submitted": "Inskickad",
+            "seen": "Sedd",
+            "contactDriver": "Kontakta föraren",
+            "contactAuthorities": "Kontakta myndigheterna",
+            "markedAsResolved": "Markerad som Avklarad",
+            "markedAsFalseAlarm": "Markerad som Falskt alarm"
+        }
+    },
+    "branding": {
+        "menu": {
+            "header": "Ridy"
+        },
+        "footer": {
+            "address": "http://ridy.io/",
+            "prefix": "© 2018-2023",
+            "title": "Ridy.io",
+            "suffix": "All Rights reserved."
+        },
+        "page": {
+            "title": "Bra Taxi Admin Panel"
+        }
+    },
+    "menu": {
+        "home": {
+            "overview": "Översikt",
+            "dispatcher": "Avsändare",
+            "header": "Hem"
+        },
+        "driver": {
+            "pendingVerification": "Inväntar Verifikation",
+            "all": "Visa Alla",
+            "header": "Förare"
+        },
+        "marketing": {
+            "coupons": "Kuponger",
+            "announcements": "Meddelanden",
+            "rewards": "Bonusar & Remisser",
+            "header": "Marknadsföring"
+        },
+        "accounting": {
+            "admin": "Admin",
+            "fleets": "Företag",
+            "drivers": "Förare",
+            "riders": "Kunder",
+            "header": "Bokföring"
+        },
+        "riders": "Kunder",
+        "requests": "Beställningar",
+        "sos": "SOS",
+        "complaints": "Klagomål",
+        "management": {
+            "regions": "Regioner",
+            "services": "Taxi Turer",
+            "serviceOptions": "Taxialternativ",
+            "fleets": "Företag",
+            "zonePrices": "Zonpriser",
+            "reviewParameters": "Recension Parametrar",
+            "cars": "Bilar",
+            "userRoles": "Användarroller",
+            "users": "Användare",
+            "paymentGateways": "Betalningsmetoder",
+            "settings": "Inställningar",
+            "header": "Hantering"
+        },
+        "drivers": {
+            "header": "Förare",
+            "subtitle": "Lista av alla registrerade förare."
+        }
+    },
+    "overview": {
+        "switch": {
+            "language": "Byt Språk"
+        },
+        "notification": {
+            "title": "Notifieringscenter"
+        },
+        "logout": "Logga Ut",
+        "driversOnline": "Online Förare",
+        "autoZoom": "Auto Zoom",
+        "viewDriver": "Visa Förare",
+        "complaints": {
+            "title": "Klagomål",
+            "suffix": "Ogranskad"
+        },
+        "activeOrders": {
+            "title": "Aktiva Beställningar",
+            "suffix": "Resor"
+        },
+        "pendingDrivers": {
+            "title": "Väntande Förare",
+            "suffix": "Ej Verifierad"
+        },
+        "bookedOrders": {
+            "title": "Bokade Resor",
+            "suffix": "Bokad"
+        },
+        "chart": {
+            "requestsTitle": "Beställningar",
+            "incomeTitle": "Inkomst"
+        }
+    },
+    "notification": {
+        "complaints": {
+            "suffix": "Ogranskade Klagomål"
+        },
+        "pendingDrivers": {
+            "suffix": "Ej Verifierade Förare"
+        },
+        "paymentRequests": {
+            "suffix": "Betalningsförfrågan ej klar"
+        }
+    },
+    "requests": {
+        "expectedTime": "Uppskattad Tid",
+        "startTime": "Start Tid",
+        "finishTime": "Slut Tid",
+        "costAfterCoupon": "Kostnad Efter Kupong",
+        "estimatedCost": "Uppskattad Kostnad",
+        "header": "Beställning #",
+        "requestTIme": "Beställningstid",
+        "service": "Support",
+        "distance": "Distans",
+        "duration": "Tidslängd",
+        "chats": "Chattar",
+        "complaints": "Klagomål",
+        "assign": "Tillddela Förare (Alpha)"
+    },
+    "profile": {
+        "status": "Status",
+        "locations": "Platser",
+        "view": "Visa",
+        "requestInfo": "Be om Info",
+        "name": "Namn",
+        "mobileNumber": "Mobilnummer",
+        "registeredOn": "Registrerad På",
+        "driverInfo": "Förarinformation",
+        "riderInfo": "Kundinformation",
+        "details": "Detaljer",
+        "title": "Titel",
+        "content": "Innehåll",
+        "firstName": "Förnamn",
+        "lastName": "Efternamn",
+        "gender": "Kön",
+        "email": "E-Post",
+        "fleet": "Företag",
+        "carModel": "Bil Modell",
+        "carColor": "Bil Färg",
+        "carProductionYear": "Bil Produktionsår",
+        "carPlateNumber": "Registreringsskylt",
+        "accountNumber": "Konto Nummer",
+        "bankName": "Bank Namn",
+        "bankRoutingNumber": "Bank Routing Nummer",
+        "bankSwift": "Bank Swift",
+        "address": "Adress",
+        "services": "Taxi Turer",
+        "avatarImage": "Avatar Bild",
+        "upload": "Ladda Upp",
+        "save": "Spara",
+        "dateTime": "Datum & Tid",
+        "rating": "Betyg",
+        "review": "Recensera",
+        "actions": "Åtgärder",
+        "transactionType": "Transaktionstyp",
+        "amount": "Summa",
+        "documentNumber": "Dokument Nummer",
+        "submit": "Skicka",
+        "insertTransaction": "Lägg in Transaktion",
+        "cost": "Kostnad",
+        "goToList": "Gå Till Lista",
+        "add": "Lägg Till",
+        "search": "Sök",
+        "reset": "Återställ",
+        "export": "Exportera",
+        "total": "Totalt",
+        "currency": "Valuta",
+        "next": "Nästa",
+        "select": "Välj",
+        "delete": "Radera",
+        "phoneNumber": "Telefonnummer",
+        "financialRecords": "Finansiella Protokoll",
+        "enabled": "Aktiverad",
+        "disabled": "Avaktiverad",
+        "deleteNotice": "Är du säker att du vill radera detta? Detta kan inte ångras!",
+        "dangerArea": "Farligt Område",
+        "userAgent": "Användar Agent",
+        "loginTimestamp": "Login Datum & Tid",
+        "logoutTimestamp": "Utloggning Datum & Tid",
+        "userName": "Användarnamn",
+        "code": "Kod",
+        "beneficiary": "Förmånstagare",
+        "availabilityTime": "Tillgänglighetstid",
+        "appType": "App Typ",
+        "creditGift": "Kredit Gåva",
+        "tripFeePercentGift": "Reseavgift Procent Gåva",
+        "creditCurrency": "Kredit Valuta",
+        "conditionTripCountsLessThan": "Resa räknas som mindre än",
+        "conditionUserNumberFirstDigits": "Förmångstagares mobilnummers första nummer (lista, komma separarar)",
+        "subject": "Ämne",
+        "type": "Typ",
+        "paymentGateway": "Betalningsmetod",
+        "rider": "Kunder",
+        "driver": "Förare",
+        "admin": "Admin",
+        "coupon": "Kupong",
+        "activities": "Aktivitetstidslinje",
+        "location": "Plats",
+        "submittedBy": "Skickad Av"
+    },
+    "complaint": {
+        "inscriptionTime": "Inskriptionstid",
+        "content": "Innehåll"
+    },
+    "driver": {
+        "profile": {
+            "changeStatus": "Uppdatera Status",
+            "lastSeenAt": "Senast sedd vid",
+            "rating": "Betyg",
+            "details": "Detaljer",
+            "orders": "Beställningar",
+            "financials": "Kredit Dokument",
+            "reviews": "Recensioner",
+            "documents": "Dokument"
+        }
+    },
+    "table": {
+        "viewRequest": "Visa Beställning",
+        "viewOperator": "Visa Operatör",
+        "viewGateway": "Visa Metod",
+        "min": "Min",
+        "max": "Max",
+        "viewDriver": "Visa Förare",
+        "viewFleet": "Visa Företag",
+        "viewRider": "Visa Kund",
+        "details": "Detaljer",
+        "viewComplaint": "Visa Klagomål"
+    },
+    "drivers": {
+        "notFoundMessage": "Förare Ej Hittad!"
+    },
+    "dispatcher": {
+        "removeLastPoint": "Ta bort sista punkten",
+        "rider": {
+            "title": "Kund",
+            "description": "Välj kund att tilldela till beställning"
+        },
+        "location": {
+            "title": "Plats",
+            "description": "Upphämtning- och Avlämningsplats(er)"
+        },
+        "service": {
+            "title": "Taxi Turer",
+            "description": "Taxi att beställa"
+        },
+        "looking": {
+            "title": "Söker",
+            "description": "Söker behörig förare"
+        },
+        "determiningLocation": "Fastlägger plats, var god vänta..."
+    },
+    "chart": {
+        "emptyState": "Inget här."
+    },
+    "message": {
+        "areYouSure": "Är du säker?",
+        "deleteDriverConfirmation": {
+            "title": "Är du säker att du vill radera föraren?",
+            "content": "Att radera förarens info kommer gömma dem från förarlistan och profilen blir ej åtkomlig längre."
+        },
+        "deleteDriverCofirmAlert": "Förare har raderats",
+        "driverAssignedSuccessfully": "Lyckades tilldela uppgift till förare",
+        "deleteConfirmation": {
+            "title": "Är du säker att du vill radera?"
+        },
+        "deleteRiderConfirmation": {
+            "content": "Att radera kundinformation kommer gömma dem från listan av kunder och profilen kommer inte vara åtkomlig längre."
+        },
+        "deleteRiderCofirmAlert": "Kund har raderats."
+    },
+    "reviewParameters": {
+        "title": "Granska Parametrar",
+        "subtitle": "Lista av parametrar som kund kan tilldela till tjänsten"
+    },
+    "services": {
+        "editCategory": "Redigera Kategori",
+        "newCategory": "Ny Kategori",
+        "newService": "Ny Taxi"
+    },
+    "service": {
+        "createFirstNotice": "Skapa din första taxi-kategori att visa i klientens applikationer",
+        "Regions": "Regioner",
+        "timeMultiplierTable": {
+            "startTime": "Start Tid",
+            "endTime": "Slut Tid",
+            "multiplyBy": "Multiplicera med"
+        },
+        "insertRule": "Lägg till Regel",
+        "distanceMultiplierTable": {
+            "distanceFrom": "Distans från",
+            "distanceTo": "Distans till"
+        }
+    },
+    "settings": {
+        "generalSettings": "Generalla Inställningar"
+    },
+    "users": {
+        "tab": {
+            "details": "Detaljer"
+        },
+        "noRole": "Ingen roll tilldelad"
+    },
+    "zonePrice": {
+        "pickupAreas": "Upphämtningsområde(n)",
+        "destinationAres": "Destinationsplats(er)"
+    },
+    "zonePrices": {
+        "title": "Zonpriser",
+        "subtitle": "Definera specifika regioner som har annorlunda standard priser och har ett specifikt pris för kundens resa"
+    },
+    "coupons": {
+        "availabilityTime": "Tillgänglighetstid",
+        "expirationTime": "Utgångstid"
+    },
+    "riders": {
+        "notFoundMessage": "Kund ej hittad!",
+        "tab": {
+            "details": "Detaljer",
+            "creditrecords": "Kredit Historik",
+            "orders": "Beställningar",
+            "addresses": "Adresser"
+        }
+    },
+    "error": {
+        "PERMISSION_NOT_GRANTED": "Tillstånd ej givet"
+    },
+    "requestActivityType": {
+        "arrivedToDestination": "Framme vid Destination",
+        "arrivedToPickupPoint": "Framme vid Upphämtningsplats",
+        "bookedByOperator": "Bokad av Operatör",
+        "bookedByRider": "Bokad av Kund",
+        "canceledByDriver": "Avbryten av Förare",
+        "canceledByOperator": "Avbryten av Operatör",
+        "canceledByRider": "Avbryten av Kund",
+        "driverAccepted": "Förare Accepterade",
+        "expired": "Utgången",
+        "paid": "Betald",
+        "requestedByOperator": "Förfrågad av Operatör",
+        "requestedByRider": "Förfrågad av Kund",
+        "reviewed": "Recenserad & Betygsatt",
+        "started": "Startad"
+    }
+}

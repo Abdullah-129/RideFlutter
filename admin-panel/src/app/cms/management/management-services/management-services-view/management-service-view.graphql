@@ -1,0 +1,125 @@
+query ViewService($id: ID!) {
+    service(id: $id) {
+        id
+        name
+        categoryId
+        baseFare
+        perHundredMeters
+        perMinuteDrive
+        perMinuteWait
+        minimumFee
+        searchRadius
+        maximumDestinationDistance
+        paymentMethod
+        cancellationTotalFee
+        cancellationDriverShare
+        providerShareFlat
+        providerSharePercent
+        prepayPercent
+        searchRadius
+        mediaId
+        description
+        personCapacity
+        roundingFactor
+        media {
+            address
+        }
+        timeMultipliers {
+            startTime
+            endTime
+            multiply
+        }
+        distanceMultipliers {
+            distanceFrom
+            distanceTo
+            multiply
+        }
+        options {
+            id
+            name
+            type
+            additionalFee
+            icon
+        }
+        regions {
+            id
+            name
+            currency
+        }
+    }
+    regions {
+        nodes {
+            id
+            name
+            currency
+        }
+    }
+    serviceCategories {
+        id
+        name
+    }
+    serviceOptions {
+        id
+        name
+        icon
+        type
+        additionalFee
+    }
+}
+
+query NewService {
+    regions {
+        nodes {
+            id
+            name
+            currency
+        }
+    }
+    serviceCategories {
+        id
+        name
+    }
+    serviceOptions {
+        id
+        name
+        icon
+        type
+        additionalFee
+    }
+}
+
+mutation CreateService($input: CreateService!) {
+    createOneService(input: {service: $input}) {
+        id
+    }
+}
+
+mutation DeleteService($id: ID!) {
+    deleteOneService(input: { id: $id }) {
+      id
+    }
+}
+
+mutation UpdateService($id: ID!, $input: UpdateService!) {
+    updateOneService(input: {id: $id, update: $input}) {
+        id
+    }
+}
+
+# mutation UploadServiceImage($file: Upload!) {
+#     uploads(input: $file) {
+#         url
+#     }
+# }
+
+mutation SetRegionsOnService($id: ID!, $relationIds: [ID!]!) {
+    setRegionsOnService(input: {id: $id, relationIds: $relationIds}) {
+        id
+    }
+}
+
+mutation SetOptionsOnService($id: ID!, $relationIds: [ID!]!) {
+    setOptionsOnService(input: { id: $id, relationIds: $relationIds}) {
+      id
+    }
+}

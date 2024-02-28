@@ -1,0 +1,47 @@
+<nz-page-header
+      [nzGhost]="false"
+      nzBackIcon
+      nzTitle="New Driver"
+      nzSubtitle="Input Driver's contact details below.">
+    </nz-page-header>
+    <nz-card [nzActions]="[tmplActions]" style="mt-16">
+      <form nz-form [formGroup]="form" (ngSubmit)="submitForm()">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="firstName">First Name</nz-form-label>
+          <nz-form-control nzErrorTip="The input is not valid First Name">
+            <input nz-input formControlName="firstName" id="firstName" required />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="lastName">Last Name</nz-form-label>
+          <nz-form-control nzErrorTip="The input is not valid Last Name">
+            <input nz-input formControlName="lastName" id="lastName" required />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="phoneNumber" nzRequired>Phone Number</nz-form-label>
+          <nz-form-control formGroupName="phoneNumber">
+            <nz-input-group [nzAddOnBefore]="addOnBeforeTemplate">
+              <ng-template #addOnBeforeTemplate>
+                <nz-select formControlName="prefix" class="phone-select">
+                  <nz-option *ngFor="let code of countryCodes" [nzLabel]="code.name + ' (' + code.dial_code + ')'" [nzValue]="code.dial_code"></nz-option>
+                </nz-select>
+              </ng-template>
+              <input formControlName="number" id="phoneNumber" type=”tel” nz-input required />
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="gender">Gender</nz-form-label>
+          <nz-form-control>
+            <nz-select formControlName="gender">
+              <nz-option nzLabel="Male" nzValue="Male"></nz-option>
+              <nz-option nzLabel="Female" nzValue="Female"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <ng-template #tmplActions>
+          <button nz-button nzType="primary" [disabled]="form.invalid" (click)="submitForm()">Register</button>
+        </ng-template>
+      </form>
+    </nz-card>

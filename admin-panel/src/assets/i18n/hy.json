@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "Հայցվել է",
+			"NotFound": "Չի գտնվել",
+			"NoCloseFound": "Փակել Չգտնվեց",
+			"Found": "Գտնվել է",
+			"DriverAccepted": "Վարորդն ընդունված է",
+			"Arrived": "Ժամանել է",
+			"WaitingForPrePay": "Սպասում է նախնական վճարմանը",
+			"DriverCanceled": "Վարորդը չեղարկվել է",
+			"RiderCanceled": "Rider-ը չեղարկվել է",
+			"Started": "Սկսվել է",
+			"WaitingForPostPay": "Սպասում է հետվճարմանը",
+			"WaitingForReview": "Սպասում է վերանայման",
+			"Finished": "Ավարտված",
+			"Booked": "Ամրագրված",
+			"Expired": "Ժամկետանց"
+		},
+		"transactionType": {
+			"OrderFee": "Պատվերի վճար",
+			"Cash": "Կանխիկ",
+			"BankTransfer": "Բանկային փոխանցում",
+			"Gift": "Նվեր",
+			"Commission": "հանձնաժողով",
+			"Correction": "Ուղղում",
+			"InAppPayment": "App Payment-ում",
+			"Withdraw": "Հանել"
+		},
+		"transactionStatus": {
+			"Processing": "Մշակում",
+			"Done": "Կատարած",
+			"Canceled": "Չեղարկված է",
+			"Rejected": "Մերժված է"
+		},
+		"gender": {
+			"male": "Արական",
+			"female": "իգական",
+			"genderless": "Անսեռ"
+		},
+		"complaintStatus": {
+			"submitted": "Ներկայացված է",
+			"underInvestigation": "Քննության տակ",
+			"resolved": "Լուծվել է"
+		},
+		"sosStatus": {
+			"submitted": "Ներկայացված է",
+			"underReview": "Վերանայման տակ",
+			"falseAlarm": "կեղծ ահազանգ",
+			"resolved": "Լուծվել է"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "Սպասում է հաստատման",
+				"approved": "Հաստատված է",
+				"blocked": "Արգելափակված",
+				"softReject": "Փափուկ մերժում",
+				"hardReject": "Դժվար մերժել",
+				"offline": "Անցանց",
+				"waitingDocuments": "Սպասվում է ներկայացում",
+				"inService": "Ծառայության մեջ",
+				"online": "Առցանց"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "Արգելափակված",
+				"enabled": "Միացված է"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "Ներկայացված է",
+			"seen": "Տեսած",
+			"contactDriver": "Կապվել է վարորդի հետ",
+			"contactAuthorities": "Կապվել է իշխանությունների հետ",
+			"markedAsResolved": "Նշված է որպես լուծված",
+			"markedAsFalseAlarm": "Նշված է որպես Կեղծ ահազանգ"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "Ուղևորություններ"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023 թթ",
+			"title": "Ridy.io",
+			"suffix": "Բոլոր իրավունքները պաշտպանված են."
+		},
+		"page": {
+			"title": "Ridy Admin Panel"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "Ընդհանուր ակնարկ",
+			"dispatcher": "դիսպետչեր",
+			"header": "տուն"
+		},
+		"driver": {
+			"pendingVerification": "Սպասվող ստուգում",
+			"all": "Դիտել բոլորը",
+			"header": "Վարորդներ"
+		},
+		"marketing": {
+			"coupons": "Կտրոններ",
+			"announcements": "Հայտարարություններ",
+			"rewards": "Պարգևներ և ուղղորդումներ",
+			"header": "Մարքեթինգ"
+		},
+		"accounting": {
+			"admin": "Ադմին",
+			"fleets": "Նավատորմերը",
+			"drivers": "Վարորդներ",
+			"riders": "Հեծյալներ",
+			"header": "Հաշվապահություն"
+		},
+		"riders": "Հեծյալներ",
+		"requests": "Հարցումներ",
+		"sos": "SOS",
+		"complaints": "Բողոքներ",
+		"management": {
+			"regions": "Մարզեր",
+			"services": "Ծառայություններ",
+			"serviceOptions": "",
+			"fleets": "Նավատորմերը",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "Ավտոմեքենաներ",
+			"userRoles": "Օգտագործողի դերեր",
+			"users": "Օգտատերեր",
+			"paymentGateways": "Վճարման դարպասներ",
+			"settings": "Կարգավորումներ",
+			"header": "Կառավարում"
+		},
+		"drivers": {
+			"header": "Վարորդներ",
+			"subtitle": "Բոլոր գրանցված վարորդների ցուցակը."
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "Փոխել լեզուն"
+		},
+		"notification": {
+			"title": "Ծանուցման կենտրոն"
+		},
+		"logout": "Դուրս գալ",
+		"driversOnline": "Առցանց վարորդներ",
+		"autoZoom": "Ավտոմատ խոշորացում",
+		"viewDriver": "Դիտել Վարորդը",
+		"complaints": {
+			"title": "Բողոքներ",
+			"suffix": "Չվերանայված"
+		},
+		"activeOrders": {
+			"title": "Ակտիվ պատվերներ",
+			"suffix": "Պատվերներ"
+		},
+		"pendingDrivers": {
+			"title": "Սպասող վարորդներ",
+			"suffix": "Չստուգված"
+		},
+		"bookedOrders": {
+			"title": "Ամրագրված պատվերներ",
+			"suffix": "Ամրագրված"
+		},
+		"chart": {
+			"requestsTitle": "հարցումներ",
+			"incomeTitle": "Եկամուտ"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "Բողոքները չվերանայված"
+		},
+		"pendingDrivers": {
+			"suffix": "Վարորդները չստուգված են"
+		},
+		"paymentRequests": {
+			"suffix": "Վճարման հարցումները չլուծված են"
+		}
+	},
+	"requests": {
+		"expectedTime": "Սպասվող ժամանակը",
+		"startTime": "Մեկնարկի ժամանակը",
+		"finishTime": "Ավարտելու ժամանակը",
+		"costAfterCoupon": "Արժեքը կտրոնից հետո",
+		"estimatedCost": "Մոտավոր արժեքը",
+		"header": "Հարցում #",
+		"requestTIme": "Հարցման ժամանակը",
+		"service": "Ծառայություն",
+		"distance": "Հեռավորությունը",
+		"duration": "Տեւողությունը",
+		"chats": "Զրույցներ",
+		"complaints": "Բողոքներ",
+		"assign": "Նշանակել վարորդ (Alpha)"
+	},
+	"profile": {
+		"status": "Կարգավիճակ",
+		"locations": "Վայրեր",
+		"view": "Դիտել",
+		"requestInfo": "Հարցրեք Տեղեկություն",
+		"name": "Անուն",
+		"mobileNumber": "Բջջայինի համար",
+		"registeredOn": "Գրանցված է",
+		"driverInfo": "Վարորդի տվյալներ",
+		"riderInfo": "Rider Info",
+		"details": "Մանրամասներ",
+		"title": "Կոչում",
+		"content": "Բովանդակություն",
+		"firstName": "Անուն",
+		"lastName": "Ազգանուն",
+		"gender": "Սեռ",
+		"email": "Էլ",
+		"fleet": "Նավատորմ",
+		"carModel": "Ավտոմեքենայի մոդել",
+		"carColor": "Մեքենայի գույնը",
+		"carProductionYear": "Ավտոմեքենաների արտադրության տարեթիվ",
+		"carPlateNumber": "Մեքենայի համարանիշ",
+		"accountNumber": "Հաշվեհամար",
+		"bankName": "Բանկի անվանումը",
+		"bankRoutingNumber": "Բանկի երթուղային համարը",
+		"bankSwift": "Bank Swift",
+		"address": "Հասցե",
+		"services": "Ծառայություններ",
+		"avatarImage": "Անձնանշանի պատկեր",
+		"upload": "Վերբեռնել",
+		"save": "Պահպանել",
+		"dateTime": "Ամսաթիվ և ժամ",
+		"rating": "Վարկանիշ",
+		"review": "Վերանայում",
+		"actions": "Գործողություններ",
+		"transactionType": "Գործարքի տեսակը",
+		"amount": "Գումարը",
+		"documentNumber": "Փաստաթղթի համարը",
+		"submit": "Ներկայացնել",
+		"insertTransaction": "Տեղադրել գործարքը",
+		"cost": "Արժեքը",
+		"goToList": "Գնալ դեպի ցուցակ",
+		"add": "Ավելացնել",
+		"search": "Որոնում",
+		"reset": "Վերականգնել",
+		"export": "Արտահանում",
+		"total": "Ընդամենը",
+		"currency": "Արժույթ",
+		"next": "Հաջորդը",
+		"select": "Ընտրել",
+		"delete": "Ջնջել",
+		"phoneNumber": "Հեռախոսահամար",
+		"financialRecords": "Ֆինանսական գրառումներ",
+		"enabled": "Միացված է",
+		"disabled": "Անաշխատունակ",
+		"deleteNotice": "Իսկապե՞ս ուզում եք ջնջել այս տվյալները: Այս գործողությունն անշրջելի է",
+		"dangerArea": "Վտանգավոր տարածք",
+		"userAgent": "Օգտագործողի գործակալ",
+		"loginTimestamp": "Մուտքագրման ամսաթիվ և ժամ",
+		"logoutTimestamp": "Դուրս գալու ամսաթիվ և ժամ",
+		"userName": "Օգտագործողի անունը",
+		"code": "Կոդ",
+		"beneficiary": "Շահառու",
+		"availabilityTime": "Հասանելիության ժամանակը",
+		"appType": "Հավելվածի տեսակը",
+		"creditGift": "Վարկային նվեր",
+		"tripFeePercentGift": "Ուղևորության վճար տոկոս նվեր",
+		"creditCurrency": "Վարկային արժույթ",
+		"conditionTripCountsLessThan": "Ուղևորությունը ավելի քիչ է, քան",
+		"conditionUserNumberFirstDigits": "Շահառուի բջջային համարների առաջին նիշերը (ցուցակ, ստորակետերով առանձնացված)",
+		"subject": "Առարկա",
+		"type": "Տիպ",
+		"paymentGateway": "Վճարման դարպաս",
+		"rider": "Հեծյալ",
+		"driver": "Վարորդ",
+		"admin": "Ադմին",
+		"coupon": "Կտրոն",
+		"activities": "Գործունեության ժամանակացույց",
+		"location": "Գտնվելու վայրը",
+		"submittedBy": "Ներկայացվել է"
+	},
+	"complaint": {
+		"inscriptionTime": "Գրությունների ժամանակ",
+		"content": "Բովանդակություն"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "Թարմացնել կարգավիճակը",
+			"lastSeenAt": "Վերջին անգամ տեսել է",
+			"rating": "Վարկանիշ",
+			"details": "Մանրամասներ",
+			"orders": "Պատվերներ",
+			"financials": "Վարկային գրառումներ",
+			"reviews": "Կարծիքներ",
+			"documents": "Փաստաթղթեր"
+		}
+	},
+	"table": {
+		"viewRequest": "Դիտել հարցումը",
+		"viewOperator": "Դիտել օպերատորը",
+		"viewGateway": "Դիտել դարպասը",
+		"min": "Min",
+		"max": "Մաքս",
+		"viewDriver": "Դիտել Վարորդը",
+		"viewFleet": "Դիտել նավատորմը",
+		"viewRider": "Դիտել Rider-ը",
+		"details": "Մանրամասներ",
+		"viewComplaint": "Դիտել բողոքը"
+	},
+	"drivers": {
+		"notFoundMessage": "Վարորդը չի գտնվել:"
+	},
+	"dispatcher": {
+		"removeLastPoint": "Հեռացնել Վերջին կետը",
+		"rider": {
+			"title": "Հեծյալ",
+			"description": "Ընտրեք հեծանվորդ՝ հարցումը նշանակելու համար"
+		},
+		"location": {
+			"title": "Գտնվելու վայրը",
+			"description": "Վերցնելու և հանձնելու վայր(ներ)"
+		},
+		"service": {
+			"title": "Ծառայություն",
+			"description": "Պահանջվող ծառայություն"
+		},
+		"looking": {
+			"title": "Փնտրում",
+			"description": "Իրավասու վարորդի որոնում"
+		},
+		"determiningLocation": "Տեղադրության որոշումը, խնդրում ենք սպասել..."
+	},
+	"chart": {
+		"emptyState": "Այստեղ տեսնելու ոչինչ չկա:"
+	},
+	"message": {
+		"areYouSure": "Համոզված ես?",
+		"deleteDriverConfirmation": {
+			"title": "Իսկապե՞ս ուզում եք ջնջել վարորդը:",
+			"content": "Վարորդի տեղեկությունները ջնջելու դեպքում վարորդը կթաքցվի վարորդների ցանկից, և պրոֆիլն այլևս հասանելի չի լինի:"
+		},
+		"deleteDriverCofirmAlert": "Վարորդը ջնջվել է",
+		"driverAssignedSuccessfully": "Վարորդը հաջողությամբ նշանակվել է",
+		"deleteConfirmation": {
+			"title": "Իսկապե՞ս ուզում եք ջնջել:"
+		},
+		"deleteRiderConfirmation": {
+			"content": "Հեծանվորդի տեղեկությունները ջնջելը կթաքցնի հեծանվորդին հեծանվորդների ցանկից, և պրոֆիլն այլևս հասանելի չի լինի:"
+		},
+		"deleteRiderCofirmAlert": "Rider-ը ջնջվել է:"
+	},
+	"reviewParameters": {
+		"title": "Վերանայման պարամետրեր",
+		"subtitle": "Պարամետրերի ցանկ, որոնք հեծանվորդը կարող է վերագրել ծառայության փորձին"
+	},
+	"services": {
+		"editCategory": "Խմբագրել կատեգորիան",
+		"newCategory": "Նոր կատեգորիա",
+		"newService": "Նոր ծառայություն"
+	},
+	"service": {
+		"createFirstNotice": "Ստեղծեք ձեր առաջին ծառայությունների կատեգորիան, որը կցուցադրվի հաճախորդի հավելվածներում",
+		"Regions": "Մարզեր",
+		"timeMultiplierTable": {
+			"startTime": "Մեկնարկի ժամանակը",
+			"endTime": "Ավարտի ժամանակը",
+			"multiplyBy": "Բազմապատկել ըստ"
+		},
+		"insertRule": "Տեղադրեք կանոն",
+		"distanceMultiplierTable": {
+			"distanceFrom": "Հեռավորությունը",
+			"distanceTo": "Հեռավորությունը դեպի"
+		}
+	},
+	"settings": {
+		"generalSettings": "Ընդհանուր կարգավորումներ"
+	},
+	"users": {
+		"tab": {
+			"details": "Մանրամասներ"
+		},
+		"noRole": "Դեր նշանակված չէ"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "Հասանելիության ժամանակը",
+		"expirationTime": "Ժամկետի ժամկետը"
+	},
+	"riders": {
+		"notFoundMessage": "Rider Չգտնվեց:",
+		"tab": {
+			"details": "Մանրամասներ",
+			"creditrecords": "Վարկային գրառումներ",
+			"orders": "Պատվերներ",
+			"addresses": "Հասցեներ"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "Թույլտվություն չի տրվում"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "Ժամանել է նպատակակետ",
+		"arrivedToPickupPoint": "Ժամանել է Pickup Point",
+		"bookedByOperator": "Գիրք օպերատորի կողմից",
+		"bookedByRider": "Booked by Rider",
+		"canceledByDriver": "Չեղարկվել է վարորդի կողմից",
+		"canceledByOperator": "Չեղարկվել է օպերատորի կողմից",
+		"canceledByRider": "Չեղարկվել է Rider-ի կողմից",
+		"driverAccepted": "Վարորդն ընդունված է",
+		"expired": "Ժամկետանց",
+		"paid": "Վճարված",
+		"requestedByOperator": "Օպերատորի խնդրանքով",
+		"requestedByRider": "Հայցվել է Rider-ի կողմից",
+		"reviewed": "Վերանայված և գնահատված",
+		"started": "Սկսվել է"
+	}
+}

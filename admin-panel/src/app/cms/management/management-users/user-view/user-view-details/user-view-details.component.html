@@ -1,0 +1,60 @@
+<!-- <nz-row *ngFor="let per of permissions">
+    <h4 style="width: 160px;">{{per}}:</h4>
+    <nz-checkbox-group *ngIf="permissionValues[per] != null" [ngModel]="permissionValues[per]"></nz-checkbox-group>
+    <br>
+    <br>
+</nz-row>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <button nz-button nzType="primary" type="submit" [disabled]="!form.valid">{{ 'profile.submit' | translate }}</button>
+</form>
+<br>
+<nz-alert *ngIf="model != null && model.id == null" nzType="info" nzMessage="{{ 'message.info' | translate }}"
+    nzDescription="{{ 'user.defaultPasswordNotice' | translate }}" nzShowIcon>
+</nz-alert> -->
+
+<form nz-form [nzLayout]="'vertical'" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <input formControlName="id" type="hidden" hidden>
+    <div class="lg:grid lg:grid-cols-3 lg:gap-2">
+        <nz-form-item>
+            <nz-form-label nzRequired nzFor="firstName">First Name</nz-form-label>
+            <nz-form-control nzErrorTip="The input is not valid First Name">
+                <input nz-input required formControlName="firstName" id="firstName" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label nzRequired nzFor="lastName">Last Name</nz-form-label>
+            <nz-form-control nzErrorTip="The input is not valid Last Name">
+                <input nz-input required formControlName="lastName" id="lastName" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label nzRequired nzFor="roleId">Role</nz-form-label>
+            <nz-form-control nzErrorTip="Role is not selected">
+                <nz-select required formControlName="roleId">
+                    <nz-option *ngFor="let role of (query | async)?.data?.operatorRoles" [nzValue]="role.id" [nzLabel]="role.title"></nz-option>
+                  </nz-select>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label nzRequired nzFor="userName">User Name</nz-form-label>
+            <nz-form-control nzErrorTip="The input is not valid User Name">
+                <input nz-input required formControlName="userName" id="userName" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label nzFor="email">Email</nz-form-label>
+            <nz-form-control>
+                <input nz-input formControlName="email" id="email" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label nzRequired nzFor="mobileNumber">Mobile Number</nz-form-label>
+            <nz-form-control>
+                <input formControlName="mobileNumber" id="'mobileNumber" nz-input />
+            </nz-form-control>
+        </nz-form-item>
+    </div>
+
+    <button class="float-right" nz-button nzType="primary" type="submit" [disabled]="form.invalid">Save</button>
+</form>

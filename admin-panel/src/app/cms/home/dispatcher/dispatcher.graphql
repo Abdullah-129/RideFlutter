@@ -1,0 +1,40 @@
+query DispatcherCalculateFare($points: [PointInput!]!) {
+    calculateFare(input: { points: $points }) {
+        currency
+        distance
+        duration
+        services {
+            name
+            services {
+                id
+                name
+                cost
+            }
+        }
+    }
+}
+
+mutation CreateOrder($riderId: ID!, $points: [PointInput!]!, $addresses: [String!]!, $serviceId: ID!) {
+    createOrder(input: { points: $points, serviceId: $serviceId, addresses: $addresses, intervalMinutes: 0, riderId: $riderId  }) {
+        id
+    }
+}
+
+subscription OrderUpdated($id: ID!) {
+    orderUpdated(orderId: $id) {
+        id
+        status
+        driver {
+            firstName
+            lastName
+            mobileNumber
+        }
+    }
+}
+
+mutation CancelOrder($orderId: ID!) {
+    cancelOrder(orderId: $orderId) {
+        id
+        status
+    }
+}

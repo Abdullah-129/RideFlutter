@@ -1,0 +1,24 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="User Roles" nzSubtitle="Role definitions for Admin panel users.">
+    <nz-page-header-extra>
+      <button nz-button nzType="primary" routerLink="new"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate
+        }}</button>
+    </nz-page-header-extra>
+    <nz-page-header-content>
+      <nz-table #table nzShowSizeChanger [nzFrontPagination]="false"
+        *ngIf="(query | async)?.data?.operatorRoles as roles" [nzData]="roles ?? []"
+        [nzTotal]="roles.length" (nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+        <thead>
+          <tr>
+            <th>
+              {{ 'profile.title' | translate }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of table.data" [routerLink]="'view/' + data.id" class="group cursor-pointer">
+            <td>{{ data.title }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </nz-page-header-content>
+  </nz-page-header>

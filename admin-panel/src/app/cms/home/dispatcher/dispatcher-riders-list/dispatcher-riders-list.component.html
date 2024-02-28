@@ -1,0 +1,58 @@
+<nz-table #table nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.riders as riders"
+  [nzData]="riders.nodes" [nzTotal]="riders.totalCount"
+  (nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+  <thead>
+    <tr>
+      <th nzCustomFilter nzColumnKey="lastName" [nzSortFn]="true">
+        {{ 'profile.name' | translate }}
+        <nz-filter-trigger [nzActive]="(route.queryParams | async)?.filter?.includes('lastName|like|')"
+          [nzDropdownMenu]="filtername">
+          <i nz-icon nzType="search"></i>
+        </nz-filter-trigger>
+      </th>
+      <th nzCustomFilter nzColumnKey="mobileNumber" [nzSortFn]="true">
+        {{ 'profile.mobileNumber' | translate }}
+        <nz-filter-trigger [nzActive]="(route.queryParams | async)?.filter?.includes('mobileNumber|like|')"
+          [nzDropdownMenu]="filtermobile">
+          <i nz-icon nzType="search"></i>
+        </nz-filter-trigger>
+      </th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of table.data">
+      <td>{{ data.firstName }} {{ data.lastName }}</td>
+      <td>{{ data.mobileNumber | phone }}</td>
+      <td>
+        <a (click)="selectRider(data.id)">{{ 'Select' }}</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+<nz-dropdown-menu #filtername="nzDropdownMenu">
+  <div class="ant-table-filter-dropdown">
+    <div class="search-box">
+      <input nz-input #lastNameInput placeholder="{{ 'profile.lastName' | translate }}" />
+      <button nz-button nzSize="small" nzType="primary"
+        (click)="tableService.filterText('lastName', lastNameInput.value)" class="search-button">
+        {{ 'profile.search' | translate }}
+      </button>
+      <button nz-button nzSize="small" (click)="tableService.resetFilter('lastName', lastNameInput)">{{
+        'profile.reset' | translate }}</button>
+    </div>
+  </div>
+</nz-dropdown-menu>
+<nz-dropdown-menu #filtermobile="nzDropdownMenu">
+  <div class="ant-table-filter-dropdown">
+    <div class="search-box">
+      <input #mobileNumberInput nz-input placeholder="Search Mobile Number">
+      <button nz-button nzSize="small" nzType="primary" class="search-button"
+        (click)="tableService.filterText('mobileNumber', mobileNumberInput.value)">
+        {{ 'profile.search' | translate }}
+      </button>
+      <button nz-button nzSize="small" (click)="tableService.resetFilter('mobileNumber', mobileNumberInput)">{{
+        'profile.reset' | translate }}</button>
+    </div>
+  </div>
+</nz-dropdown-menu>

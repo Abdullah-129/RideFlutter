@@ -1,0 +1,23 @@
+<nz-page-header [nzGhost]="false" nzBackIcon [nzTitle]="'zonePrices.title' | translate"
+  [nzSubtitle]="'zonePrices.subtitle' | translate">
+  <nz-page-header-extra>
+    <button nz-button nzType="primary" routerLink="new"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate
+      }}</button>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <nz-table #ajaxTable nzShowSizeChanger [nzFrontPagination]="false"
+      *ngIf="(query | async)?.data?.zonePrices as zonePrices" [nzData]="zonePrices.nodes"
+      [nzTotal]="zonePrices.totalCount" nzBordered>
+      <thead>
+        <tr>
+          <th>{{ 'profile.name' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of ajaxTable.data" [routerLink]="'view/' + data.id" class="group cursor-pointer">
+          <td>{{ data.name }}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>

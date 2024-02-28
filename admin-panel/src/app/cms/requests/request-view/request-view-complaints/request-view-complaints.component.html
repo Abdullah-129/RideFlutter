@@ -1,0 +1,36 @@
+<div *ngIf="(query | async)?.data?.order?.complaints as complaints">
+      <nz-table
+      #ajaxTable
+      nzShowSizeChanger
+      [nzData]="complaints"
+      [nzTotal]="complaints.length"
+      nzBordered
+    >
+      <thead>
+        <tr>
+          <th>
+            {{ 'profile.dateTime' | translate }}
+          </th>
+          <th>
+            {{ 'profile.subject' | translate }}
+          </th>
+          <th>
+            {{ 'profile.content' | translate }}
+          </th>
+          <th>{{ 'profile.actions' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of ajaxTable.data">
+          <td>{{ data.inscriptionTimestamp | timeago }}</td>
+          <td>{{ data.subject }}</td>
+          <td>{{ data.content }}</td>
+          <td>
+            <a [routerLink]="'/complaints/view/' + data.id"
+              >{{ 'table.viewComplaint' | translate }}</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+</div>

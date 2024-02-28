@@ -1,0 +1,29 @@
+<nz-page-header
+  [nzGhost]="false"
+  nzBackIcon
+  nzTitle="Regions"
+  nzSubtitle="List of all the regions app operates within">
+  <nz-page-header-extra>
+    <button nz-button nzType="primary" routerLink="new"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate }}</button>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <nz-table #ajaxTable nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.regions as regions" [nzData]="regions.nodes" [nzTotal]="regions.totalCount" nzBordered>
+      <thead>
+        <tr>
+          <th>{{ 'profile.name' | translate }}</th>
+          <th>{{ 'profile.currency' | translate }}</th>
+          <th>{{ 'profile.status' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of ajaxTable.data" [routerLink]="'view/' + data.id" class="group cursor-pointer">
+          <td>{{ data.name }}</td>
+          <td>{{ data.currency }}</td>
+          <td>
+            <nz-tag [nzColor]="tagColor.boolean(data.enabled)">{{data.enabled ? ('profile.enabled' | translate) : ('profile.disabled' | translate)}}</nz-tag>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>

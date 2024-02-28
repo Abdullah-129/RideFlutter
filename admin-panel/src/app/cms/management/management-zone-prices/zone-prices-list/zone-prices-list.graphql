@@ -1,0 +1,9 @@
+query ZonePricesList($paging: OffsetPaging) {
+  zonePrices(paging: $paging) {
+    nodes {
+      id
+      name
+    }
+    totalCount
+  }
+}

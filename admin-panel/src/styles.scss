@@ -1,0 +1,51 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.ant-form-item {
+  @apply mb-2;
+}
+
+nz-table {
+  @apply overflow-hidden;
+}
+
+// Start Search Box
+
+.search-box {
+  padding: 8px;
+}
+
+.search-box input {
+  width: 188px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.search-box button {
+  width: 90px;
+}
+
+.search-button {
+  margin-right: 8px;
+}
+
+.ant-statistic-content-value-int {
+  font-size: 24px;
+}
+
+.ant-statistic-content-suffix {
+  font-size: 16px;
+}
+.ant-statistic-content-prefix .anticon {
+  vertical-align: 0.07em !important;
+}
+// End Search Box
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+button, [type=button], [type=reset], [type=submit] {
+  @apply bg-primary-500;
+}

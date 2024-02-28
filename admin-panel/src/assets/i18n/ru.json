@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "Запрошено",
+			"NotFound": "не обнаружена",
+			"NoCloseFound": "Закрыть не найдено",
+			"Found": "Найденный",
+			"DriverAccepted": "Водитель принят",
+			"Arrived": "Прибыли",
+			"WaitingForPrePay": "Ожидание предоплаты",
+			"DriverCanceled": "Водитель отменен",
+			"RiderCanceled": "Гонщик отменен",
+			"Started": "Начал",
+			"WaitingForPostPay": "Ожидание постоплаты",
+			"WaitingForReview": "Ожидание обзора",
+			"Finished": "Законченный",
+			"Booked": "Забронировано",
+			"Expired": "Истекший"
+		},
+		"transactionType": {
+			"OrderFee": "Плата за заказ",
+			"Cash": "Наличные",
+			"BankTransfer": "Банковский перевод",
+			"Gift": "Подарок",
+			"Commission": "Комиссия",
+			"Correction": "Коррекция",
+			"InAppPayment": "Оплата в приложении",
+			"Withdraw": "Отзывать"
+		},
+		"transactionStatus": {
+			"Processing": "Обработка",
+			"Done": "Сделанный",
+			"Canceled": "Отменено",
+			"Rejected": "Отклоненный"
+		},
+		"gender": {
+			"male": "Мужской",
+			"female": "женский",
+			"genderless": "бесполый"
+		},
+		"complaintStatus": {
+			"submitted": "Поданный",
+			"underInvestigation": "Под следствием",
+			"resolved": "Решено"
+		},
+		"sosStatus": {
+			"submitted": "Поданный",
+			"underReview": "На рассмотрении",
+			"falseAlarm": "ложное предупреждение",
+			"resolved": "Решено"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "В ожидании утверждения",
+				"approved": "Одобренный",
+				"blocked": "Заблокировано",
+				"softReject": "Мягкий отказ",
+				"hardReject": "Жесткий отказ",
+				"offline": "Не в сети",
+				"waitingDocuments": "Ожидает отправки",
+				"inService": "В сервисе",
+				"online": "онлайн"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "Заблокировано",
+				"enabled": "Включено"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "Поданный",
+			"seen": "Видимый",
+			"contactDriver": "Связался с водителем",
+			"contactAuthorities": "Связавшиеся с властями",
+			"markedAsResolved": "Отмечено как решенное",
+			"markedAsFalseAlarm": "Помечен как ложная тревога"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "аттракционы"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "Все права защищены."
+		},
+		"page": {
+			"title": "Риди Панель администратора"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "Обзор",
+			"dispatcher": "Диспетчер",
+			"header": "Дом"
+		},
+		"driver": {
+			"pendingVerification": "Ожидание проверки",
+			"all": "Посмотреть все",
+			"header": "Драйверы"
+		},
+		"marketing": {
+			"coupons": "купоны",
+			"announcements": "Объявления",
+			"rewards": "Награды и рефералы",
+			"header": "Маркетинг"
+		},
+		"accounting": {
+			"admin": "Администратор",
+			"fleets": "Флоты",
+			"drivers": "Драйверы",
+			"riders": "Райдеры",
+			"header": "Бухгалтерский учет"
+		},
+		"riders": "Райдеры",
+		"requests": "Запросы",
+		"sos": "SOS",
+		"complaints": "Жалобы",
+		"management": {
+			"regions": "Регионы",
+			"services": "Услуги",
+			"serviceOptions": "",
+			"fleets": "Флоты",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "Машины",
+			"userRoles": "Роли пользователей",
+			"users": "Пользователи",
+			"paymentGateways": "Платежные шлюзы",
+			"settings": "Настройки",
+			"header": "Управление"
+		},
+		"drivers": {
+			"header": "Драйверы",
+			"subtitle": "Список всех зарегистрированных водителей."
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "Смена языка"
+		},
+		"notification": {
+			"title": "Центр уведомлений"
+		},
+		"logout": "Выйти",
+		"driversOnline": "Онлайн-драйверы",
+		"autoZoom": "Автоматическое масштабирование",
+		"viewDriver": "Посмотреть драйвер",
+		"complaints": {
+			"title": "Жалобы",
+			"suffix": "Не рассмотрено"
+		},
+		"activeOrders": {
+			"title": "Активные заказы",
+			"suffix": "Заказы"
+		},
+		"pendingDrivers": {
+			"title": "Ожидающие драйверы",
+			"suffix": "Непроверенный"
+		},
+		"bookedOrders": {
+			"title": "Забронированные заказы",
+			"suffix": "Забронировано"
+		},
+		"chart": {
+			"requestsTitle": "Запросы",
+			"incomeTitle": "Доход"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "Жалобы не рассмотрены"
+		},
+		"pendingDrivers": {
+			"suffix": "Драйверы непроверенные"
+		},
+		"paymentRequests": {
+			"suffix": "Запросы на оплату не удовлетворены"
+		}
+	},
+	"requests": {
+		"expectedTime": "Ожидаемое время",
+		"startTime": "Время начала",
+		"finishTime": "Время окончания",
+		"costAfterCoupon": "Стоимость после купона",
+		"estimatedCost": "Ориентировочная стоимость",
+		"header": "Запрос #",
+		"requestTIme": "Время запроса",
+		"service": "обслуживание",
+		"distance": "Расстояние",
+		"duration": "Продолжительность",
+		"chats": "Чаты",
+		"complaints": "Жалобы",
+		"assign": "Назначить водителя (альфа)"
+	},
+	"profile": {
+		"status": "Статус",
+		"locations": "Места",
+		"view": "Вид",
+		"requestInfo": "Запросить информацию",
+		"name": "Имя",
+		"mobileNumber": "Номер мобильного",
+		"registeredOn": "Зарегистрирован",
+		"driverInfo": "Информация о водителе",
+		"riderInfo": "Информация о гонщике",
+		"details": "Подробности",
+		"title": "Заголовок",
+		"content": "Содержание",
+		"firstName": "Имя",
+		"lastName": "Фамилия",
+		"gender": "Пол",
+		"email": "Эл. почта",
+		"fleet": "Флот",
+		"carModel": "Модель автомобиля",
+		"carColor": "Цвет автомобиля",
+		"carProductionYear": "Год выпуска автомобиля",
+		"carPlateNumber": "Автомобильный номерной знак",
+		"accountNumber": "Номер счета",
+		"bankName": "Название банка",
+		"bankRoutingNumber": "Маршрутный номер банка",
+		"bankSwift": "Банк Свифт",
+		"address": "Адрес",
+		"services": "Услуги",
+		"avatarImage": "Изображение аватара",
+		"upload": "Загрузить",
+		"save": "Сохранять",
+		"dateTime": "Дата и время",
+		"rating": "Рейтинг",
+		"review": "Обзор",
+		"actions": "Действия",
+		"transactionType": "Тип операции",
+		"amount": "Количество",
+		"documentNumber": "номер документа",
+		"submit": "Представлять на рассмотрение",
+		"insertTransaction": "Вставить транзакцию",
+		"cost": "Расходы",
+		"goToList": "Перейти к списку",
+		"add": "Добавлять",
+		"search": "Поиск",
+		"reset": "Перезагрузить",
+		"export": "Экспорт",
+		"total": "Общий",
+		"currency": "Валюта",
+		"next": "Следующий",
+		"select": "Выбирать",
+		"delete": "Удалить",
+		"phoneNumber": "Номер телефона",
+		"financialRecords": "Финансовые записи",
+		"enabled": "Включено",
+		"disabled": "Неполноценный",
+		"deleteNotice": "Вы уверены, что хотите удалить эти данные? Это действие необратимо",
+		"dangerArea": "Опасная зона",
+		"userAgent": "Агент пользователя",
+		"loginTimestamp": "Дата и время входа",
+		"logoutTimestamp": "Дата и время выхода",
+		"userName": "Имя пользователя",
+		"code": "Код",
+		"beneficiary": "Бенефициар",
+		"availabilityTime": "Время доступности",
+		"appType": "Тип приложения",
+		"creditGift": "Кредитный подарок",
+		"tripFeePercentGift": "Подарок в процентах от платы за поездку",
+		"creditCurrency": "Валюта кредита",
+		"conditionTripCountsLessThan": "Поездка считается меньше, чем",
+		"conditionUserNumberFirstDigits": "Первые цифры мобильных номеров получателей (список, через запятую)",
+		"subject": "Предмет",
+		"type": "Тип",
+		"paymentGateway": "Платежный шлюз",
+		"rider": "Райдер",
+		"driver": "Водитель",
+		"admin": "Администратор",
+		"coupon": "Купон",
+		"activities": "Хронология деятельности",
+		"location": "Расположение",
+		"submittedBy": "Представленный"
+	},
+	"complaint": {
+		"inscriptionTime": "Надпись Время",
+		"content": "Содержание"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "Обновить состояние",
+			"lastSeenAt": "Последний раз видели в",
+			"rating": "Рейтинг",
+			"details": "Подробности",
+			"orders": "Заказы",
+			"financials": "Кредитные записи",
+			"reviews": "Отзывы",
+			"documents": "Документы"
+		}
+	},
+	"table": {
+		"viewRequest": "Посмотреть запрос",
+		"viewOperator": "Просмотр оператора",
+		"viewGateway": "Посмотреть шлюз",
+		"min": "Мин.",
+		"max": "Максимум",
+		"viewDriver": "Посмотреть драйвер",
+		"viewFleet": "Посмотреть флот",
+		"viewRider": "Посмотреть всадника",
+		"details": "Подробности",
+		"viewComplaint": "Посмотреть жалобу"
+	},
+	"drivers": {
+		"notFoundMessage": "Драйвер не найден!"
+	},
+	"dispatcher": {
+		"removeLastPoint": "Удалить последнюю точку",
+		"rider": {
+			"title": "Райдер",
+			"description": "Выберите гонщика для назначения запроса"
+		},
+		"location": {
+			"title": "Расположение",
+			"description": "Места посадки и высадки"
+		},
+		"service": {
+			"title": "обслуживание",
+			"description": "Запрашиваемая услуга"
+		},
+		"looking": {
+			"title": "Ищу",
+			"description": "Поиск подходящего водителя"
+		},
+		"determiningLocation": "Определение местоположения, пожалуйста, подождите..."
+	},
+	"chart": {
+		"emptyState": "Здесь нечего смотреть."
+	},
+	"message": {
+		"areYouSure": "Ты уверен?",
+		"deleteDriverConfirmation": {
+			"title": "Вы уверены, что хотите удалить драйвер?",
+			"content": "Удаление информации о водителе скроет водителя из списка водителей, и профиль больше не будет доступен."
+		},
+		"deleteDriverCofirmAlert": "Драйвер был удален",
+		"driverAssignedSuccessfully": "Драйвер успешно назначен",
+		"deleteConfirmation": {
+			"title": "Вы уверены, что хотите удалить?"
+		},
+		"deleteRiderConfirmation": {
+			"content": "Удаление информации о гонщике скроет гонщика из списка гонщиков, и профиль больше не будет доступен."
+		},
+		"deleteRiderCofirmAlert": "Райдер был удален."
+	},
+	"reviewParameters": {
+		"title": "Просмотр параметров",
+		"subtitle": "Список параметров, которые гонщик может назначать опыту обслуживания"
+	},
+	"services": {
+		"editCategory": "Изменить категорию",
+		"newCategory": "Новая категория",
+		"newService": "Новая услуга"
+	},
+	"service": {
+		"createFirstNotice": "Создайте свою первую категорию услуг, которая будет отображаться в клиентских приложениях",
+		"Regions": "Регионы",
+		"timeMultiplierTable": {
+			"startTime": "Время начала",
+			"endTime": "Время окончания",
+			"multiplyBy": "Умножить на"
+		},
+		"insertRule": "Вставить правило",
+		"distanceMultiplierTable": {
+			"distanceFrom": "Расстояние от",
+			"distanceTo": "Расстояние до"
+		}
+	},
+	"settings": {
+		"generalSettings": "общие настройки"
+	},
+	"users": {
+		"tab": {
+			"details": "Подробности"
+		},
+		"noRole": "Роль не назначена"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "Время доступности",
+		"expirationTime": "Время окончания срока действия"
+	},
+	"riders": {
+		"notFoundMessage": "Райдер не найден!",
+		"tab": {
+			"details": "Подробности",
+			"creditrecords": "Кредитные записи",
+			"orders": "Заказы",
+			"addresses": "Адреса"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "Разрешение не предоставлено"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "Прибыл в пункт назначения",
+		"arrivedToPickupPoint": "Прибыл в пункт самовывоза",
+		"bookedByOperator": "Забронировать через оператора",
+		"bookedByRider": "Забронировано Райдером",
+		"canceledByDriver": "Отменено водителем",
+		"canceledByOperator": "Отменено оператором",
+		"canceledByRider": "Отменено Райдером",
+		"driverAccepted": "Водитель принят",
+		"expired": "Истекший",
+		"paid": "Оплаченный",
+		"requestedByOperator": "Запрошено оператором",
+		"requestedByRider": "Запрошено Райдером",
+		"reviewed": "Просмотрено и оценено",
+		"started": "Начал"
+	}
+}

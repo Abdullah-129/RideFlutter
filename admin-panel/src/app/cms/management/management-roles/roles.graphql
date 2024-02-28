@@ -1,0 +1,28 @@
+query Roles {
+    operatorRoles {
+        id
+        title
+    }
+}
+
+query Role($id: ID!) {
+    operatorRole(id: $id) {
+        id
+        title
+        permissions
+    }
+}
+
+mutation CreateRole($input: CreateOperatorRole!) {
+    createOneOperatorRole(input: {operatorRole: $input}) {
+        id
+        title
+        permissions
+    }
+}
+
+mutation UpdateRole($id: ID!, $input: UpdateOperatorRole!) {
+    updateOneOperatorRole(input: {id: $id, update: $input}) {
+        id
+    }
+}

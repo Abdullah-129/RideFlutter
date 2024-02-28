@@ -1,0 +1,12 @@
+query ComplaintsList($paging: OffsetPaging) {
+    complaints(paging: $paging) {
+        nodes {
+            id
+            inscriptionTimestamp
+            subject
+            status
+            content
+        }
+        totalCount
+    }
+}

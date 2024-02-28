@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "Solicitado",
+			"NotFound": "Extraviado",
+			"NoCloseFound": "Cerrar No encontrado",
+			"Found": "Fundar",
+			"DriverAccepted": "Conductor aceptado",
+			"Arrived": "Llegado",
+			"WaitingForPrePay": "Esperando el prepago",
+			"DriverCanceled": "Conductor cancelado",
+			"RiderCanceled": "Cláusula cancelada",
+			"Started": "Empezado",
+			"WaitingForPostPay": "Esperando Pospago",
+			"WaitingForReview": "esperando para revisión",
+			"Finished": "Acabado",
+			"Booked": "Reservado",
+			"Expired": "Venció"
+		},
+		"transactionType": {
+			"OrderFee": "Tarifa de pedido",
+			"Cash": "Dinero",
+			"BankTransfer": "Transferencia bancaria",
+			"Gift": "Regalo",
+			"Commission": "Comisión",
+			"Correction": "Corrección",
+			"InAppPayment": "Pago en la aplicación",
+			"Withdraw": "Retirar"
+		},
+		"transactionStatus": {
+			"Processing": "Procesando",
+			"Done": "Hecho",
+			"Canceled": "Cancelado",
+			"Rejected": "Rechazado"
+		},
+		"gender": {
+			"male": "Masculino",
+			"female": "Femenino",
+			"genderless": "sin género"
+		},
+		"complaintStatus": {
+			"submitted": "Presentada",
+			"underInvestigation": "Bajo investigación",
+			"resolved": "Resuelto"
+		},
+		"sosStatus": {
+			"submitted": "Presentada",
+			"underReview": "Bajo revisión",
+			"falseAlarm": "alerta falsa",
+			"resolved": "Resuelto"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "Aprobación pendiente",
+				"approved": "Aprobado",
+				"blocked": "Obstruido",
+				"softReject": "Rechazo suave",
+				"hardReject": "Rechazo duro",
+				"offline": "Desconectado",
+				"waitingDocuments": "Envío pendiente",
+				"inService": "En servicio",
+				"online": "En línea"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "Obstruido",
+				"enabled": "Activado"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "Presentada",
+			"seen": "Visto",
+			"contactDriver": "Contactó al conductor",
+			"contactAuthorities": "Autoridades contactadas",
+			"markedAsResolved": "Marcado como resuelto",
+			"markedAsFalseAlarm": "Marcado como falsa alarma"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "paseos"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "Reservados todos los derechos."
+		},
+		"page": {
+			"title": "Panel de administración Ridy"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "Visión general",
+			"dispatcher": "Despachador",
+			"header": "Hogar"
+		},
+		"driver": {
+			"pendingVerification": "verificación pendiente",
+			"all": "Ver todo",
+			"header": "Conductores"
+		},
+		"marketing": {
+			"coupons": "cupones",
+			"announcements": "Anuncios",
+			"rewards": "Recompensas y referencias",
+			"header": "Marketing"
+		},
+		"accounting": {
+			"admin": "Administración",
+			"fleets": "flotas",
+			"drivers": "Conductores",
+			"riders": "Jinetes",
+			"header": "Contabilidad"
+		},
+		"riders": "Jinetes",
+		"requests": "Peticiones",
+		"sos": "llamada de socorro",
+		"complaints": "Quejas",
+		"management": {
+			"regions": "Regiones",
+			"services": "Servicios",
+			"serviceOptions": "",
+			"fleets": "flotas",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "Coches",
+			"userRoles": "Roles del usuario",
+			"users": "Usuarios",
+			"paymentGateways": "Via de pago",
+			"settings": "Ajustes",
+			"header": "administración"
+		},
+		"drivers": {
+			"header": "Conductores",
+			"subtitle": "Lista de todos los conductores registrados."
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "Cambiar idioma"
+		},
+		"notification": {
+			"title": "Centro de notificaciones"
+		},
+		"logout": "Cerrar sesión",
+		"driversOnline": "Controladores en línea",
+		"autoZoom": "Zoom automático",
+		"viewDriver": "Ver controlador",
+		"complaints": {
+			"title": "Quejas",
+			"suffix": "sin revisar"
+		},
+		"activeOrders": {
+			"title": "Órdenes activas",
+			"suffix": "Pedidos"
+		},
+		"pendingDrivers": {
+			"title": "Controladores pendientes",
+			"suffix": "Inconfirmado"
+		},
+		"bookedOrders": {
+			"title": "Pedidos reservados",
+			"suffix": "Reservado"
+		},
+		"chart": {
+			"requestsTitle": "Peticiones",
+			"incomeTitle": "Ingreso"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "Quejas sin revisar"
+		},
+		"pendingDrivers": {
+			"suffix": "Conductores no verificados"
+		},
+		"paymentRequests": {
+			"suffix": "Solicitudes de pago sin resolver"
+		}
+	},
+	"requests": {
+		"expectedTime": "Tiempo esperado",
+		"startTime": "Hora de inicio",
+		"finishTime": "Tiempo de finalización",
+		"costAfterCoupon": "Costo después del cupón",
+		"estimatedCost": "Costo estimado",
+		"header": "Solicitud #",
+		"requestTIme": "Tiempo requerido",
+		"service": "Servicio",
+		"distance": "Distancia",
+		"duration": "Duración",
+		"chats": "charlas",
+		"complaints": "Quejas",
+		"assign": "Asignar conductor (alfa)"
+	},
+	"profile": {
+		"status": "Estado",
+		"locations": "Ubicaciones",
+		"view": "Vista",
+		"requestInfo": "Solicitar información",
+		"name": "Nombre",
+		"mobileNumber": "Número de teléfono móvil",
+		"registeredOn": "Registrado en",
+		"driverInfo": "Información del conductor",
+		"riderInfo": "Información del pasajero",
+		"details": "Detalles",
+		"title": "Título",
+		"content": "Contenido",
+		"firstName": "Primer nombre",
+		"lastName": "Apellido",
+		"gender": "Género",
+		"email": "Correo electrónico",
+		"fleet": "Flota",
+		"carModel": "Modelo de auto",
+		"carColor": "Color del coche",
+		"carProductionYear": "Año de producción de automóviles",
+		"carPlateNumber": "Número de matrícula del coche",
+		"accountNumber": "Número de cuenta",
+		"bankName": "Nombre del banco",
+		"bankRoutingNumber": "Número de ruta bancaria",
+		"bankSwift": "banco rápido",
+		"address": "Dirección",
+		"services": "Servicios",
+		"avatarImage": "Imagen de avatar",
+		"upload": "Subir",
+		"save": "Ahorrar",
+		"dateTime": "Fecha y hora",
+		"rating": "Clasificación",
+		"review": "Revisar",
+		"actions": "Comportamiento",
+		"transactionType": "tipo de transacción",
+		"amount": "Monto",
+		"documentNumber": "Número del Documento",
+		"submit": "Enviar",
+		"insertTransaction": "Insertar transacción",
+		"cost": "Costo",
+		"goToList": "Ir a la lista",
+		"add": "Agregar",
+		"search": "Búsqueda",
+		"reset": "Reiniciar",
+		"export": "Exportar",
+		"total": "Total",
+		"currency": "Divisa",
+		"next": "próximo",
+		"select": "Seleccione",
+		"delete": "Borrar",
+		"phoneNumber": "Número de teléfono",
+		"financialRecords": "Registros financieros",
+		"enabled": "Activado",
+		"disabled": "Desactivado",
+		"deleteNotice": "¿Está seguro de que desea eliminar estos datos? Esta acción es irreversible.",
+		"dangerArea": "Zona peligrosa",
+		"userAgent": "Agente de usuario",
+		"loginTimestamp": "Fecha y hora de inicio de sesión",
+		"logoutTimestamp": "Fecha y hora de cierre de sesión",
+		"userName": "Nombre de usuario",
+		"code": "Código",
+		"beneficiary": "Beneficiario",
+		"availabilityTime": "Tiempo de disponibilidad",
+		"appType": "Tipo de aplicación",
+		"creditGift": "Regalo de crédito",
+		"tripFeePercentGift": "Regalo de porcentaje de tarifa de viaje",
+		"creditCurrency": "Moneda de crédito",
+		"conditionTripCountsLessThan": "El viaje cuenta menos que",
+		"conditionUserNumberFirstDigits": "Primeros dígitos de los números de móvil del beneficiario (lista, separados por comas)",
+		"subject": "Tema",
+		"type": "Escribe",
+		"paymentGateway": "Pasarela de pago",
+		"rider": "Jinete",
+		"driver": "Conductor",
+		"admin": "Administración",
+		"coupon": "Cupón",
+		"activities": "Cronograma de actividades",
+		"location": "Ubicación",
+		"submittedBy": "Presentado por"
+	},
+	"complaint": {
+		"inscriptionTime": "Tiempo de inscripción",
+		"content": "Contenido"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "Estado de actualización",
+			"lastSeenAt": "Visto por última vez en",
+			"rating": "Clasificación",
+			"details": "Detalles",
+			"orders": "Pedidos",
+			"financials": "Registros de crédito",
+			"reviews": "Reseñas",
+			"documents": "Documentos"
+		}
+	},
+	"table": {
+		"viewRequest": "Ver solicitud",
+		"viewOperator": "Ver operador",
+		"viewGateway": "Ver puerta de enlace",
+		"min": "mínimo",
+		"max": "máx.",
+		"viewDriver": "Ver controlador",
+		"viewFleet": "Ver flota",
+		"viewRider": "Ver jinete",
+		"details": "Detalles",
+		"viewComplaint": "Ver queja"
+	},
+	"drivers": {
+		"notFoundMessage": "¡Conductor no encontrado!"
+	},
+	"dispatcher": {
+		"removeLastPoint": "Eliminar último punto",
+		"rider": {
+			"title": "Jinete",
+			"description": "Seleccionar corredor para asignar solicitud"
+		},
+		"location": {
+			"title": "Ubicación",
+			"description": "Ubicaciones de recogida y entrega"
+		},
+		"service": {
+			"title": "Servicio",
+			"description": "Servicio a solicitar"
+		},
+		"looking": {
+			"title": "Buscando",
+			"description": "Buscando un conductor elegible"
+		},
+		"determiningLocation": "Determinando ubicación, por favor espere..."
+	},
+	"chart": {
+		"emptyState": "Nada que ver aqui."
+	},
+	"message": {
+		"areYouSure": "¿Está seguro?",
+		"deleteDriverConfirmation": {
+			"title": "¿Está seguro de que desea eliminar el controlador?",
+			"content": "Eliminar la información del conductor ocultará al conductor de la lista de conductores y ya no se podrá acceder al perfil."
+		},
+		"deleteDriverCofirmAlert": "El controlador ha sido eliminado",
+		"driverAssignedSuccessfully": "El conductor se asignó con éxito",
+		"deleteConfirmation": {
+			"title": "¿Estas seguro que quieres borrarlo?"
+		},
+		"deleteRiderConfirmation": {
+			"content": "Eliminar la información del ciclista ocultará al ciclista de la lista de ciclistas y ya no se podrá acceder al perfil."
+		},
+		"deleteRiderCofirmAlert": "Rider ha sido eliminado."
+	},
+	"reviewParameters": {
+		"title": "Parámetros de revisión",
+		"subtitle": "Lista de parámetros que el usuario puede asignar a la experiencia de servicio"
+	},
+	"services": {
+		"editCategory": "Editar categoria",
+		"newCategory": "Nueva categoría",
+		"newService": "Nuevo servicio"
+	},
+	"service": {
+		"createFirstNotice": "Cree su primera categoría de servicio para que se muestre en las aplicaciones de los clientes",
+		"Regions": "Regiones",
+		"timeMultiplierTable": {
+			"startTime": "Hora de inicio",
+			"endTime": "Hora de finalización",
+			"multiplyBy": "Multiplicar por"
+		},
+		"insertRule": "Insertar regla",
+		"distanceMultiplierTable": {
+			"distanceFrom": "Distancia desde",
+			"distanceTo": "Distancia a"
+		}
+	},
+	"settings": {
+		"generalSettings": "Configuración general"
+	},
+	"users": {
+		"tab": {
+			"details": "Detalles"
+		},
+		"noRole": "Sin rol asignado"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "Tiempo de disponibilidad",
+		"expirationTime": "Tiempo de expiración"
+	},
+	"riders": {
+		"notFoundMessage": "¡Jinete no encontrado!",
+		"tab": {
+			"details": "Detalles",
+			"creditrecords": "Registros de crédito",
+			"orders": "Pedidos",
+			"addresses": "direcciones"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "No se concede el permiso"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "Al llegar a su destino",
+		"arrivedToPickupPoint": "Llegó al punto de recogida",
+		"bookedByOperator": "Reservar por operador",
+		"bookedByRider": "Reservar por Rider",
+		"canceledByDriver": "Cancelado por el conductor",
+		"canceledByOperator": "Cancelado por el operador",
+		"canceledByRider": "Cancelado por el pasajero",
+		"driverAccepted": "Conductor aceptado",
+		"expired": "Venció",
+		"paid": "Pagado",
+		"requestedByOperator": "Solicitado por Operador",
+		"requestedByRider": "Solicitado por el pasajero",
+		"reviewed": "Revisado y Calificado",
+		"started": "Empezado"
+	}
+}

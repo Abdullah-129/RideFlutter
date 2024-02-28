@@ -1,0 +1,69 @@
+query ZonePriceView($id: ID!) {
+  zonePrice(id: $id) {
+    id
+    name
+    from {
+      lat
+      lng
+    }
+    to {
+      lat
+      lng
+    }
+    cost
+    services {
+      id
+    }
+    fleets {
+      id
+    }
+    timeMultipliers {
+      startTime
+      endTime
+      multiply
+    }
+  }
+  fleets(paging: { limit: 50 }) {
+    nodes {
+      id
+      name
+    }
+  }
+  services {
+    id
+    name
+  }
+}
+query ZonePriceNew {
+  fleets(paging: { limit: 50 }) {
+    nodes {
+      id
+      name
+    }
+  }
+  services {
+    id
+    name
+  }
+}
+
+mutation UpdateZonePrice($id: ID!, $update: UpdateZonePrice!) {
+  updateOneZonePrice(input: { id: $id, update: $update }) {
+    id
+  }
+}
+
+mutation CreateZonePrice($input: CreateZonePrice!) {
+  createOneZonePrice(input: { zonePrice: $input }) {
+    id
+  }
+}
+
+mutation SetZonePriceRelations($id: ID!, $services: [ID!]!, $fleets: [ID!]!) {
+  setServicesOnZonePrice(input: { id: $id, relationIds: $services }) {
+    id
+  }
+  setFleetsOnZonePrice(input: { id: $id, relationIds: $fleets }) {
+    id
+  }
+}

@@ -1,0 +1,117 @@
+<div class="grid lg:grid-cols-2 lg:gap-2">
+  <div>
+    <nz-form-control class="mb-2">
+      <input
+        class="col-span-2"
+        placeholder="Enter driver last name or mobile number"
+        nz-input
+        [formControl]="searchDriversCtrl"
+        [nzAutocomplete]="auto"
+      />
+      <nz-autocomplete
+        [nzDataSource]="filteredDrivers"
+        nzBackfill
+        #auto
+        (selectionChange)="onItemSelected(auto.activeItem)"
+      ></nz-autocomplete>
+    </nz-form-control>
+    <!-- <button
+      (disabled)="auto.activeItem == null"
+      class="w-24"
+      nz-button
+      nzType="primary">
+      Assign
+    </button> -->
+    <google-map class="w-full h-96" width="100%" [zoom]="4">
+      <map-marker
+        #marker="mapMarker"
+        [icon]="
+          i == 0 ? 'assets/marker_pickup.png' : 'assets/marker_destination.png'
+        "
+        *ngFor="let markerPosition of (query | async)?.[1]?.data?.order?.points, index as i"
+        [position]="markerPosition"
+        [options]="{ draggable: false }"
+      ></map-marker>
+      <map-marker
+        #marker="mapMarker"
+        icon="assets/marker_taxi.png"
+        *ngFor="let driver of (query | async)?.[0]?.data?.getDriversLocationWithData, index as i"
+        [position]="driver.location"
+        [options]="{ draggable: false }"
+        (mapClick)="openInfoWindow(marker, driver)"
+      ></map-marker>
+      <map-info-window>
+        <div class="grid grid-cols-2 gap-2 gap-y-2" *ngIf="selectedDriver as d">
+          <p class="text-gray-600">{{ 'profile.name' | translate }}</p>
+          <p class="font-semibold">{{ d.firstName }} {{ d.lastName }}</p>
+          <p class="text-gray-600">{{ 'profile.status' | translate }}</p>
+          <p class="font-semibold">
+            <nz-tag [nzColor]="tagColor.driver(d.status)">{{
+              'enum.driver.status.' + toCamelCase(d.status) | translate
+            }}</nz-tag>
+          </p>
+          <p class="text-gray-600">{{ 'profile.mobileNumber' | translate }}</p>
+          <a [href]="'tel:+' + d.mobileNumber" class="font-semibold">{{
+            d.mobileNumber | phone
+          }}</a>
+          <p class="text-gray-600">{{ 'profile.rating' | translate }}</p>
+          <p *ngIf="d.rating != null">
+            {{ d.rating }}% (from {{ d.reviewCount }} reviews)
+          </p>
+          <p *ngIf="d.rating == null">-</p>
+          <button [routerLink]="'/drivers/view/' + d.id" nz-button>
+            View Driver
+          </button>
+          <button
+            nz-button
+            nzType="primary"
+            (click)="assignToDriver(d.id.toString())"
+          >
+            Assign
+          </button>
+        </div>
+      </map-info-window>
+    </google-map>
+  </div>
+  <div class="mt-2 lg:mt-0">
+    <nz-table
+      #table
+      nzShowSizeChanger
+      [nzFrontPagination]="false"
+      *ngIf="(query | async)?.[0]?.data?.getDriversLocationWithData as drivers"
+      [nzData]="drivers"
+      nzBordered
+    >
+      <thead>
+        <tr>
+          <th nzShowSort nzColumnKey="reviewTimestamp">
+            {{ 'profile.name' | translate }}
+          </th>
+          <th nzShowSort nzColumnKey="score">
+            {{ 'profile.rating' | translate }}
+          </th>
+          <th class="hidden md:table-cell">
+            {{ 'profile.mobileNumber' | translate }}
+          </th>
+          <th>{{ 'profile.actions' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of table.data">
+          <td>{{ data.firstName }} {{ data.lastName }}</td>
+          <td *ngIf="data.rating != null">
+            {{ data.rating }}% (from {{ data.reviewCount }} reviews)
+          </td>
+          <td *ngIf="data.rating == null">-</td>
+          <td>{{ data.mobileNumber }}</td>
+          <td>
+            <a [routerLink]="'/drivers/view/' + data.id">{{
+              'table.viewDriver' | translate
+            }}</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+  
+</div>

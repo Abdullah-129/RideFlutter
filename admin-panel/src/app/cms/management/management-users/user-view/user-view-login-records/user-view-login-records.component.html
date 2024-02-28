@@ -1,0 +1,18 @@
+<nz-table #ajaxTable nzShowSizeChanger [nzFrontPagination]="false" [nzData]="listOfData" [nzTotal]="total"
+  [(nzPageIndex)]="pageIndex" [(nzPageSize)]="pageSize" (nzPageIndexChange)="searchData()"
+  (nzPageSizeChange)="searchData(true)" nzBordered>
+  <thead>
+    <tr>
+      <th>{{ 'profile.userAgent' | translate }}</th>
+      <th>{{ 'profile.loginTimestamp' | translate }}</th>
+      <th>{{ 'profile.logoutTimestamp' | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of ajaxTable.data">
+        <td>{{ data.userAgent }}</td>
+      <td>{{ (data.loginTimestamp | date: 'short') || '-' }}</td>
+      <td>{{ (data.logoutTimestamp | date: 'short') || '-' }}</td>
+    </tr>
+  </tbody>
+</nz-table>

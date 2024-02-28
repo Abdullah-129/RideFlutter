@@ -1,0 +1,76 @@
+<nz-card>
+  <nz-empty *ngIf="(query | async)?.data?.driver == null"
+      [nzNotFoundContent]="contentTpl"
+      [nzNotFoundFooter]="footerTpl">
+      <ng-template #contentTpl>
+        <span>
+          {{'drivers.notFoundMessage' | translate}}
+        </span>
+      </ng-template>
+      <ng-template #footerTpl>
+        <button nz-button nzType="primary" routerLink="/drivers">{{'profile.goToList' | translate}}</button>
+      </ng-template>
+    </nz-empty>
+  <nz-page-header *ngIf="(query | async)?.data?.driver as driver">
+    <nz-page-header-title>
+      <nz-avatar nzIcon="user" [nzSrc]="driver.media?.address ? (root + driver.media?.address) : undefined"></nz-avatar>{{driver.firstName}} {{driver.lastName}}
+    </nz-page-header-title>
+    <nz-page-header-tags>
+      <nz-tag [nzColor]="tagColor.driver(driver.status)">{{('enum.driver.status.' + toCamelCase(driver.status)) | translate}}</nz-tag>
+    </nz-page-header-tags>
+    <nz-page-header-extra>
+      <button nz-button [nzType]="'dashed'" nzDanger class="mr-2" (click)="deleteDriver(driver.id)">
+        <i nz-icon nzType="delete"></i>
+      </button>
+      <button nz-button nz-dropdown [nzDropdownMenu]="menu4">
+        {{'driver.profile.changeStatus' | translate}}
+        <i nz-icon nzType="down"></i>
+      </button>
+      <nz-dropdown-menu #menu4="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item (click)='changeStatus(driverStatus.PendingApproval)'>{{'enum.driver.status.pendingApproval' | translate}}</li>
+          <li nz-menu-item (click)="changeStatus(driverStatus.Offline)">{{'enum.driver.status.approved' | translate}} </li>
+          <li nz-menu-item (click)="changeStatus(driverStatus.Blocked)">{{'enum.driver.status.blocked' | translate}}</li>
+          <li nz-menu-item (click)="changeStatus(driverStatus.SoftReject)">{{'enum.driver.status.softReject' | translate}}</li>
+          <li nz-menu-item (click)="changeStatus(driverStatus.HardReject)">{{'enum.driver.status.hardReject' | translate}}</li>
+          <li nz-menu-item (click)="changeStatus(driverStatus.Offline)">{{'enum.driver.status.offline' | translate}}</li>
+          <li nz-menu-item (click)="changeStatus(driverStatus.WaitingDocuments)">{{'enum.driver.status.waitingDocuments' | translate}}</li>
+          <li nz-menu-item hidden (click)="changeStatus(driverStatus.InService)">{{'enum.driver.status.inService' | translate}}</li>
+          <li nz-menu-item hidden (click)="changeStatus(driverStatus.Online)">{{'enum.driver.status.online' | translate}}</li>
+        </ul>
+      </nz-dropdown-menu>
+    </nz-page-header-extra>
+    <nz-page-header-content>
+      <nz-descriptions>
+        <nz-descriptions-item [nzTitle]="'profile.registeredOn' | translate">{{driver.registrationTimestamp | timeago}}</nz-descriptions-item>
+        <nz-descriptions-item [nzTitle]="'driver.profile.lastSeenAt' | translate" *ngIf="driver.status !== 'Online'">{{driver.lastSeenTimestamp != null ? (driver.lastSeenTimestamp | timeago) : '-'}}</nz-descriptions-item>
+        <nz-descriptions-item [nzTitle]="'driver.profile.rating' | translate">{{(driver.rating !== null ? (driver.rating + '%' + '(' + driver.reviewCount  + ' reviews)') : 'N/A')}}</nz-descriptions-item>
+        <!-- <nz-descriptions-item nzTitle="Positive qualities"><div *ngFor="let feedback of driver.feedbacks.nodes">
+          <span *ngIf="feedback.parametersAggregate."></span>
+        </div></nz-descriptions-item>
+        <nz-descriptions-item nzTitle="Negative qualities">{{driver.firstName}}</nz-descriptions-item> -->
+      </nz-descriptions>
+      
+    </nz-page-header-content>
+    <nz-page-header-footer>
+      <nz-tabset [nzLinkExact]="false" nzLinkRouter class="mb-2">
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="details">{{'driver.profile.details' | translate}}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="orders">{{'driver.profile.orders' | translate}}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="financial">{{'driver.profile.financials' | translate}}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="reviews">{{'driver.profile.reviews' | translate}}</a>
+        </nz-tab>
+        <nz-tab>
+          <a *nzTabLink nz-tab-link routerLink="documents">{{'driver.profile.documents' | translate}}</a>
+        </nz-tab>
+      </nz-tabset>
+      <router-outlet></router-outlet>
+    </nz-page-header-footer>
+  </nz-page-header>
+</nz-card>

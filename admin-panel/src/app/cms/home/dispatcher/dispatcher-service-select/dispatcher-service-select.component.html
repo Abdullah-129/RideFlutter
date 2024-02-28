@@ -1,0 +1,14 @@
+<ul nz-list *ngIf="(query | async)?.data?.calculateFare as fare" [nzDataSource]="fare.services" nzBordered
+  nzSize="large">
+  <nz-list-header>{{'profile.services' | translate }}</nz-list-header>
+  <div *ngFor="let category of fare.services">
+    <li nz-list-item *ngFor="let service of category.services" nzNoFlex>
+      <ul nz-list-item-actions>
+        <nz-list-item-action>
+          <a (click)="selectService(service)">{{ 'profile.select' | translate }}</a>
+        </nz-list-item-action>
+      </ul>
+      {{service.name}} ({{service.cost | currency: fare.currency}})
+    </li>
+  </div>
+</ul>

@@ -1,0 +1,19 @@
+query FleetWalletsList($paging: OffsetPaging, $filter: FleetWalletFilter) {
+    fleetWallets(paging: $paging, filter: $filter) {
+        nodes {
+            id
+            balance
+            currency
+            fleetId
+            fleet {
+                name
+            }
+        }
+        totalCount
+    }
+    regions {
+        nodes {
+            currency
+        }
+    }
+}

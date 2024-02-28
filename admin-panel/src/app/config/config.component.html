@@ -1,0 +1,47 @@
+<nz-steps *ngIf="!configed" [nzCurrent]="currentStep" nzType="navigation">
+    <nz-step nzTitle="Purchase Code" nzDescription="License Verification"></nz-step>
+    <nz-step nzTitle="Maps API" nzDescription="Google Maps API Keys"></nz-step>
+    <nz-step nzTitle="Firebase Admin SDK" nzDescription="Notification & Auth"></nz-step>
+</nz-steps>
+<div class="step-content" *ngIf="currentStep === 0">
+    <input nz-input placeholder="Purchase Code" [(ngModel)]="currentConfig.currentConfiguration.purchaseCode" />
+</div>
+<div class="step-content" *ngIf="currentStep === 1">
+    <input nz-input placeholder="Backend Maps API key" [(ngModel)]="currentConfig.currentConfiguration.backendMapsAPIKey" />
+    <input nz-input placeholder="Dashboard Maps API key" [(ngModel)]="currentConfig.currentConfiguration.adminPanelAPIKey" />
+</div>
+<div class="step-content" *ngIf="currentStep === 2 && !configed">
+    <nz-upload nzType="drag" [nzAction]="root + 'config/upload'" (nzChange)="handleChange($event)"
+        nzAccept=".json,application/json">
+        <p class="ant-upload-drag-icon">
+            <i nz-icon nzType="inbox"></i>
+        </p>
+        <p class="ant-upload-text">Firebase Project Private Key</p>
+        <p class="ant-upload-hint">
+            Upload private key json file received from firebase project under Service Account and by
+            clicking on the `Generate Private Key` button.
+        </p>
+    </nz-upload>
+</div>
+<div class="steps-action"  *ngIf="!configed">
+    <button nz-button nzType="default" (click)="pre()" *ngIf="currentStep > 0">Previous</button>
+    <button nz-button nzType="primary" (click)="next()" *ngIf="currentStep < 2">Next</button>
+    <button nz-button nzType="primary" (click)="done()" *ngIf="currentStep === 2">Done</button>
+</div>
+<nz-result *ngIf="configed" nzStatus="success" nzTitle="Configuration Done!"
+    nzSubTitle="Your configuration steps are done now! You will need to wait for around 30 seconds so system would set it up then you can go to login screen using button below.">
+    <div nz-result-extra>
+        <button nz-button nzType="primary" routerLink="../login">Go Login</button>
+    </div>
+</nz-result>
+  <ng-template #tplContent>
+    <p>This purchase code seems to have been used by another server `in past`/`right now`. You can select to disable the previous server from below list and continue using on this server.</p>
+    <nz-select [(ngModel)]="selectedClient" nzAllowClear nzPlaceHolder="Choose" style="width: 100%;">
+        <nz-option *ngFor="let client of clients" [nzValue]="client" [nzLabel]="client"></nz-option>
+      </nz-select>
+  </ng-template>
+  <ng-template #tplFooter>
+    <button nz-button nzType="primary" [nzLoading]="tplModalButtonLoading" [disabled]="selectedClient === null" (click)="disableServer()">
+      Disable Selected Server
+    </button>
+  </ng-template>

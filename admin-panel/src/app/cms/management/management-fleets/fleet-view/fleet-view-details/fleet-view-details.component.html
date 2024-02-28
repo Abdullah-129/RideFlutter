@@ -1,0 +1,68 @@
+<form nz-form #frm [formGroup]="form" (ngSubmit)="onSubmit()" nzLayout="vertical">
+  <input type="hidden" formControlName="id">
+  <div class="md:grid md:grid-cols-4 md:gap-2">
+  <nz-form-item>
+    <nz-form-label nzRequired nzFor="name">Name</nz-form-label>
+    <nz-form-control nzErrorTip="The input is not valid Name">
+      <input nz-input formControlName="name" id="name" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="phoneNumber" nzRequired>Phone Number</nz-form-label>
+    <nz-form-control>
+      <nz-input-number formControlName="phoneNumber" id="phoneNumber" class="w-full"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="mobileNumber" nzRequired>Mobile Number</nz-form-label>
+    <nz-form-control>
+      <nz-input-number formControlName="mobileNumber" id="mobileNumber" class="w-full"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired nzFor="commissionSharePercent">Commission Percentage</nz-form-label>
+    <nz-form-control>
+      <nz-input-number [nzMin]="0" [nzMax]="100" class="w-full" required id="commissionSharePercent" formControlName="commissionSharePercent"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired nzFor="commissionShareFlat">Commission Flat</nz-form-label>
+    <nz-form-control>
+      <nz-input-number [nzMin]="0" [nzMax]="100" required class="w-full" id="commissionShareFlat" formControlName="commissionSharePercent"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="feeMultiplier">Fee Multiplier</nz-form-label>
+    <nz-form-control>
+      <nz-input-number [nzPrecision]="1" class="w-full" id="feeMultiplier" formControlName="feeMultiplier"></nz-input-number>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzRequired nzFor="accountNumber">Bank Account Info</nz-form-label>
+    <nz-form-control>
+      <input nz-input required id="accountNumber" formControlName="accountNumber">
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzFor="address">Address</nz-form-label>
+    <nz-form-control>
+      <input nz-input id="address" formControlName="address">
+    </nz-form-control>
+  </nz-form-item>
+</div>
+<nz-form-item>
+  <nz-form-label nzFor="address">Exclusivity Area</nz-form-label>
+  <nz-form-control>
+    <input type="hidden" hidden formControlName="exclusivityAreas">
+    <google-map height="400px" width="100%" [center]="center" [zoom]="4">
+      <map-polygon #poly [paths]="form.value.exclusivityAreas">
+      </map-polygon>
+    </google-map>
+  </nz-form-control>
+</nz-form-item>
+
+<div class="float-right">
+    <button nz-button (click)="clearMap()" style="margin: 4px;" type="button" [disabled]="polygons.length == 0">Clear Map</button>
+  <button nz-button nzType="primary" type="submit" [disabled]="form.invalid">Register</button>
+</div>
+</form>

@@ -1,0 +1,62 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Cars" nzSubtitle="Basic car info definitions">
+  <nz-page-header-extra>
+    <button nz-button nzType="primary" (click)="onAddModel()"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate
+      }}</button>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <nz-table *ngIf="(query | async)?.data?.carModels?.nodes as carModels" #ajaxTable [nzData]="carModels" nzBordered nzTitle="Models">
+      <thead>
+        <tr>
+          <th nzWidth="80%">{{ 'profile.name' | translate }}</th>
+          <th>{{ 'profile.actions' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of ajaxTable.data" class="editable-row" (click)="startEdit(data.id, $event)">
+          <td>
+            <div class="editable-cell" *ngIf="editId !== data.id; else editTpl">
+              <div class="editable-cell-value-wrap">
+                {{ data.name }}
+              </div>
+            </div>
+            <ng-template #editTpl>
+              <input nz-input [(ngModel)]="data.name" (keyup.enter)="onSubmitEditModel(data.id, data.name)" />
+            </ng-template>
+          </td>
+          <td>
+            <a nz-popconfirm nzPopconfirmTitle="{{ 'message.areYouSure' | translate }}"
+              (nzOnConfirm)="onDeleteModel(data.id)">{{ 'profile.delete' | translate }}</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+    <button nz-button nzType="primary" (click)="onAddColor()" class="float-right mb-2"><i nz-icon nzType="plus"></i>{{ 'profile.add' | translate
+    }}</button>
+    <nz-table *ngIf="(query | async)?.data?.carColors as carColors" #colorTable [nzData]="carColors" nzBordered nzTitle="Colors">
+      <thead>
+        <tr>
+          <th nzWidth="80%">{{ 'profile.name' | translate }}</th>
+          <th>{{ 'profile.actions' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of colorTable.data" class="editable-row" (click)="startEditColor(data.id, $event)">
+          <td>
+            <div class="editable-cell" *ngIf="editColorId !== data.id; else editTpl">
+              <div class="editable-cell-value-wrap">
+                {{ data.name }}
+              </div>
+            </div>
+            <ng-template #editTpl>
+              <input nz-input [(ngModel)]="data.name" (keyup.enter)="onSubmitEditColor(data.id, data.name)" />
+            </ng-template>
+          </td>
+          <td>
+            <a nz-popconfirm nzPopconfirmTitle="{{ 'message.areYouSure' | translate }}"
+              (nzOnConfirm)="onDeleteColor(data.id)">{{ 'profile.delete' | translate }}</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>

@@ -1,0 +1,23 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="SOS" nzSubtitle="Distress Signals submitted by users">
+  <nz-page-header-content>
+    <nz-table #table nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.distressSignals as sos"
+      [nzData]="sos.nodes" [nzTotal]="sos.totalCount" (nzQueryParams)="tableService.onTableQueryParamsChange($event)"
+      nzBordered>
+      <thead>
+        <tr>
+          <th>{{ 'profile.dateTime' | translate }}</th>
+          <th>{{ 'profile.status' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of table.data" [routerLink]="'view/' + data.id" class="group cursor-pointer">
+          <td>{{ data.createdAt | timeago }}</td>
+          <td>
+            <nz-tag [nzColor]="tagColor.sosStatus(data.status)">{{ ('enum.sosStatus.' + camelCase(data.status)) |
+              translate }}</nz-tag>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-page-header-content>
+</nz-page-header>

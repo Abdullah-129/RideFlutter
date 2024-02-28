@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "Demandé",
+			"NotFound": "Pas trouvé",
+			"NoCloseFound": "Fermer introuvable",
+			"Found": "Trouvé",
+			"DriverAccepted": "Chauffeur accepté",
+			"Arrived": "Arrivé",
+			"WaitingForPrePay": "En attente de paiement anticipé",
+			"DriverCanceled": "Chauffeur annulé",
+			"RiderCanceled": "Passager annulé",
+			"Started": "A débuté",
+			"WaitingForPostPay": "En attente de post-paiement",
+			"WaitingForReview": "en attente d'une revue",
+			"Finished": "Achevé",
+			"Booked": "Réservé",
+			"Expired": "Expiré"
+		},
+		"transactionType": {
+			"OrderFee": "Frais de commande",
+			"Cash": "En espèces",
+			"BankTransfer": "Virement",
+			"Gift": "Cadeau",
+			"Commission": "Commission",
+			"Correction": "Correction",
+			"InAppPayment": "Paiement dans l'application",
+			"Withdraw": "Se désister"
+		},
+		"transactionStatus": {
+			"Processing": "Traitement",
+			"Done": "Fait",
+			"Canceled": "Annulé",
+			"Rejected": "Rejeté"
+		},
+		"gender": {
+			"male": "Homme",
+			"female": "Femelle",
+			"genderless": "Asexué"
+		},
+		"complaintStatus": {
+			"submitted": "Soumis",
+			"underInvestigation": "Sous enquête",
+			"resolved": "Résolu"
+		},
+		"sosStatus": {
+			"submitted": "Soumis",
+			"underReview": "À l'étude",
+			"falseAlarm": "fausse alerte",
+			"resolved": "Résolu"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "En attente de validation",
+				"approved": "Approuvé",
+				"blocked": "Bloqué",
+				"softReject": "Rejet doux",
+				"hardReject": "Rejet définitif",
+				"offline": "Hors ligne",
+				"waitingDocuments": "En attente de soumission",
+				"inService": "En service",
+				"online": "En ligne"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "Bloqué",
+				"enabled": "Activé"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "Soumis",
+			"seen": "Vu",
+			"contactDriver": "J'ai contacté le chauffeur",
+			"contactAuthorities": "Autorités contactées",
+			"markedAsResolved": "Marqué comme résolu",
+			"markedAsFalseAlarm": "Marqué comme fausse alarme"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "Monte"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "Tous les droits sont réservés."
+		},
+		"page": {
+			"title": "Panneau d'administration Ridy"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "Aperçu",
+			"dispatcher": "Répartiteur",
+			"header": "Maison"
+		},
+		"driver": {
+			"pendingVerification": "En attente de vérification",
+			"all": "Voir tout",
+			"header": "Conducteurs"
+		},
+		"marketing": {
+			"coupons": "Coupons",
+			"announcements": "Annonces",
+			"rewards": "Récompenses et références",
+			"header": "Commercialisation"
+		},
+		"accounting": {
+			"admin": "Administrateur",
+			"fleets": "Flottes",
+			"drivers": "Conducteurs",
+			"riders": "Cavaliers",
+			"header": "Comptabilité"
+		},
+		"riders": "Cavaliers",
+		"requests": "Demandes",
+		"sos": "SOS",
+		"complaints": "Plaintes",
+		"management": {
+			"regions": "Régions",
+			"services": "Prestations de service",
+			"serviceOptions": "",
+			"fleets": "Flottes",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "Voitures",
+			"userRoles": "Rôles d'utilisateur",
+			"users": "Utilisateurs",
+			"paymentGateways": "Passerelles de paiement",
+			"settings": "Réglages",
+			"header": "La gestion"
+		},
+		"drivers": {
+			"header": "Conducteurs",
+			"subtitle": "Liste de tous les pilotes inscrits."
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "Changer de langue"
+		},
+		"notification": {
+			"title": "Centre de notification"
+		},
+		"logout": "Se déconnecter",
+		"driversOnline": "Pilotes en ligne",
+		"autoZoom": "Zoom automatique",
+		"viewDriver": "Afficher le pilote",
+		"complaints": {
+			"title": "Plaintes",
+			"suffix": "Non révisé"
+		},
+		"activeOrders": {
+			"title": "Commandes actives",
+			"suffix": "Ordres"
+		},
+		"pendingDrivers": {
+			"title": "Pilotes en attente",
+			"suffix": "Non vérifié"
+		},
+		"bookedOrders": {
+			"title": "Commandes enregistrées",
+			"suffix": "Réservé"
+		},
+		"chart": {
+			"requestsTitle": "Demandes",
+			"incomeTitle": "Revenu"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "Plaintes non examinées"
+		},
+		"pendingDrivers": {
+			"suffix": "Pilotes non vérifiés"
+		},
+		"paymentRequests": {
+			"suffix": "Demandes de paiement non réglées"
+		}
+	},
+	"requests": {
+		"expectedTime": "Heure prévue",
+		"startTime": "Heure de début",
+		"finishTime": "Heure de fin",
+		"costAfterCoupon": "Coût après coupon",
+		"estimatedCost": "Coût estimé",
+		"header": "Demande #",
+		"requestTIme": "Heure de la demande",
+		"service": "Service",
+		"distance": "Distance",
+		"duration": "Durée",
+		"chats": "Chats",
+		"complaints": "Plaintes",
+		"assign": "Attribuer un chauffeur (Alpha)"
+	},
+	"profile": {
+		"status": "Statut",
+		"locations": "Emplacements",
+		"view": "Voir",
+		"requestInfo": "Demande d'info",
+		"name": "Nom",
+		"mobileNumber": "Numéro de portable",
+		"registeredOn": "Inscrit le",
+		"driverInfo": "Informations sur le conducteur",
+		"riderInfo": "Informations sur le passager",
+		"details": "Détails",
+		"title": "Titre",
+		"content": "Contenu",
+		"firstName": "Prénom",
+		"lastName": "Nom de famille",
+		"gender": "Le genre",
+		"email": "E-mail",
+		"fleet": "Flotte",
+		"carModel": "Modèle de voiture",
+		"carColor": "Couleur de la voiture",
+		"carProductionYear": "Année de production de la voiture",
+		"carPlateNumber": "Numéro de plaque de voiture",
+		"accountNumber": "Numéro de compte",
+		"bankName": "Nom de banque",
+		"bankRoutingNumber": "Numéro d'acheminement bancaire",
+		"bankSwift": "Banque Swift",
+		"address": "Adresse",
+		"services": "Prestations de service",
+		"avatarImage": "Image d'avatar",
+		"upload": "Télécharger",
+		"save": "sauvegarder",
+		"dateTime": "Date et heure",
+		"rating": "Évaluation",
+		"review": "Examen",
+		"actions": "Actions",
+		"transactionType": "Type de transaction",
+		"amount": "Montant",
+		"documentNumber": "numéro de document",
+		"submit": "Soumettre",
+		"insertTransaction": "Insérer l'opération",
+		"cost": "Coût",
+		"goToList": "Aller à la liste",
+		"add": "Ajouter",
+		"search": "Chercher",
+		"reset": "Réinitialiser",
+		"export": "Exporter",
+		"total": "Total",
+		"currency": "Devise",
+		"next": "Prochain",
+		"select": "Sélectionner",
+		"delete": "Effacer",
+		"phoneNumber": "Numéro de téléphone",
+		"financialRecords": "Dossiers financiers",
+		"enabled": "Activé",
+		"disabled": "Handicapé",
+		"deleteNotice": "Êtes-vous sûr de vouloir supprimer ces données ? Cette action est irréversible",
+		"dangerArea": "Zone dangereuse",
+		"userAgent": "Agent utilisateur",
+		"loginTimestamp": "Date et heure de connexion",
+		"logoutTimestamp": "Date et heure de déconnexion",
+		"userName": "Nom d'utilisateur",
+		"code": "Code",
+		"beneficiary": "Bénéficiaire",
+		"availabilityTime": "Temps de disponibilité",
+		"appType": "Type d'application",
+		"creditGift": "Cadeau de crédit",
+		"tripFeePercentGift": "Cadeau en pourcentage des frais de voyage",
+		"creditCurrency": "Devise du crédit",
+		"conditionTripCountsLessThan": "Le trajet compte moins de",
+		"conditionUserNumberFirstDigits": "Premiers chiffres des numéros mobiles des bénéficiaires (liste, séparés par des virgules)",
+		"subject": "Matière",
+		"type": "Taper",
+		"paymentGateway": "Passerelle de paiement",
+		"rider": "Cavalier",
+		"driver": "Chauffeur",
+		"admin": "Administrateur",
+		"coupon": "Coupon",
+		"activities": "Chronologie des activités",
+		"location": "Emplacement",
+		"submittedBy": "Proposé par"
+	},
+	"complaint": {
+		"inscriptionTime": "Heure d'inscription",
+		"content": "Contenu"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "État de mise à jour",
+			"lastSeenAt": "Vu dernièrement à",
+			"rating": "Évaluation",
+			"details": "Détails",
+			"orders": "Ordres",
+			"financials": "Dossiers de crédit",
+			"reviews": "Commentaires",
+			"documents": "Documents"
+		}
+	},
+	"table": {
+		"viewRequest": "Voir la demande",
+		"viewOperator": "Afficher l'opérateur",
+		"viewGateway": "Afficher la passerelle",
+		"min": "Min",
+		"max": "Max",
+		"viewDriver": "Afficher le pilote",
+		"viewFleet": "Voir la flotte",
+		"viewRider": "Voir l'avenant",
+		"details": "Détails",
+		"viewComplaint": "Voir la plainte"
+	},
+	"drivers": {
+		"notFoundMessage": "Pilote introuvable !"
+	},
+	"dispatcher": {
+		"removeLastPoint": "Supprimer le dernier point",
+		"rider": {
+			"title": "Cavalier",
+			"description": "Sélectionnez le passager à attribuer à la demande"
+		},
+		"location": {
+			"title": "Emplacement",
+			"description": "Lieu(x) de ramassage et de dépôt"
+		},
+		"service": {
+			"title": "Service",
+			"description": "Prestation à demander"
+		},
+		"looking": {
+			"title": "En regardant",
+			"description": "Recherche de conducteur éligible"
+		},
+		"determiningLocation": "Détermination de l'emplacement, veuillez patienter..."
+	},
+	"chart": {
+		"emptyState": "Rien à voir ici."
+	},
+	"message": {
+		"areYouSure": "Êtes-vous sûr?",
+		"deleteDriverConfirmation": {
+			"title": "Voulez-vous vraiment supprimer le pilote ?",
+			"content": "La suppression des informations du conducteur masquera le conducteur de la liste des conducteurs et le profil ne sera plus accessible."
+		},
+		"deleteDriverCofirmAlert": "Le pilote a été supprimé",
+		"driverAssignedSuccessfully": "Le conducteur est attribué avec succès",
+		"deleteConfirmation": {
+			"title": "Etes-vous sûr que vous voulez supprimer?"
+		},
+		"deleteRiderConfirmation": {
+			"content": "La suppression des informations sur le passager masquera le passager de la liste des passagers et le profil ne sera plus accessible."
+		},
+		"deleteRiderCofirmAlert": "Le cavalier a été supprimé."
+	},
+	"reviewParameters": {
+		"title": "Paramètres d'examen",
+		"subtitle": "Liste des paramètres que le pilote peut attribuer à l'expérience de service"
+	},
+	"services": {
+		"editCategory": "Modifier la catégorie",
+		"newCategory": "Nouvelle catégorie",
+		"newService": "Nouveau service"
+	},
+	"service": {
+		"createFirstNotice": "Créez votre première catégorie de service à afficher dans les applications clientes",
+		"Regions": "Régions",
+		"timeMultiplierTable": {
+			"startTime": "Heure de début",
+			"endTime": "Heure de fin",
+			"multiplyBy": "Multiplier par"
+		},
+		"insertRule": "Insérer une règle",
+		"distanceMultiplierTable": {
+			"distanceFrom": "Distance de",
+			"distanceTo": "Distance à"
+		}
+	},
+	"settings": {
+		"generalSettings": "réglages généraux"
+	},
+	"users": {
+		"tab": {
+			"details": "Détails"
+		},
+		"noRole": "Aucun rôle attribué"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "Temps de disponibilité",
+		"expirationTime": "Date d'expiration"
+	},
+	"riders": {
+		"notFoundMessage": "Cavalier introuvable !",
+		"tab": {
+			"details": "Détails",
+			"creditrecords": "Dossiers de crédit",
+			"orders": "Ordres",
+			"addresses": "Adresses"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "L'autorisation n'est pas accordée"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "Arrivé à destination",
+		"arrivedToPickupPoint": "Arrivé au point de ramassage",
+		"bookedByOperator": "Réservez par opérateur",
+		"bookedByRider": "Réservé par le cavalier",
+		"canceledByDriver": "Annulé par le conducteur",
+		"canceledByOperator": "Annulé par l'opérateur",
+		"canceledByRider": "Annulé par le cavalier",
+		"driverAccepted": "Chauffeur accepté",
+		"expired": "Expiré",
+		"paid": "Payé",
+		"requestedByOperator": "Demandé par l'opérateur",
+		"requestedByRider": "Demandé par le cavalier",
+		"reviewed": "Examiné et évalué",
+		"started": "A débuté"
+	}
+}

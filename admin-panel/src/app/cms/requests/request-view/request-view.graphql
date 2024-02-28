@@ -1,0 +1,103 @@
+query ViewOrder($id: ID!) {
+    order(id: $id) {
+        id
+        createdOn
+        costBest
+        costAfterCoupon
+        status
+        currency
+        distanceBest
+        durationBest
+        startTimestamp
+        finishTimestamp
+        addresses
+        points {
+            lat
+            lng
+        }
+        service {
+            name
+        }
+        driver {
+            id
+            firstName
+            lastName
+            mobileNumber
+            registrationTimestamp
+            status
+            media {
+                address
+            }
+        }
+        rider {
+            id
+            firstName
+            lastName
+            mobileNumber
+            registrationTimestamp
+            status
+            media {
+                address
+            }
+        }
+        complaints {
+            id
+            subject
+            inscriptionTimestamp
+            content
+            requestedByDriver
+        }
+        conversations {
+            sentAt
+            sentByDriver
+            status
+            content
+        }
+        activities {
+            createdAt
+            type
+        }
+        coupon {
+            title
+            code
+            expireAt
+        }
+        riderTransactions {
+            action
+            rechargeType
+            deductType
+            amount
+            status
+            currency
+            refrenceNumber
+            paymentGateway {
+                title
+            }
+        }
+        driverTransactions {
+            action
+            rechargeType
+            deductType
+            amount
+            status
+            currency
+            refrenceNumber
+        }
+        providerTransactions {
+            action
+            rechargeType
+            deductType
+            amount
+            currency
+            refrenceNumber
+        }
+        fleetTransactions {
+            action
+            rechargeType
+            deductType
+            amount
+            currency
+            refrenceNumber
+        }
+    }
+}

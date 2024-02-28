@@ -1,0 +1,48 @@
+<nz-card *ngIf="(query | async)?.data?.serviceCategories as categories">
+  <nz-tabset [nzTabBarExtraContent]="extraTemplate" [(nzSelectedIndex)]="selectedCategory" nzType="card">
+    <nz-tab *ngFor="let cat of categories" [nzTitle]="cat.name">
+      <nz-table #ajaxTable [nzFrontPagination]="false" [nzData]="cat.services" nzBordered>
+        <thead>
+          <tr>
+            <th>{{ 'profile.name' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of ajaxTable.data">
+            <td>
+              <div class="flex flex-row group cursor-pointer" [routerLink]="'view/' + data.id">
+                <img [src]="serverUrl + data.media.address" width="75" height="75">
+                <div class="flex items-center ml-2">
+                  <div>
+                    <div class="text-sm text-neutral-700 group-hover:text-neutral-900">
+                      {{ data.name }}
+                    </div>
+                    <div class="text-sm text-neutral-400 group-hover:text-neutral-700">
+                      {{ data.description }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </nz-tab>
+  </nz-tabset>
+  <ng-template #extraTemplate>
+    <button nz-button style="margin-left: 8px;" *ngIf="categories.length > 0"
+      [routerLink]="'category/view/' + categories[selectedCategory ?? 0].id">{{ 'services.editCategory' | translate
+      }}</button>
+    <button nz-button style="margin-left: 8px;" routerLink="category/new/">{{ 'services.newCategory' | translate
+      }}</button>
+    <button nz-button style="margin-left: 8px;" *ngIf="categories.length > 0" [routerLink]="'new'">{{
+      'services.newService' | translate }}</button>
+  </ng-template>
+  <div *ngIf="categories.length < 1">
+    <nz-result nzStatus="info" nzTitle="{{ 'service.createFirstNotice' | translate }}">
+      <div nz-result-extra>
+        <button nz-button nzType="primary" routerLink="category/new/">{{ 'services.newCategory' | translate }}</button>
+      </div>
+    </nz-result>
+  </div>
+</nz-card>

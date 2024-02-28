@@ -1,0 +1,5 @@
+mutation UpdatePassword($input: UpdatePasswordInput!) {
+    updatePassword(input: $input) {
+        id
+    }
+}

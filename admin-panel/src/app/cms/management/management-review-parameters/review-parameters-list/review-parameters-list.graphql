@@ -1,0 +1,7 @@
+query ReviewParametersList {
+  feedbackParameters {
+    id
+    title
+    isGood
+  }
+}

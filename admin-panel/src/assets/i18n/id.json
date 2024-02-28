@@ -1,0 +1,422 @@
+{
+	"enum": {
+		"request": {
+			"Requested": "Diminta",
+			"NotFound": "Tidak ditemukan",
+			"NoCloseFound": "Tutup Tidak Ditemukan",
+			"Found": "Ditemukan",
+			"DriverAccepted": "Pengemudi Diterima",
+			"Arrived": "Tiba",
+			"WaitingForPrePay": "Menunggu Pra-Pembayaran",
+			"DriverCanceled": "Pengemudi Dibatalkan",
+			"RiderCanceled": "Pengendara Dibatalkan",
+			"Started": "Dimulai",
+			"WaitingForPostPay": "Menunggu Pasca Pembayaran",
+			"WaitingForReview": "Menunggu Review",
+			"Finished": "Selesai",
+			"Booked": "Dipesan",
+			"Expired": "Kedaluwarsa"
+		},
+		"transactionType": {
+			"OrderFee": "Biaya Pemesanan",
+			"Cash": "Uang tunai",
+			"BankTransfer": "Transfer Bank",
+			"Gift": "Hadiah",
+			"Commission": "Komisi",
+			"Correction": "Koreksi",
+			"InAppPayment": "Pembayaran Dalam Aplikasi",
+			"Withdraw": "Menarik"
+		},
+		"transactionStatus": {
+			"Processing": "Pengolahan",
+			"Done": "Selesai",
+			"Canceled": "Dibatalkan",
+			"Rejected": "Ditolak"
+		},
+		"gender": {
+			"male": "Pria",
+			"female": "Perempuan",
+			"genderless": "Tanpa gender"
+		},
+		"complaintStatus": {
+			"submitted": "Dikirim",
+			"underInvestigation": "Sedang dalam investigasi",
+			"resolved": "Terselesaikan"
+		},
+		"sosStatus": {
+			"submitted": "Dikirim",
+			"underReview": "Sedang Ditinjau",
+			"falseAlarm": "peringatan palsu",
+			"resolved": "Terselesaikan"
+		},
+		"driver": {
+			"status": {
+				"pendingApproval": "Menunggu persetujuan",
+				"approved": "Disetujui",
+				"blocked": "Diblokir",
+				"softReject": "Tolak Lembut",
+				"hardReject": "Tolak Keras",
+				"offline": "Offline",
+				"waitingDocuments": "Pengiriman Tertunda",
+				"inService": "Dalam pelayanan",
+				"online": "On line"
+			}
+		},
+		"rider": {
+			"status": {
+				"blocked": "Diblokir",
+				"enabled": "Diaktifkan"
+			}
+		},
+		"sosActivityAction": {
+			"submitted": "Dikirim",
+			"seen": "Terlihat",
+			"contactDriver": "Menghubungi pengemudi",
+			"contactAuthorities": "Pihak berwenang yang dihubungi",
+			"markedAsResolved": "Ditandai sebagai Terselesaikan",
+			"markedAsFalseAlarm": "Ditandai sebagai Alarm palsu"
+		}
+	},
+	"branding": {
+		"menu": {
+			"header": "Wahana"
+		},
+		"footer": {
+			"address": "http://ridy.io/",
+			"prefix": "© 2018-2023",
+			"title": "Ridy.io",
+			"suffix": "Seluruh hak cipta."
+		},
+		"page": {
+			"title": "Panel Admin Ridy"
+		}
+	},
+	"menu": {
+		"home": {
+			"overview": "Ringkasan",
+			"dispatcher": "pengirim",
+			"header": "Rumah"
+		},
+		"driver": {
+			"pendingVerification": "Verifikasi Tertunda",
+			"all": "Lihat semua",
+			"header": "Pengemudi"
+		},
+		"marketing": {
+			"coupons": "Kupon",
+			"announcements": "Pengumuman",
+			"rewards": "Hadiah & Referensi",
+			"header": "Pemasaran"
+		},
+		"accounting": {
+			"admin": "Admin",
+			"fleets": "Armada",
+			"drivers": "Pengemudi",
+			"riders": "Penunggang",
+			"header": "Akuntansi"
+		},
+		"riders": "Penunggang",
+		"requests": "Permintaan",
+		"sos": "SOS",
+		"complaints": "Keluhan",
+		"management": {
+			"regions": "Wilayah",
+			"services": "Jasa",
+			"serviceOptions": "",
+			"fleets": "Armada",
+			"zonePrices": "",
+			"reviewParameters": "",
+			"cars": "mobil",
+			"userRoles": "Peran Pengguna",
+			"users": "Pengguna",
+			"paymentGateways": "Gerbang Pembayaran",
+			"settings": "Pengaturan",
+			"header": "Pengelolaan"
+		},
+		"drivers": {
+			"header": "Pengemudi",
+			"subtitle": "Daftar semua driver yang terdaftar."
+		}
+	},
+	"overview": {
+		"switch": {
+			"language": "Ganti Bahasa"
+		},
+		"notification": {
+			"title": "Pusat Pemberitahuan"
+		},
+		"logout": "Keluar",
+		"driversOnline": "Driver Online",
+		"autoZoom": "Zoom Otomatis",
+		"viewDriver": "Lihat Pengemudi",
+		"complaints": {
+			"title": "Keluhan",
+			"suffix": "Belum ditinjau"
+		},
+		"activeOrders": {
+			"title": "Pesanan Aktif",
+			"suffix": "Pesanan"
+		},
+		"pendingDrivers": {
+			"title": "Driver Tertunda",
+			"suffix": "Tidak diverifikasi"
+		},
+		"bookedOrders": {
+			"title": "Pesanan yang Dipesan",
+			"suffix": "Dipesan"
+		},
+		"chart": {
+			"requestsTitle": "Permintaan",
+			"incomeTitle": "Penghasilan"
+		}
+	},
+	"notification": {
+		"complaints": {
+			"suffix": "Keluhan belum ditinjau"
+		},
+		"pendingDrivers": {
+			"suffix": "Driver belum diverifikasi"
+		},
+		"paymentRequests": {
+			"suffix": "Permintaan Pembayaran belum diselesaikan"
+		}
+	},
+	"requests": {
+		"expectedTime": "Waktu yang diharapkan",
+		"startTime": "Waktu mulai",
+		"finishTime": "Waktu Selesai",
+		"costAfterCoupon": "Biaya Setelah Kupon",
+		"estimatedCost": "Estimasi biaya",
+		"header": "Meminta #",
+		"requestTIme": "Waktu Permintaan",
+		"service": "Melayani",
+		"distance": "Jarak",
+		"duration": "Durasi",
+		"chats": "Obrolan",
+		"complaints": "Keluhan",
+		"assign": "Tetapkan Driver (Alfa)"
+	},
+	"profile": {
+		"status": "Status",
+		"locations": "Lokasi",
+		"view": "Melihat",
+		"requestInfo": "Minta Info",
+		"name": "Nama",
+		"mobileNumber": "Nomor handphone",
+		"registeredOn": "Terdaftar Pada",
+		"driverInfo": "Informasi Pengemudi",
+		"riderInfo": "Info Penunggang",
+		"details": "rincian",
+		"title": "Judul",
+		"content": "Isi",
+		"firstName": "Nama depan",
+		"lastName": "Nama keluarga",
+		"gender": "Jenis kelamin",
+		"email": "Surel",
+		"fleet": "Armada",
+		"carModel": "Model mobil",
+		"carColor": "Warna Mobil",
+		"carProductionYear": "Tahun Produksi Mobil",
+		"carPlateNumber": "Nomor Plat Mobil",
+		"accountNumber": "Nomor akun",
+		"bankName": "Nama Bank",
+		"bankRoutingNumber": "Nomor Perutean Bank",
+		"bankSwift": "Bank Swift",
+		"address": "Alamat",
+		"services": "Jasa",
+		"avatarImage": "Gambar Avatar",
+		"upload": "Mengunggah",
+		"save": "Menyimpan",
+		"dateTime": "Tanggal Waktu",
+		"rating": "Peringkat",
+		"review": "Tinjauan",
+		"actions": "tindakan",
+		"transactionType": "tipe transaksi",
+		"amount": "Jumlah",
+		"documentNumber": "Nomor dokumen",
+		"submit": "Kirim",
+		"insertTransaction": "Masukkan Transaksi",
+		"cost": "Biaya",
+		"goToList": "Pergi ke Daftar",
+		"add": "Menambahkan",
+		"search": "Mencari",
+		"reset": "Mengatur ulang",
+		"export": "Ekspor",
+		"total": "Total",
+		"currency": "Mata uang",
+		"next": "Lanjut",
+		"select": "Pilih",
+		"delete": "Menghapus",
+		"phoneNumber": "Nomor telepon",
+		"financialRecords": "Catatan Keuangan",
+		"enabled": "Diaktifkan",
+		"disabled": "Dengan disabilitas",
+		"deleteNotice": "Anda yakin ingin menghapus data ini? Tindakan ini tidak dapat diubah",
+		"dangerArea": "Daerah Berbahaya",
+		"userAgent": "Agen pengguna",
+		"loginTimestamp": "Tanggal & Waktu Masuk",
+		"logoutTimestamp": "Tanggal & Waktu Logout",
+		"userName": "Nama belakang",
+		"code": "Kode",
+		"beneficiary": "Penerima",
+		"availabilityTime": "Waktu Ketersediaan",
+		"appType": "Jenis Aplikasi",
+		"creditGift": "Hadiah Kredit",
+		"tripFeePercentGift": "Hadiah Persen Biaya Perjalanan",
+		"creditCurrency": "Mata Uang Kredit",
+		"conditionTripCountsLessThan": "Jumlah perjalanan kurang dari",
+		"conditionUserNumberFirstDigits": "Nomor ponsel penerima digit pertama (daftar, dipisahkan koma)",
+		"subject": "Subjek",
+		"type": "Jenis",
+		"paymentGateway": "Gerbang pembayaran",
+		"rider": "Pengendara",
+		"driver": "Pengemudi",
+		"admin": "Admin",
+		"coupon": "Kupon",
+		"activities": "Jadwal Kegiatan",
+		"location": "Lokasi",
+		"submittedBy": "Disampaikan oleh"
+	},
+	"complaint": {
+		"inscriptionTime": "Waktu Prasasti",
+		"content": "Isi"
+	},
+	"driver": {
+		"profile": {
+			"changeStatus": "Memperbaharui status",
+			"lastSeenAt": "Terakhir Terlihat Di",
+			"rating": "Peringkat",
+			"details": "rincian",
+			"orders": "Pesanan",
+			"financials": "Catatan Kredit",
+			"reviews": "Ulasan",
+			"documents": "Dokumen"
+		}
+	},
+	"table": {
+		"viewRequest": "Lihat Permintaan",
+		"viewOperator": "Lihat Operator",
+		"viewGateway": "Lihat Gerbang",
+		"min": "min",
+		"max": "Maks",
+		"viewDriver": "Lihat Pengemudi",
+		"viewFleet": "Lihat Armada",
+		"viewRider": "Lihat Penunggang",
+		"details": "rincian",
+		"viewComplaint": "Lihat Keluhan"
+	},
+	"drivers": {
+		"notFoundMessage": "Pengemudi Tidak Ditemukan!"
+	},
+	"dispatcher": {
+		"removeLastPoint": "Hapus Poin Terakhir",
+		"rider": {
+			"title": "Pengendara",
+			"description": "Pilih pengendara untuk menetapkan permintaan"
+		},
+		"location": {
+			"title": "Lokasi",
+			"description": "Lokasi Penjemputan & Pengantaran"
+		},
+		"service": {
+			"title": "Melayani",
+			"description": "Layanan yang diminta"
+		},
+		"looking": {
+			"title": "Melihat",
+			"description": "Mencari pengemudi yang memenuhi syarat"
+		},
+		"determiningLocation": "Menentukan Lokasi, Mohon tunggu..."
+	},
+	"chart": {
+		"emptyState": "Tidak ada yang bisa dilihat di sini."
+	},
+	"message": {
+		"areYouSure": "Apa kamu yakin?",
+		"deleteDriverConfirmation": {
+			"title": "Apakah Anda yakin ingin menghapus driver?",
+			"content": "Menghapus informasi driver akan menyembunyikan driver dari daftar driver dan profil tidak dapat diakses lagi."
+		},
+		"deleteDriverCofirmAlert": "Driver telah dihapus",
+		"driverAssignedSuccessfully": "Pengemudi berhasil ditetapkan",
+		"deleteConfirmation": {
+			"title": "Anda yakin ingin menghapus?"
+		},
+		"deleteRiderConfirmation": {
+			"content": "Menghapus informasi pengendara akan menyembunyikan pengendara dari daftar pengendara dan profil tidak dapat diakses lagi."
+		},
+		"deleteRiderCofirmAlert": "Pengendara Telah dihapus."
+	},
+	"reviewParameters": {
+		"title": "Parameter Ulasan",
+		"subtitle": "Daftar parameter yang dapat ditetapkan pengendara untuk pengalaman layanan"
+	},
+	"services": {
+		"editCategory": "Edit Kategori",
+		"newCategory": "Kategori baru",
+		"newService": "Layanan Baru"
+	},
+	"service": {
+		"createFirstNotice": "Buat kategori layanan pertama Anda untuk ditampilkan di aplikasi klien",
+		"Regions": "Wilayah",
+		"timeMultiplierTable": {
+			"startTime": "Waktu mulai",
+			"endTime": "Akhir waktu",
+			"multiplyBy": "Kalikan dengan"
+		},
+		"insertRule": "Sisipkan Aturan",
+		"distanceMultiplierTable": {
+			"distanceFrom": "Jarak dari",
+			"distanceTo": "Jarak Ke"
+		}
+	},
+	"settings": {
+		"generalSettings": "Pengaturan Umum"
+	},
+	"users": {
+		"tab": {
+			"details": "rincian"
+		},
+		"noRole": "Tidak ada Peran yang ditetapkan"
+	},
+	"zonePrice": {
+		"pickupAreas": "",
+		"destinationAres": ""
+	},
+	"zonePrices": {
+		"title": "",
+		"subtitle": ""
+	},
+	"coupons": {
+		"availabilityTime": "Waktu Ketersediaan",
+		"expirationTime": "Waktu kedaluwarsa"
+	},
+	"riders": {
+		"notFoundMessage": "Pengendara Tidak Ditemukan!",
+		"tab": {
+			"details": "rincian",
+			"creditrecords": "Catatan Kredit",
+			"orders": "Pesanan",
+			"addresses": "Alamat"
+		}
+	},
+	"error": {
+		"PERMISSION_NOT_GRANTED": "Izin tidak diberikan"
+	},
+	"requestActivityType": {
+		"arrivedToDestination": "Tiba Di Tujuan",
+		"arrivedToPickupPoint": "Tiba Di Titik Penjemputan",
+		"bookedByOperator": "Pesan Oleh Operator",
+		"bookedByRider": "Dipesan Oleh Rider",
+		"canceledByDriver": "Dibatalkan Oleh Pengemudi",
+		"canceledByOperator": "Dibatalkan Oleh Operator",
+		"canceledByRider": "Dibatalkan Oleh Rider",
+		"driverAccepted": "Pengemudi Diterima",
+		"expired": "Kedaluwarsa",
+		"paid": "Dibayar",
+		"requestedByOperator": "Diminta Oleh Operator",
+		"requestedByRider": "Diminta Oleh Rider",
+		"reviewed": "Ditinjau & Dinilai",
+		"started": "Dimulai"
+	}
+}

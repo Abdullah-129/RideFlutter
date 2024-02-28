@@ -1,0 +1,38 @@
+query CurrentConfiguration {
+    currentConfiguration {
+        purchaseCode
+        backendMapsAPIKey
+        adminPanelAPIKey
+        firebaseProjectPrivateKey
+    }
+}
+
+mutation UpdatePurchaseCode($code: String!) {
+    updatePurchaseCode(purchaseCode: $code) {
+        status
+        clients {
+            ip
+        }
+    }
+}
+
+mutation UpdateMapsAPIKey($backend: String!, $adminPanel: String!) {
+    updateMapsAPIKey(backend: $backend, adminPanel: $adminPanel) {
+        status
+        message
+    }
+}
+
+mutation UpdateFirebase($keyFileName: String!) {
+    updateFirebase(keyFileName: $keyFileName) {
+        status
+        message
+    }
+}
+
+mutation DisableServer($ip: String!) {
+    disablePreviousServer(ip: $ip) {
+        status
+        message
+    }
+}

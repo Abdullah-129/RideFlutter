@@ -1,0 +1,12 @@
+query OrdersList($paging: OffsetPaging, $filter: OrderFilter, $sorting: [OrderSort!]) {
+    orders(paging: $paging, filter: $filter, sorting: $sorting) {
+        nodes {
+            id
+            status
+            createdOn
+            costAfterCoupon
+            currency
+        }
+        totalCount
+    }
+}

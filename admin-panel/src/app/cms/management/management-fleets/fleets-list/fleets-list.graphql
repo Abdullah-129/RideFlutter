@@ -1,0 +1,16 @@
+query FleetsList($paging: OffsetPaging, $filter: FleetFilter) {
+    fleets(paging: $paging, filter: $filter) {
+        nodes {
+            id
+            name
+            phoneNumber
+            address
+        }
+        totalCount
+    }
+}
+mutation CreateFleet($input: CreateFleet!) {
+    createOneFleet(input: { fleet: $input }) {
+        id
+    }
+}

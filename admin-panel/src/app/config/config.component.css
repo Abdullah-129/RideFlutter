@@ -1,0 +1,29 @@
+nz-steps {
+    display: block;
+    margin: 10px;
+}
+
+.steps-action {
+    display: block;
+    margin-left: 10px;
+    margin-top: 24px;
+  }
+
+  button {
+    margin-right: 8px;
+  }
+
+  .step-content {
+      margin-left: 10px;
+      margin-right: 10px;
+    margin-top: 16px;
+    border: 1px dashed #e9e9e9;
+    border-radius: 6px;
+    background-color: #fafafa;
+  }
+
+  .step-content input, .step-content nz-upload {
+      width: 90%;
+      display: block;
+      margin: 50px auto;
+  }

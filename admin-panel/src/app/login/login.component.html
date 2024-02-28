@@ -1,0 +1,38 @@
+<div class="full-screen page-content">
+  <div class="wrapper">
+    <img class="logo-img" src="./assets/logo.png" alt="">
+    <div class="text-wrapper">
+      <h1 class="title-text">
+        Login
+      </h1>
+    </div>
+    <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your username!">
+          <nz-input-group nzPrefixIcon="user">
+            <input type="text" nz-input formControlName="userName" placeholder="Username" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group nzPrefixIcon="lock" [nzSuffix]="passwordSuffixTemplate">
+            <input [type]="passwordVisible ? 'text' : 'password'" nz-input formControlName="password" placeholder="Password" />
+          </nz-input-group>
+          <ng-template #passwordSuffixTemplate>
+            <i nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'" (click)="passwordVisible = !passwordVisible"></i>
+          </ng-template>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <!--label nz-checkbox formControlName="remember">
+            <span>Remember me</span>
+          </label-->
+          <button nz-button class="login-form-button" nzType="primary" (click)="onLogin()"
+            [disabled]="!validateForm.valid">Log in</button>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </div>
+</div>

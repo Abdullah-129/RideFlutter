@@ -1,0 +1,19 @@
+query RiderWalletsList($paging: OffsetPaging) {
+    riderWallets(paging: $paging) {
+        nodes {
+            balance
+            currency
+            riderId
+            rider {
+                firstName
+                lastName
+            }
+        }
+        totalCount
+    }
+    regions {
+        nodes {
+            currency
+        }
+    }
+}

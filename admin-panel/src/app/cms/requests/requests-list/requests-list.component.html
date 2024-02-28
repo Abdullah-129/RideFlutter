@@ -1,0 +1,46 @@
+<nz-page-header [nzGhost]="false" nzBackIcon nzTitle="Requests" nzSubtitle="List of all the order requests">
+  <nz-page-header-extra>
+  </nz-page-header-extra>
+  <nz-page-header-content>
+    <nz-table #table nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.orders as orders"
+      [nzData]="orders.nodes" [nzTotal]="orders.totalCount"
+      (nzQueryParams)="tableService.onTableQueryParamsChange($event)" nzBordered>
+      <thead>
+        <tr>
+          <th>
+            {{ 'profile.dateTime' | translate }}
+            <!--nz-filter-trigger [nzActive]="dateRanges[0] != null" [nzDropdownMenu]="filterDateRange">
+              <i nz-icon nzType="filter" nzTheme="fill"></i>
+            </nz-filter-trigger-->
+          </th>
+          <th>
+            {{ 'profile.cost' | translate }}
+          </th>
+          <th nzColumnKey="status" [nzSortFn]="true" [nzFilters]="statuses" [nzFilterFn]="true">{{ 'profile.status' |
+            translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of table.data" [routerLink]="'view/' + data.id" class="group cursor-pointer">
+          <td [nz-tooltip]="data.createdOn | date:'short'">{{ data.createdOn | timeago }}</td>
+          <td>{{ data.costAfterCoupon | currency: data.currency }}</td>
+          <td>
+            <nz-tag [nzColor]="tagColor.orderStatus(data.status)">{{('enum.request.' + data.status) | translate }}
+            </nz-tag>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+    <nz-dropdown-menu #filterDateRange="nzDropdownMenu">
+      <div class="ant-table-filter-dropdown">
+        <div class="search-box">
+          <nz-range-picker [(ngModel)]="dateRanges"></nz-range-picker><br>
+          <button nz-button nzSize="small" nzType="primary" (click)="tableService.filterText('createdOn', undefined)"
+            class="search-button">{{ 'profile.search' | translate }}</button>
+          <button nz-button nzSize="small" (click)="tableService.filterText('createdOn', undefined)">{{ 'profile.reset'
+            | translate }}</button>
+        </div>
+      </div>
+    </nz-dropdown-menu>
+  </nz-page-header-content>
+</nz-page-header>

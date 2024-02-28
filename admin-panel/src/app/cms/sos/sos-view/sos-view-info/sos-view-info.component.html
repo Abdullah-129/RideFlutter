@@ -1,0 +1,105 @@
+<div *ngIf="(query | async)?.data?.distressSignal as sos">
+<nz-descriptions nzTitle="{{ 'profile.requestInfo' | translate }}" nzBordered class="mt-2">
+    <nz-descriptions-item nzTitle="{{ 'requests.expectedTime' | translate }}">{{
+      sos.order.expectedTimestamp !== null
+      ? (sos.order.expectedTimestamp | date: "short")
+      : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.startTime' | translate }}">{{
+      sos.order.startTimestamp !== null ? (sos.order.startTimestamp | date: "short") : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.finishTime' | translate }}">{{
+      sos.order.finishTimestamp !== null ? (sos.order.finishTimestamp | date: "short") : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.costAfterCoupon' | translate }}">{{
+      sos.order.costAfterCoupon | currency:sos.order.currency
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'requests.estimatedCost' | translate }}">{{
+      sos.order.costBest | currency:sos.order.currency
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+        <nz-badge [nzStatus]="tagColor.orderStatus(sos.order.status)" [nzText]="'enum.request.' + sos.order.status | translate"></nz-badge>
+    </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.locations' | translate }}" [nzSpan]="3">
+      {{ sos.order.addresses.join(" -> ") }}
+  </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.view' | translate }}"><a [routerLink]="'/../requests/view/' + sos.order.id">{{ 'profile.view' | translate }}</a></nz-descriptions-item>
+</nz-descriptions>
+
+<nz-descriptions *ngIf="sos.order.driver as driver" nzTitle="{{ ('profile.driverInfo' | translate) + (sos.submittedByRider ? '' : ' (Sender)') }}" nzBordered class="mt-2">
+    <nz-descriptions-item nzTitle="{{ 'profile.name' | translate }}">{{driver.firstName }} {{driver.lastName}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.mobileNumber' | translate }}"><a [href]="'tel:' + driver.mobileNumber">{{driver.mobileNumber | phone }}</a></nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.registeredOn' | translate }}">{{ driver.registrationTimestamp | date: "short" }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+        <nz-badge [nzStatus]="tagColor.driver(driver.status)" [nzText]="'enum.driver.status.' + camelCase(driver.status) | translate"></nz-badge>
+    </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.view' | translate }}"><a [routerLink]="'/../drivers/all/view/' + driver.id">View</a></nz-descriptions-item>
+</nz-descriptions>
+
+<nz-descriptions nzTitle="{{ ('profile.riderInfo' | translate) + (!sos.submittedByRider ? ' (Sender)' : '') }}" nzBordered class="mt-2" *ngIf="sos.order.rider as rider">
+    <nz-descriptions-item nzTitle="{{ 'profile.name' | translate }}">{{rider.firstName }} {{rider.lastName}}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.mobileNumber' | translate }}"><a [href]="'tel:' + rider.mobileNumber">{{rider.mobileNumber | phone }}</a></nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.registeredOn' | translate }}">{{
+    rider.registrationTimestamp !== null ? (rider.registrationTimestamp | date: "short") : "-"
+  }}</nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+        <nz-badge [nzStatus]="tagColor.rider(rider.status)" [nzText]="'enum.rider.status.' + rider.status.toLowerCase() | translate"></nz-badge>
+    </nz-descriptions-item>
+    <nz-descriptions-item nzTitle="{{ 'profile.view' | translate }}"><a [routerLink]="'/../riders/view/' + rider.id">{{ 'profile.view' | translate }}</a></nz-descriptions-item>
+</nz-descriptions>
+
+  <nz-table #activityTable nzTitle="Activities" *ngIf="sos.activities as activities"
+  [nzShowPagination]="false" [nzData]="activities" [nzTotal]="activities.length" nzBordered class="mt-2">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of activityTable.data">
+      <td>
+        <div class="flex items-center ml-2">
+          <div>
+            <div class="text-sm text-neutral-700 group-hover:text-neutral-900">
+              {{ 'enum.sosActivityAction.' + camelCase(item.action) | translate }}
+            </div>
+            <div class="text-sm text-neutral-400 group-hover:text-neutral-700" [nz-tooltip]="item.createdAt | date: 'short'" [routerLink]="item.operator != null ? ('/operators/view/' + item.operator.id) : null">
+              {{ item.createdAt | timeago }} by {{ item.operator == null ? (sos.submittedByRider ? 'Rider' : 'Driver') : item.operator.firstName + ' ' + item.operator.lastName }}
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>{{item.note}}</td>
+    </tr>
+  </tbody>
+</nz-table>
+
+<nz-card nzTitle="Insert activity" class="mt-2">
+  <form nz-form [formGroup]="formActivity" (ngSubmit)="onSubmitActivity(sos.id)">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-2">
+    <nz-form-item>
+      <nz-form-label nzRequired>Action</nz-form-label>
+      <nz-form-control>
+        <nz-select formControlName="action">
+          <nz-option [nzLabel]="('enum.sosActivityAction.submitted') | translate" [nzValue]="activityAction.Submitted" *ngIf="false"></nz-option>
+          <nz-option [nzLabel]="('enum.sosActivityAction.seen') | translate" [nzValue]="activityAction.Seen" *ngIf="false"></nz-option>
+          <nz-option [nzLabel]="('enum.sosActivityAction.contactDriver') | translate" [nzValue]="activityAction.ContactDriver"></nz-option>
+          <nz-option [nzLabel]="('enum.sosActivityAction.contactAuthorities') | translate" [nzValue]="activityAction.ContactAuthorities"></nz-option>
+          <nz-option [nzLabel]="('enum.sosActivityAction.markedAsResolved') | translate" [nzValue]="activityAction.MarkedAsResolved"></nz-option>
+          <nz-option [nzLabel]="('enum.sosActivityAction.markedAsFalseAlarm') | translate" [nzValue]="activityAction.MarkedAsFalseAlarm"></nz-option>
+</nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzFor="note">Note</nz-form-label>
+      <nz-form-control>
+        <input nz-input formControlName="note" id="note" class="w-full" required>
+      </nz-form-control>
+    </nz-form-item>
+  </div>
+  <button class="float-right mt-2" nz-button nzType="primary" type="submit" [disabled]="!formActivity.valid">{{
+    'profile.submit' | translate }}</button>
+  </form>
+</nz-card>
+</div>

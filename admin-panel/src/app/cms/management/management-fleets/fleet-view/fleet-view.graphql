@@ -1,0 +1,91 @@
+query ViewFleet($id: ID!) {
+  fleet(id: $id) {
+    id
+    name
+    phoneNumber
+    address
+    mobileNumber
+    accountNumber
+    commissionSharePercent
+    commissionShareFlat
+    feeMultiplier
+    exclusivityAreas {
+      lat
+      lng
+    }
+  }
+}
+
+query FleetFinancials(
+  $id: ID!
+  $paging: OffsetPaging
+  $filter: FleetTransactionFilter
+  $sorting: [FleetTransactionSort!]
+) {
+  fleet(id: $id) {
+    transactions(paging: $paging, filter: $filter, sorting: $sorting) {
+      nodes {
+        transactionTimestamp
+        amount
+        currency
+        action
+        deductType
+        rechargeType
+        refrenceNumber
+        operatorId
+        requestId
+        description
+      }
+      totalCount
+    }
+    wallets {
+      currency
+      balance
+    }
+  }
+  regions {
+    nodes {
+      currency
+    }
+  }
+}
+
+query FleetZonePrices(
+  $id: ID!
+  $paging: OffsetPaging
+  $filter: ZonePriceFilter
+  $sorting: [ZonePriceSort!]
+) {
+  fleet(id: $id) {
+    zonePrices(paging: $paging, filter: $filter, sorting: $sorting) {
+      nodes {
+        id
+        name
+      }
+      totalCount
+    }
+  }
+}
+
+query FleetDrivers($id: ID!, $paging: OffsetPaging) {
+  drivers(filter: { fleetId: { eq: $id } }, paging: $paging) {
+    nodes {
+      id
+      firstName
+      lastName
+      mobileNumber
+    }
+  }
+}
+
+mutation UpdateFleet($id: ID!, $update: UpdateFleet!) {
+  updateOneFleet(input: { id: $id, update: $update }) {
+    id
+  }
+}
+
+mutation CreateFleetTransaction($input: FleetTransactionInput!) {
+  createFleetTransaction(input: $input) {
+    id
+  }
+}

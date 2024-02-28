@@ -1,0 +1,89 @@
+<nz-page-header [nzGhost]="false" nzBackIcon
+  [nzTitle]="form.value.id == null ? 'New reward rule' : ('Edit reward rule #' + form.value.id)"
+  nzSubtitle="Definitions of rewarding rule.">
+  <nz-page-header-content>
+    <form nz-form nzLayout="vertical" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input formControlName="id" type="hidden" hidden>
+      <div class="lg:grid lg:grid-cols-4 lg:gap-2">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="title">{{'profile.title' | translate}}</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="title" id="title">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="dates">{{ 'profile.availabilityTime' | translate }}</nz-form-label>
+          <nz-form-control>
+            <nz-range-picker id="dates" formControlName="dates" class="w-full"></nz-range-picker>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="appType">{{'profile.appType' | translate}}</nz-form-label>
+          <nz-form-control>
+            <nz-select formControlName="appType" id="appTyoe">
+              <nz-option nzLabel="Driver" nzValue="Driver"></nz-option>
+              <nz-option nzLabel="Rider" nzValue="Rider"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="beneficiary">{{ 'profile.beneficiary' | translate }}</nz-form-label>
+          <nz-form-control>
+            <nz-select formControlName="beneficiary" id="beneficiary">
+              <nz-option nzLabel="Self" nzValue="Self"></nz-option>
+              <nz-option nzLabel="Referrer" nzValue="Referrer"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="event">Event</nz-form-label>
+          <nz-form-control>
+            <nz-select formControlName="event" id="event">
+              <nz-option nzLabel="Register" nzValue="Register"></nz-option>
+              <nz-option nzLabel="Service Completed" nzValue="ServiceCompleted"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="creditGift">{{ 'profile.creditGift' | translate }}</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="creditGift" id="creditGift"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="tripFeePercentGift">{{ 'profile.tripFeePercentGift' | translate }}
+          </nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="tripFeePercentGift" id="tripFeePercentGift"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="creditCurrency">{{ 'profile.creditCurrency' | translate }}</nz-form-label>
+          <nz-form-control>
+            <nz-select formControlName="creditCurrency" id="creditCurrency" nzShowSearch>
+              <nz-option *ngFor="let currency of currencies" [nzLabel]="currency.label" [nzValue]="currency.value"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <nz-divider nzText="Conditions" nzOrientation="left"></nz-divider>
+      <div class="lg:grid lg:grid-cols-2 lg:gap-2">
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="conditionTripCountsLessThan">{{ 'profile.conditionTripCountsLessThan' | translate }}</nz-form-label>
+          <nz-form-control>
+            <nz-input-number formControlName="conditionTripCountsLessThan" id="conditionTripCountsLessThan">
+            </nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="conditionUserNumberFirstDigits">{{ 'profile.conditionUserNumberFirstDigits' | translate }}</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="conditionUserNumberFirstDigits" id="conditionUserNumberFirstDigits">
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <button nz-button nzType="primary" type="submit" [disabled]="form.invalid" class="float-right">{{ 'profile.submit' |
+        translate }}</button>
+    </form>
+  </nz-page-header-content>
+</nz-page-header>
